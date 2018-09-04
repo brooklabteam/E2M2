@@ -1,0 +1,9 @@
+name: "E2M2"
+output_dir: "."
+navbar:
+  title: "E2M2"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About Me"
+      href: about.html
