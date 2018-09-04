@@ -21,7 +21,7 @@ output:
 
 <span style="text-align: left; font-size: 1em;">
 ---
-We are pleased to announce the second annual E^2^M^2^:  Ecological and Epidemiological Modeling in Madagascar, to be held January 13-20, 2018 at Centre ValBio, Ranomafana National Park, Madagascar, with an optional R bootcamp on January 12 and a mandatory closing session on January 21, both at Institut Pasteur de Madagascar in Antananarivo. The clinic will be an eight-day intensive workshop aimed to provide an introduction to the use of dynamical models in understanding ecological and epidemiological data.
+We are pleased to announce the second annual E^2^M^2^:  Ecological and Epidemiological Modeling in Madagascar, to be held January 13-20, 2019 at Centre ValBio, Ranomafana National Park, Madagascar, with an optional 'R bootcamp' on January 12 and a mandatory closing session on January 21, both at Institut Pasteur de Madagascar in Antananarivo. The clinic will be an eight-day intensive workshop aimed to provide an introduction to the use of dynamical models in understanding ecological and epidemiological data.
 
 Students will participate in a series of interactive lectures and computer-based tutorials and learn to fine-tune model-based research questions, develop clear model frameworks and corresponding equations, and fit models to real-world data. All students will work closely with peers and faculty to develop a research plan for an ongoing or existing project integrating dynamical modeling with data collection and/or analysis in a biological system of their choosing. These research plans can then be used as a foundation for future dissertation or grant proposals. Materials from last year’s course are available for your perusal [here](E2M2_2018.html).
 
