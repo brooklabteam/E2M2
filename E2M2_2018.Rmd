@@ -1,27 +1,6 @@
 ---
-output:
-  html_document: default
-  pdf_document: default
+title: "2018 Syllabus"
 ---
-<br>
-<div style="text-align: left; font-size: 2.2em;">
-**E^2^M^2^:  Ecological & Epidemiological Modeling in Madagascar**
-</div>
-
-![](E2M2-2018/E2M2-2018.jpg)
-
-
-**January 13-20 & January 22, 2018**
-
-**Centre ValBio, Ranomafana National Park & Institut Pasteur de Madagascar, Antananarivo**<br>
-
-Along with [Tanjona Ramidantsoa](https://ramiadantsoa.github.io), I organize E^2^M^2^:  Ecological and Epidemiological Modeling in Madagascar, an annual workshop for Malagasy students aimed to provide an introduction to the use of dynamical models in understanding ecological and epidemiological data. Students participate in a series of interactive lectures and computer-based tutorials and learn to fine-tune model-based research questions, develop clear model frameworks and corresponding equations, and fit models to real-world data. All students work closely with peers and instructors to develop a research plan for an ongoing or existing project integrating dynamical modeling with data collection and/or analysis in a biological system of their choosing. These research plans can then be used as a foundation for future dissertation or grant proposals. 
-
-Our 2018 clinic will take place from January 13-20, 2018 at Centre ValBio, Ranomafana National Park, Madagascar, with a mandatory closing session to follow at Institut Pasteur de Madagascar on January 22. 
-
-Our teaching team is comprised of: [Matthew Bonds](http://ghsm.hms.harvard.edu/person/faculty/matthew-bonds), Cara Brook, [Andres Garchitorena](http://bondslab.com/people/andres-garchitorena/), [Jessica Metcalf](metcalflab.princeton.edu/), [Calistus Ngonghala](https://people.clas.ufl.edu/calistusnn/), [Tanjona Ramiadantsoa](https://ramiadantsoa.github.io), [Fidisoa Rasambainarivo](https://fidyras.com/), Julio Rakotonirina, Hafaliana Christian Ranaivoson, and [Amy Wesolowski](https://www.jhsph.edu/faculty/directory/profile/3546/amy-wesolowski).
-
-**2018 Syllabus:**
 
 Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_InstallPackages.html).
 

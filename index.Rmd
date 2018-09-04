@@ -1,5 +1,62 @@
 ---
-title: "E2M2"
+output:
+  html_document: default
+  pdf_document: default
+---
+<br>
+<div style="text-align: left; font-size: 2.2em;">
+**E^2^M^2^:  Ecological & Epidemiological Modeling in Madagascar**
+</div>
+
+
+<img src="E2M2-2018/E2M2-2018.jpg" alt="E2M2class" style="width: 70%; height: 70%;" align="center">
+
+<span style="text-align: left; font-size: 1.5em;">**January 12-21, 2019**</span><br>
+
+<span style="text-align: left; font-size: 1.5em;">
+**Institut Pasteur de Madagascar, Antananarivo & Centre ValBio, Ranomafana National Park**</span><br>
+
+<span style="text-align: left; font-size: 1.5em; color:#C11B17"> **Application Deadline: Friday, October 19, 2018**</span><br>
+
+
+<span style="text-align: left; font-size: 1em;">
+---
+We are pleased to announce the second annual E^2^M^2^:  Ecological and Epidemiological Modeling in Madagascar, to be held January 13-20, 2018 at Centre ValBio, Ranomafana National Park, Madagascar, with an optional R bootcamp on January 12 and a mandatory closing session on January 21, both at Institut Pasteur de Madagascar in Antananarivo. The clinic will be an eight-day intensive workshop aimed to provide an introduction to the use of dynamical models in understanding ecological and epidemiological data.
+
+Students will participate in a series of interactive lectures and computer-based tutorials and learn to fine-tune model-based research questions, develop clear model frameworks and corresponding equations, and fit models to real-world data. All students will work closely with peers and faculty to develop a research plan for an ongoing or existing project integrating dynamical modeling with data collection and/or analysis in a biological system of their choosing. These research plans can then be used as a foundation for future dissertation or grant proposals. Materials from last year’s course are available for your perusal [here](E2M2_2018.html).
+
+The course will be targeted towards students in their third cycle or higher in biology, mathematics, medicine, public health, or related fields, though all are welcome to apply. The course will be taught primarily in English, though a subset of the faculty will be available to offer some translation into French and/or Malagasy. A working knowledge of the English language is required for admission; however, we will do our best to make the material accessible to students who find English challenging. If you have any questions about the appropriateness of your background or training for our course, either in language or in science, please do not hesitate to contact us straight away (email below).
+
+Funding is available to cover transportation from Antananarivo to Ranomafana and back, in addition to room and board throughout the duration of the clinic for all participants (lodging in Antananarivo on Jan 12 and 21 not included). International applicants are welcome to apply but will need to provide their own funding for travel to Madagascar.
+
+The application process is expected to be highly competitive.
+Applications are available for submission below and must be completed and uploaded by midnight on Friday, October 19, 2018 if you wish to be considered.
+Please do not hesitate contact Cara Brook [(cbrook@berkeley.edu)](cbrook@berkeley.edu) or Tanjona Ramiadantsoa [(ramiadantsoa@wisc.edu)](ramiadantsoa@wisc.edu) with any questions or concerns. We hope to see you in January!
+
+– The E^2^M^2^ instructor team:
+
+*[Matthew Bonds](http://ghsm.hms.harvard.edu/person/faculty/matthew-bonds), [Cara Brook](carabrook.github.io), [Andres Garchitorena](http://bondslab.com/people/andres-garchitorena/), Sarah Guth, Jean-Michel Héraud, [Jessica Metcalf](http://metcalflab.princeton.edu/), Julio Rakotonirina, [Tanjona Ramiadantsoa](https://ramiadantsoa.github.io), Hafaliana Christian Ranaivoson, [Fidy Rasambainarivo](https://fidyras.com/), Benjamin Rice, [Amy Wesolowski](https://www.jhsph.edu/faculty/directory/profile/3546/amy-wesolowski)*
+</span><br>
+
 ---
 
-Hello, World!
+<div style="text-align: left; font-size: 2em; color:#C11B17;">
+**Application Required Components**
+</div>
+
+
+For consideration in our clinic, applications must be submitted below along with one collated pdf file by **Friday, October 19, 2018** at midnight in your country of residence. The application filename should read as “E2M2_Application_YourLastName_YourFirstName.pdf”
+
+Please note that late applications will not be accepted.
+
+The collated file should include (in the following order):
+
+1. A current Curriculum Vitae (2 pages maximum)
+2. An Abstract (400 words maximum) describing a current or planned research project that incorporates modeling
+3. A Statement of Interest and Intent indicating how the experience of attending this workshop would enhance your short-term and long-term research goals (500-1000 words)
+
+*Please note that a Google account is required for upload of your application file. If you do not already possess a Google account, you can register one for free [here](https://accounts.google.com/SignUp?hl=en).*
+
+<div style="text-align: left; font-size: 1.5em; color:#C11B17;">
+**Submit your application for E^2^M^2^ today [here](https://goo.gl/forms/tjH4kIK0hyfNHCww2)!**
+</div>

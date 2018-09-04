@@ -1,11 +1,13 @@
-name: "E2M2"
+#name: "E2M2"
 output_dir: "."
 navbar:
-  title: "E2M2"
+  #title: "E2M2"
   left:
-    - text: "Home"
+    - text: "Application"
       href: index.html
-    - text: "About Me"
-      href: about.html
-    - text: "E2M2-2018"
+    - text: "Preparation"
+      href: preparation.html
+    - text: "Sponsors"
+      href: sponsors.html
+    - text: "E2M2 2018"
       href: E2M2_2018.html
