@@ -1,0 +1,166 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
+<br>
+<div style="text-align: left; font-size: 2.2em;">
+**E^2^M^2^:  Ecological & Epidemiological Modeling in Madagascar**
+</div>
+
+![](E2M2-2018/E2M2-2018.jpg)
+
+
+**January 13-20 & January 22, 2018**
+
+**Centre ValBio, Ranomafana National Park & Institut Pasteur de Madagascar, Antananarivo**<br>
+
+Along with [Tanjona Ramidantsoa](https://ramiadantsoa.github.io), I organize E^2^M^2^:  Ecological and Epidemiological Modeling in Madagascar, an annual workshop for Malagasy students aimed to provide an introduction to the use of dynamical models in understanding ecological and epidemiological data. Students participate in a series of interactive lectures and computer-based tutorials and learn to fine-tune model-based research questions, develop clear model frameworks and corresponding equations, and fit models to real-world data. All students work closely with peers and instructors to develop a research plan for an ongoing or existing project integrating dynamical modeling with data collection and/or analysis in a biological system of their choosing. These research plans can then be used as a foundation for future dissertation or grant proposals. 
+
+Our 2018 clinic will take place from January 13-20, 2018 at Centre ValBio, Ranomafana National Park, Madagascar, with a mandatory closing session to follow at Institut Pasteur de Madagascar on January 22. 
+
+Our teaching team is comprised of: [Matthew Bonds](http://ghsm.hms.harvard.edu/person/faculty/matthew-bonds), Cara Brook, [Andres Garchitorena](http://bondslab.com/people/andres-garchitorena/), [Jessica Metcalf](metcalflab.princeton.edu/), [Calistus Ngonghala](https://people.clas.ufl.edu/calistusnn/), [Tanjona Ramiadantsoa](https://ramiadantsoa.github.io), [Fidisoa Rasambainarivo](https://fidyras.com/), Julio Rakotonirina, Hafaliana Christian Ranaivoson, and [Amy Wesolowski](https://www.jhsph.edu/faculty/directory/profile/3546/amy-wesolowski).
+
+**2018 Syllabus:**
+
+Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_InstallPackages.html).
+
+Follow along with R tricks posted through the week [here](E2M2-2018/E2M2_R_tricks.html).
+
+**Sat, Jan 13: (Travel)**
+
+* 6:30am: Depart from Tana (Institut Pasteur) via bus, travel to Ranomafana (lunch stop Antsirabe)
+* 6:30-7:30pm: Dinner
+* 7:30-8:30pm: Introductions and Road Map: [What are we doing here?](E2M2-2018/E2M2_What_are_we_doing_here.pdf) __(Cara)__
+
+**Sun, Jan 14: “Thinking About Data”**
+
+* 6:30-8:00am: Breakfast
+* 8:00-8:30am: Road Map and Daily Agenda __(Cara)__
+* 8:30-9:30am: [Lecture: Models and Data](E2M2-2018/E2M2_Models_and_Data.pdf) __(Tanjona)__
+* 9:30-10:30am: Software installation and catch-up. Mentors + instructors make sure all students have the proper materials installed and work through [4 tutorials](E2M2-2018/E2M2_R_tutorials.zip) with them.
+* 10:30am – 11:00am: Break
+* 11:00am-12:00pm: 1-min student introductions and research presentations __(Cara)__
+* 12:00-1:00pm: Lunch
+* 1:00-3:00pm [Lecture/Tutorial: Exploring & visualizing data in R](E2M2-2018/E2M2_Data_Visualization.zip) __(Christian)__
+* 3:00-3:30pm: Break
+* 3:30-5:30pm: [Lecture/Tutorial: Linear regression and simple statistics](E2M2-2018/E2M2_Basic_statistical_modeling.zip) __(Andres)__
+* 5:30-6:30pm: Free time
+* 6:30-7:30pm: Dinner
+
+**Mon, Jan 15: “Deeper Thinking About Data”**
+
+* 6:30-8:00am: Breakfast
+* 8:00-8:15am: Road Map and Daily Agenda __(Cara)__
+* 8:15am-9:45am: Lecture/Tutorial: Introduction to mixed modeling __(Andres)__
+* 9:45 - 10:00am: Coffee Break. Prep for hike!
+* 10:00am-1:00pm: Morning walk in Ranomafana National Park
+* 1:00pm-2:00pm: Lunch
+* 2:00 - 3:00pm: [Writing Exercise: Formulating research questions](E2M2-2018/E2M2_HW_Formulating_Research_Questions.pdf) __(HW)__ __(Cara)__
+* 3:00-3:30pm: Break
+* 3:30-5:00pm: [Lecture/Tutorial: Introduction to occupancy modeling](E2M2-2018/E2M2_Occupancy.zip) __(Fidy)__
+* 5:00-6:30pm: Free time, or one-on-one mentoring
+* 6:30-7:30pm: Dinner
+
+**Tues, Jan 16: “Thinking About Mechanism”**
+
+* 6:30-8:00am: Breakfast
+* 8:00-8:15am: Road Map and Daily Agenda __(Cara)__
+* 8:15-10:15am: [Lecture/Tutorial: Introduction to Compartmental Models and Differential Equations](E2M2-2018/E2M2_Intro_to_Mechanistic_Models.zip) __(Jess)__
+* 10:15-10:45am: Break
+* 10:45am-12:00pm: Group exercise: Refining research questions for modeling __(Cara)__
+* 12:00-1:00pm: Lunch
+* 1:00-2:00pm: Small group session: Refining research questions for modeling (cont.) __(all instructors lead small groups)__
+* 2:00-2:15pm: [Writing Exercise: Creating a model world to address a research question](E2M2-2018/E2M2_Model_Framework_HW.pdf) __(HW)__ __(Cara)__
+* 2:15-2:45pm: Break
+* 2:45-4:30pm: [Exercise + Discussion: Dynamical Fever](E2M2-2018/E2M2_Dynamical_Fever.zip) __(Mentors: Jean-Marius, Ornella, Antso)__
+* 4:30-6:00pm: Mid-session feedback __(Julio)__
+* 6:00 - 6:30pm: Free time
+* 6:30-7:30pm: Dinner
+
+**Wed, Jan 17: “Fitting Models to Data”**
+
+* 6:30-8:00am: Breakfast
+* 7:00-8:00am: Mentoring as needed
+* 8:00-8:30am: Road Map and Daily Agenda __(Cara)__
+* 8:30-10:30am: [Lecture/Tutorial: Model Fitting in Practice – the Basic Concept](E2M2-2018/E2M2_Model_Fitting_Basic_Concept.zip) __(Cara)__
+* 10:00-10:30am: Break
+* 10:30-12:00pm: [Exercise: Epidemics Cards](E2M2-2018/E2M2_Epidemic_Cards.zip) __(Cara + Amy)__
+* 12:00-1:00pm: Lunch
+* 1:00pm-2:00pm: Tutorial: Model Fitting with Epidemic Cards (continued from above) __(Amy)__
+* 2:00-3:30pm: Model Telephone with Model Diagrams __(Mentors: Jean-Marius, Ornella, Antso)__
+* 3:30-4:00pm: Break
+* 4:00-5:00pm: [Lecture: PIVOT’s Role in E^2^M^2^](E2M2-2018/E2M2_Role_of_PIVOT.pdf) __(Andres)__
+* 5:00-6:30pm: Mentor research presentations __(Jean-Marius, Ornella, Antso)__
+* 6:30-7:30pm: Dinner
+
+**Thurs, Jan 18: “Refining Your Work”**
+
+* 6:30-8:00am: Breakfast
+* 7:00-8:00am: Mentoring as needed
+* 8:00-8:15am: Road Map and Daily Agenda __(Amy)__
+* 8:15-10:00am: [Lecture/Tutorial: Introduction to Network Modeling](E2M2-2018/E2M2_Network.zip) __(Fidy)__
+* 10:00-10:30am: Break
+* 10:30-12:00pm: [Lecture/Tutorial: Introduction to Model Evaluation and Comparison](E2M2-2018/E2M2_Intro_to_Model_Evaluation_and_Comparison.zip) __(Jess)__
+* 12:00pm-1:00pm: Lunch
+* 1:00-1:15pm: [Final research plans](E2M2-2018/E2M2-Final-Research-Plan.pdf) __(HW)__ __(Cara)__
+* 1:15pm-3:00pm: Lecture/Tutorial: [Introduction to Spatial Modeling](E2M2-2018/E2M2_Introduction_to_Spatial_Modeling.zip) __(Amy)__
+* 3:00-4:00pm: [Lecture: Modeling Extensions – Spatial mechanistic models](E2M2-2018/E2M2_spatial_mechanistic_model.pdf) __(Tanjona)__
+* 4:00-4:30pm: Break
+* 4:30-6:30pm: Work time + one-on-one mentoring sessions __(all)__
+* 6:30-7:30pm: Dinner
+* 7:30-9:30pm: Night hike: Ranomafana National Park (optional)
+
+**Fri, Jan 19: “Putting it all in Perspective”**
+
+* 6:30-8:00am: Breakfast
+* 7:00-8:00am: Mentoring as needed
+* 8:00-8:15am: Road Map and Daily Agenda __(Cara)__
+* 8:15-9:30am: [Research Snapshots](E2M2-2018/E2M2_ResearchSnapshots.zip) __(all)__  
+* 9:30am-10:30am: Discussion of a [scientific paper](E2M2-2018/E2M2_Readings.zip) __(Tanjona + Mentors: Jean-Marius, Ornella, Antso)__
+* 10:30-11:00am: Break
+* 11:00-11:50pm: [Lecture: Modeling in Practice: The Life Cycle of a Modeling Project, from Conception to Publication](E2M2-2018/E2M2_Life_Cycle_Modelling_Project.pdf) __(Andres)__
+* 11:50-12:00pm: Group photo
+* 12:00-1:00pm: Lunch
+* 1:00-2:00pm: [Lecture: Looking back: How far have we come?](E2M2-2018/E2M2_LookingBack.pdf) __(Tanjona)__
+* 2:00-3:00pm: Research plan work time + mentoring as needed __(all)__
+* 3:00-5:00pm: Research plan work time on your own
+* 5:00pm: Bus leaves CVB to take students to Ranomafana town (afternoon off)
+* 7:30pm: Meet for dinner at Hotel Manja in Ranomafana town
+* 9:30pm: Return bus to CVB
+
+**Sat, Jan 20: (Travel)**
+
+* 6:00-6:30am: Breakfast to go
+* 6:30am: Board bus
+* Return to Antananarivo 
+
+**Mon, Jan 22: "Sharing Your Work"** *(at [Institut Pasteur de Madagascar](http://www.pasteur.mg/) in Antananarivo)*
+
+* 9:00-11:00am: Closing ceremony and final student presentations __(Cara)__
+* 11:00am-12:00pm: Final Feedback Session __(Julio)__
+* 12:30-2:00pm: Farewell lunch
+* 2:00-4:30pm: [Mini-symposium](E2M2-2018/E2M2_IPM_Mini_Symposium.pdf): **“Modeling Insights Into Epidemiology and Ecology”** *(Instructor presentations)*
+    * **Cara Brook**  "Malagasy fruit bats as reservoirs for emerging viral zoonoses" (20 min. + 5 min. Q/A)
+    * **Tanjona Ramiadantsoa** "Importance of large scale corridors for biodiversity conservation" (20 min. + 5 min. Q/A)
+    * **Jessica Metcalf** "Vaccine preventable diseases: mathematical modeling for public health" (20 min. + 5 min. Q/A)
+    * **Amy Wesolowski** ""Using novel data sources to understand the spatial distribution of vector-borne diseases" (20 min. + 5 min. Q/A)
+    * **Fidy Rasambainarivo** "Interactions and disease transmission at the domestic animal-wildlife interface in Betampona, Madagascar" (20 min. + 5 min. Q/A)
+* 4:30pm: Social Hour
+
+<br>
+<div style="text-align: center; font-size: 1em;">
+Many of the materials and methods used in E^2^M^2^ were adapted from those previously developed by faculty at [ICI3D](ici3d.org):
+<br>
+<img src="ici3d-logo.png" alt="IPM" style="width: 300px;" >
+</div>
+<br>
+<div style="text-align: center; font-size: 1em;">
+<br>
+Thanks to our sponsors:
+<br>
+<img src="IPM_logo.png" alt="IPM" style="width: 300px;" >
+<img src="CHW-logo.png" alt="IPM" style="width: 200px;" >
+<img src="PIVOT-logo.png" alt="IPM" style="width: 300px;" >
+<img src="CVB-logo.png" alt="IPM" style="width: 200px;" >
+</div>

@@ -7,3 +7,5 @@ navbar:
       href: index.html
     - text: "About Me"
       href: about.html
+    - text: "E2M2-2018"
+      href: E2M2_2018.html

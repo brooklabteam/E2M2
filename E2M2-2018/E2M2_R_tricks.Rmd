@@ -1,0 +1,85 @@
+---
+title: "R tricks"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+There have been a few specific requests for carrying out particular applications in R. We will add code to address these requests here throughout the week.
+
+1. **Updating R, RStudio, Rpackages** 
+    * If you are getting warning messages while installing packages, your version of R may be out-of-date. To keep your version of R most up-to-date, follow the directions at the [webpage linked here](http://bioinfo.umassmed.edu/bootstrappers/bootstrappers-courses/courses/rCourse/Additional_Resources/Updating_R.html).
+    * **Note for Windows** : Keep in mind that if you are using the installr package for Windows, you will be installing a new package to help you. The linked page gives directions for installing this package via your console, but if you do not have internet on your computer, you'll need to [install this package from the source file](E2M2_InstallPackages.html).
+
+2. **Correcting commas from a French dataset**
+  * Many .csv files in Madagascar will have commas in place of periods for numeric entries like weights. If you are not able to import these into R correctly via the read.csv2 command, you can change them manually. Try it with the following code:
+  
+```{r echo=TRUE, message=TRUE, warning=TRUE, eval=FALSE}
+## make up a vector where the decimals are entered as commas
+comma.weights = c("56,3", "45,6", "67,8", "87,4", "42,1", "75,4")
+
+## look at your vector of weights with commas.
+comma.weights
+
+## it is stored as a character because of the commas, which you would like to replace with periods
+class(comma.weights)
+
+## you can do this with 'gsub' in base R
+comma.weights = gsub(pattern = ",", replacement = ".", x=comma.weights)
+
+## then, turn it into a numeric vector for use in data analysis
+comma.weights = as.numeric(comma.weights)
+
+## look at the help file to explore the functions of this command and others like it further
+?gsub
+```
+  
+3. **Correcting NAs in your data**
+  * You can use the following code to subset your data to include only those rows that have no NAs in any column.
+  
+```{r echo=TRUE, message=TRUE, warning=TRUE, eval=FALSE}
+## imagine you have a dataset that looks like this
+yr = c(1990, 1998, 1997, 2003, NA, 2015)
+age =c(5,4,NA,6,12,18)
+name=c("Ricky", "Fenosoa", "Lady", NA, "Tahiana", "Tsilavo")
+dat.ex = cbind.dataframe(yr, name, age)
+
+## look at your dataframe. you have an NA in column 1/row 5, column 2/row 4, and column 3/row3. the function complete.cases will help you subset your data to include only those rows of data which have no NAs
+
+dat.ex.new = dat.ex[complete.cases(dat.ex),]
+
+##look at your new data frame:
+
+dat.ex.new
+
+## there are no longer any NAs, but be careful! if you were only interested in analyzing your columns for yr and age, you just eliminated a row (row 4) that had all the information you needed. this function will only take rows for which ALL information is complete.
+
+```
+
+4. **Plotting a single shape area**
+  * Warning! This code will only run in the same working directory as Amy's Intro to Spatial Modeling tutorial. This tells you how to plot a singe shape area within a larger shapefile
+
+```{r echo=TRUE, message=TRUE, warning=TRUE, eval=FALSE}
+
+## load your required libraries
+library(maptools)
+library(rgeos)
+
+## read in the entire districts of Madagascar shapefil
+mdg_admin2_shp<-readShapePoly('MDG_Shp/MDG_adm2.shp', proj4string = CRS('+proj=longlat'))
+
+## select a subset that only includes the district named "Sava"
+subset_shp_file<-mdg_admin2_shp[which(mdg_admin2_shp$NAME_2 == 'Sava'),]
+
+## plot all of Madagascar
+plot(mdg_admin2_shp)
+
+## plot the Sava district on top of all of Madagascar and color it blue
+plot(subset_shp_file, col = 'blue', add = TRUE)
+
+## plot just the Sava district on its own
+plot(subset_shp_file)
+
+```

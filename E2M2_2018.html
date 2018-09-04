@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>E2M2_2018.utf8.md</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">E2M2</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="about.html">About Me</a>
+</li>
+<li>
+  <a href="E2M2_2018.html">E2M2-2018</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<br>
+<div style="text-align: left; font-size: 2.2em;">
+<p><strong>E<sup>2</sup>M<sup>2</sup>: Ecological &amp; Epidemiological Modeling in Madagascar</strong></p>
+</div>
+<p><img src="E2M2-2018/E2M2-2018.jpg" /></p>
+<p><strong>January 13-20 &amp; January 22, 2018</strong></p>
+<p><strong>Centre ValBio, Ranomafana National Park &amp; Institut Pasteur de Madagascar, Antananarivo</strong><br></p>
+<p>Along with <a href="https://ramiadantsoa.github.io">Tanjona Ramidantsoa</a>, I organize E<sup>2</sup>M<sup>2</sup>: Ecological and Epidemiological Modeling in Madagascar, an annual workshop for Malagasy students aimed to provide an introduction to the use of dynamical models in understanding ecological and epidemiological data. Students participate in a series of interactive lectures and computer-based tutorials and learn to fine-tune model-based research questions, develop clear model frameworks and corresponding equations, and fit models to real-world data. All students work closely with peers and instructors to develop a research plan for an ongoing or existing project integrating dynamical modeling with data collection and/or analysis in a biological system of their choosing. These research plans can then be used as a foundation for future dissertation or grant proposals.</p>
+<p>Our 2018 clinic will take place from January 13-20, 2018 at Centre ValBio, Ranomafana National Park, Madagascar, with a mandatory closing session to follow at Institut Pasteur de Madagascar on January 22.</p>
+<p>Our teaching team is comprised of: <a href="http://ghsm.hms.harvard.edu/person/faculty/matthew-bonds">Matthew Bonds</a>, Cara Brook, <a href="http://bondslab.com/people/andres-garchitorena/">Andres Garchitorena</a>, <a href="metcalflab.princeton.edu/">Jessica Metcalf</a>, <a href="https://people.clas.ufl.edu/calistusnn/">Calistus Ngonghala</a>, <a href="https://ramiadantsoa.github.io">Tanjona Ramiadantsoa</a>, <a href="https://fidyras.com/">Fidisoa Rasambainarivo</a>, Julio Rakotonirina, Hafaliana Christian Ranaivoson, and <a href="https://www.jhsph.edu/faculty/directory/profile/3546/amy-wesolowski">Amy Wesolowski</a>.</p>
+<p><strong>2018 Syllabus:</strong></p>
+<p>Please follow instructions for installing packages in R <a href="E2M2-2018/E2M2_InstallPackages.html">here</a>.</p>
+<p>Follow along with R tricks posted through the week <a href="E2M2-2018/E2M2_R_tricks.html">here</a>.</p>
+<p><strong>Sat, Jan 13: (Travel)</strong></p>
+<ul>
+<li>6:30am: Depart from Tana (Institut Pasteur) via bus, travel to Ranomafana (lunch stop Antsirabe)</li>
+<li>6:30-7:30pm: Dinner</li>
+<li>7:30-8:30pm: Introductions and Road Map: <a href="E2M2-2018/E2M2_What_are_we_doing_here.pdf">What are we doing here?</a> <strong>(Cara)</strong></li>
+</ul>
+<p><strong>Sun, Jan 14: “Thinking About Data”</strong></p>
+<ul>
+<li>6:30-8:00am: Breakfast</li>
+<li>8:00-8:30am: Road Map and Daily Agenda <strong>(Cara)</strong></li>
+<li>8:30-9:30am: <a href="E2M2-2018/E2M2_Models_and_Data.pdf">Lecture: Models and Data</a> <strong>(Tanjona)</strong></li>
+<li>9:30-10:30am: Software installation and catch-up. Mentors + instructors make sure all students have the proper materials installed and work through <a href="E2M2-2018/E2M2_R_tutorials.zip">4 tutorials</a> with them.</li>
+<li>10:30am – 11:00am: Break</li>
+<li>11:00am-12:00pm: 1-min student introductions and research presentations <strong>(Cara)</strong></li>
+<li>12:00-1:00pm: Lunch</li>
+<li>1:00-3:00pm <a href="E2M2-2018/E2M2_Data_Visualization.zip">Lecture/Tutorial: Exploring &amp; visualizing data in R</a> <strong>(Christian)</strong></li>
+<li>3:00-3:30pm: Break</li>
+<li>3:30-5:30pm: <a href="E2M2-2018/E2M2_Basic_statistical_modeling.zip">Lecture/Tutorial: Linear regression and simple statistics</a> <strong>(Andres)</strong></li>
+<li>5:30-6:30pm: Free time</li>
+<li>6:30-7:30pm: Dinner</li>
+</ul>
+<p><strong>Mon, Jan 15: “Deeper Thinking About Data”</strong></p>
+<ul>
+<li>6:30-8:00am: Breakfast</li>
+<li>8:00-8:15am: Road Map and Daily Agenda <strong>(Cara)</strong></li>
+<li>8:15am-9:45am: Lecture/Tutorial: Introduction to mixed modeling <strong>(Andres)</strong></li>
+<li>9:45 - 10:00am: Coffee Break. Prep for hike!</li>
+<li>10:00am-1:00pm: Morning walk in Ranomafana National Park</li>
+<li>1:00pm-2:00pm: Lunch</li>
+<li>2:00 - 3:00pm: <a href="E2M2-2018/E2M2_HW_Formulating_Research_Questions.pdf">Writing Exercise: Formulating research questions</a> <strong>(HW)</strong> <strong>(Cara)</strong></li>
+<li>3:00-3:30pm: Break</li>
+<li>3:30-5:00pm: <a href="E2M2-2018/E2M2_Occupancy.zip">Lecture/Tutorial: Introduction to occupancy modeling</a> <strong>(Fidy)</strong></li>
+<li>5:00-6:30pm: Free time, or one-on-one mentoring</li>
+<li>6:30-7:30pm: Dinner</li>
+</ul>
+<p><strong>Tues, Jan 16: “Thinking About Mechanism”</strong></p>
+<ul>
+<li>6:30-8:00am: Breakfast</li>
+<li>8:00-8:15am: Road Map and Daily Agenda <strong>(Cara)</strong></li>
+<li>8:15-10:15am: <a href="E2M2-2018/E2M2_Intro_to_Mechanistic_Models.zip">Lecture/Tutorial: Introduction to Compartmental Models and Differential Equations</a> <strong>(Jess)</strong></li>
+<li>10:15-10:45am: Break</li>
+<li>10:45am-12:00pm: Group exercise: Refining research questions for modeling <strong>(Cara)</strong></li>
+<li>12:00-1:00pm: Lunch</li>
+<li>1:00-2:00pm: Small group session: Refining research questions for modeling (cont.) <strong>(all instructors lead small groups)</strong></li>
+<li>2:00-2:15pm: <a href="E2M2-2018/E2M2_Model_Framework_HW.pdf">Writing Exercise: Creating a model world to address a research question</a> <strong>(HW)</strong> <strong>(Cara)</strong></li>
+<li>2:15-2:45pm: Break</li>
+<li>2:45-4:30pm: <a href="E2M2-2018/E2M2_Dynamical_Fever.zip">Exercise + Discussion: Dynamical Fever</a> <strong>(Mentors: Jean-Marius, Ornella, Antso)</strong></li>
+<li>4:30-6:00pm: Mid-session feedback <strong>(Julio)</strong></li>
+<li>6:00 - 6:30pm: Free time</li>
+<li>6:30-7:30pm: Dinner</li>
+</ul>
+<p><strong>Wed, Jan 17: “Fitting Models to Data”</strong></p>
+<ul>
+<li>6:30-8:00am: Breakfast</li>
+<li>7:00-8:00am: Mentoring as needed</li>
+<li>8:00-8:30am: Road Map and Daily Agenda <strong>(Cara)</strong></li>
+<li>8:30-10:30am: <a href="E2M2-2018/E2M2_Model_Fitting_Basic_Concept.zip">Lecture/Tutorial: Model Fitting in Practice – the Basic Concept</a> <strong>(Cara)</strong></li>
+<li>10:00-10:30am: Break</li>
+<li>10:30-12:00pm: <a href="E2M2-2018/E2M2_Epidemic_Cards.zip">Exercise: Epidemics Cards</a> <strong>(Cara + Amy)</strong></li>
+<li>12:00-1:00pm: Lunch</li>
+<li>1:00pm-2:00pm: Tutorial: Model Fitting with Epidemic Cards (continued from above) <strong>(Amy)</strong></li>
+<li>2:00-3:30pm: Model Telephone with Model Diagrams <strong>(Mentors: Jean-Marius, Ornella, Antso)</strong></li>
+<li>3:30-4:00pm: Break</li>
+<li>4:00-5:00pm: <a href="E2M2-2018/E2M2_Role_of_PIVOT.pdf">Lecture: PIVOT’s Role in E<sup>2</sup>M<sup>2</sup></a> <strong>(Andres)</strong></li>
+<li>5:00-6:30pm: Mentor research presentations <strong>(Jean-Marius, Ornella, Antso)</strong></li>
+<li>6:30-7:30pm: Dinner</li>
+</ul>
+<p><strong>Thurs, Jan 18: “Refining Your Work”</strong></p>
+<ul>
+<li>6:30-8:00am: Breakfast</li>
+<li>7:00-8:00am: Mentoring as needed</li>
+<li>8:00-8:15am: Road Map and Daily Agenda <strong>(Amy)</strong></li>
+<li>8:15-10:00am: <a href="E2M2-2018/E2M2_Network.zip">Lecture/Tutorial: Introduction to Network Modeling</a> <strong>(Fidy)</strong></li>
+<li>10:00-10:30am: Break</li>
+<li>10:30-12:00pm: <a href="E2M2-2018/E2M2_Intro_to_Model_Evaluation_and_Comparison.zip">Lecture/Tutorial: Introduction to Model Evaluation and Comparison</a> <strong>(Jess)</strong></li>
+<li>12:00pm-1:00pm: Lunch</li>
+<li>1:00-1:15pm: <a href="E2M2-2018/E2M2-Final-Research-Plan.pdf">Final research plans</a> <strong>(HW)</strong> <strong>(Cara)</strong></li>
+<li>1:15pm-3:00pm: Lecture/Tutorial: <a href="E2M2-2018/E2M2_Introduction_to_Spatial_Modeling.zip">Introduction to Spatial Modeling</a> <strong>(Amy)</strong></li>
+<li>3:00-4:00pm: <a href="E2M2-2018/E2M2_spatial_mechanistic_model.pdf">Lecture: Modeling Extensions – Spatial mechanistic models</a> <strong>(Tanjona)</strong></li>
+<li>4:00-4:30pm: Break</li>
+<li>4:30-6:30pm: Work time + one-on-one mentoring sessions <strong>(all)</strong></li>
+<li>6:30-7:30pm: Dinner</li>
+<li>7:30-9:30pm: Night hike: Ranomafana National Park (optional)</li>
+</ul>
+<p><strong>Fri, Jan 19: “Putting it all in Perspective”</strong></p>
+<ul>
+<li>6:30-8:00am: Breakfast</li>
+<li>7:00-8:00am: Mentoring as needed</li>
+<li>8:00-8:15am: Road Map and Daily Agenda <strong>(Cara)</strong></li>
+<li>8:15-9:30am: <a href="E2M2-2018/E2M2_ResearchSnapshots.zip">Research Snapshots</a> <strong>(all)</strong><br />
+</li>
+<li>9:30am-10:30am: Discussion of a <a href="E2M2-2018/E2M2_Readings.zip">scientific paper</a> <strong>(Tanjona + Mentors: Jean-Marius, Ornella, Antso)</strong></li>
+<li>10:30-11:00am: Break</li>
+<li>11:00-11:50pm: <a href="E2M2-2018/E2M2_Life_Cycle_Modelling_Project.pdf">Lecture: Modeling in Practice: The Life Cycle of a Modeling Project, from Conception to Publication</a> <strong>(Andres)</strong></li>
+<li>11:50-12:00pm: Group photo</li>
+<li>12:00-1:00pm: Lunch</li>
+<li>1:00-2:00pm: <a href="E2M2-2018/E2M2_LookingBack.pdf">Lecture: Looking back: How far have we come?</a> <strong>(Tanjona)</strong></li>
+<li>2:00-3:00pm: Research plan work time + mentoring as needed <strong>(all)</strong></li>
+<li>3:00-5:00pm: Research plan work time on your own</li>
+<li>5:00pm: Bus leaves CVB to take students to Ranomafana town (afternoon off)</li>
+<li>7:30pm: Meet for dinner at Hotel Manja in Ranomafana town</li>
+<li>9:30pm: Return bus to CVB</li>
+</ul>
+<p><strong>Sat, Jan 20: (Travel)</strong></p>
+<ul>
+<li>6:00-6:30am: Breakfast to go</li>
+<li>6:30am: Board bus</li>
+<li>Return to Antananarivo</li>
+</ul>
+<p><strong>Mon, Jan 22: “Sharing Your Work”</strong> <em>(at <a href="http://www.pasteur.mg/">Institut Pasteur de Madagascar</a> in Antananarivo)</em></p>
+<ul>
+<li>9:00-11:00am: Closing ceremony and final student presentations <strong>(Cara)</strong></li>
+<li>11:00am-12:00pm: Final Feedback Session <strong>(Julio)</strong></li>
+<li>12:30-2:00pm: Farewell lunch</li>
+<li>2:00-4:30pm: <a href="E2M2-2018/E2M2_IPM_Mini_Symposium.pdf">Mini-symposium</a>: <strong>“Modeling Insights Into Epidemiology and Ecology”</strong> <em>(Instructor presentations)</em>
+<ul>
+<li><strong>Cara Brook</strong> “Malagasy fruit bats as reservoirs for emerging viral zoonoses” (20 min. + 5 min. Q/A)</li>
+<li><strong>Tanjona Ramiadantsoa</strong> “Importance of large scale corridors for biodiversity conservation” (20 min. + 5 min. Q/A)</li>
+<li><strong>Jessica Metcalf</strong> “Vaccine preventable diseases: mathematical modeling for public health” (20 min. + 5 min. Q/A)</li>
+<li><strong>Amy Wesolowski</strong> “”Using novel data sources to understand the spatial distribution of vector-borne diseases&quot; (20 min. + 5 min. Q/A)</li>
+<li><strong>Fidy Rasambainarivo</strong> “Interactions and disease transmission at the domestic animal-wildlife interface in Betampona, Madagascar” (20 min. + 5 min. Q/A)</li>
+</ul></li>
+<li>4:30pm: Social Hour</li>
+</ul>
+<br>
+<div style="text-align: center; font-size: 1em;">
+<p>Many of the materials and methods used in E<sup>2</sup>M<sup>2</sup> were adapted from those previously developed by faculty at <a href="ici3d.org">ICI3D</a>: <br> <img src="ici3d-logo.png" alt="IPM" style="width: 300px;" ></p>
+</div>
+<br>
+<div style="text-align: center; font-size: 1em;">
+<p><br> Thanks to our sponsors: <br> <img src="IPM_logo.png" alt="IPM" style="width: 300px;" > <img src="CHW-logo.png" alt="IPM" style="width: 200px;" > <img src="PIVOT-logo.png" alt="IPM" style="width: 300px;" > <img src="CVB-logo.png" alt="IPM" style="width: 200px;" ></p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
