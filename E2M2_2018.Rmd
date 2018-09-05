@@ -126,20 +126,3 @@ Follow along with R tricks posted through the week [here](E2M2-2018/E2M2_R_trick
     * **Amy Wesolowski** ""Using novel data sources to understand the spatial distribution of vector-borne diseases" (20 min. + 5 min. Q/A)
     * **Fidy Rasambainarivo** "Interactions and disease transmission at the domestic animal-wildlife interface in Betampona, Madagascar" (20 min. + 5 min. Q/A)
 * 4:30pm: Social Hour
-
-<br>
-<div style="text-align: center; font-size: 1em;">
-Many of the materials and methods used in E^2^M^2^ were adapted from those previously developed by faculty at [ICI3D](ici3d.org):
-<br>
-<img src="ici3d-logo.png" alt="IPM" style="width: 300px;" >
-</div>
-<br>
-<div style="text-align: center; font-size: 1em;">
-<br>
-Thanks to our sponsors:
-<br>
-<img src="IPM_logo.png" alt="IPM" style="width: 300px;" >
-<img src="CHW-logo.png" alt="IPM" style="width: 200px;" >
-<img src="PIVOT-logo.png" alt="IPM" style="width: 300px;" >
-<img src="CVB-logo.png" alt="IPM" style="width: 200px;" >
-</div>
