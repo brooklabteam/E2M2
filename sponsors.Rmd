@@ -6,7 +6,7 @@
 <div style="text-align: center; font-size: 1.5em;">
 Many of the materials and methods used in E^2^M^2^ were adapted <br>
 
-from those previously developed by faculty at [ICI3D](ici3d.org):
+from those previously developed by faculty at [ICI3D](http://www.ici3d.org/):
 <br>
 <img src="images/ici3d-logo.png" alt="IPM" style="width: 300px;" >
 </div>
