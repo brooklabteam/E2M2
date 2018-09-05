@@ -45,7 +45,7 @@ Please do not hesitate contact Cara Brook [(cbrook@berkeley.edu)](cbrook@berkele
 </div>
 
 
-For consideration in our clinic, applications must be submitted below along with one collated pdf file by **Friday, October 19, 2018** at midnight in your country of residence. The application filename should read as “E2M2_Application_YourLastName_YourFirstName.pdf”
+For consideration in our clinic, applications must be submitted below along with one collated .pdf file by **Friday, October 19, 2018** at midnight in your country of residence. The application filename should read as “E2M2_Application_YourLastName_YourFirstName.pdf”
 
 Please note that late applications will not be accepted.
 
@@ -55,8 +55,7 @@ The collated file should include (in the following order):
 2. An Abstract (400 words maximum) describing a current or planned research project that incorporates modeling
 3. A Statement of Interest and Intent indicating how the experience of attending this workshop would enhance your short-term and long-term research goals (500-1000 words)
 
-*Please note that a Google account is required for upload of your application file. If you do not already possess a Google account, you can register one for free [here](https://accounts.google.com/SignUp?hl=en).*
 
 <div style="text-align: left; font-size: 1.5em; color:#C11B17;">
-**Submit your application for E^2^M^2^ today [here](https://goo.gl/forms/tjH4kIK0hyfNHCww2)!**
+**Submit your application for E^2^M^2^ today [here](https://airtable.com/shr306mj9BT4Myltp)!**
 </div>
