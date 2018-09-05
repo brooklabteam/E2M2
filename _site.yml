@@ -1,4 +1,4 @@
-#name: "E2M2"
+name: "E2M2: Ecological and Epidemiological Modeling in Madagascar"
 output_dir: "."
 navbar:
   #title: "E2M2"
