@@ -1,4 +1,5 @@
-name: "E2M2: Ecological and Epidemiological Modeling in Madagascar"
+title: "E2M2: Ecological and Epidemiological Modeling in Madagascar"
+permalink: ':title/'
 output_dir: "."
 navbar:
   #title: "E2M2"
