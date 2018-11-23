@@ -9,6 +9,11 @@ output:
 
 ---
 
+### **Personal Information Survey**
+Selected participants, please fill out this [personal information survey](https://airtable.com/shr1CerfbpWS2oE43) to help us prepare for your arrival in January. We ask that you complete this survey **no later than Friday, November 30, 2018.** 
+
+---
+
 ### **Software installations**
 
 For those selected for participation in E^2^M^2^ 2019, we ask that you please begin to familiarize yourself with the computer programs that will be used at the workshop in advance of arrival. If you will be bringing a personal laptop to the workshop, please be sure that the following programs are installed and working:
@@ -35,7 +40,7 @@ You may summarize recent, completed research that forms the basis for ongoing wo
 
 We recommend including 1-2 visual aids (e.g. figures or diagrams) that will help you explain key aspects of the research. Please keep the text on your slide to a minimum. Do not attempt to explain all of the details of your project – stick to the essentials and keep it simple. You will be kept to time.
 
-We ask that you please email PDF versions of your slide to [cbrook@berkeley.edu](cbrook@berkeley.edu) by midnight on Wednesday, January 9 in advance of arrival to the workshop. Please be prepared to present your slide to the rest of the class on Monday, January 14.
+We ask that you please submit the PDF version of your slide [here](https://airtable.com/shr7QNeyhYDhgXHlw) by midnight on Wednesday, January 9 in advance of arrival to the workshop. Please be prepared to present your slide to the rest of the class on Monday, January 14.
 
 ---
 
@@ -46,15 +51,10 @@ Please also read the scientific paper, “Bubonic plaque: a metapopulation model
 
 ---
 
-### **Allergies, medications, and food restrictions**
+### **Food, accommodation, and weather**
 
 All meals and lodging during the workshop will be provided, beginning with lunch on Sunday, January 13 (please eat breakfast prior to arrival) and ending with lunch on Sunday, January 20 (you will be responsible for your own dinner the evening after return to Tana). With the exception of lunch during both transit journeys, all meals will take place at Centre Valbio. Additionally, lunch will be provided at our mandatory closing session at Institut Pasteur de Madagascar (IPM) on Monday, January 21, as well as at the optional 'R bootcamp' which will precede the workshop at IPM on Saturday, January 12.
 
-If you have any allergies, medications, or food restrictions that we need to know about (i.e. shellfish allergy, vegetarianism, etc.), please let Cara Brook [(cbrook@berkeley.edu)](cbrook@berkeley.edu) know ahead of your arrival.
-
-
----
-
-### **Climate and weather**
-
 Our workshop takes place at the onset of the rainy season in Madagascar’s summer. As such, it will be hot and humid in Ranomafana, so please pack accordingly. While most of our workshop will take place in the CVB conference room, some of our sessions will involve hiking outside. Please bring bug-repellent clothing (long sleeves and pants), hiking shoes, and rain gear. Each participant should also bring a backpack, a water bottle, and a headlamp or flashlight to take on the trail.
+
+**Additionally, it is highly recommended that all foreign participants take malaria medication (i.e. malarone, doxycycline, or mefloquine) throughout the duration of their visit.**
