@@ -1,0 +1,136 @@
+---
+title: "2019 Syllabus"
+---
+
+Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_InstallPackages.html).
+
+
+**Saturday, Jan 12: ‘R Bootcamp’ (attendance optional)** *(at [Institut Pasteur de Madagascar](http://www.pasteur.mg/) in Antananarivo)*
+
+* 8:00-8:30am: Brief Introductions __(Cara)__
+* 8:30-9:30am: Intro to R Studio __(Fidy)__
+    * Knowing your working environment
+    * Assigning variables
+    * Basic arithmetic
+    * Running a script
+* 9:30-10am: Coffee Break
+* 10:00-11:00am:  Small Groups: Software installation and catch-up. Mentors + instructors make sure all students have the proper materials installed and work through [4 tutorials](E2M2-2018/E2M2_R_tutorials.zip) with them. __(Mentors)__
+* 11:00-12:00pm: Lecture: Exploring & visualizing data in R __(Christian)__
+* 12:00-1:00pm: Lunch
+* 1:00-2:00pm: Tutorial: Exploring & visualizing data in R __(Christian)__
+* 2:00-3:30pm: Lecture/Tutorial/Live Coding: Writing functions and for-loops __(Cara)__
+* 3:30-4:00pm: Coffee Break
+* 4:00-5:00pm: Open mentoring session for outstanding questions
+
+**Sun, Jan 13: “Travel Day"**
+* 6:00am: Meet at Institut Pasteur for departure to Ranomafana (lunch stop Antsirabe)
+* 6:30-7:30pm: Dinner
+* 7:30-8:30pm: Introductions __(Cara)__ and Ice Breakers __(Ben)__
+
+**Monday, Jan 14 “Dealing with Data”**
+* 6:30-8:00am: Breakfast
+* 8:00-8:30am: Road Map and Daily Agenda __(Cara)__
+* 8:30-9:30am: Lecture: What are We Doing Here? Ecology Meets Epidemiology __(Cara)__
+* 9:30-10:00am: Coffee Break
+* 10:00am-12:00pm: Introductions: 2-min student/mentor/instructor introductions and mentor research presentations __(Mentors lead transitions)__
+* 1:00-2:00pm: Lecture: Linear regression and simple statistics __(Andres)__
+* 2:00-3:00pm: Tutorial: Basic statistical modeling in R __(Andres)__
+* 3:00-3:30pm: Coffee Break
+* 3:30-4:30pm: Lecture: Study design and data collection/management __(Amy/Ben)__
+* 4:30-6:30pm: Free time, or one-on-one mentoring
+* 6:30-7:30pm: Dinner
+
+**Tuesday, Jan 15: “Deeper Thinking With Data”**
+
+* 6:30-8:00am: Breakfast
+* 8:00-8:30am: Road Map and Daily Agenda __(Cara)__
+* 8:30-9:30am: Lecture/Tutorial: Introduction to mixed modeling __(Andres)__
+* 9:30-10:00am: Coffee Break
+* 10:00-11:00am: Tutorial: Mixed modeling in R __(Andres)__
+* 11:00am-12:00pm: Writing Exercise: Formulating research questions (HW) __(Cara)__
+* 12:00-1:00pm: Lunch, prep for hike
+* 1:00-3:30pm: Afternoon hike in Ranomafana National Park
+* 3:30-4:00pm: Coffee break
+* 4:00-5:30pm: Exercise + Discussion: Dynamical Fever __(Mentors + Christian)__
+* 5:30-6:30pm: Free time or one-on-one mentoring
+* 6:30-7:30pm: Dinner
+
+
+**Wednesday, Jan 16: “Thinking About Mechanism”**
+
+* 6:30-8:00am: Breakfast
+* 8:00-8:15am: Road Map and Daily Agenda __(Cara)__
+* 8:15-9:45am: Lecture: Introduction to Compartmental Models and Differential Equations __(Amy)__
+* 9:45-10:15am: Break
+* 10:15-11:00am: Tutorial: Building Mechanistic Models in R __(Amy)__
+* 11:00am-12:00pm: Group exercise: Refining research questions for modeling __(Cara)__
+* 12:00-1:00pm: Lunch
+* 1:00-2:00pm: Small group session: Refining research questions for modeling (cont.) __(all instructors lead small groups)__
+* 2:00-2:30pm: Writing Exercise: Creating a model world to address a research question (HW for tomorrow) __(Cara)__
+* 2:30-3:00pm: Coffee Break
+* 3:00-4:00pm: Mentor research presentations (10 min each) __(Mentors + Christian)__
+* 4:00-5:30pm: Mid-session feedback __(Julio)__
+* 5:30-6:30pm: Free time, or one-on-one mentoring
+* 6:30-7:30pm: Dinner
+
+**Thursday, Jan 17: “Fitting Models to Data”**
+
+* 6:30-8:00am: Breakfast
+* 8:00-8:30am: Road Map and Daily Agenda __(Cara)__
+* 8:30-9:30am: Lecture w/Tutorial: Model Fitting in Practice – the Basic Concept __(Sarah)__
+* 9:30-10:30am: Exercise: Epidemics Cards __(Mentors + Sarah)__
+* 10:30-11:00am: Coffee Break
+* 11:00-12:00pm:  Tutorial: Model Fitting with Epidemic Cards __(Mentors + Sarah)__
+* 12:00-1:00pm: Lunch
+* 1:00-2:00pm: Model Telephone with Model Diagrams __(Mentors + Christian)__
+* 2:00-3:30pm: Lecture w/Tutorial: Introduction to occupancy modeling __(Fidy)__
+* 3:30-4:00pm: Coffee Break
+* 4:00-5:00pm: Lecture/Tutorial: Model Selection and Comparison __(Cara)__
+* 5:00-6:30pm:  Free time, or one-on-one mentoring
+* 6:30-7:30pm: Dinner
+* 8:00pm: Evening social activity (TBA) __(Mentors)__
+
+
+**Friday, Jan 18: “Refining Your Work”**
+* 6:30-8:00am: Breakfast
+* 8:00-8:30am: Road Map and Daily Agenda __(Cara)__
+* 8:30-9:30am: Lecture/Tutorial: Introduction to Spatial Modeling __(Ben)__
+* 9:30-10:00am: Coffee Break
+* 10:00-10:30am:  Lecture w/Tutorial: Introduction to Network Modeling __(Fidy)__
+* 11:00-12:00pm: Small Group Discussion: Reading Keeling and Gilligan __(Mentors)__
+* 12:00pm-1:00pm: Lunch
+* 1:00-3:00pm: Lecture/Tutorial: Modeling vector-borne disease __(Amy/Ben)__
+* 3:00-3:30pm: Coffee Break
+* 3:30-4:00pm: Final research plans (HW) __(Cara)__
+* 4:00-6:30pm: Work time + one-on-one mentoring sessions __(all)__
+* 6:30-7:30pm: Dinner
+
+
+**Saturday, Jan 19: “Putting It All In Perspective”**
+
+* 6:30-8:00am: Breakfast
+* 8:00-8:15am: Road Map and Daily Agenda __(Cara)__
+* 8:15-9:15am: Lecture: Modeling in Practice: The Life Cycle of a Modeling Project, from Conception to Publication __(Andres)__  
+* 9:15-9:45am: Research Snapshots __(all)__
+* 9:45-10:15am: Coffee Break
+* 10:15-11:15am: Lecture: Looking back: How far have we come? __(Fidy)__
+* 11:15am-12:00pm: Research plan work time + mentoring sessions (all)
+* 12:00-1:00pm: Lunch
+* 1:00-6:30pm: Women’s March Madagascar (optional), March will proceed from CVB to Ranomafana town. Speakers and activities for all who are interested. __(Liz)__
+* 6:30-9:00pm: Farewell dinner in Ranomafana town (Hote Manja)
+* 9:30pm: Return bus to CVB
+
+**Sunday, Jan 20: (Travel Day)**
+
+* 5:00-6:00am: Breakfast to go
+* 6:00am: Board bus
+* Return to Antananarivo 
+
+**Monday, January 21: "Sharing Your Work"** *(at [Institut Pasteur de Madagascar](http://www.pasteur.mg/) in Antananarivo)*
+
+* 9:00-11:00am: Closing ceremony and final student presentations __(Cara)__
+* 11:00am-12:00pm: Final Feedback Session __(Julio)__
+* 12:30-2:00pm: Farewell lunch
+* 2:00-4:30pm: Mini-symposium: **“Modeling Insights Into Epidemiology and Ecology”** *(Instructor presentations)*
+    * Instructor research presentations, (TBA, 15 min each) 
+* 4:30pm: Social Hour

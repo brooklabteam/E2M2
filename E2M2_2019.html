@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>2019 Syllabus</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Application</a>
+</li>
+<li>
+  <a href="preparation.html">Preparation</a>
+</li>
+<li>
+  <a href="sponsors.html">Acknowledgements</a>
+</li>
+<li>
+  <a href="E2M2_2019.html">E2M2 2019</a>
+</li>
+<li>
+  <a href="E2M2_2018.html">E2M2 2018</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">2019 Syllabus</h1>
+
+</div>
+
+
+<p>Please follow instructions for installing packages in R <a href="E2M2-2018/E2M2_InstallPackages.html">here</a>.</p>
+<p><strong>Saturday, Jan 12: ‘R Bootcamp’ (attendance optional)</strong> <em>(at <a href="http://www.pasteur.mg/">Institut Pasteur de Madagascar</a> in Antananarivo)</em></p>
+<ul>
+<li>8:00-8:30am: Brief Introductions <strong>(Cara)</strong></li>
+<li>8:30-9:30am: Intro to R Studio <strong>(Fidy)</strong>
+<ul>
+<li>Knowing your working environment</li>
+<li>Assigning variables</li>
+<li>Basic arithmetic</li>
+<li>Running a script</li>
+</ul></li>
+<li>9:30-10am: Coffee Break</li>
+<li>10:00-11:00am: Small Groups: Software installation and catch-up. Mentors + instructors make sure all students have the proper materials installed and work through <a href="E2M2-2018/E2M2_R_tutorials.zip">4 tutorials</a> with them. <strong>(Mentors)</strong></li>
+<li>11:00-12:00pm: Lecture: Exploring &amp; visualizing data in R <strong>(Christian)</strong></li>
+<li>12:00-1:00pm: Lunch</li>
+<li>1:00-2:00pm: Tutorial: Exploring &amp; visualizing data in R <strong>(Christian)</strong></li>
+<li>2:00-3:30pm: Lecture/Tutorial/Live Coding: Writing functions and for-loops <strong>(Cara)</strong></li>
+<li>3:30-4:00pm: Coffee Break</li>
+<li>4:00-5:00pm: Open mentoring session for outstanding questions</li>
+</ul>
+<p><strong>Sun, Jan 13: “Travel Day”</strong> * 6:00am: Meet at Institut Pasteur for departure to Ranomafana (lunch stop Antsirabe) * 6:30-7:30pm: Dinner * 7:30-8:30pm: Introductions <strong>(Cara)</strong> and Ice Breakers <strong>(Ben)</strong></p>
+<p><strong>Monday, Jan 14 “Dealing with Data”</strong> * 6:30-8:00am: Breakfast * 8:00-8:30am: Road Map and Daily Agenda <strong>(Cara)</strong> * 8:30-9:30am: Lecture: What are We Doing Here? Ecology Meets Epidemiology <strong>(Cara)</strong> * 9:30-10:00am: Coffee Break * 10:00am-12:00pm: Introductions: 2-min student/mentor/instructor introductions and mentor research presentations <strong>(Mentors lead transitions)</strong> * 1:00-2:00pm: Lecture: Linear regression and simple statistics <strong>(Andres)</strong> * 2:00-3:00pm: Tutorial: Basic statistical modeling in R <strong>(Andres)</strong> * 3:00-3:30pm: Coffee Break * 3:30-4:30pm: Lecture: Study design and data collection/management <strong>(Amy/Ben)</strong> * 4:30-6:30pm: Free time, or one-on-one mentoring * 6:30-7:30pm: Dinner</p>
+<p><strong>Tuesday, Jan 15: “Deeper Thinking With Data”</strong></p>
+<ul>
+<li>6:30-8:00am: Breakfast</li>
+<li>8:00-8:30am: Road Map and Daily Agenda <strong>(Cara)</strong></li>
+<li>8:30-9:30am: Lecture/Tutorial: Introduction to mixed modeling <strong>(Andres)</strong></li>
+<li>9:30-10:00am: Coffee Break</li>
+<li>10:00-11:00am: Tutorial: Mixed modeling in R <strong>(Andres)</strong></li>
+<li>11:00am-12:00pm: Writing Exercise: Formulating research questions (HW) <strong>(Cara)</strong></li>
+<li>12:00-1:00pm: Lunch, prep for hike</li>
+<li>1:00-3:30pm: Afternoon hike in Ranomafana National Park</li>
+<li>3:30-4:00pm: Coffee break</li>
+<li>4:00-5:30pm: Exercise + Discussion: Dynamical Fever <strong>(Mentors + Christian)</strong></li>
+<li>5:30-6:30pm: Free time or one-on-one mentoring</li>
+<li>6:30-7:30pm: Dinner</li>
+</ul>
+<p><strong>Wednesday, Jan 16: “Thinking About Mechanism”</strong></p>
+<ul>
+<li>6:30-8:00am: Breakfast</li>
+<li>8:00-8:15am: Road Map and Daily Agenda <strong>(Cara)</strong></li>
+<li>8:15-9:45am: Lecture: Introduction to Compartmental Models and Differential Equations <strong>(Amy)</strong></li>
+<li>9:45-10:15am: Break</li>
+<li>10:15-11:00am: Tutorial: Building Mechanistic Models in R <strong>(Amy)</strong></li>
+<li>11:00am-12:00pm: Group exercise: Refining research questions for modeling <strong>(Cara)</strong></li>
+<li>12:00-1:00pm: Lunch</li>
+<li>1:00-2:00pm: Small group session: Refining research questions for modeling (cont.) <strong>(all instructors lead small groups)</strong></li>
+<li>2:00-2:30pm: Writing Exercise: Creating a model world to address a research question (HW for tomorrow) <strong>(Cara)</strong></li>
+<li>2:30-3:00pm: Coffee Break</li>
+<li>3:00-4:00pm: Mentor research presentations (10 min each) <strong>(Mentors + Christian)</strong></li>
+<li>4:00-5:30pm: Mid-session feedback <strong>(Julio)</strong></li>
+<li>5:30-6:30pm: Free time, or one-on-one mentoring</li>
+<li>6:30-7:30pm: Dinner</li>
+</ul>
+<p><strong>Thursday, Jan 17: “Fitting Models to Data”</strong></p>
+<ul>
+<li>6:30-8:00am: Breakfast</li>
+<li>8:00-8:30am: Road Map and Daily Agenda <strong>(Cara)</strong></li>
+<li>8:30-9:30am: Lecture w/Tutorial: Model Fitting in Practice – the Basic Concept <strong>(Sarah)</strong></li>
+<li>9:30-10:30am: Exercise: Epidemics Cards <strong>(Mentors + Sarah)</strong></li>
+<li>10:30-11:00am: Coffee Break</li>
+<li>11:00-12:00pm: Tutorial: Model Fitting with Epidemic Cards <strong>(Mentors + Sarah)</strong></li>
+<li>12:00-1:00pm: Lunch</li>
+<li>1:00-2:00pm: Model Telephone with Model Diagrams <strong>(Mentors + Christian)</strong></li>
+<li>2:00-3:30pm: Lecture w/Tutorial: Introduction to occupancy modeling <strong>(Fidy)</strong></li>
+<li>3:30-4:00pm: Coffee Break</li>
+<li>4:00-5:00pm: Lecture/Tutorial: Model Selection and Comparison <strong>(Cara)</strong></li>
+<li>5:00-6:30pm: Free time, or one-on-one mentoring</li>
+<li>6:30-7:30pm: Dinner</li>
+<li>8:00pm: Evening social activity (TBA) <strong>(Mentors)</strong></li>
+</ul>
+<p><strong>Friday, Jan 18: “Refining Your Work”</strong> * 6:30-8:00am: Breakfast * 8:00-8:30am: Road Map and Daily Agenda <strong>(Cara)</strong> * 8:30-9:30am: Lecture/Tutorial: Introduction to Spatial Modeling <strong>(Ben)</strong> * 9:30-10:00am: Coffee Break * 10:00-10:30am: Lecture w/Tutorial: Introduction to Network Modeling <strong>(Fidy)</strong> * 11:00-12:00pm: Small Group Discussion: Reading Keeling and Gilligan <strong>(Mentors)</strong> * 12:00pm-1:00pm: Lunch * 1:00-3:00pm: Lecture/Tutorial: Modeling vector-borne disease <strong>(Amy/Ben)</strong> * 3:00-3:30pm: Coffee Break * 3:30-4:00pm: Final research plans (HW) <strong>(Cara)</strong> * 4:00-6:30pm: Work time + one-on-one mentoring sessions <strong>(all)</strong> * 6:30-7:30pm: Dinner</p>
+<p><strong>Saturday, Jan 19: “Putting It All In Perspective”</strong></p>
+<ul>
+<li>6:30-8:00am: Breakfast</li>
+<li>8:00-8:15am: Road Map and Daily Agenda <strong>(Cara)</strong></li>
+<li>8:15-9:15am: Lecture: Modeling in Practice: The Life Cycle of a Modeling Project, from Conception to Publication <strong>(Andres)</strong><br />
+</li>
+<li>9:15-9:45am: Research Snapshots <strong>(all)</strong></li>
+<li>9:45-10:15am: Coffee Break</li>
+<li>10:15-11:15am: Lecture: Looking back: How far have we come? <strong>(Fidy)</strong></li>
+<li>11:15am-12:00pm: Research plan work time + mentoring sessions (all)</li>
+<li>12:00-1:00pm: Lunch</li>
+<li>1:00-6:30pm: Women’s March Madagascar (optional), March will proceed from CVB to Ranomafana town. Speakers and activities for all who are interested. <strong>(Liz)</strong></li>
+<li>6:30-9:00pm: Farewell dinner in Ranomafana town (Hote Manja)</li>
+<li>9:30pm: Return bus to CVB</li>
+</ul>
+<p><strong>Sunday, Jan 20: (Travel Day)</strong></p>
+<ul>
+<li>5:00-6:00am: Breakfast to go</li>
+<li>6:00am: Board bus</li>
+<li>Return to Antananarivo</li>
+</ul>
+<p><strong>Monday, January 21: “Sharing Your Work”</strong> <em>(at <a href="http://www.pasteur.mg/">Institut Pasteur de Madagascar</a> in Antananarivo)</em></p>
+<ul>
+<li>9:00-11:00am: Closing ceremony and final student presentations <strong>(Cara)</strong></li>
+<li>11:00am-12:00pm: Final Feedback Session <strong>(Julio)</strong></li>
+<li>12:30-2:00pm: Farewell lunch</li>
+<li>2:00-4:30pm: Mini-symposium: <strong>“Modeling Insights Into Epidemiology and Ecology”</strong> <em>(Instructor presentations)</em>
+<ul>
+<li>Instructor research presentations, (TBA, 15 min each)</li>
+</ul></li>
+<li>4:30pm: Social Hour</li>
+</ul>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
