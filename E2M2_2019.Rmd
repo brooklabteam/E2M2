@@ -94,6 +94,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 
 
 **Friday, Jan 18: “Refining Your Work”**
+
 * 6:30-8:00am: Breakfast
 * 8:00-8:30am: Road Map and Daily Agenda __(Cara)__
 * 8:30-9:30am: Lecture/Tutorial: Introduction to Spatial Modeling __(Ben)__
