@@ -18,7 +18,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 11:00-12:00pm: Lecture: Exploring & visualizing data in R __(Christian)__
 * 12:00-1:00pm: Lunch
 * 1:00-2:00pm: Tutorial: Exploring & visualizing data in R __(Christian)__
-* 2:00-3:30pm: Lecture/Tutorial/Live Coding: Writing functions and for-loops __(Cara)__
+* 2:00-3:30pm: Lecture/Tutorial/Live Coding: Writing For-loops, Functions, and If-Else Statements __(Cara)__
 * 3:30-4:00pm: Coffee Break
 * 4:00-5:00pm: Open mentoring session for outstanding questions
 
@@ -71,7 +71,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 2:00-2:30pm: Writing Exercise: Creating a model world to address a research question (HW for tomorrow) __(Cara)__
 * 2:30-3:00pm: Coffee Break
 * 3:00-4:00pm: Mentor research presentations (10 min each) __(Mentors + Christian)__
-* 4:00-5:30pm: Mid-session feedback __(Julio)__
+* 4:00-5:30pm: Mid-session feedback __(Mentors)__
 * 5:30-6:30pm: Free time, or one-on-one mentoring
 * 6:30-7:30pm: Dinner
 
@@ -132,7 +132,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 **Monday, January 21: "Sharing Your Work"** *(at [Institut Pasteur de Madagascar](http://www.pasteur.mg/) in Antananarivo)*
 
 * 9:00-11:00am: Closing ceremony and final student presentations __(Cara)__
-* 11:00am-12:00pm: Final Feedback Session __(Julio)__
+* 11:00am-12:00pm: Final Feedback Session __(Julio + Mentors)__
 * 12:30-2:00pm: Farewell lunch
 * 2:00-4:30pm: Mini-symposium: **“Modeling Insights Into Epidemiology and Ecology”** *(Instructor presentations)*
     * Instructor research presentations, (TBA, 15 min each) 
