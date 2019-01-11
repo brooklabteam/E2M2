@@ -18,7 +18,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 11:00-12:00pm: Lecture: Exploring & visualizing data in R __(Christian)__
 * 12:00-1:00pm: Lunch
 * 1:00-2:00pm: Tutorial: Exploring & visualizing data in R __(Christian)__
-* 2:00-3:30pm: Lecture/Tutorial/Live Coding: Writing For-loops, Functions, and If-Else Statements __(Cara)__
+* 2:00-3:30pm: Lecture/Tutorial: [Writing For-loops, If-Else Statements, and Functions in R](E2M2-2019/Bootcamp_Functions&ForLoops.zip) __(Cara)__
 * 3:30-4:00pm: Coffee Break
 * 4:00-5:00pm: Open mentoring session for outstanding questions
 

@@ -1,3 +1,5 @@
+rm(list=ls())
+
 library(plyr)
 library(dplyr)
 library(ggplot2)
@@ -43,6 +45,12 @@ dat.e2m2["Forearm"]
 ## Writing for-loops:
 
 ## To loop through our data, we use the following syntax:
+
+## for (variable in vector) {
+  # do something
+# }
+
+## A real example looks like this:
 
 for (i in 1:length(dat.e2m2$Id)){ ## This line creates a variable "i" that is as long as the Id column in our dataset
   print(dat.e2m2$Forearm[i]) ## Here we loop through and print each value of "i" as specified in the initial loop
@@ -100,10 +108,22 @@ print(out.mean)
 #############################################################################
 ## If-Else Statements
 
-## R also has a cool feature that allows you to specify certain actions if certain qualifications are met. This can be
-## paired powerfully with a for-loop. For instance, can you print the forearm length only of bats that are positive
+## R also has a cool feature that allows you to specify certain actions if certain qualifications are met. These If-Else
+## Statements take on the following general form:
+
+## if (condition is TRUE) {
+  # do something
+# } else {
+  # do different thing
+# }
+
+
+## This can be paired powerfully with a for-loop. For instance, can you print the forearm length only of bats that are positive
 ## ("Pos=1") for the pathogen?
 ## Alternatively, if not positive, have it print the phrase: "Bat is pathogen negative."
+
+
+
 
 for (i in 1:length(dat.e2m2$Id)){
   if(dat.e2m2$Pos[i]==1){
@@ -117,13 +137,14 @@ for (i in 1:length(dat.e2m2$Id)){
 ## Writing Functions:
 
 ## In the above section, we learned how to for-loop over our data and apply useful built-in functions in R (i.e. 'mean').
-## Fidy showed you a list of some of these in his lecture this morning. Try to build a vector and use some of these
-## functions to accomplish tasks in R. Calculate the min, max, and mean of your vector and tell us how long it is.
+## Fidy showed you a list of some of these fucntions in his lecture this morning. Try to build a vector and use some of these
+## functions to accomplish tasks in R. Calculate the min, max, and mean of the bat forearms in Christian's data, and
+## tell us how many there are.
 
-example.vector= c(1,2,5,8,3,5,6,9)
-min(example.vector) #1
-max(example.vector) #9
-mean(example.vector) #4.875
+
+min(dat.e2m2$Forearm) #41.04
+max(dat.e2m2$Forearm) #94.15
+mean(dat.e2m2$Forearm) #73.72424
 
 ## In reality, R is simply hiding a lot of directional code 'under the hood' such that you can't see what is happening 
 ## but can simply call the function from it's name. In the case of mean, for example, the built-in R function first 
@@ -148,10 +169,10 @@ alternative.mean <- function(vector){
 }
 
 ## Run your new function on your vector:
-alternative.mean(vector=example.vector) #4.875
+alternative.mean(vector=dat.e2m2$Forearm) #73.72424
 
 ## CHALLENGE: Can you write a third function to get the mean of the vector, but without using any built-in 
-## functions in R, specifically sum() and length()? (Hint: Try using a for-loop)
+## functions in R, specifically sum()? (Hint: Try using a for-loop)
 
 alternative.mean2 <- function(vector){
   new.vector <- vector
@@ -207,16 +228,18 @@ teach.male = sum(c(unlist(list.males)))/ length(list.males)
 ## First, separate data into a list of two: m and f
 sep.dat.list = dlply(dat.e2m2, .(Sex))
 
+## Then store your new averaging function:
+get.mean.forearm <- function(data){
+  data2 = mean(data$Forearm)
+  return(data2)}
+
 ## You now have a list with f and m data. Apply the mean function 
 ## over the list. 
 
 out.MF <- lapply(sep.dat.list, get.mean.forearm) 
 
-## new to write a function
-get.mean.forearm <- function(data){
-  data2 = mean(data$Forearm)
-  return(data2)
-}
+
+
 
 
 
