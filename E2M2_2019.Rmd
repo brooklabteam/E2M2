@@ -74,6 +74,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 4:00-5:30pm: Mid-session feedback __(Mentors)__
 * 5:30-6:30pm: Free time, or one-on-one mentoring
 * 6:30-7:30pm: Dinner
+* 8:00pm: Night walk Ranomafana National Park (optional)
 
 **Thursday, Jan 17: “Fitting Models to Data”**
 
@@ -120,7 +121,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 11:15am-12:00pm: Research plan work time + mentoring sessions (all)
 * 12:00-1:00pm: Lunch
 * 1:00-6:30pm: Women’s March Madagascar (optional), March will proceed from CVB to Ranomafana town. Speakers and activities for all who are interested. __(Liz)__
-* 6:30-9:00pm: Farewell dinner in Ranomafana town (Hote Manja)
+* 6:30-9:00pm: Farewell dinner in Ranomafana town (Hotel Manja)
 * 9:30pm: Return bus to CVB
 
 **Sunday, Jan 20: (Travel Day)**
