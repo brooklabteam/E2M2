@@ -8,7 +8,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 **Saturday, Jan 12: ‘R Bootcamp’ (attendance optional)** *(at [Institut Pasteur de Madagascar](http://www.pasteur.mg/) in Antananarivo)*
 
 * 8:00-8:30am: Brief Introductions __(Cara)__
-* 8:30-9:30am: Intro to R Studio __(Fidy)__
+* 8:30-9:30am: [Intro to R Studio](E2M2-2019/Rbasics.zip) __(Fidy)__
     * Knowing your working environment
     * Assigning variables
     * Basic arithmetic
