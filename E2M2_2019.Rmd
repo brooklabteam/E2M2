@@ -8,17 +8,17 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 **Saturday, Jan 12: ‘R Bootcamp’ (attendance optional)** *(at [Institut Pasteur de Madagascar](http://www.pasteur.mg/) in Antananarivo)*
 
 * 8:00-8:30am: Brief Introductions __(Cara)__
-* 8:30-9:30am: [Intro to R Studio](E2M2-2019/Rbasics.zip) __(Fidy)__
+* 8:30-9:30am: [Intro to R Studio](E2M2-2019/1_Bootcamp_Rbasics.zip) __(Fidy)__
     * Knowing your working environment
     * Assigning variables
     * Basic arithmetic
     * Running a script
 * 9:30-10am: Coffee Break
 * 10:00-11:00am:  Small Groups: Software installation and catch-up. Mentors + instructors make sure all students have the proper materials installed and work through [4 tutorials](E2M2-2018/E2M2_R_tutorials.zip) with them. __(Mentors)__
-* 11:00-12:00pm: Lecture: Exploring & visualizing data in R __(Christian)__
+* 11:00-12:00pm: Lecture: [Exploring & visualizing data in R](E2M2-2019/1_Bootcamp_ExplorationVisualizationR.zip) __(Christian)__
 * 12:00-1:00pm: Lunch
 * 1:00-2:00pm: Tutorial: Exploring & visualizing data in R __(Christian)__
-* 2:00-3:30pm: Lecture/Tutorial: [Writing For-loops, If-Else Statements, and Functions in R](E2M2-2019/Bootcamp_Functions&ForLoops.zip) __(Cara)__
+* 2:00-3:30pm: Lecture/Tutorial: [Writing For-loops, If-Else Statements, and Functions in R](E2M2-2019/1_Bootcamp_Functions&ForLoops.zip) __(Cara)__
 * 3:30-4:00pm: Coffee Break
 * 4:00-5:00pm: Open mentoring session for outstanding questions
 
