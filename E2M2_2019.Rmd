@@ -32,7 +32,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:30am: Road Map and Daily Agenda __(Cara)__
-* 8:30-9:30am: Lecture: What are We Doing Here? Ecology Meets Epidemiology __(Cara)__
+* 8:30-9:30am: Lecture: What are We Doing Here? Models and Data, Ecology and Epidemiology __(Cara)__
 * 9:30-10:00am: Coffee Break
 * 10:00am-12:00pm: Introductions: 2-min student/mentor/instructor introductions and mentor research presentations __(Mentors lead transitions)__
 * 1:00-2:00pm: Lecture: Linear regression and simple statistics __(Andres)__
@@ -86,9 +86,9 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 11:00-12:00pm:  Tutorial: Model Fitting with Epidemic Cards __(Mentors + Sarah)__
 * 12:00-1:00pm: Lunch
 * 1:00-2:00pm: Model Telephone with Model Diagrams __(Mentors + Christian)__
-* 2:00-3:30pm: Lecture w/Tutorial: Introduction to occupancy modeling __(Fidy)__
+* 2:00-3:30pm: Lecture w/Tutorial: Introduction to Occupancy Modeling __(Fidy)__
 * 3:30-4:00pm: Coffee Break
-* 4:00-5:00pm: Lecture/Tutorial: Model Selection and Comparison __(Cara)__
+* 4:00-5:00pm: Lecture/Tutorial: Introduction to Spatial Modeling __(Ben)__
 * 5:00-6:30pm:  Free time, or one-on-one mentoring
 * 6:30-7:30pm: Dinner
 * 8:00pm: Evening social activity (TBA) __(Mentors)__
@@ -98,12 +98,12 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:30am: Road Map and Daily Agenda __(Cara)__
-* 8:30-9:30am: Lecture/Tutorial: Introduction to Spatial Modeling __(Ben)__
+* 8:30-9:30am: Lecture/Tutorial: Model Selection and Comparison __(Cara)__
 * 9:30-10:00am: Coffee Break
 * 10:00-10:30am:  Lecture w/Tutorial: Introduction to Network Modeling __(Fidy)__
 * 11:00-12:00pm: Small Group Discussion: Reading Keeling and Gilligan __(Mentors)__
 * 12:00pm-1:00pm: Lunch
-* 1:00-3:00pm: Lecture/Tutorial: Modeling vector-borne disease __(Amy/Ben)__
+* 1:00-3:00pm: Lecture/Tutorial: Modeling Vector-Borne Disease __(Amy/Ben)__
 * 3:00-3:30pm: Coffee Break
 * 3:30-4:00pm: Final research plans (HW) __(Cara)__
 * 4:00-6:30pm: Work time + one-on-one mentoring sessions __(all)__
