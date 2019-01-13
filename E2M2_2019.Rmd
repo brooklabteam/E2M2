@@ -4,7 +4,7 @@ title: "2019 Syllabus"
 
 Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_InstallPackages.html).
 
-Find your 'Challenge and Mentoring' Teams for the week [here](E2M2-2019/Admin/ChallengeandMentoringTeams.pdf).
+Find your 'Challenge and Mentoring' Teams for the week [here](E2M2-2019/Admin/ChallengeandMentoringTeams.html).
 
 
 **Saturday, Jan 12: ‘R Bootcamp’ (attendance optional)** *(at [Institut Pasteur de Madagascar](http://www.pasteur.mg/) in Antananarivo)*
@@ -27,7 +27,7 @@ Find your 'Challenge and Mentoring' Teams for the week [here](E2M2-2019/Admin/Ch
 
 * 6:00am: Meet at Institut Pasteur for departure to Ranomafana (lunch stop Antsirabe)
 * 6:30-7:30pm: Dinner
-* 7:30-8:30pm: Introductions __(Cara)__ and [Ice Breakers](E2M2-2019/IceBreaker/IceBreaker.zip)  __(Ben)__
+* 7:30-8:30pm: Introductions __(Cara)__ and [Ice Breakers](E2M2-2019/IceBreaker/IceBreaker.pdf) with [data](E2M2-2019/IceBreaker/ice_breaker_day1_challenge_data_set.csv) __(Ben)__
 
 **Monday, Jan 14 “Dealing with Data”**
 

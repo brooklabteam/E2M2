@@ -1,13 +1,11 @@
 ---
-title: "ChallengeandMentoringTeams"
+title: "Challenge and Mentoring Teams"
 
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-## Challenge and Mentoring Teams
 
 **Team Antso**
 
