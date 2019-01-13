@@ -4,6 +4,8 @@ title: "2019 Syllabus"
 
 Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_InstallPackages.html).
 
+Find your 'Challenge and Mentoring' Teams for the week [here](E2M2-2019/Admin/ChallengeandMentoringTeams.pdf).
+
 
 **Saturday, Jan 12: ‘R Bootcamp’ (attendance optional)** *(at [Institut Pasteur de Madagascar](http://www.pasteur.mg/) in Antananarivo)*
 
