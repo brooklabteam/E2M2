@@ -127,7 +127,7 @@ print(out.mean)
 
 for (i in 1:length(dat.e2m2$Id)){
   if(dat.e2m2$Pos[i]==1){
-    print(dat.e2m2$Forearm)   
+    print(dat.e2m2$Forearm[i])   
   }else{
     print("Bat is pathogen negative.")
   }

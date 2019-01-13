@@ -2,13 +2,21 @@
 
 ## Let's work together to re-analyze Christian's dataset:
 
-
+setwd("/Users/caraebrook/iCloud-Drive-Dec-2018/Documents/R/R_repositories/E2M2/E2M2-2019/1_Bootcamp_Functions&ForLoops")
 ##############################################
 # Load data and visualize
 ##############################################
 ## First, read in the .csv file.
 
+dat <- read.csv(file="e2m2.csv", header = T, stringsAsFactors = F)
+head(dat)
+str(dat)
+
 ## What do we do if we want to print out the Forearm length of every bat in the dataset?
+
+dat$Forearm
+dat['Forearm']
+
 
 ##############################################
 # For-loops
@@ -21,6 +29,24 @@
 ## for (variable in vector) {
 # do something
 # }
+
+length(dat$Id)
+
+#for(i in 1:length(dat$Id)){
+
+
+for(i in 1:1200){
+  print(dat$Forearm[i])
+}
+
+for(p in 1:3){
+  print(dat$Forearm[p])
+}
+
+
+i = 3
+print(dat$Forearm[i])
+
 
 
 ##############################################
@@ -37,6 +63,48 @@
 # do different thing
 # }
 
+head(dat)
+dat$Pos
+unique(dat$Pos)
+
+if('bats are positive for babesia'){
+  'print forearm length'
+}else{
+  'print "bats not infected."'
+}
+
+interpret.bat <- function(data){
+  if (data$Pos==1){
+    print(data$Forearm)
+  }else{
+    print("bats not infected")
+  }
+}
+
+
+for(i in 1:1200){
+  interpret.bat(dat[i,])
+}
+
+library(dplyr)
+library(plyr)
+dat.list <- dlply(dat, .(Id))
+interpret.bat(dat)
+
+
+lapply(X=dat.list, FUN=interpret.bat)
+
+
+for(i in 1:1200){
+  if(dat$Pos[i]==1){
+    print(dat$Forearm[i])
+  }else{
+    print("bats not infected.")
+  } 
+  }
+
+
+
 ##############################################
 # Functions
 ##############################################
@@ -47,13 +115,47 @@
 ## functions to accomplish tasks in R. Calculate the min, max, and mean of the bat forearms in Christian's data, and
 ## tell us how many there are.
 
-
+min(dat$Forearm)
+max(dat$Forearm)
+mean(dat$Forearm)
 
 
 
 ## Next, can you write an alternative function to the default in R that calculates the mean of your vector? Try it.
 ## Remember that you will first need to highlight and run your function to save it into your working directory, and
 ## you'll then be able to use it later.
+
+
+mean2 <- function(data){
+  sum.of.values <- sum(data)
+  number.of.values <- length(data)
+  new.mean <- sum.of.values/number.of.values
+  return(new.mean)
+}
+
+mean.forearm.positive <- function(data){
+  sum.of.values <- sum(data$Forearm[data$Pos==1])
+  number.of.values <- length(data$Forearm[data$Pos==1])
+  new.mean <- sum.of.values/number.of.values
+  return(new.mean)
+}
+mean.forearm.negative <- function(data){
+  sum.of.values <- sum(data$Forearm[data$Pos==0])
+  number.of.values <- length(data$Forearm[data$Pos==0])
+  new.mean <- sum.of.values/number.of.values
+  return(new.mean)
+}
+
+mean2(data = c(1,2))
+
+mean(dat$Forearm)
+mean2(dat$Forearm)
+
+mean.forearm.positive(dat)
+
+mean.forearm.negative(dat)
+
+
 
 ## Remember the syntax:
 
