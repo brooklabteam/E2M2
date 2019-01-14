@@ -37,11 +37,12 @@ Find your 'Challenge and Mentoring' Teams for the week [here](E2M2-2019/Admin/Ch
 * 10:00-10:30am: Coffee Break
 * 10:30-11:45am: Introductions: 2-min student/mentor/instructor introductions and mentor research presentations __(Amy)__
 * 11:45am-12:00pm: [Preparation for Women's March Madagascar](E2M2-2019/Homework_Submissions/2019-slide_submissions/instructor_mentors/WomensMarchPrez.pptx)  __(Liz)__
+** Click [here](E2M2-2019/WhyDoIMarch.html) for discussion points about the Women's March!
 * 12:00-1:00pm: Lunch
 * 1:00-2:00pm: [Lecture: Linear regression and simple statistics](E2M2-2019/2_BasicStatisticalModels.zip) __(Andres)__
 * 2:00-3:00pm: Tutorial: Basic statistical modeling in R __(Andres)__
 * 3:00-3:30pm: Coffee Break
-* 3:30-5:00pm: Writing Exercise: Formulating research questions ([HW](E2M2-2019/2_HW_Formulating_Research_Questions.pdf)) __(Cara)__
+* 3:30-5:00pm: Writing Exercise: Formulating Research Questions ([HW](E2M2-2019/2_HW_Formulating_Research_Questions.pdf)) __(Cara)__
 * 5:00-5:30pm: Beginning Malagasy Lesson __(Mentors)__
 * 5:30-6:30pm: Free time, or one-on-one mentoring 
 * 6:30-7:30pm: Dinner
@@ -54,7 +55,7 @@ Find your 'Challenge and Mentoring' Teams for the week [here](E2M2-2019/Admin/Ch
 * 9:45-10:15am: Coffee Break, Prep for hike
 * 10:30am-12:00pm: Morning hike in Ranomafana National Park
 * 12:00-1:00pm: Lunch
-* 1:00-2:00pm: Lecture/Tutorial: Introduction to mixed modeling __(Andres)__
+* 1:00-2:00pm: Lecture/Tutorial: Introduction to Mixed Modeling __(Andres)__
 * 2:00-3:00pm: Tutorial: Mixed modeling in R __(Andres)__
 * 3:00-3:30pm: Coffee Break
 * 3:30-4:30pm: Lecture: Study Design and Data Collection/Management __(Amy/Ben)__

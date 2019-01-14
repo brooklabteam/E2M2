@@ -1,0 +1,12 @@
+---
+title: "Why Do We March?"
+output: html_document
+---
+
+* What is Democracy? How can we, as regular citizens, participate in democracy? 
+
+* What changes would you like to see in your community, your country, or the world?
+
+* What can I do, what actions can I take, to help make these changes?
+
+* Why do I march?
