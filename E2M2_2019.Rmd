@@ -33,7 +33,7 @@ Find your 'Challenge and Mentoring' Teams for the week [here](E2M2-2019/Admin/Ch
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:30am: Road Map and Daily Agenda __(Cara)__
-* 8:30-9:30am: Lecture: [What are We Doing Here? Data and Models and Data](E2M2-2019/E2M2_2019_Models_and_Data.pdf) __(Cara)__
+* 8:30-9:30am: Lecture: [What are We Doing Here? Data and Models](E2M2-2019/E2M2_2019_Models_and_Data.pdf) __(Cara)__
 * 9:30-10:00am: Coffee Break
 * 10:00-11:45am: Introductions: 2-min student/mentor/instructor introductions and mentor research presentations __(Amy)__
 * 11:45am-12:00pm: Preparation for Women's March Madagascar  __(Liz)__
@@ -42,7 +42,7 @@ Find your 'Challenge and Mentoring' Teams for the week [here](E2M2-2019/Admin/Ch
 * 3:00-3:30pm: Coffee Break
 * 3:30-5:00pm: Writing Exercise: Formulating research questions (HW) __(Cara)__
 * 5:00-5:30pm: Beginning Malagasy Lesson __(Mentors)__
-* 5:00-6:30pm: Free time, or one-on-one mentoring. 
+* 5:30-6:30pm: Free time, or one-on-one mentoring. 
 * 6:30-7:30pm: Dinner
 
 **Tuesday, Jan 15: “Deeper Thinking With Data”**
