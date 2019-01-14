@@ -43,7 +43,7 @@ Find your 'Challenge and Mentoring' Teams for the week [here](E2M2-2019/Admin/Ch
 * 2:00-3:00pm: Tutorial: Basic statistical modeling in R __(Andres)__
 * 3:00-3:30pm: Coffee Break
 * 3:30-5:00pm: Writing Exercise: Formulating Research Questions ([HW](E2M2-2019/2_HW_Formulating_Research_Questions.pdf)) __(Cara)__
-* 5:00-5:30pm: Beginning Malagasy Lesson __(Mentors)__
+* 5:00-5:30pm: [Beginning Malagasy Lesson](E2M2-2019/2-E2M2-2019-Malagasy-Lesson.pdf) __(Mentors)__
 * 5:30-6:30pm: Free time, or one-on-one mentoring 
 * 6:30-7:30pm: Dinner
 
