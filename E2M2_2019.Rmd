@@ -67,14 +67,13 @@ Find your 'Challenge and Mentoring' Teams for the week [here](E2M2-2019/Admin/Ch
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:15am: Road Map and Daily Agenda __(Cara)__
-* 8:15-9:45am: Lecture: Introduction to Compartmental Models and Differential Equations __(Amy)__
-* 9:45-10:15am: Coffee Break
-* 10:15-11:00am: Tutorial: Building Mechanistic Models in R __(Amy)__
+* 8:15-10:30am: [Lecture/Tutorial: Introduction to Compartmental Models and Differential Equations](E2M2-2019/4_IntroCompartmentalModels.zip) __(Amy)__
+* 10:30-11:00am: Coffee Break
 * 11:00am-11:30pm: Writing Exercise: Creating a model world to address a research question (HW for tomorrow) __(Cara)__
 * 11:30am-12:00pm: Small Group Session: Refining research questions for modeling  __(all instructors lead small groups)__
 * 12:00-1:00pm: Lunch
 * 1:00-2:00pm: Small group session: Refining research questions for modeling (cont.) __(all instructors lead small groups)__
-* 2:00-3:00pm: Small Group Discussion: Reading Keeling and Gilligan __(Mentors + Sarah)__
+* 2:00-3:00pm: [Small Group Discussion: Reading Keeling and Gilligan]((E2M2-2018/E2M2_Readings.zip)) __(Mentors + Sarah)__
 * 3:00-3:30pm: Coffee Break
 * 3:30-4:45pm: Mentor research presentations (10 min each) __(Mentors)__
 * 4:45-6:00pm: Mid-session feedback __(Mentors)__
