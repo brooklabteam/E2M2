@@ -75,9 +75,9 @@ Find your 'Challenge and Mentoring' Teams for the week [here](E2M2-2019/Admin/Ch
 * 1:00-2:00pm: Small group session: Refining research questions for modeling (cont.) __(all instructors lead small groups)__
 * 2:00-3:00pm: [Small Group Discussion: Reading Keeling and Gilligan]((E2M2-2018/E2M2_Readings.zip)) __(Mentors + Sarah)__
 * 3:00-3:30pm: Coffee Break
-* 3:30-4:45pm: Mentor research presentations (10 min each) __(Mentors)__
-* 4:45-6:00pm: Mid-session feedback __(Mentors)__
-* 6:00-6:30pm: Free time, or one-on-one mentoring
+* 3:30-4:45pm: [Lecture w/Tutorial: Introduction to Occupancy Modeling](E2M2-2019/4_Occupancy_2019.zip) __(Fidy)__
+* 4:45-5:45pm: Mid-session feedback __(Mentors)__
+* 5:45-6:30pm: Free time, or one-on-one mentoring
 * 6:30-7:30pm: Dinner
 * 8:00pm: Night walk Ranomafana National Park (optional)
 
@@ -90,11 +90,11 @@ Find your 'Challenge and Mentoring' Teams for the week [here](E2M2-2019/Admin/Ch
 * 10:30-11:00am: Coffee Break
 * 11:00-12:00pm:  Tutorial: Model Fitting with Epidemic Cards __(Mentors + Sarah)__
 * 12:00-1:00pm: Lunch
-* 1:00-2:30pm: Lecture w/Tutorial: Introduction to Occupancy Modeling __(Fidy)__
-* 2:30-3:30pm: Lecture/Tutorial: Introduction to Spatial Modeling __(Ben)__
+* 1:00-2:00pm: Lecture/Tutorial: Introduction to Spatial Modeling __(Ben)__
+* 2:30-3:30pm: Model Telephone with Model Diagrams __(Mentors + Christian)__
 * 3:30-4:00pm: Coffee Break
-* 4:00-5:00pm: Model Telephone with Model Diagrams __(Mentors + Christian)__
-* 5:00-6:30pm:  Free time, or one-on-one mentoring
+* 4:00-4:15pm: Final research plans (HW) __(Cara)__ 
+* 4:15-6:30pm:  Free time, or one-on-one mentoring
 * 6:30-7:30pm: Dinner
 * 8:00pm: Evening social activity 
 
@@ -107,12 +107,13 @@ Find your 'Challenge and Mentoring' Teams for the week [here](E2M2-2019/Admin/Ch
 * 10:00-10:30am: Coffee Break
 * 10:30-12:00pm:  Lecture w/Tutorial: Introduction to Network Modeling __(Fidy)__
 * 12:00pm-1:00pm: Lunch
-* 1:00-1:15pm: Group photo - Wear your E2M2 shirts!
-* 1:15-3:30pm: Lecture/Tutorial: Modeling Vector-Borne Disease __(Amy/Ben)__
+* 1:00-1:30pm: Group photo - Wear your E2M2 shirts!
+* 1:30-3:30pm: Lecture/Tutorial: Modeling Vector-Borne Disease __(Amy/Ben)__
 * 3:30-4:00pm: Coffee Break
-* 3:30-4:00pm: Final research plans (HW) __(Cara)__
-* 4:00-6:30pm: Work time + one-on-one mentoring sessions __(all)__
+* 4:00-5:00pm: Mentor research presentations (10 min each) __(Mentors)__
+* 5:00-6:30pm: Work time + student-instructor meetings __(all)__
 * 6:30-7:30pm: Dinner
+
 
 
 **Saturday, Jan 19: “Putting It All In Perspective”**
@@ -120,10 +121,10 @@ Find your 'Challenge and Mentoring' Teams for the week [here](E2M2-2019/Admin/Ch
 * 6:30-8:00am: Breakfast
 * 8:00-8:15am: Road Map and Daily Agenda __(Cara)__
 * 8:15-9:15am: Lecture: Modeling in Practice: The Life Cycle of a Modeling Project, from Conception to Publication __(Andres)__  
-* 9:15-9:45am: Research Snapshots __(all)__
+* 9:15-9:45am: Research Snapshots __(instructors)__
 * 9:45-10:15am: Coffee Break
 * 10:15-11:15am: Lecture: Looking back: How far have we come? __(Fidy)__
-* 11:15am-12:00pm: Research plan work time + mentoring sessions (all)
+* 11:15am-12:00pm: Student presentation preactice
 * 12:00-1:00pm: Lunch
 * 1:00-6:30pm: Women’s March Madagascar (optional), March will proceed from CVB to Ranomafana town. Speakers and activities for all who are interested. __(Liz)__
 * 6:30-9:00pm: Farewell dinner in Ranomafana town (Hotel Manja)
