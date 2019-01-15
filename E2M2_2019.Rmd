@@ -59,7 +59,7 @@ Find your 'Challenge and Mentoring' Teams for the week [here](E2M2-2019/Admin/Ch
 * 3:00-4:00pm: Lecture: Study Design and Data Collection/Management __(Amy/Ben)__
 * 4:00-4:30pm: Coffee Break 
 * 4:30-5:30pm: Group exercise: Refining research questions for modeling ([HW](E2M2-2019/2_HW_Formulating_Research_Questions2.pdf)) __(Cara)__
-* 5:30-6:30pm: Free time, or one-on-one mentoring, or additional Time for Tutorial: Mixed Modeling in R
+* 5:30-6:30pm: Free time, or one-on-one mentoring, or additional time for Tutorial: Mixed Modeling in R
 * 6:30-7:30pm: Dinner
 
 
