@@ -87,15 +87,16 @@ Find your 'Challenge and Mentoring' Teams for the week [here](E2M2-2019/Admin/Ch
 * 6:30-8:00am: Breakfast
 * 8:00-8:15am: Road Map and Daily Agenda __(Cara)__
 * 8:15-9:45am: Lecture w/Tutorial: Model Fitting in Practice – the Basic Concept __(Sarah)__
-* 9:45-10:30am: Exercise: Epidemics Cards __(Mentors + Sarah)__
-* 10:30-11:00am: Coffee Break
-* 11:00-12:00pm:  Tutorial: Model Fitting with Epidemic Cards __(Mentors + Sarah)__
+* 9:45-10:45am: Lecture/Tutorial: Introduction to Spatial Modeling __(Ben)__
+* 10:45-11:15am: Coffee Break
+* 11:15-12:00pm:  Exercise: Epidemics Cards __(Cara + Sarah)__
 * 12:00-1:00pm: Lunch
-* 1:00-2:00pm: Lecture/Tutorial: Introduction to Spatial Modeling __(Ben)__
+* 1:00-2:00pm: Tutorial: Model Fitting with Epidemic Cards __(Cara)__
 * 2:00-3:30pm: Model Telephone with Model Diagrams __(Mentors + Christian)__
 * 3:30-4:00pm: Coffee Break
 * 4:00-4:15pm: Final research plans (HW) __(Cara)__ 
-* 4:15-6:30pm:  Free time, or one-on-one mentoring
+* 4:15-6:00pm: Work time + student-instructor meetings
+* 6:00-6:30pm: Complete "Challenge Group" Activities __(Ben)__
 * 6:30-7:30pm: Dinner
 * 8:00pm: Night walk Ranomafana National Park (optional)
 
