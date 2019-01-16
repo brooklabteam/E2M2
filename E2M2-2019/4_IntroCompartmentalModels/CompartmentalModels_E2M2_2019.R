@@ -5,15 +5,15 @@
 ## E2M2 - 2019
 ## written by: Jess Metcalf, Amy Wesolowski
 
-## In this tutorial, we will construct a simple vector-borne disease model (humans: SIRS, vector: SI). First, we will make a function that is just an SIRS model:
-
+## In this tutorial, we will construct simple compartmental models and explore different structures of these models
 ##############################################################################
 ## Contents: 
 # Line 23: Modeling Population Growth
 # Line 80: Investigating continuous vs discrete time
 # Line 165: Structured population models
-# Line 202: Lotka-Volterra models of predator-prey dynamics
-# Line 257: Susceptible-Infected-Recovered models
+# Line 205: Life-stages of a mosquito population
+# Line 264: Lotka-Volterra models of predator-prey dynamics
+# Line 319: Susceptible-Infected-Recovered models
 ##############################################################################
 ## load your libraries first
 
@@ -197,6 +197,67 @@ eigen(A)$value[1]      #extract the pop growth rate using the eigenvalue; now po
 #### 1) Iterate the population forwards in a loop and compare the growth rate obtained with the eigenvalue estimate of lambda. You may find that the population gets unmanageably large very quickly (R can't handle very large numbers) - so one trick is to reset the popuation to sum to one after each iteration - it doesn't matter, since you're only interested in the change / increase from t to t+1.
 #### 2) For some species, e.g., mosquitoes, the juvenile phase (or larval phase) could be sensitive to environmental drivers, like temperature, humidity, etc. Create a loop that changes survival of juveniles (or aging, which equates to development rate) in the matrix at each time-step based on such time-varying drivers (which you could build using a sine wave to capture seasonality, etc - note that this means that the time-step is < 1 year). Explore the consequences for total population size if temperature increases. 
 ### 3)  You can download a large set of pre-digitised matrix population models from: http://www.compadre-db.org and then explore population growth, life expectancy, etc. for 100s and 100s of species, etc. (see Salgeruo-Gomez et al. 2015)
+
+
+
+##############################################################################
+## Life-stages of a mosquito dynamics
+##############################################################################
+
+## First, we will make a model that has multiple stages of a mosquito: eggs, larvae, pupae, and adults
+mosq.pop.eq<-function(t, y, parms){
+  with(c(as.list(y), parms),{
+    dEdt = mu*A - gamma*E - sigmaE*E
+    dLdt = gamma*E - rho*L - sigmaL*L
+    dPdt = rho*L - alpha*P - sigmaP*P
+    dAdt = alpha*P - sigmaA*A
+    list(c(dEdt, dLdt, dPdt, dAdt))
+  })
+}
+## with rates of transition between these states (compartments) and different death rates for each state
+## mu = egg laying rate
+## gamma = rate till eggs become larvae
+## sigmaE = death rate of eggs
+## rho = rate at which larvae become pupae
+## sigmaL = death rate of larvae
+## alpha = rate at which pupae become larvae
+## sigmaP = death rate of pupae
+## sigmaA = death rate adults
+
+## now we can set an initial population size and parameters and run the model to see how the different population sizes of each state will change over time. 
+initial.pops<-c(E = 1000, L = 500, P = 100, A = 10)
+mosq.pop.params<-c(mu = 0.05, gamma = 1/14, sigmaE = 0.001, rho = 1/5, sigmaL = 0.001, alpha = 1/2, sigmaP = 0.001, sigmaA = 0.05)
+
+times<-seq(1,365, by = 1)
+result<-data.frame(lsoda(y = initial.pops, times = times, func = mosq.pop.eq, parms = mosq.pop.params))
+
+par(mfrow=c(1,1))
+plot(NA, NA, xlim = range(times), ylim = range(result[,2:5]), xlab = 'Time', ylab = 'Population')
+legend('topright', legend = c('Eggs', 'Larvae', 'Pupae', 'Adult'), col = c('blue', 'red', 'orange', 'green'), bty = 'n', pch = 15)
+lines(result$E, col = 'blue', lwd = 2)
+lines(result$L, col = 'red', lwd = 2)
+lines(result$P, col = 'orange', lwd = 2)
+lines(result$A, col = 'green', lwd = 2)
+
+## now we can re-run the analysis to see what happens if the rate till eggs become larvae decreases
+
+initial.pops<-c(E = 1000, L = 500, P = 100, A = 10)
+mosq.pop.params<-c(mu = 0.05, gamma = 1/4, sigmaE = 0.001, rho = 1/5, sigmaL = 0.001, alpha = 1/2, sigmaP = 0.001, sigmaA = 0.05)
+
+times<-seq(1,365, by = 1)
+result<-data.frame(lsoda(y = initial.pops, times = times, func = mosq.pop.eq, parms = mosq.pop.params))
+
+par(mfrow=c(1,1))
+plot(NA, NA, xlim = range(times), ylim = range(result[,2:5]), xlab = 'Time', ylab = 'Population')
+legend('right', legend = c('Eggs', 'Larvae', 'Pupae', 'Adult'), col = c('blue', 'red', 'orange', 'green'), bty = 'n', pch = 15)
+lines(result$E, col = 'blue', lwd = 2)
+lines(result$L, col = 'red', lwd = 2)
+lines(result$P, col = 'orange', lwd = 2)
+lines(result$A, col = 'green', lwd = 2)
+
+## TO DO: 
+#### 1) Change the parameter values, see what happens if the death rates are the same between different compartments. 
+
 
 ##############################################################################
 ## Lotka-Volterra models of predator-prey dynamics

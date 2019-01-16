@@ -69,7 +69,7 @@ Find your 'Challenge and Mentoring' Teams for the week [here](E2M2-2019/Admin/Ch
 * 8:00-8:15am: Road Map and Daily Agenda __(Cara)__
 * 8:15-10:30am: [Lecture/Tutorial: Introduction to Compartmental Models and Differential Equations](E2M2-2019/4_IntroCompartmentalModels.zip) __(Amy)__
 * 10:30-11:00am: Coffee Break
-* 11:00am-11:30pm: Writing Exercise: Creating a model world to address a research question (HW for tomorrow) __(Cara)__
+* 11:00am-11:30pm: Writing Exercise: Creating a model world to address a research question ([HW for tomorrow](E2M2-2019/4_Model_Framework_HW.pdf)) __(Cara)__
 * 11:30am-12:00pm: Small Group Session: Refining research questions for modeling  __(all instructors lead small groups)__
 * 12:00-1:00pm: Lunch
 * 1:00-2:00pm: Small group session: Refining research questions for modeling (cont.) __(all instructors lead small groups)__
