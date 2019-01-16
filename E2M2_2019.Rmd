@@ -84,9 +84,9 @@ Find your 'Challenge and Mentoring' Teams for the week [here](E2M2-2019/Admin/Ch
 **Thursday, Jan 17: “Fitting Models to Data”**
 
 * 6:30-8:00am: Breakfast
-* 8:00-8:30am: Road Map and Daily Agenda __(Cara)__
-* 8:30-9:30am: Lecture w/Tutorial: Model Fitting in Practice – the Basic Concept __(Sarah)__
-* 9:30-10:30am: Exercise: Epidemics Cards __(Mentors + Sarah)__
+* 8:00-8:15am: Road Map and Daily Agenda __(Cara)__
+* 8:15-9:45am: Lecture w/Tutorial: Model Fitting in Practice – the Basic Concept __(Sarah)__
+* 9:45-10:30am: Exercise: Epidemics Cards __(Mentors + Sarah)__
 * 10:30-11:00am: Coffee Break
 * 11:00-12:00pm:  Tutorial: Model Fitting with Epidemic Cards __(Mentors + Sarah)__
 * 12:00-1:00pm: Lunch
