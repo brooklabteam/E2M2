@@ -106,15 +106,17 @@ Find your 'Challenge and Mentoring' Teams for the week [here](E2M2-2019/Admin/Ch
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:30am: Road Map and Daily Agenda __(Cara)__
-* 8:30-10:00am: Lecture/Tutorial: Model Selection and Comparison __(Cara)__
+* 8:30-10:00am: [Lecture/Tutorial: Model Selection and Comparison](E2M2-2019/6_Epidemic_Cards_Model_Comparison.zip) __(Cara)__
+  * We will not be teaching this tutorial, but feel free to work through '[Model Comparison with Age Prevalence Data](E2M2-2019/6_Rodent-Age-Prevalence.zip)' on your own time.
 * 10:00-10:30am: Coffee Break
 * 10:30-12:00pm:  Lecture w/Tutorial: Introduction to Network Modeling __(Fidy)__
 * 12:00pm-1:00pm: Lunch
 * 1:00-1:30pm: Group photo - Wear your E2M2 shirts!
-* 1:30-3:30pm: Lecture/Tutorial: Modeling Vector-Borne Disease __(Amy/Ben)__
-* 3:30-4:00pm: Coffee Break
+* 1:30-3:00pm: Lecture/Tutorial: Modeling Vector-Borne Disease __(Amy/Ben)__
+* 3:00-3:30pm: Coffee Break
+* 3:30-4:00pm: Research Snapshots __(instructors)__
 * 4:00-5:00pm: Mentor research presentations (10 min each) __(Mentors)__
-* 5:00-6:30pm: Work time + student-instructor meetings __(all)__
+* 5:00-6:30pm: Work time + one-on-one student-instructor meetings __(all)__
 * 6:30-7:30pm: Dinner
 
 
@@ -123,11 +125,10 @@ Find your 'Challenge and Mentoring' Teams for the week [here](E2M2-2019/Admin/Ch
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:15am: Road Map and Daily Agenda __(Cara)__
-* 8:15-9:15am: Lecture: Modeling in Practice: The Life Cycle of a Modeling Project, from Conception to Publication __(Andres)__  
-* 9:15-9:45am: Research Snapshots __(instructors)__
-* 9:45-10:15am: Coffee Break
-* 10:15-11:15am: Lecture: Looking back: How far have we come? __(Fidy)__
-* 11:15am-12:00pm: Student presentation preactice
+* 8:15-9:30am: Lecture: Modeling in Practice: The Life Cycle of a Modeling Project, from Conception to Publication __(Andres)__  
+* 9:30-10:00am: Coffee Break
+* 10:00-11:00am: Lecture: Looking back: How far have we come? __(Fidy)__
+* 11:00am-12:00pm:  Work time + one-on-one student-instructor meetings __(all)__
 * 12:00-1:00pm: Lunch
 * 1:00-6:30pm: Women’s March Madagascar (optional), March will proceed from CVB to Ranomafana town. Speakers and activities for all who are interested. __(Liz)__
 * 6:30-9:00pm: Farewell dinner in Ranomafana town (Hotel Manja)

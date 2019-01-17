@@ -204,17 +204,17 @@ legend("topright", legend=c("susceptible-data", "susceptible-model", "infectious
 ## minimize the sum of squared errors.
 
 
-## (20) First, wrap your discrete time model above into a function called "discrete.mod"
-## with the following 4 input arguments: R0, I.start, S.start, time. Have it "return" a 
-## dataframe of susceptibles and infecteds.
-discrete.mod <- function(R0, S.start, I.start, time){
+## (20) First, wrap your discrete time model above into a function called "SIR.discrete.deterministic"
+## with the following 2 input arguments: R0, time. Have it "return" a 
+## dataframe of time, S, and I.
+SIR.discrete.deterministic <- function(R0, time){
   
   model.S <- rep(NA, length(time))
   model.I <- rep(NA, length(time))
-  model.S[1] <- S.start
-  model.I[1] <- I.start
+  model.S[1] <- 25
+  model.I[1] <- 1
   
-  N = S.start + I.start
+  N = model.S[1] + model.I[1]
   
   for (t in 1:(length(time)-1)){
     model.S[t+1] = model.S[t] - (R0 * model.S[t]/N) * model.I[t]
@@ -222,69 +222,81 @@ discrete.mod <- function(R0, S.start, I.start, time){
   }
   
   
-  dat.return <- cbind.data.frame(model.S, model.I)
-  names(dat.return) <- c("susceptibles", "infecteds")
+  dat.return <- cbind.data.frame(time, model.S, model.I)
+  names(dat.return) <- c("time", "S", "I")
   return(dat.return)
 }
 
 
 ## (21) Test that your function is working by running the following line of script:
-## out <- discrete.mod(R0=2, S.start = 25, I.start = 1, time=time)
-## (Hint: Double-check that your 'time' vector still equals seq(1,10,1))
-out <- discrete.mod(R0=2, S.start = 25, I.start = 1, time=time)
+## out <- discrete.mod(R0=2, time=seq(1,10,1))
+out <- SIR.discrete.deterministic(R0=2, time=seq(1,10,1))
   
-## (22) Write a function called "get.diffs" that returns a vector of differences between the model outputs 
-## for the infected population and your infected data and your model outputs of susceptible and your 
-## susceptible data for one trial at each of the 10 discrete timesteps.
-get.diffs <- function(real.dat1,mod.dat){
-  diff.inf <- real.dat1$infecteds - mod.dat$infecteds
-  diff.sus <- real.dat1$susceptibles - mod.dat$susceptibles
-  diff.tot <- diff.inf + diff.sus
-  return(diff.tot)
-}
+## (22) Write a function called "sum_sq" that calculates the sum of squared difference between your model
+## and the data across all trials. (Hint: This will include 4 steps: 
+## 1. You will first need to run your model at your chosen parameters.
+## 2. You will then need to add two columns labeled "I_predictions" and "S_predictions" to your dat.R0
+##    dataset and fill with 'NAs'
+## 3. You will then need to fill those columns with model predictions from step #1. This will 
+##    require a for-loop over the unique trials.
+## 4. You will need to calculate the sum of squared differences between all model predictions (both S
+##    and I) from the data and return it from the function.)
 
-
-## (23) Write a function called "sum_sq" that calculates the sum of squared difference between your model
-## and the data across all trials. (Hint: This will include 3 steps: You will first need to (1) divide 
-## your dataset into a list by unique trial using 'dlply', (2) use the function 'lapply' to apply "get.diffs"
-## across all trials, and (3) recombine the list of differences into a vector that you square and sum.)
 sum_sq <- function(par, real.dat, time){
-  #run your function at the guess par
+  ## 1. You will first need to run your model at your chosen parameters.
+  out.model <- SIR.discrete.deterministic(R0=par, time=time)
   
-  out.test <- discrete.mod(R0=par, S.start=25, I.start=1, time=time)
-  #divide real dat by trials
-  trial.list <- dlply(real.dat, .(trial))
+  ## 2. You will then need to add two columns labeled "I_predictions" and "S_predictions" to your dat.R0
+  ##    dataset and fill with 'NAs'
+  real.dat$I_predictions <- real.dat$S_predictions <- NA
   
-  #and apply your difference function to get observed - modeled
-  trial.list.diffs <- lapply(trial.list,get.diffs, mod.dat=out.test)
+  ## 3. You will then next to fill those columns with model predictions at the appropriate timesteps
+  ##    like those from #21. This will require a double for-loop over the unique trials and timesteps.
   
-  #take the sum of these squared differences and return
-  sum.of.sqs = sum(unlist(c(trial.list.diffs))^2)
+  ## Infecteds first:
+  for(i in 1:length(unique(real.dat$trial))){
+    for(j in 1:length(unique(real.dat$timestep))){
+      real.dat$I_predictions[real.dat$trial==i & real.dat$timestep==j] <- out.model$I[out.model$time==j]
+    }
+  }
+  
+  ## And Susceptibles:
+  for(i in 1:length(unique(real.dat$trial))){
+    for(j in 1:length(unique(real.dat$timestep))){
+      real.dat$S_predictions[real.dat$trial==i & real.dat$timestep==j] <- out.model$S[out.model$time==j]
+    }
+  }
+  
+  ## 4. You will need to calculate the sum of squared differences between all model predictions (both S
+  ##    and I) from the data and return it from the function.)
+  
+  ## First, get both S and I differences
+  real.dat$S_differences <- real.dat$S_predictions - real.dat$susceptibles
+  real.dat$I_differences <- real.dat$I_predictions - real.dat$infecteds
+  
+  ## Then, square them and add them:
+  sum.of.sqs = sum(c(real.dat$S_differences, real.dat$I_differences)^2)
   
   return(sum.of.sqs)
-  
-  
-  for (i in 1:length(unique(real.dat$trial))){
-    
-  }
+
 }
 
-## (24) Use the 'BFGS' method in the function optim() to minimize the difference between your model and 
+## (24) Now, use the 'BFGS' method in the function optim() to minimize the difference between your model and 
 ## the data, and save the returned values as an object called 'out.optim'. Guess the value of R0 as 2, meaning 
 ## that you should use the following input variables: 
-## optim(par = 2, fn=sum_sq, real.dat=dat.R0, time=time, method="BFGS")
-out.optim <- optim(par = 2, fn=sum_sq, real.dat=dat.R0, time=time, method="BFGS")
+## optim(par = 2, fn=sum_sq, real.dat=dat.R0, time=seq(1,10,1), method="BFGS")
+out.optim <- optim(par = 2, fn=sum_sq, real.dat=dat.R0, time=seq(1,10,1), method="BFGS")
 
 ## (25) Save out.optim$par as the object R0.fit. How close is your value to R0=2? Why might it be different?
 R0.fit <- out.optim$par
 
-## (25) Now run your model with the new value R0.fit and save the Infecteds output as "new.model"
-new.model <- discrete.mod(R0=R0.fit, S.start = 25, I.start = 1, time = time)
+## (25) Now run your model with the new value R0.fit and save the output as "new.model"
+new.model <- SIR.discrete.deterministic(R0=R0.fit, time = seq(1,10,1))
 
 ## (26) Plot your new model output and compare with the data. First plot your model I and S predictions
 plot("n", xlim=c(0,12), ylim = c(0,30), ylab="cards", xlab="timestep")
-lines(x=time, y = new.model$infecteds, col = "red", lwd=3, lty = 1)
-lines(x=time, y = new.model$susceptibles, col = "green", lwd=3, lty = 1)
+lines(x=new.model$time, y = new.model$I, col = "red", lwd=3, lty = 1)
+lines(x=new.model$time, y = new.model$S, col = "green", lwd=3, lty = 1)
 
 ## (27) Now, add your original data again.  Make your trials of infecteds as thin, red
 ## lines (hint: lty=2, lwd=.5) and your trials of susceptibles as thin, dashed green lines.
