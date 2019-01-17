@@ -28,28 +28,42 @@ rm(list=ls())
 dat <-  read.csv("Epidemic_Cards.csv", header=T)
 
 ## (1) Take a look at the form of the dataset
+head(dat)
+str(dat)
 
 
 ## (2) Select a subset of these data, choosing just those with R0 value = 2 and name that object "dat.R0"
-
+dat.R0 <- dat[dat$R0==2,]
+## or
+dat.R0 <- subset(dat, R0==3)
+head(dat.R0)
 
 ## (3) Next,  define the length of our time series. Make a vector titled "time" that is the length of 
 ## the longest timestep in your dataset.
-
-
+max(dat.R0$timestep) ## 10 is the largest value
+time <- seq(1,10,1)
+time <- sort(unique(dat$timestep))
+time
 
 ## (4) Now, define a variable called "N" that equals your population size (Angelo's pile)
+N <- 26
 
 
 ## (5) Using your data, plot Infecteds over time, with a different line for each trial.
 ## Color all the Infecteds lines as red.
-
+plot("n", xlim=c(0,12), ylim=c(0,30), ylab="cards", xlab="timestep")
+for (i in 1:length(unique(dat.R0$trial))){
+  lines(x=dat.R0$timestep[dat.R0$trial==i], y=dat.R0$infecteds[dat.R0$trial==i], col = "red")
+}
 
 ## (6) Now plot all the Susceptible trials as individual lines.
 ## Color them as green.
-
+for (i in 1:length(unique(dat.R0$trial))){
+  lines(x=dat.R0$timestep[dat.R0$trial==i], y=dat.R0$susceptibles[dat.R0$trial==i], col = "green")
+}
 
 ## (7) Now add a legend to the plot in the top right-hand corner of your plotting frame.
+legend(x=6, y=25, legend=c("susceptibles", "infecteds"), lwd=2, col=c("green", "red"), cex = .6)
 
 
 ## (8) How do things change when R0 = 3? Go back above, and take a new subset of the
@@ -97,22 +111,25 @@ dat <-  read.csv("Epidemic_Cards.csv", header=T)
 
 ## (9) First, let's print our time vector from above to make sure we still have all the 
 ## important information at hand. Do this here:
+print(time)
 
 
 ## (10) Then, we make two empty vectors called  model.I and model.S for the full duration of the
 ## time series. (Hint, make two vectors called 'model.I' and 'model.S' that are filled with the value
 ## 'NA' but are the same length as your vector 'time')
-
+model.I <- rep(NA, length(time))
+model.S <- rep(NA, length(time))
 
 
 ## (11) Now,  "seed" these vectors with our initial conditions of the numbers infected and susceptible.
 ## (Hint, write over index 1 of model.I and model.S with with one infected individual 25 susceptible individuals.
 
-
+model.I[1] <- 1
+model.S[1] <- 25
 
 ## (12) Now make an object called "R0" that specifies a value for R0. Use the same value of R0 from the first two rounds
 ## of the game.
-
+R0 <- 2
 
 ## (13) Now, write a for-loop that iterates your discrete time model across the full length of the time series
 ## Essentially, write the R language that says the following:
@@ -121,11 +138,34 @@ dat <-  read.csv("Epidemic_Cards.csv", header=T)
 ##              run my discrete time model (hint, use the equations from above, lines 88 and 89)
 ##             }
 
+for(t in 1: length(time)){
+  model.S[t+1] = model.S[t] - (R0 * model.S[t]/N)*model.I[t]
+  model.I[t+1]= (R0 * model.S[t]/N)*model.I[t]
+}
+model.S
+model.I
 
 ## (14) Now plot the infected output from your discrete time model in #13 and color it red.
+time0_10 <- seq(0,10,1)
+time0_10
+plot("n", xlim=c(0,12), ylim = c(0,30), ylab="cards", xlab="timestep")
+lines(x=time0_10, y = model.I, col = "red", lwd=3, lty = 1)
 
 ## (15) And add a line to the graph with the susceptible output from your discrete time model in #13 and
 ## color it green. Add a legend to the plot in the top right-hand corner.
+lines(x=time0_10, y = model.S, col = "green", lwd=3, lty = 1)
+
+for (i in 1:length(unique(dat.R0$trial))){
+  lines(x=dat.R0$timestep[dat.R0$trial==i], y=dat.R0$infecteds[dat.R0$trial==i], col = "red", lty=2, lwd=.5)
+}
+
+## (6) Now plot all the Susceptible trials as individual lines.
+## Color them as green.
+for (i in 1:length(unique(dat.R0$trial))){
+  lines(x=dat.R0$timestep[dat.R0$trial==i], y=dat.R0$susceptibles[dat.R0$trial==i], col = "green",  lty=2, lwd=.5)
+}
+
+
 
 ## You can see that the Susceptible population declines across the course of 
 ## the epidemic. What would happen if births were added to this population?
@@ -212,13 +252,6 @@ sum_sq <- function(par, real.dat, time){
   
   return(sum.of.sqs)
   
-  
-    
-  
-    
-    
-    
-
   
   for (i in 1:length(unique(real.dat$trial))){
     

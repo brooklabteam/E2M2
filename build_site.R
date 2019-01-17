@@ -7,3 +7,4 @@ setwd("/Users/caraebrook/Documents/R/R_repositories/E2M2")
 #render your sweet site. 
 rmarkdown::render_site()
 
+
