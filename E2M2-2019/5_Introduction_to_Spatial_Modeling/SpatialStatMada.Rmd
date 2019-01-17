@@ -1,0 +1,259 @@
+---
+title: "Spatial Modeling, Data, and Statistics in R"
+output: html_document
+author: Amy Wesolowski (awesolowski@jhu.edu)
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```
+
+First, you need to set your current working directory to the location where the spatial data files are located. This will be different for each person.
+```{r}
+getwd()
+setwd('/Users/benjaminrice/Dropbox/Lab Projects/3 E2M2 2019/Tasks and Lectures/3 Introduction to Spatial Modeling (Thursday Jan 17 pm)/E2M2_Introduction_to_Spatial_Modeling')
+getwd()
+```
+
+# Reading shp files
+
+For the first part of the lecture, we will go through different spatial data sets and how you can load them into R. There are multiple packages that will enable you to read in .shp files in R, but here we will use maptools. It is important that all of the corresponding files (.dbf, .prj, .shx) are in the same folder as the .shp file. These other files include additional information about the spatial data frame that are necessarily to read a .shp file. We will use two functions, one to read in a point shp file and one to read in a polygon shp file. If an error message comes up that says use rgdal::readOGR or sf::st_read, these messages are just to indicate that other functions to read shp files may be more efficient or newer. First we will read in 
+
+```{r}
+library(maptools)
+library(rgdal)
+library(rgeos)
+
+mdg_admin2_shp<-readShapePoly('MDG_Shp/MDG_adm2.shp', proj4string = CRS('+proj=longlat'))
+
+subset_shp_file<-mdg_admin2_shp[which(mdg_admin2_shp$NAME_2 == 'Sava'),]
+
+mdg_admin2_shp<-gSimplify(mdg_admin2_shp, tol = 0.01)
+
+plot(mdg_admin2_shp)
+
+plot(subset_shp_file, col = 'blue', add = TRUE)
+
+
+par(mfrow=c(1,3))
+plot(mdg_admin2_shp)
+``` 
+
+# Reading in Raster Data sets
+Next we will practice reading in raster data and extracting these data 
+```{r}
+library(raster)
+library(rgdal)
+library(colorRamps)
+
+mdg_birth<-raster('MDG_Births/MDG_births_pp_v2_2015.tif')
+```
+
+
+After reading in these data, we will then plot these raster images using various color schemes and highlighting particular values. 
+
+```{r}
+par(mfrow=c(1,3))
+image(mdg_birth, col = blue2red(100))
+
+image(log(mdg_birth+1), col = blue2red(50))
+```
+
+* TO DO: How does the image change if you change the raster values to be between 0 and 10, or 50 and above? 
+
+Now we will also plot these raster images with the Madagascar shp files
+```{r}
+par(mfrow=c(1,3))
+image(mdg_birth, zlim = c(0,3000))
+plot(mdg_admin2_shp, add = TRUE)
+```
+
+
+### Reading in point data sets
+We will work with the Snow data again and calculate some additional summary values. The pumps and deaths datapoints were digitized by Rusty Dodson at the National Center for Geographic Information & Analysis (NCGIA) at UC Santa Barbara. First we will read in each data set. 
+
+```{r}
+#library(spatstat) # do not need, but has lots of great functions for spatial point process data
+
+deaths_points_file<-read.csv('Snow_deaths.csv', header = TRUE)
+
+pumps_points_file<-read.csv('Snow_pumps.csv', header = TRUE)
+
+street_points_file<-read.csv('Snow_streets.csv', header = TRUE)
+```
+
+The death and pump data set are x,y coordinates (not longitude/latitude) that can be read and plot directly. The street data set is read in as endpoints of lines that will need to be plot in a different manner. First we will remake the plot that we made during the lecture.
+```{r}
+
+par(mfrow=c(1,1))
+plot(NA, NA, xlim = range(street_points_file$x), ylim = range(street_points_file$y), xlab = '', ylab = '', bty = 'n', xaxt = 'n', yaxt = 'n')
+
+for(ii in 1:max(street_points_file$street)){
+  sub_dat<-street_points_file[which(street_points_file$street == ii),]
+  lines(c(sub_dat$x[1], sub_dat$x[2]), c(sub_dat$y[1], sub_dat$y[2]))
+}
+
+points(deaths_points_file$x, deaths_points_file$y, col = 'red')
+
+points(pumps_points_file$x, pumps_points_file$y, col = 'blue', pch = 16)
+
+legend('bottomleft', legend = c('pumps', 'deaths'), col = c('blue', 'red'), pch = 16)
+
+```
+
+We will also write two additional functions that we will use to plot both the basic streets as well as the pump, death and street data. 
+```{r}
+plot_streets<-function(){
+  plot(NA, NA, xlim = range(street_points_file$x), ylim = range(street_points_file$y), xlab = '', ylab = '', bty = 'n', xaxt = 'n', yaxt = 'n', add = TRUE)
+
+  for(ii in 1:max(street_points_file$street)){
+    sub_dat<-street_points_file[which(street_points_file$street == ii),]
+    lines(c(sub_dat$x[1], sub_dat$x[2]), c(sub_dat$y[1], sub_dat$y[2]))
+  }
+}
+
+plot_base_snow_plot<-function(){
+  par(mfrow=c(1,1))
+  plot(NA, NA, xlim = range(street_points_file$x), ylim = range(street_points_file$y), xlab = '', ylab = '', bty = 'n', xaxt = 'n', yaxt = 'n')
+
+  for(ii in 1:max(street_points_file$street)){
+    sub_dat<-street_points_file[which(street_points_file$street == ii),]
+    lines(c(sub_dat$x[1], sub_dat$x[2]), c(sub_dat$y[1], sub_dat$y[2]))
+  }
+
+  points(deaths_points_file$x, deaths_points_file$y, col = 'red')
+
+  points(pumps_points_file$x, pumps_points_file$y, col = 'blue', pch = 16)
+
+  legend('bottomleft', legend = c('pumps', 'deaths'), col = c('blue', 'red'), pch = 16)
+}
+
+```
+
+First we will calculate the average x, y coordinates (of deaths) and then plot a circle around this point. 
+```{r}
+mean_x = mean(deaths_points_file$x)
+mean_y = mean(deaths_points_file$y)
+
+sd = sqrt(sum((deaths_points_file$x - mean_x)^2 + (deaths_points_file$y - mean_y)^2)/length(deaths_points_file$x))
+
+plot_base_snow_plot()
+bearing = 1:360*pi/180
+cx = mean_x + sd * cos(bearing)
+cy = mean_y + sd * sin(bearing)
+circle <- cbind(cx, cy)
+lines(circle, col = 'green', lwd = 2)
+
+```
+
+In the lecture, we calculated the distribution of distances from two sample pumps to all of the cases. Now we will calculate the distances from all other points and identify if the cases really were closer to the Broad Street Pump relative to all other pumps. We will do this by comparing the mean distance. 
+
+```{r}
+numb_pumps<-nrow(pumps_points_file)
+mean_distance<-rep(NA, numb_pumps)
+for(jj in 1:numb_pumps){
+  single_pump_coord<-pumps_points_file[jj,]
+  euc_dist_from_single_pump<-sqrt((deaths_points_file$x - single_pump_coord$x)^2 + (deaths_points_file$y - single_pump_coord$y)^2)
+  mean_distance[jj] = mean(euc_dist_from_single_pump)
+}
+
+mean_distance_w_pumps <- data.frame(pumps_points_file$label, mean_distance)
+View(mean_distance_w_pumps)
+
+```
+
+How does the mean distance from Broad Street pump compares to the other pumps? 
+
+* TO DO: Would you make the same inference if you compared the distributions of the distances (not just the means)? How would you compare these?
+
+
+# Vaccination coverage in Madagascar
+Now, we will read in data from the 2008-2009 Madagascar Demographic Health Survey (in the file: Madagascar2008-2009.csv). These large scale, cross-sectional surveys are conducted globally, freely available, and may contain relevant covariates. We will first bring the data:
+
+```{r}
+
+library(mgcv)
+dhs<-read.csv('Madagascar2008-2009.csv', header = TRUE)
+```
+We will focus on the variables 'age', 'measles.y', and the geographic location ('long' and 'lat'). measles.y is coded as a 1 if the mother can report on whether the child was vaccinated, otherwise it is coded as a 0. Some of the coordinates are incorrect, so let's make a new variable identifying which rows in the data set have true longitude and latitude coordinates. 
+```{r}
+good<-which(dhs$long != 0 & dhs$lat != 0, arr.ind = TRUE)
+```
+
+With this data, we can fit a very simple non-linear statistical model to vaccination coverage, which essentially ‘smooths’ across age, and ‘smooths’ across space. This is clearly very simplistic! But is presented here as a starting point from which further analyses could proceed. Here, we use the package mgcv, which fits ‘generalized additive models’ (or gams, see Wood et al. 2015), following a syntax much like the regression syntax in R, but where ‘s’ indicates ‘smoothed’ terms. Type ?gam into your console if you want to learnmore about this function. We fit this model keeping only the ‘good’ values defined above in the data-set.
+
+```{r}
+fit<-gam(measles.y~s(age.in.months)+s(long,lat), family = 'binomial', data = dhs[good,])
+```
+and we can see if these covariates significantly explain the patterns:
+```{r}
+summary(fit)
+```
+
+The stars tell us that both of these covariates significantly improve model fit. We can therefore plot the projected patterns over age and space inferred by this model, first looking at the predicted pattern over age:
+```{r}
+plot(fit, select = 1, trans = function(x)exp(x)/(1+exp(x)), xlim = c(0,60), ylim = c(0,1.5), xlab = 'Age in months', ylab = 'Proportion vaccinated')
+```
+
+Note that since we are using binomial (0,1) data, we’ve effectively fitted a logistic transform, so the function ‘trans’ is used to bring our results back to the 0,1 scale. The pattern predicted by the model broadly makes sense - most vaccination is delivered in very young kids (aged < 12 months) and then vaccination rates tail
+off. We can also plot patterns across space:
+
+```{r}
+library(maps) 
+vis.gam(fit,view=c("long","lat"),plot.type="contour",too.far=0.1,type="response",color="cm",ylim=c(-30,-10),xlim=c(35,55), xlab="", ylab="", main="") 
+points(dhs$long[good], dhs$lat[good], pch=19,cex=0.2)
+map(add=TRUE)
+```
+
+This again, broadly, makes sense - in Madagascar, it is reasonable to expect that the highest coverage (shown here in purple) will be around the capital, Antananarivo, which is towards the center of the country; and lower coverage (blue) in the south. To figure out how many susceptible children this distribution of vaccination coverage will result in (which then is of relevance for the SIR models, as we can project incidence through time, but also more formally defines the population at risk, and lets us known where most vulnerable children are to be found) we could bring in layers including the details of population density of children aged <5, or birth rates across space from worldpop.org.uk. See for example Takahashi et al. (2015).
+
+# Issues to consider with Generalized Additive Models
+We use gams here as a descriptive tool, and do not go into the details of issues associated with over-fitting, out-of-data prediction, choice of smooth terms, etc, but these should all be considered for more serious use of these methods!
+
+* TO DO: Do you see the same patterns with the three polio vaccines? Why would you (or wouldn't you) expect the same relationships? 
+
+# Calculating travel times and routes between destinations using a google api
+Below are some additional mapping packages. One common question is: how to calculate the distance between two points. We can use the googleway library to calculate the driving distance between locations. These results will be biased based on the quality of the road data and estimated driving times in google, so they may not be very accurate for particular areas of the world. But they will provide a rough estimate of the time it takes to go between locations, which will likely be an improvement on just Euclidean distance. The package googleway allows you to access the google api. Additional information is available here: https://cran.r-project.org/web/packages/googleway/vignettes/googleway-vignette.html. We will use multiple libraries to first 1) calculate the travel distance between the airport in Tana and Mahajanga, and then 2) plot the route on a google map.
+
+First, we will load the libraries: 
+```{r}
+library(googleway)
+library(leaflet)
+library(raster)
+```
+
+Next, we will use a google API code (which is also available at: https://developers.google.com/maps/documentation/javascript/)
+```{r}
+## Google directions API
+key<-"AIzaSyCuhQ4K6pVY1jl62qXvAmhNTiw3GQDoSKk"
+```
+
+Now, we will calculate the travel distance between the Antananarivo Airport, Antananarivo, Madagascara nd Mahajanga, Madagascar. This example will only include a single origin and destination, but you can easily adapt the code to calculate the distance between multiple pairs of locations (change the origin to a list of elements, similarly change the destination to a list of elements). You can list locations by their name, address, or longitude/latitude. However, if google has a hard time locating the name of a location, then the code will not work. It will be the most reliable to use longitude/latitude values. You may also change the mode of transport see (help(google_distance)). 
+
+
+```{r}
+## get the travel distance 
+test_distance<- google_distance(origin = "Antananarivo Airport, Madagascar", destination = "Mahajanga, Madagascar", key = key, mode = "driving")
+
+driving_distance<-test_distance$rows
+print(driving_distance)
+```
+
+Next, we will plot the route on a map from open streetmap. 
+```{r}
+test_route<- google_directions(origin = "Antananarivo Airport, Madagascar", destination = "Mahajanga, Madagascar", key = key, mode = "driving")
+
+# get encoded route
+route <- test_route$routes$overview_polyline$points
+test_route <- decode_pl(route)
+head(test_route)
+
+# plot result
+map <- leaflet() %>%
+  addTiles("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png")
+
+map %>% addPolylines(test_route$lon, test_route$lat)
+```
+
+test_route<- google_directions(origin = "Antananarivo Airport, Madagascar", destination = "Maroantsetra, Madagascar", key = key, mode = "driving")
