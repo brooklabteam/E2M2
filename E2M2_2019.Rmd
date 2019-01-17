@@ -86,7 +86,8 @@ Find your 'Challenge and Mentoring' Teams for the week [here](E2M2-2019/Admin/Ch
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:15am: Road Map and Daily Agenda __(Cara)__
-* 8:15-9:45am: Lecture w/Tutorial: Model Fitting in Practice – the Basic Concept __(Sarah)__
+* 8:15-8:30am: [Response to Feedback](E2M2-2019/5_Wed_Response_to_Feedback.pdf) __(Ben)__
+* 8:15-9:45am: [Lecture w/Tutorial: Model Fitting in Practice – the Basic Concept](E2M2-2019/5_ModelFitting.zip) __(Sarah)__
 * 9:45-10:45am: Lecture/Tutorial: Introduction to Spatial Modeling __(Ben)__
 * 10:45-11:15am: Coffee Break
 * 11:15-12:00pm:  Exercise: Epidemics Cards __(Cara + Sarah)__
