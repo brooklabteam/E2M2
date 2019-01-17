@@ -1,8 +1,8 @@
 ## Epidemic Cards Tutorial: computer exercise
 ## E2M2: Ecological and Epidemiological Modeling in Madagascar
-## November 27-December 1, 2016
+## January 12-21, 2019
 
-## Cara Brook, 2016
+## Cara Brook, 2019
 
 ## By now, you've been exposed to some of the variety of model
 ## types used to understand infectious disease data. We'll now work
@@ -234,10 +234,13 @@ discrete.mod <- function(R0, S.start, I.start, time){
 out <- discrete.mod(R0=2, S.start = 25, I.start = 1, time=time)
   
 ## (22) Write a function called "get.diffs" that returns a vector of differences between the model outputs 
-## for the infected population and your infected data for each trial at each of the 10 discrete timesteps.
+## for the infected population and your infected data and your model outputs of susceptible and your 
+## susceptible data for one trial at each of the 10 discrete timesteps.
 get.diffs <- function(real.dat1,mod.dat){
-  diff <- real.dat1$infecteds - mod.dat$infecteds
-  return(diff)
+  diff.inf <- real.dat1$infecteds - mod.dat$infecteds
+  diff.sus <- real.dat1$susceptibles - mod.dat$susceptibles
+  diff.tot <- diff.inf + diff.sus
+  return(diff.tot)
 }
 
 
@@ -248,7 +251,7 @@ get.diffs <- function(real.dat1,mod.dat){
 sum_sq <- function(par, real.dat, time){
   #run your function at the guess par
   
-  out.test <- discrete.mod(R0=par, S.start=1, I.start=26, time=time)
+  out.test <- discrete.mod(R0=par, S.start=25, I.start=1, time=time)
   #divide real dat by trials
   trial.list <- dlply(real.dat, .(trial))
   

@@ -1,8 +1,8 @@
 ## Epidemic Cards Tutorial: computer exercise
 ## E2M2: Ecological and Epidemiological Modeling in Madagascar
-## November 27-December 1, 2016
+## January 12-21, 2019
 
-## Cara Brook, 2016
+## Cara Brook, 2019
 
 ## By now, you've been exposed to some of the variety of model
 ## types used to understand infectious disease data. We'll now work
@@ -35,7 +35,7 @@ str(dat)
 ## (2) Select a subset of these data, choosing just those with R0 value = 2 and name that object "dat.R0"
 dat.R0 <- dat[dat$R0==2,]
 ## or
-dat.R0 <- subset(dat, R0==3)
+dat.R0 <- subset(dat, R0==2)
 head(dat.R0)
 
 ## (3) Next,  define the length of our time series. Make a vector titled "time" that is the length of 
@@ -43,6 +43,8 @@ head(dat.R0)
 max(dat.R0$timestep) ## 10 is the largest value
 time <- seq(1,10,1)
 time <- sort(unique(dat$timestep))
+
+## Look at the vector:
 time
 
 ## (4) Now, define a variable called "N" that equals your population size (Angelo's pile)
@@ -51,7 +53,7 @@ N <- 26
 
 ## (5) Using your data, plot Infecteds over time, with a different line for each trial.
 ## Color all the Infecteds lines as red.
-plot("n", xlim=c(0,12), ylim=c(0,30), ylab="cards", xlab="timestep")
+plot("n", xlim=c(0,10), ylim=c(0,26), ylab="cards", xlab="timestep")
 for (i in 1:length(unique(dat.R0$trial))){
   lines(x=dat.R0$timestep[dat.R0$trial==i], y=dat.R0$infecteds[dat.R0$trial==i], col = "red")
 }
@@ -146,53 +148,41 @@ model.S
 model.I
 
 ## (14) Now plot the infected output from your discrete time model in #13 and color it red.
-time0_10 <- seq(0,10,1)
+## Since your infected vector is 11 places long, you will need to add timestep 0 to your "times" vector to 
+## plot against your model output. Label this new time vector as: time0_10
+time0_10 <- c(0, time)
 time0_10
 plot("n", xlim=c(0,12), ylim = c(0,30), ylab="cards", xlab="timestep")
-lines(x=time0_10, y = model.I, col = "red", lwd=3, lty = 1)
+lines(x=time, y = model.I, col = "red", lwd=3, lty = 1)
 
 ## (15) And add a line to the graph with the susceptible output from your discrete time model in #13 and
 ## color it green. Add a legend to the plot in the top right-hand corner.
 lines(x=time0_10, y = model.S, col = "green", lwd=3, lty = 1)
 
+## (16) Then, let's plot our model and data together. Make your trials of infecteds
+## thin,  dashed red lines (hint: lty=2, lwd=.5)
+
 for (i in 1:length(unique(dat.R0$trial))){
   lines(x=dat.R0$timestep[dat.R0$trial==i], y=dat.R0$infecteds[dat.R0$trial==i], col = "red", lty=2, lwd=.5)
 }
 
-## (6) Now plot all the Susceptible trials as individual lines.
-## Color them as green.
+## (17) Next, do the same for susceptibles as dashed green lines.
 for (i in 1:length(unique(dat.R0$trial))){
   lines(x=dat.R0$timestep[dat.R0$trial==i], y=dat.R0$susceptibles[dat.R0$trial==i], col = "green",  lty=2, lwd=.5)
 }
 
 
-
-## You can see that the Susceptible population declines across the course of 
-## the epidemic. What would happen if births were added to this population?
+## (18) And, add a legend to the plot in the top right-hand corner that shows the difference between these line types.
+legend("topright", legend=c("susceptible-data", "susceptible-model", "infectious-data", "infectious-model"), col=c("green", "green", "red", "red"), lty=c(1,1,2,2), cex=.6)
 
 
 ## How do things change when R0 = 3? 
 ## Go back above, change R0 = 3, and repeat!
 
 ######################################################################
-##Part 3: How likely are we to recover the observed data, assuming
-## our model is true?
+##Part 3: How likely are we to recover the observed data, assuming our model is true?
 
-## We've now visualized our data and modeled our data, but how well does the 
-## model recapture the data? Let's look. First re-run your model and select
-## the data subset above, for which R0=2. Label that dataset as  "dat.R0"
-
-## Then, let's plot our model and data together.
-## (16) First plot your model lines for infected and susceptible, as you did above under #14 above (line 123).
-
-## (17) Then, add your trials of infected time series to the plot as dashed red lines (hint: lty=2)
-
-## (18) Next, do the same for susceptibles as dashed green lines.
-
-
-## (19) And, add a legend to the plot in the top righ-hand corner.
-
-
+## How well does the model recapture the data?
 ## We see that there is variation from trial-to-trial in our data and that,
 ## sometimes, our model fits the data better than other times. Why might this
 ## be? Did we get the same time series of S and I every time we played a new trial?
@@ -215,32 +205,45 @@ for (i in 1:length(unique(dat.R0$trial))){
 
 
 ## (20) First, wrap your discrete time model above into a function called "discrete.mod"
-## with the following 4 input arguments: R0, I.start, S.start, time. Have it "return" a time series of infecteds.
+## with the following 4 input arguments: R0, I.start, S.start, time. Have it "return" a 
+## dataframe of susceptibles and infecteds.
 
 
 
 ## (21) Test that your function is working by running the following line of script:
-#out <- discrete.mod(R0=2, S.start = 25, I.start = 1, time=seq(1,10,1))
-  
-## (22) Now, write a function called "get.diffs" that calculates the difference for each timestep between
-## the model output in #21 and one run of the data.
+## out <- discrete.mod(R0=2, S.start = 25, I.start = 1, time=time)
+## (Hint: Double-check that your 'time' vector still equals seq(1,10,1))
+
+
+## (22) Write a function called "get.diffs" that returns a vector of differences between the model outputs 
+## for the infected population and your infected data and your model outputs of susceptible and your 
+## susceptible data for one trial at each of the 10 discrete timesteps.
+
+
+
 
 ## Here it is:
 get.diffs <- function(real.dat1,mod.dat){
-  diff <- real.dat1$infecteds - mod.dat
-  return(diff)
+  diff.inf <- real.dat1$infecteds - mod.dat$infecteds
+  diff.sus <- real.dat1$susceptibles - mod.dat$susceptibles
+  diff.tot <- diff.inf + diff.sus
+  return(diff.tot)
 }
 
 
 ## (23) Write a function called "sum_sq" that calculates the sum of squared difference between your model
-## and the data across all trials.
+## and the data across all trials. (Hint: This will include 3 steps: You will first need to (1) divide 
+## your dataset into a list by unique trial using 'dlply', (2) use the function 'lapply' to apply "get.diffs"
+## across all trials, and (3) recombine the list of differences into a vector that you square and sum.)
+
+
 
 
 ## Here it is:
 sum_sq <- function(par, real.dat, time){
   #run your function at the guess par
   
-  out.test <- discrete.mod(R0=par, S.start=1, I.start=26, time=time)
+  out.test <- discrete.mod(R0=par, S.start=25, I.start=1, time=time)
   #divide real dat by trials
   trial.list <- dlply(real.dat, .(trial))
   
@@ -258,18 +261,30 @@ sum_sq <- function(par, real.dat, time){
   }
 }
 
-## (24) Use optim() to minimize the difference between your model and the data. Guess R0 as a value of 2.
-
-out.optim <- optim(par = 2, fn=sum_sq, real.dat=dat.R0, time=time)
-
-## (25) Save out.optim$value as the object R0.fit
-
-## (25) Run your model with the new value R0.fit.
-
-## (26) Plot your new model and compare with the data.
+## (24) Use the 'BFGS' method in the function optim() to minimize the difference between your model and 
+## the data, and save the returned values as an object called 'out.optim'. Guess the value of R0 as 2, meaning 
+## that you should use the following input variables: 
+## optim(par = 2, fn=sum_sq, real.dat=dat.R0, time=time, method="BFGS")
 
 
-## How well did we do at recapturing our data, as compared with our 'true model', plotted above?
+
+## (25) Save out.optim$par as the object R0.fit. How close is your value to R0=2? Why might it be different?
+
+
+## (25) Now run your model with the new value R0.fit and save the Infecteds output as "new.model"
+
+
+## (26) Plot your new model output and compare with the data. First plot your model I and S predictions
+
+
+
+## (27) Now, add your original data again.  Make your trials of infecteds as thin, red
+## lines (hint: lty=2, lwd=.5) and your trials of susceptibles as thin, dashed green lines.
+
+
+
+## How well does our fitted model recapture our data, as compared with our 'true model', plotted above in 
+## number 14 and 15?
 
 
 ## What does this tell us about the model fit?
