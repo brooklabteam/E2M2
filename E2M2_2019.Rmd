@@ -106,17 +106,17 @@ Find your 'Challenge and Mentoring' Teams for the week [here](E2M2-2019/Admin/Ch
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:30am: Road Map and Daily Agenda __(Cara)__
-* 8:30-10:00am: [Lecture/Tutorial: Model Selection and Comparison](E2M2-2019/6_Epidemic_Cards_Model_Comparison.zip) __(Cara)__
+* 8:30-10:00am: [Teaching/Tutorial: Model Selection and Comparison](E2M2-2019/6_Epidemic_Cards_Model_Comparison.zip) __(Cara)__
   * We will not be teaching this tutorial, but feel free to work through '[Model Comparison with Age Prevalence Data](E2M2-2019/6_Rodent-Age-Prevalence.zip)' on your own time.
 * 10:00-10:30am: Coffee Break
-* 10:30-12:00pm:  Lecture w/Tutorial: Introduction to Network Modeling __(Fidy)__
+* 10:30-12:00pm:  [Lecture w/Tutorial: Introduction to Network Modeling](E2M2-2019/6_Network_2019.zip) __(Fidy)__
 * 12:00pm-1:00pm: Lunch
 * 1:00-1:30pm: Group photo - Wear your E2M2 shirts!
 * 1:30-3:00pm: Lecture/Tutorial: Modeling Vector-Borne Disease __(Amy/Ben)__
 * 3:00-3:30pm: Coffee Break
-* 3:30-4:00pm: Research Snapshots __(instructors)__
-* 4:00-5:00pm: Mentor research presentations (10 min each) __(Mentors)__
-* 5:00-6:30pm: Work time + one-on-one student-instructor meetings __(all)__
+* 3:30-4:15pm: Research Snapshots __(instructors)__
+* 4:15-5:15pm: Mentor research presentations (10 min each) __(Mentors)__
+* 5:30-6:30pm: Work time + [one-on-one student-instructor meetings](E2M2-2019/6_Network_2019.zip) __(all)__
 * 6:30-7:30pm: Dinner
 
 
