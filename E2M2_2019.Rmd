@@ -112,7 +112,7 @@ Find your 'Challenge and Mentoring' Teams for the week [here](E2M2-2019/Admin/Ch
 * 10:30-12:00pm:  [Lecture w/Tutorial: Introduction to Network Modeling](E2M2-2019/6_Network_2019.zip) __(Fidy)__
 * 12:00pm-1:00pm: Lunch
 * 1:00-1:30pm: Group photo - Wear your E2M2 shirts!
-* 1:30-3:00pm: Lecture/Tutorial: Modeling Vector-Borne Disease __(Amy/Ben)__
+* 1:30-3:00pm: [Lecture/Tutorial: Modeling Vector-Borne Disease](E2M2-2019/6_VectorBorneDiseaseModels.zip) __(Amy/Ben)__
 * 3:00-3:30pm: Coffee Break
 * 3:30-4:15pm: Research Snapshots __(instructors)__
 * 4:15-5:15pm: Mentor research presentations (10 min each) __(Mentors)__
