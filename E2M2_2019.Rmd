@@ -114,7 +114,7 @@ Find your 'Challenge and Mentoring' Teams for the week [here](E2M2-2019/Admin/Ch
 * 1:00-1:30pm: Group photo - Wear your E2M2 shirts!
 * 1:30-3:00pm: [Lecture/Tutorial: Modeling Vector-Borne Disease](E2M2-2019/6_VectorBorneDiseaseModels.zip) __(Amy/Ben)__
 * 3:00-3:30pm: Coffee Break
-* 3:30-4:15pm: Research Snapshots __(instructors)__
+* 3:30-4:15pm: [Research Snapshots](E2M2-2019/6_ResearchSnapshots/6_ResearchSnapshots.zip) __(instructors)__
 * 4:15-5:15pm: Mentor research presentations (10 min each) __(Mentors)__
 * 5:30-6:30pm: Work time + [one-on-one student-instructor meetings](E2M2-2019/6_FridayMentoringGroups.pdf) __(all)__
 * 6:30-7:30pm: Dinner
