@@ -100,8 +100,6 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 6:30-7:30pm: Dinner
 
 
-
-
 **Thursday, Jan 9: “Adding Bells and Whistles”**
 
 * 6:30-8:00am: Breakfast
@@ -130,10 +128,12 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 11:00-12:00pm:  Lecture w/Tutorial: Introduction to Network Modeling 
 * 12:00pm-1:00pm: Lunch
 * 1:00-1:30pm: Group photo - Wear your E2M2 shirts!
-* 1:30-3:00pm: Lecture/Tutorial: Modeling Vector-Borne Disease 
+* 1:30-3:00pm: Lecture/Tutorial: Compartmental Model Extensions
+  * Modeling Vector-Borne Disease 
+  * Modeling Turtle Life History
 * 3:00-3:30pm: Coffee Break
-* 3:30-4:15pm: Research Snapshots __(instructors)__
-* 4:15-5:15pm: Mentor research presentations (10 min each) __(Mentors)__
+* 3:30-4:00pm: Research Snapshots __(instructors)__
+* 4:00-5:15pm: Mentor research presentations (10 min each) __(Mentors)__
 * 5:15-6:30pm: Work time + one-on-one student-instructor meetings
 * 6:30-7:30pm: Dinner
 
