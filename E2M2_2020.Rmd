@@ -41,7 +41,6 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 
 
 **Monday, Jan 6 “Dealing with Data”**
-* Daily Challenge :
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:30am: Road Map and Daily Agenda. Brief Introductions (animals worked well last year) 
@@ -67,6 +66,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 6:30-7:30pm: Dinner
 
 **Tuesday, Jan 7: “Building Simple Models”**
+
 * 6:30-8:00am: Breakfast
 * 8:00-8:15am: Road Map and Daily Agenda 
 * 8:15-10:00am: Lecture/Tutorial: Lecture: Linear regression and simple statistics
