@@ -4,29 +4,58 @@ title: "2020 Syllabus (Tentative)"
 
 Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_InstallPackages.html).
 
+**Thursday, Jan 9 - Saturday Jan 11: Mentor Research Workshop** 
 
-**Saturday, Jan 11: ‘R Bootcamp’ (attendance optional)** *(at [Institut Pasteur de Madagascar](http://www.pasteur.mg/) in Antananarivo)*
+* Half of the instructor team works with mentors on their research during this period. The other half teaches the R Bootcamp -- see below.
 
-* 8:30-9:00am: Brief Introductions 
-* 9:00-9:45am: Lecture: Intro to R Studio 
+**Thursday, Jan 9: ‘R Bootcamp’ (attendance optional)** 
+* 9:00-9:30am: Brief Introductions 
+* 9:30-10:30am: Lecture: Intro to R Studio 
   * Slides Only Here. Students should not follow along with their own computers yet.
-* 9:45-10:15am: Coffee Break
-* 10:15-11:15am: Small Groups: Software installation and catch-up. Mentors + instructors make sure all students have the proper materials installed and work through Intro Tutorial 
+* 10:30-11:00am: Coffee Break
+* 11:00am-12:00pm: Small Groups: Software installation and catch-up. Mentors + instructors make sure all students have the proper materials installed and work through Intro Tutorial 
   * Let's make only **1 Intro R Tutorial** for Workshop preparation and streamline topics across the 4 tutorials     taught in previous years.
-* 11:15am-12:00pm: Tutorial: Intro to R Studio 
+* 12:00-2:00pm: Lunch + extra time if certain students need extra time for downloads/installations.
+* 2:00-3:00pm: Tutorial: Intro to R Studio 
   * Here students actually start coding, but let's design the script such that they have a blank script that        challenges them to write their own code, then furnish a supplementary script with the answers to follow.
   * Include topics such as:
       * Knowing your working environment
       * Assigning variables
       * Basic arithmetic
       * Running a script
-* 12:00-1:00pm: Lunch
-* 1:00-3:00pm: Lecture/Tutorial: Exploring & visualizing data in R
+* 3:00-3:30pm: Coffee Break 
+* 3:30-5:00pm: Tutorial: Intro to R Studio
+  * continued from above
+  
+  
+**Friday, Jan 10: ‘R Bootcamp’ (attendance optional)** 
+
+* 9:00-10:30am: Lecture/Tutorial: Exploring & visualizing data in R
+  * Let's redesign script as above. Provide one script with blanks for the students to work through and a second   with the answers in case they get stuck.
+* 10:30-11:00am: Coffee Break
+* 11:00am-12:00pm: Lecture/Tutorial: Exploring & visualizing data in R
+  * Continued from above.
+* 12:00-1:00pm: Lunch 
+* 1:00-3:00pm: Lecture/Tutorial: Writing For-loops, If-Else Statements, and Functions in R 
   * Let's redesign script as above. Provide one script with blanks for the students to work through and a second   with the answers in case they get stuck.
 * 3:00-3:30pm: Coffee Break
-* 3:30-4:30pm: Lecture/Tutorial: Writing For-loops, If-Else Statements, and Functions in R 
-  * Let's redesign script as above. Provide one script with blanks for the students to work through and a second   with the answers in case they get stuck.
-* 4:30-5:30pm: Open mentoring session for outstanding questions
+* 3:30-5:00pm: Tutorial: Writing For-loops, If-Else Statements, and Functions in R 
+  * Continued from above.
+
+
+**Saturday, Jan 11: ‘R Bootcamp’ (attendance optional)** *(at [Institut Pasteur de Madagascar](http://www.pasteur.mg/) in Antananarivo)*
+
+* 9:00-10:30am: Lecture/Tutorial: Data cleaning in R
+* 10:30-11:00am: Coffee Break
+* 10:30am-12:00pm: Tutorial: Data cleaning in R
+   * Let's redesign script as above. Provide one script with blanks for the students to work through and a second   with the answers in case they get stuck.
+* 12:00-1:00pm: Lunch
+* 1:00-2:00pm:  Lecture/Tutorial: Intro to Spatial Visualization and Plotting
+  * The simplest bits of Amy's lecture (feeds in to the more advanced spatial modeling later in the workshop)
+* 2:00-3:00pm: Time for students to load and clean their own datasets if they have them. Otherwise, students are free to go home.
+* 3:00-3:30pm: Coffee Break
+* 3:30-5:00pm: Open mentoring session for outstanding questions or continued work on tutorials from above
+  * students can leave to go home whenever
 
 **Sunday, Jan 12: “Travel Day"**
 
@@ -53,16 +82,14 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 11:30am-12:00pm: Preparation for Women's March Madagascar 
 * 12:00-1:00pm: Lunch
 * 1:00-2:00pm: Introductions: 2-min student/mentor/instructor introductions
-* 2:30-3:30pm: Formulating research questions - let's walk through a stat Q and a mech Q entirely all the way           from question to compartmentments (no R code or equations needed yet) so that students know where they          are headed
+* 2:30-4:00pm: Formulating research questions - let's walk through a stat Q and a mech Q entirely all the way           from question to compartmentments (no R code or equations needed yet) so that students know where they          are headed
         * Will take a while. Move through stat model quickly, then, for mechanistic, brainstorm states and                processes, then cull them to the essential, then build boxes together
         * Break up with coffee break in the middle.
         * Try to get one question ecology-related and one disease related
-* 3:00-3:30pm: Coffee Break
-* 3:30-4:00pm: Formulating research questions (continued - finish here)
-* 4:30-5:30pm: Study Design and Data Collection 
+* 4:00-4:30pm: Coffee Break
+* 4:30-6:30pm: Study Design and Data Collection 
   * Ideally, let's have examples from both ecology and epidemiology. (Could combine with timeslot before into       one lecture).
   * Would be best to have a tutorial that shows how we do this. Power analysis, etc. Could we generate some data     to clean/analyze later? 
-* 5:30-6:30pm: Data cleaning tutorial?
 * 6:30-7:30pm: Dinner
 
 **Tuesday, Jan 14: “Building Simple Models”**
@@ -73,8 +100,8 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 10:00-10:30am: Coffee Break; prep for hike
 * 10:30am-1pm: Morning hike in Ranomafana National Park
 * 1:00-1:45pm: Lunch
-* 1:45-3:00pm: Exercise + Discussion: Dynamical Fever __(Mentors)__
-  * Need to prepare investigator guide sheet for students to fill out as they go, as well as script for mentors to follow as they present this
+* 1:45-3:00pm: Exercise + Discussion: Dynamical Fever 
+  * Have already prepared an investigator guide sheet for students to fill out as they go, as well as script for mentors to follow as they present this
 * 3:00-3:30pm: Coffee Break 
 * 3:30-5:30pm: Lecture/Tutorial: Introduction to Compartmental Models and Differential Equations
 * 5:30-6:30pm: Small Group Sessions: Refining research questions for modeling __(all instructors lead small groups)__
@@ -107,7 +134,8 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 8:15-8:30am: Response to Feedback
 * 8:30-10:00am: Lecture w/Tutorial: Introduction to Occupancy Modeling
 * 9:45-10:15am: Coffee Break
-* 10:30-12:00pm: Lecture/Tutorial: Introduction to Spatial Modeling
+* 10:30am-12:00pm: Lecture/Tutorial: Advances in Spatial Modeling
+  * Develop something that builds on the plotting from the Bootcamp but actually goes deeper (a real model)
 * 12:00-1:00pm: Lunch
 * 1:00-2:30pm: Model Telephone with Model Diagrams 
 * 2:30-3:00pm: Final research plans (HW) 
@@ -158,8 +186,10 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 6:00am: Board bus
 * Return to Antananarivo 
 
+**Monday, January 21**
+* Mahaliana and/or IPM are open with WiFi connections for students to upload documents. Perhaps we have 1-2 instructors and 1-2 mentors on hand for office hourse (could swap by half-day) to answer questions if students need help???
 
-**Monday, January 20: "Sharing Your Work"** *(at [Institut Pasteur de Madagascar](http://www.pasteur.mg/) in Antananarivo)*
+**Tuesday, January 20: "Sharing Your Work"** *(at [Institut Pasteur de Madagascar](http://www.pasteur.mg/) in Antananarivo)*
 
 * 9:00-11:00am: Closing ceremony and final student presentations 
 * 11:00am-12:00pm: Final Feedback Session
