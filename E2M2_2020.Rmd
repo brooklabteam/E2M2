@@ -9,6 +9,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * Half of the instructor team works with mentors on their research during this period. The other half teaches the R Bootcamp -- see below.
 
 **Thursday, Jan 9: ‘R Bootcamp’ (attendance optional)** 
+
 * 9:00-9:30am: Brief Introductions 
 * 9:30-10:30am: Lecture: Intro to R Studio 
   * Slides Only Here. Students should not follow along with their own computers yet.
