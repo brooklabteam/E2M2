@@ -70,7 +70,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
     * Address the following "bonus" challenges if desired: Fun-Translate function, Speaking French to Amy, ...?
 
 
-**Monday, Jan 13 “Dealing with Data”**
+**Monday, Jan 13: “Dealing with Data”**
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:30am: Road Map and Daily Agenda. Brief Introductions (animals worked well last year) 
@@ -187,11 +187,11 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 6:00am: Board bus
 * Return to Antananarivo 
 
-**Monday, January 21**
+**Monday, Jan 21**
 
 * Mahaliana and/or IPM are open with WiFi connections for students to upload documents. Perhaps we have 1-2 instructors and 1-2 mentors on hand for office hourse (could swap by half-day) to answer questions if students need help???
 
-**Tuesday, January 20: "Sharing Your Work"** *(at [Institut Pasteur de Madagascar](http://www.pasteur.mg/) in Antananarivo)*
+**Tuesday, Jan 20: "Sharing Your Work"** *(at [Institut Pasteur de Madagascar](http://www.pasteur.mg/) in Antananarivo)*
 
 * 9:00-11:00am: Closing ceremony and final student presentations 
 * 11:00am-12:00pm: Final Feedback Session
