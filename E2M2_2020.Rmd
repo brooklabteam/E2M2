@@ -4,22 +4,19 @@ title: "2020 Syllabus (Tentative)"
 
 Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_InstallPackages.html).
 
-**Thursday, Jan 9 - Saturday Jan 11: Mentor Research Workshop** 
+**Friday, Jan 3 - Sunday, Jan 5: Mentor Research Workshop** 
 
 * Half of the instructor team works with mentors on their research during this period. The other half teaches the R Bootcamp -- see below.
 
-**Thursday, Jan 9: ‘R Bootcamp’ (attendance optional)** 
+**Friday, Jan 3: ‘R Bootcamp’ (attendance optional)** 
 
 * 9:00-9:30am: Brief Introductions 
 * 9:30-10:30am: Lecture: Intro to R Studio 
-  * Slides Only Here. Students should not follow along with their own computers yet.
 * 10:30-11:00am: Coffee Break
-* 11:00am-12:00pm: Small Groups: Software installation and catch-up. Mentors + instructors make sure all students have the proper materials installed and work through Intro Tutorial 
-  * Let's make only **1 Intro R Tutorial** for Workshop preparation and streamline topics across the 4 tutorials     taught in previous years.
+* 11:00am-12:00pm: Small Groups: Software installation and catch-up. Mentors + instructors make sure all students have the proper materials installed and work through Intro Tutorial.
 * 12:00-2:00pm: Lunch + extra time if certain students need extra time for downloads/installations.
 * 2:00-3:00pm: Tutorial: Intro to R Studio 
-  * Here students actually start coding, but let's design the script such that they have a blank script that        challenges them to write their own code, then furnish a supplementary script with the answers to follow.
-  * Include topics such as:
+  * Includes:
       * Knowing your working environment
       * Assigning variables
       * Basic arithmetic
@@ -29,71 +26,52 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
   * continued from above
   
   
-**Friday, Jan 10: ‘R Bootcamp’ (attendance optional)** 
+**Saturday, Jan 4: ‘R Bootcamp’ (attendance optional)** 
 
-* 9:00-10:30am: Lecture/Tutorial: Exploring & visualizing data in R
-  * Let's redesign script as above. Provide one script with blanks for the students to work through and a second   with the answers in case they get stuck.
+* 9:00-10:30am: Lecture: Exploring & visualizing data in R
 * 10:30-11:00am: Coffee Break
-* 11:00am-12:00pm: Lecture/Tutorial: Exploring & visualizing data in R
+* 11:00am-12:00pm: Tutorial: Exploring & visualizing data in R
   * Continued from above.
 * 12:00-1:00pm: Lunch 
-* 1:00-3:00pm: Lecture/Tutorial: Writing For-loops, If-Else Statements, and Functions in R 
-  * Let's redesign script as above. Provide one script with blanks for the students to work through and a second   with the answers in case they get stuck.
+* 1:00-3:00pm: Lecture: Writing For-loops, If-Else Statements, and Functions in R 
 * 3:00-3:30pm: Coffee Break
 * 3:30-5:00pm: Tutorial: Writing For-loops, If-Else Statements, and Functions in R 
   * Continued from above.
 
 
-**Saturday, Jan 11: ‘R Bootcamp’ (attendance optional)** *(at [Institut Pasteur de Madagascar](http://www.pasteur.mg/) in Antananarivo)*
+**Sunday, Jan 5: ‘R Bootcamp’ (attendance optional)** *(at [Institut Pasteur de Madagascar](http://www.pasteur.mg/) in Antananarivo)*
 
 * 9:00-10:30am: Lecture/Tutorial: Data cleaning in R
 * 10:30-11:00am: Coffee Break
 * 10:30am-12:00pm: Tutorial: Data cleaning in R
-   * Let's redesign script as above. Provide one script with blanks for the students to work through and a second   with the answers in case they get stuck.
 * 12:00-1:00pm: Lunch
 * 1:00-2:00pm:  Lecture/Tutorial: Intro to Spatial Visualization and Plotting
-  * The simplest bits of Amy's lecture (feeds in to the more advanced spatial modeling later in the workshop)
 * 2:00-3:00pm: Time for students to load and clean their own datasets if they have them. Otherwise, students are free to go home.
 * 3:00-3:30pm: Coffee Break
 * 3:30-5:00pm: Open mentoring session for outstanding questions or continued work on tutorials from above
-  * students can leave to go home whenever
 
-**Sunday, Jan 12: “Travel Day"**
+**Monday, Jan 6: “Travel Day"**
 
 * 6:00am: Meet at Institut Pasteur for departure to Ranomafana (lunch stop Ambositra)
 * 6:30-7:30pm: Dinner
 * 7:30-8:30pm: Introductions and Beginning Malagasy Lession __(Mentors)__
 * 8:30-9:00pm: Ice Breakers 
-  * Ice Breaker teams like those from last year are good, but let's keep things simple. Teams should do the         following:
-    * Make a team name and logo.
-    * Address one course-related challenge per day (presented with each day - see below)
-    * Address the following "bonus" challenges if desired: Fun-Translate function, Speaking French to Amy, ...?
 
-
-**Monday, Jan 13: “Dealing with Data”**
+**Tuesday, Jan 7: “Dealing with Data”**
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:30am: Road Map and Daily Agenda. Brief Introductions (animals worked well last year) 
 * 8:30-10:00am: Lecture: What are We Doing Here? Data and Models 
-  * Lecture from last year needs to be amended to include terms 'stochastic' vs. 'deterministic' and 'discrete'   and 'continuous'
-  * Get rid of pink font.
 * 10:00-10:30am: Coffee Break
-* 10:30-11:30am: Intro to Epidemiology and Ecology
-  * Be sure to introduce basic epi terms like R0, incidence, prevalence, seroprevalence, herd immunity
-* 11:30am-12:00pm: Preparation for Women's March Madagascar 
+* 10:30-12:00pm: Intro to Epidemiology and Ecology
 * 12:00-1:00pm: Lunch
 * 1:00-2:00pm: Introductions: 2-min student/mentor/instructor introductions
-* 2:30-4:00pm: Formulating research questions - let's walk through a stat Q and a mech Q entirely all the way           from question to compartmentments (no R code or equations needed yet) so that students know where they          are headed
-        * Will take a while. Move through stat model quickly, then, for mechanistic, brainstorm states and                processes, then cull them to the essential, then build boxes together
-        * Break up with coffee break in the middle.
-        * Try to get one question ecology-related and one disease related
+* 2:30-4:00pm: Formulating research questions
 * 4:00-4:30pm: Coffee Break
-* 4:30-6:30pm: Study Design and Data Collection 
-  * Ideally, let's have examples from both ecology and epidemiology. (Could combine with timeslot before into       one lecture).
-  * Would be best to have a tutorial that shows how we do this. Power analysis, etc. Could we generate some data     to clean/analyze later? 
+* 4:30-6:30pm: Study Design and Data Collection, with examples from ecology and epidemiology.
 * 6:30-7:30pm: Dinner
 
-**Tuesday, Jan 14: “Building Simple Models”**
+**Wednesday, Jan 8: “Building Simple Models”**
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:15am: Road Map and Daily Agenda 
@@ -102,16 +80,15 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 10:30am-1pm: Morning hike in Ranomafana National Park
 * 1:00-1:45pm: Lunch
 * 1:45-3:00pm: Exercise + Discussion: Dynamical Fever 
-  * Have already prepared an investigator guide sheet for students to fill out as they go, as well as script for mentors to follow as they present this
 * 3:00-3:30pm: Coffee Break 
 * 3:30-5:30pm: Lecture/Tutorial: Introduction to Compartmental Models and Differential Equations
 * 5:30-6:30pm: Small Group Sessions: Refining research questions for modeling __(all instructors lead small groups)__
-  * Get all students to a point where they have a workable stat and mechanistic question
-  * For HW, assign: Creating a model world to address a research question, but **make sure it is not due until Thursday**
+  * All students should have a workable statistical and mechanistic question by the end of the session
+  * For HW, assign: Creating a model world to address a research question, but **it will not be due until Thursday**
 * 6:30-7:30pm: Dinner
 
 
-**Wednesday, Jan 15: “More Complicated Models”**
+**Thursday, Jan 9: “More Complicated Models”**
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:15am: Road Map and Daily Agenda __(Cara)__
@@ -120,7 +97,6 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 11:00am-12:00pm: Lecture w/Tutorial: Model Fitting in Practice – the Basic Concept
 * 12:00-1:00pm: Lunch
 * 1:00-2:00pm: Small Group Discussion: Reading a Research Paper __(Mentors)__
-  * Let's find a simpler paper for next year
 * 2:00-3:00pm: Exercise: Epidemics Cards
 * 3:00-3:30pm: Coffee Break
 * 3:30-5:00pm: Tutorial: Model Fitting with Epidemic Cards
@@ -128,7 +104,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 6:30-7:30pm: Dinner
 
 
-**Thursday, Jan 16: “Adding Bells and Whistles”**
+**Friday, Jan 10: “Adding Bells and Whistles”**
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:15am: Road Map and Daily Agenda 
@@ -136,19 +112,17 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 8:30-10:00am: Lecture w/Tutorial: Introduction to Occupancy Modeling
 * 9:45-10:15am: Coffee Break
 * 10:30am-12:00pm: Lecture/Tutorial: Advances in Spatial Modeling
-  * Develop something that builds on the plotting from the Bootcamp but actually goes deeper (a real model)
 * 12:00-1:00pm: Lunch
 * 1:00-2:30pm: Model Telephone with Model Diagrams 
 * 2:30-3:00pm: Final research plans (HW) 
 * 3:00-3:30pm: Coffee Break
-* 3:30-5:00pm: Exercise/Activity to generate/understand ecological data?
-  * Not sure what goes in here, but maybe some sort of game like Epidemic Cards/Dynamical Fever but with a focus     on ecological data?
+* 3:30-5:00pm: Exercise/Activity to generate/understand ecological data
 * 5:00-6:30pm: Work time + one-on-one student-instructor meetings
 * 6:30-7:30pm: Dinner
 * 8:00pm: Night walk Ranomafana National Park (optional)
 
 
-**Friday, Jan 17: “Refining Your Work”**
+**Saturday, Jan 11: “Refining Your Work”**
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:30am: Road Map and Daily Agenda 
@@ -168,7 +142,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 
 
 
-**Saturday, Jan 18: “Putting It All In Perspective”**
+**Sunday, Jan 12: “Putting It All In Perspective”**
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:15am: Road Map and Daily Agenda 
@@ -181,17 +155,17 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 6:30-9:00pm: Farewell dinner in Ranomafana town (Hotel Manja)
 * 9:30pm: Return bus to CVB
 
-**Sunday, Jan 19: (Travel Day)**
+**Monday, Jan 13: (Travel Day)**
 
 * 5:00-6:00am: Breakfast to go
 * 6:00am: Board bus
 * Return to Antananarivo 
 
-**Monday, Jan 21**
+**Tuesday, Jan 14**
 
-* Mahaliana and/or IPM are open with WiFi connections for students to upload documents. Perhaps we have 1-2 instructors and 1-2 mentors on hand for office hourse (could swap by half-day) to answer questions if students need help???
+* Mahaliana and/or IPM are open with WiFi connections for students to upload documents. We will have 1-2 instructors and 1-2 mentors on hand for office hourse to answer questions if students need help.
 
-**Tuesday, Jan 20: "Sharing Your Work"** *(at [Institut Pasteur de Madagascar](http://www.pasteur.mg/) in Antananarivo)*
+**Wednesday, Jan 15: "Sharing Your Work"** *(at [Institut Pasteur de Madagascar](http://www.pasteur.mg/) in Antananarivo)*
 
 * 9:00-11:00am: Closing ceremony and final student presentations 
 * 11:00am-12:00pm: Final Feedback Session
