@@ -1,12 +1,17 @@
 ---
+title: "**E^2^M^2^: Ecological & Epidemiological Modeling in Madagascar**"
 output:
   html_document: default
   pdf_document: default
 ---
+<style type="text/css">
+h1.title {
+  font-size: 31px;
+  color:black;
+}
+</style>
 <br>
-<div style="text-align: left; font-size: 2.2em;">
-**E^2^M^2^:  Ecological & Epidemiological Modeling in Madagascar**
-</div>
+
 
 <img src="E2M2-2019/E2M2-2019.JPG" alt="E2M2class" style="width: 70%; height: 70%;" align="center">
 
