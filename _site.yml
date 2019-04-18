@@ -4,7 +4,7 @@ output_dir: "."
 navbar:
   #title: "E2M2"
   left:
-    - text: "Application"
+    - text: "Home"
       href: index.html
     - text: "Preparation"
       href: preparation.html

@@ -1,0 +1,34 @@
+---
+title: "Untitled"
+author: "Cara Brook"
+date: "4/17/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<div style="text-align: left; font-size: 2em; color:#C11B17;">
+**Application Required Components**
+</div>
+
+
+
+Funding is available to cover transportation from Antananarivo to Ranomafana and back, in addition to room and board throughout the duration of the clinic for all participants (lodging in Antananarivo on Jan 3-5 and 12-14 not included). International applicants are welcome to apply but will need to provide their own funding for travel to Madagascar.
+
+If you have any questions about the appropriateness of your background or training for our course, either in language or in science, please do not hesitate to contact us straight away (email below). 
+
+
+For consideration in our clinic, applications must be submitted below along with one collated .pdf file by Friday, October 19, 2018 at midnight in your country of residence. The application filename should read as “E2M2_Application_YourLastName_YourFirstName.pdf”
+
+Please note that late applications will not be accepted.
+
+
+1. A current Curriculum Vitae (2 pages maximum)
+2. An Abstract (400 words maximum) describing a current or planned research project that incorporates modeling
+3. A Statement of Interest and Intent indicating how the experience of attending this workshop would enhance your short-term and long-term research goals (500-1000 words)
+
+The application process is expected to be highly competitive.
+Applications will become available for submission in September 2019. Please check back then.
+In the meantime, please do not hesitate contact Cara Brook [(cbrook@berkeley.edu)](cbrook@berkeley.edu), Fidisoa Rasambainarivo [(fidy@mahaliana.org)](fidy@mahaliana.org), or Tanjona Ramiadantsoa [(ramiadantsoa@wisc.edu)](ramiadantsoa@wisc.edu) with any questions or concerns. We hope to see you in January!
