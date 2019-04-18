@@ -1,7 +1,20 @@
-<br>
-<div style="text-align: center; font-size: 2em;">
-**Collaborating Institutions**
-</div>
+
+---
+title: "**Acknowledgements**"
+author: ""
+date: ""
+output:
+  html_document: default
+  pdf_document: default
+---
+
+<style type="text/css">
+h1.title {
+  font-size: 31px;
+  text-align: center;
+}
+</style>
+
 <br>
 <div style="text-align: center; font-size: 1.5em;">
 Many of the materials and methods used in E^2^M^2^ were adapted <br>
