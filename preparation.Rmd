@@ -6,10 +6,16 @@ output:
   html_document: default
   pdf_document: default
 ---
+<style type="text/css">
+h1.title {
+  font-size: 31px;
+  color:black;
+}
+</style>
 
 ---
 
-<div style="text-align: left; font-size: 1.8em; color:#C11B17;">
+<div style="text-align: left; font-size: 1.7em; color:#C11B17;">
 Please stay tuned for preparation updates for E^2^M^2^ 2020. Feel free to peruse information below from E^2^M^2^ 2019.
 </div>
 
