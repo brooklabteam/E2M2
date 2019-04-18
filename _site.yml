@@ -9,7 +9,7 @@ navbar:
     - text: "Preparation"
       href: preparation.html
     - text: "Acknowledgements"
-      href: sponsors.html
+      href: acknowledgements.html
     - text: "E2M2 2020"
       href: E2M2_2020.html
     - text: "E2M2 2019"
