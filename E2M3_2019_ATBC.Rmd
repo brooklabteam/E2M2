@@ -3,42 +3,26 @@ title: "E^2^M^3^ 2019 Syllabus (Tentative)"
 ---
 
 
-Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_InstallPackages.html).
+**Tuesday, July 30: 1:00-4:00pm** 
 
-**Tuesday, July 30: 1:00-4:30pm** 
-
-* 1:00-1:15pm: Brief Introductions of Everyone in the Workshop
-  * Share your name, institution, and your animagus. (or something)
-  * Take a poll of who has R installed and the packages successfully loaded (we will           send out instructions for this ahead of the workshop)
-  * While Cara is doing the exercise and Tanjona is giving his lecture, Sarah and C or T       can quietly help troubleshoot in the background. Students who can't catch up will then     just have to follow along with a neighbor.
-* 1:15-1:35pm: What is Science? Brainstorm of the scientific method (Exercise:         **Cara**)
-    * The precise steps can be summarized as:
-      1. Formulating a research question
-      **Have the group pick a question. Guide them to a tractable question for our purposes. Given the primary audience at ATBC, it would likely be best if this question was more ecological than epidemiological.**
-      2. Formulating hypotheses and building a model (walk through conceptually)
-      3. Collecting data
-      4. Fitting your model to your data
-      5. Evaluating and refining your model
-* 1:35-1:55pm: What are We Doing Here? Data and Models (Lecture: **Tanjona**)
-    * Can be structured however you lioke but needs to categorize and distinguish                mechanistic and statistical models.
-* 1:55-2:00pm: Stretch Break
-* 2:00-2:20pm: Intro to R and R Studio (Guided Computer Tutorial: **Sarah**)
-    * I'm thinking you'll just project your screen and walk through what's going on. They        can follow along on their computer or just watch -- your choice.
-    * Needs to includes:
-      * Explanation of R as a tool for modeling (to show how it fits into the class topic)
-      * Knowing your working environment
-      * Assigning variables
-      * Basic arithmetic
-      * Running a script
-      * Basic data exploration and visualization
-* 2:20-2:40pm: Linear Regression and Simple Statistics (Lecture: **Tanjona**)
-* 2:40-3:00pm: Constructing a Statistical Model (Guided Computer Tutorial: **Cara**)
-    * While Tanjona is lecturing and Sarah is introducing R, I'm going to try to generate some fake data that addresses whatever question they come up with.
-    * During this module, I'll walk through how to build a statistical model in R and try to parallel the takeaway points with whatever Tanjona emphasizes in his lecture (advance slides owuld be great!)
-* 3:00-3:05pm: Stretch Break  
-* 3:05-3:25pm: Introduction to Compartmental Models (Lecture: **Sarah**)
-* 3:25-3:45pm: Constructing a Mechanistic Model (Guided Computer Tutorial: **Cara**)
-* During this module, I'll use the same topic and fake data highlighted above but build a mechanistic model instead.
-* 3:45-4:05pm: Fitting, Evaluating, and Refining Your model (Lecture: **Tanjona**)
-* 4:05-4:20pm: Fitting Your Model to Data (Guided Computer Tutorial: **Cara**)
-    * We'll see if we get to this. Otherwise, we can advertize the modules online and promote E^2^M^2^
+* 1:00-1:15pm: Brief Introductions of everyone in the workshop
+  * Share your name, institution, and animagus. 
+* 1:15-1:40pm: What is Science? Brainstorm of the scientific method ([White Board Exercise](E2M3-ATBC-2019/1_What_is_Science.pdf): **Need one facilitator and one scribe!**)
+* 1:40-2:00pm: What are We Doing Here? Data and Models (Lecture: **Tanjona**)
+    * Can be structured however you like but needs to categorize and distinguish statistical and mechanistic models.
+    * While Tanjona is lecturing, I'm going to try to generate some fake data that addresses whatever question they come up with and can be modeled both statistically and mechanistically.
+* 2:00-2:05pm: Stretch Break
+* 2:05-2:30pm: Intro to Statistical Modeling ([White Board Exercise](E2M3-ATBC-2019/2_Intro_To_Statistical_Models.pdf): **Need one facilitator and one scribe!**)
+    * Goal of this session will be to give a brief intro as to what statistical modeling is, then have the students develop a conceptual framework for what their actual statistical model would look like (i.e. Identify the response variable, predictor variable(s), any random effects, the distribution, and the link function).
+    * Can be entirely a white-board based exercise if you prefer or can use some powerpoint material
+* 2:30-2:45pm: Constructing a Statistical Model (Guided Computer Tutorial: **Cara, or anyone else who wants to try!**) 
+    * Using fake data generated during Tanjona's lecture (above), I'm going to walk through how to build and fit a statistical model in R and try to parallel the takeaway points from Tanjona's lecture and the white board walk-through above 
+* 2:45-2:50pm: Stretch Break  
+* 2:50-3:15pm: Intro to Mechanistic Modeling ([White Board Exercise](E2M3-ATBC-2019/3_Intro_To_Compartmental_Models.pdf): **Need one facilitator and one scribe!**)
+    * Goal of this session will be to give a brief intro as to what mechanistic modeling is, then have the students           develop a conceptual framework for what their actual statistical model would look like
+    * Can be entirely a white-board based exercise if you prefer or can use some powerpoint material
+* 3:15-3:35pm: Constructing a Mechanistic Model (Guided Computer Tutorial:  **Cara, or anyone else who wants to try!**) 
+    * During this module, I'll use the same topic and fake data highlighted above but build a mechanistic model instead.
+    * I'll use a least squares function (maybe pre-prep it) to fit the model to the data
+* 3:35-4:00pm: Putting it all in Perspective (Lecture: **Tanjona**)
+    * Review the major concepts and advertise for E^2^M^2^ 2020!
