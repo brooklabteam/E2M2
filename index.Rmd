@@ -12,6 +12,16 @@ h1.title {
 </style>
 <br>
 
+---
+
+<div style="text-align: left; font-size: 2em; color:#C11B17;">
+**Apply now to take E^2^M^2^ 2020!**
+</div>
+<div style="text-align: left; font-size: 1.5em; color:#C11B17;">
+**[Application](https://airtable.com/shrNy6vl6xnKy5duF) Due Date: Friday, November 8, 2019**
+</div>
+
+---
 
 <img src="E2M2-2019/E2M2-2019.JPG" alt="E2M2class" style="width: 70%; height: 70%;" align="center">
 
@@ -34,8 +44,21 @@ A working outline of our 2020 syllabus is available for your perusal [here](E2M2
 ---
 
 <div style="text-align: left; font-size: 1.5em; color:#C11B17;">
-**Applications for interested participants in E^2^M^2^ 2020 will become available in September 2019. Please check back at that time.**
+**[Application](https://airtable.com/shrNy6vl6xnKy5duF) Due Date: Friday, November 8, 2019**
 </div>
+
+**We ask that anyone interested in attending E^2^M^2^ 2020, please fill out the application linked above by midnight on Friday, November 8, 2019 in your country of residence.** 
+
+The application includes the following:
+
+- Fill-in form with previous experience and qualifications
+- Curriculum Vitae (1-4 pages)
+- Research Abstract (half page): Please write a short summary of an ongoing or proposed research project that involves applying statistical or mechansitic models in ecology and/or epidemiology.
+- Statement of Interest and Intent (1 page): Please explain why you are interested in E^2^M^2^ and what you hope to gain from the course.
+
+Please do not hesitate contact Cara Brook [(cbrook@berkeley.edu)](cbrook@berkeley.edu), Tanjona Ramiadantsoa [(ramiadantsoa@wisc.edu)](ramiadantsoa@wisc.edu), or Fidisoa Rasambainarivo [(fidy@mahaliana.org)](fidy@mahaliana.org) with any questions or concerns. We look forward to reviewing your application!
+
+
 
 ---
 
