@@ -14,8 +14,11 @@ h1.title {
 
 ---
 
+<div style="text-align: left; font-size: 2em; color:#C11B17;">
+**Apply now to take E^2^M^2^ 2020!**
+</div>
 <div style="text-align: left; font-size: 1.5em; color:#C11B17;">
-**Applications for E^2^M^2^ 2020 are now closed. We will complete application review by the end of November. Thank you for your patience!**
+**[Application](https://airtable.com/shrNy6vl6xnKy5duF) Due Date: Friday, November 8, 2019**
 </div>
 
 ---
@@ -35,12 +38,26 @@ Throughout E^2^M^2^, students will participate in a series of interactive lectur
 
 The course will be targeted towards students in their third cycle or higher in biology, mathematics, medicine, public health, or related fields, though all are welcome to apply. The course will be taught primarily in English, though a subset of the faculty will be available to offer some translation into French and/or Malagasy. A working knowledge of the English language is required for admission; however, we will do our best to make the material accessible to students who find English challenging.
 
----
-
 A working outline of our 2020 syllabus is available for your perusal [here](E2M2_2020.html), and materials from previous years' courses can be accessed at [E^2^M^2^ 2018](E2M2_2018.html) and [E^2^M^2^ 2019](E2M2_2019.html).
 
 
-Please do not hesitate contact Cara Brook [(cbrook@berkeley.edu)](cbrook@berkeley.edu), Tanjona Ramiadantsoa [(ramiadantsoa@wisc.edu)](ramiadantsoa@wisc.edu), or Fidisoa Rasambainarivo [(fidy@mahaliana.org)](fidy@mahaliana.org) with any questions or concerns.
+---
+
+<div style="text-align: left; font-size: 1.5em; color:#C11B17;">
+**[Application](https://airtable.com/shrNy6vl6xnKy5duF) Due Date: Friday, November 8, 2019**
+</div>
+
+**We ask that anyone interested in attending E^2^M^2^ 2020, please fill out the application linked above by midnight on Friday, November 8, 2019 in your country of residence.** 
+
+The application includes the following:
+
+- Fill-in form with previous experience and qualifications
+- Curriculum Vitae (1-4 pages)
+- Research Abstract (half page): Please write a short summary of an ongoing or proposed research project that involves applying statistical or mechansitic models in ecology and/or epidemiology.
+- Statement of Interest and Intent (1 page): Please explain why you are interested in E^2^M^2^ and what you hope to gain from the course.
+
+Please do not hesitate contact Cara Brook [(cbrook@berkeley.edu)](cbrook@berkeley.edu), Tanjona Ramiadantsoa [(ramiadantsoa@wisc.edu)](ramiadantsoa@wisc.edu), or Fidisoa Rasambainarivo [(fidy@mahaliana.org)](fidy@mahaliana.org) with any questions or concerns. We look forward to reviewing your application!
+
 
 
 ---
