@@ -8,47 +8,47 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 
 * Half of the instructor team works with mentors on their research during this period. The other half teaches the R Bootcamp -- see below.
 
-**Friday, Jan 3: ‘R Bootcamp’ (attendance optional)** *(at [Institut Pasteur de Madagascar](http://www.pasteur.mg/) in Antananarivo)*
+**Saturday, Jan 4: ‘R Bootcamp’ (attendance optional)** *(at [Institut Pasteur de Madagascar](http://www.pasteur.mg/) in Antananarivo)*
 
-* 9:00-9:30am: Brief Introductions 
-* 9:30-10:30am: Lecture: Intro to R Studio 
+* 8:00-8:30am: Brief Introductions 
+* 8:30-9:30am: Lecture: Intro to R Studio 
+* 9:30-10:30am: Small Groups: Software installation and catch-up. Mentors + instructors make sure all students have the proper materials installed and work through Intro Tutorial.
 * 10:30-11:00am: Coffee Break
-* 11:00am-12:00pm: Small Groups: Software installation and catch-up. Mentors + instructors make sure all students have the proper materials installed and work through Intro Tutorial.
-* 12:00-2:00pm: Lunch + extra time if certain students need extra time for downloads/installations.
-* 2:00-3:00pm: Tutorial: Intro to R Studio 
+* 11:00am-12:30pm: Tutorial: Intro to R Studio 
   * Includes:
       * Knowing your working environment
       * Assigning variables
       * Basic arithmetic
       * Running a script
-* 3:00-3:30pm: Coffee Break 
-* 3:30-5:00pm: Tutorial: Intro to R Studio
-  * continued from above
-  
+* 12:30-1:30pm: Lunch + extra time if certain students need extra time for downloads/installations.
+* 1:30-2:30pm: Lecture: Exploring & visualizing data in R
+* 2:30-3:00pm: Coffee Break 
+* 3:00-5:00pm: Tutorial: Exploring & visualizing data in R
+
+
   
 **Saturday, Jan 4: ‘R Bootcamp’ (attendance optional)** 
 
-* 9:00-10:30am: Lecture: Exploring & visualizing data in R
 * 10:30-11:00am: Coffee Break
 * 11:00am-12:00pm: Tutorial: Exploring & visualizing data in R
   * Continued from above.
 * 12:00-1:00pm: Lunch 
 * 1:00-3:00pm: Lecture: Writing For-loops, If-Else Statements, and Functions in R 
 * 3:00-3:30pm: Coffee Break
-* 3:30-5:00pm: Tutorial: Writing For-loops, If-Else Statements, and Functions in R 
+* 3:30-5:00pm: 
   * Continued from above.
 
-
 **Sunday, Jan 5: ‘R Bootcamp’ (attendance optional)** 
-
-* 9:00-10:30am: Lecture/Tutorial: Data cleaning in R
-* 10:30-11:00am: Coffee Break
-* 10:30am-12:00pm: Tutorial: Data cleaning in R
-* 12:00-1:00pm: Lunch
-* 1:00-2:00pm:  Lecture/Tutorial: Intro to Spatial Visualization and Plotting
-* 2:00-3:00pm: Time for students to load and clean their own datasets if they have them. Otherwise, students are free to go home.
-* 3:00-3:30pm: Coffee Break
-* 3:30-5:00pm: Open mentoring session for outstanding questions or continued work on tutorials from above
+* 8:00-9:00am: Lecture: Writing For-loops, If-Else Statements, and Functions in R 
+* 9:00-10:00am: Tutorial: Writing For-loops, If-Else Statements, and Functions in R 
+* 10:00-10:30am: Coffee Break
+* 10:30-11:30am: Lecture/Tutorial: Data cleaning in R
+* 11:30am-12:30pm: Tutorial: Data cleaning in R
+* 12:30-1:30pm: Lunch
+* 1:30-2:30pm:  Lecture/Tutorial: Intro to Spatial Visualization and Plotting
+* 2:30-3:30pm: Time for students to load and clean their own datasets if they have them. Otherwise, students are free to go home.
+* 3:30-4:00pm: Coffee Break
+* 4:00-5:00pm: Open mentoring session for outstanding questions or continued work on tutorials from above
 
 **Monday, Jan 6: “Travel Day"**
 
