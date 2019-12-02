@@ -15,7 +15,7 @@ h1.title {
 ---
 
 <div style="text-align: left; font-size: 1.5em; color:#C11B17;">
-**Applications for E^2^M^2^ 2020 are now closed. We will complete application review by the end of November. Thank you for your patience!**
+**Applications for E^2^M^2^ 2020 have been received and reviewed. All students have been notified of their application status. If you have not received a notification, please email the E^2^M^2^ organizing team for clarification.**
 </div>
 
 ---
