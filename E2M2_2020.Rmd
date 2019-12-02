@@ -25,20 +25,8 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 2:30-3:00pm: Coffee Break 
 * 3:00-5:00pm: Tutorial: Exploring & visualizing data in R
 
-
-  
-**Saturday, Jan 4: ‘R Bootcamp’ (attendance optional)** 
-
-* 10:30-11:00am: Coffee Break
-* 11:00am-12:00pm: Tutorial: Exploring & visualizing data in R
-  * Continued from above.
-* 12:00-1:00pm: Lunch 
-* 1:00-3:00pm: Lecture: Writing For-loops, If-Else Statements, and Functions in R 
-* 3:00-3:30pm: Coffee Break
-* 3:30-5:00pm: 
-  * Continued from above.
-
 **Sunday, Jan 5: ‘R Bootcamp’ (attendance optional)** 
+
 * 8:00-9:00am: Lecture: Writing For-loops, If-Else Statements, and Functions in R 
 * 9:00-10:00am: Tutorial: Writing For-loops, If-Else Statements, and Functions in R 
 * 10:00-10:30am: Coffee Break
