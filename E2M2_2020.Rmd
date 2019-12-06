@@ -9,7 +9,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 
 * 8:00-8:30am: Brief Introductions __(Fidy, Cara, Tanjona)__
 * 8:30-9:30am: Lecture: Intro to R Studio __(Fidy)__
-* 9:30-10:30am: Small Groups: Software installation and catch-up. Mentors + instructors make sure all students have the proper materials installed and work through Intro Tutorial. __(Fidy, Christian, Fara, new mentors)__
+* 9:30-10:30am: Small Groups: Software installation and catch-up. Mentors + instructors make sure all students have the proper materials installed and work through Intro Tutorial. __(Fidy, Christian, new mentors)__
 * 10:30-11:00am: Coffee Break
 * 11:00am-12:30pm: Tutorial: Intro to R Studio  __(Fidy, with help from mentors)__
   * Includes:
@@ -25,10 +25,10 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 **Sunday, Jan 5: ‘R Bootcamp’ (attendance optional)** 
 
 * 8:00-9:00am: Lecture: Writing For-loops, If-Else Statements, and Functions in R __(Fidy)__
-* 9:00-10:00am: Tutorial: Writing For-loops, If-Else Statements, and Functions in R 
+* 9:00-10:00am: Tutorial: Writing For-loops, If-Else Statements, and Functions in R __(Fidy, with help from mentors)__
 * 10:00-10:30am: Coffee Break
 * 10:30-11:30am: Lecture/Tutorial: Data cleaning in R __(Christian)__
-* 11:30am-12:30pm: Tutorial: Data cleaning in R __(Christian)__
+* 11:30am-12:30pm: Tutorial: Data cleaning in R __(Christian, with help from mentors)__
 * 12:30-1:30pm: Lunch
 * 1:30-2:30pm:  Lecture/Tutorial: Intro to Spatial Visualization and Plotting __(Fidy)__
 * 2:30-3:30pm: Time for students to load and clean their own datasets if they have them. Otherwise, students are free to go home.
