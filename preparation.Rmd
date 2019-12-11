@@ -17,7 +17,7 @@ h1.title {
 
 <div style="text-align: left; font-size: 1.7em; color:red;">
 Congratulations on your selection for E^2^M^2^ 2020!
-Please read familiarize yourself with the preparation materials below in order to prepare for the upcoming workshop.
+Please familiarize yourself with the preparation materials below in order to prepare for the upcoming workshop.
 </div>
 
 ---
