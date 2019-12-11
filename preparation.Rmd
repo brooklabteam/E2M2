@@ -15,8 +15,9 @@ h1.title {
 
 ---
 
-<div style="text-align: left; font-size: 1.7em; color:#C11B17;">
-Congratulations on your selection for E^2^M^2^ 2020! We are excited to meet you soon. Please read familiarize yourself with the preparation materials below in order to prepare for the upcoming workshop.
+<div style="text-align: left; font-size: 1.7em; color:red;">
+Congratulations on your selection for E^2^M^2^ 2020!
+Please read familiarize yourself with the preparation materials below in order to prepare for the upcoming workshop.
 </div>
 
 ---
@@ -35,7 +36,7 @@ If you will not be bringing your own computer to the workshop, we will still exp
 
 ### **Preparatory tutorials**
 
-After you have installed R and R studio on your computer, please begin to work through the [four tutorials](E2M2-2018/E2M2_R_tutorials.zip) linked here. All of them are extensively annotated with directions. If you have any problems loading and/or the software, please let us know immediately. We expect you to be familiar with all material presented in these tutorials prior to your arrival to the E^2^M^2^ R Bootcamp on January 4.
+After you have installed R and R studio on your computer, **<span style="color:red">please begin to work through the [four tutorials](E2M2-2018/E2M2_R_tutorials.zip) linked here.</span>** All of them are extensively annotated with directions. If you have any problems loading and/or the software, please let us know immediately. We expect you to be familiar with all material presented in these tutorials prior to your arrival to the E^2^M^2^ R Bootcamp on January 4.
 
 ---
 
@@ -47,7 +48,9 @@ You may summarize recent, completed research that forms the basis for ongoing wo
 
 We recommend including 1-2 visual aids (e.g. figures or diagrams) that will help you explain key aspects of the research. Please keep the text on your slide to a minimum. Do not attempt to explain all of the details of your project – stick to the essentials and keep it simple. You will be kept to time.
 
-We ask that you please submit the PDF version of your slide [here](https://airtable.com/shrBZDKMYdliP58cx) by midnight on Friday, January 3 in advance of arrival to the workshop. Please use the following naming convention upon submission: "E2M2_2020_Prep_Slide_LastName_FirstName.pdf"
+**<span style="color:red"> We ask that you please submit the PDF version of your slide [here](https://airtable.com/shrBZDKMYdliP58cx) by midnight on Friday, January 3 in advance of arrival to the workshop.</span>**
+
+ Please use the following naming convention upon submission: "E2M2_2020_Prep_Slide_LastName_FirstName.pdf"
 
 
 ---
