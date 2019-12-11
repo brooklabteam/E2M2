@@ -16,7 +16,7 @@ h1.title {
 ---
 
 <div style="text-align: left; font-size: 1.7em; color:#C11B17;">
-Please stay tuned for preparation updates for E^2^M^2^ 2020. Feel free to peruse information below from E^2^M^2^ 2019.
+Congratulations on your selection for E^2^M^2^ 2020! We are excited to meet you soon. Please read familiarize yourself with the preparation materials below in order to prepare for the upcoming workshop.
 </div>
 
 ---
@@ -35,34 +35,26 @@ If you will not be bringing your own computer to the workshop, we will still exp
 
 ### **Preparatory tutorials**
 
-After you have installed R and R studio on your computer, please begin to work through the [four tutorials](E2M2-2018/E2M2_R_tutorials.zip) linked here. All of them are extensively annotated with directions. If you have any problems loading and/or the software, please let us know immediately. We expect you to be familiar with all material presented in these tutorials prior to your arrival to E^2^M^2^ on January 13.
+After you have installed R and R studio on your computer, please begin to work through the [four tutorials](E2M2-2018/E2M2_R_tutorials.zip) linked here. All of them are extensively annotated with directions. If you have any problems loading and/or the software, please let us know immediately. We expect you to be familiar with all material presented in these tutorials prior to your arrival to the E^2^M^2^ R Bootcamp on January 4.
 
 ---
 
 ### **Preparatory assignment**
 
-In addition to the above tutorials, we ask that you prepare one powerpoint slide (saved in PDF format) summarizing your research prior to your arrival to E^2^M^2^. Please be prepared to present your slide to the rest of the class in a short, 2-minute oral presentation on Monday, January 14, 2019.
+In addition to the above tutorials, we ask that you prepare one powerpoint slide (saved in PDF format) summarizing your research prior to your arrival to E^2^M^2^. Please be prepared to present your slide to the rest of the class in a short, 2-minute oral presentation at Centre ValBio on Tuesday, January 7, 2020.
 
 You may summarize recent, completed research that forms the basis for ongoing work, or you may give an overview of a new project that’s in development. You can present the subject of your application abstract if you desire, or you can choose a new topic you would like to develop during the workshop.
 
 We recommend including 1-2 visual aids (e.g. figures or diagrams) that will help you explain key aspects of the research. Please keep the text on your slide to a minimum. Do not attempt to explain all of the details of your project – stick to the essentials and keep it simple. You will be kept to time.
 
-We ask that you please submit the PDF version of your slide [here](https://airtable.com/shr7QNeyhYDhgXHlw) by midnight on Wednesday, January 9 in advance of arrival to the workshop. Please use the following naming convention upon submission: "E2M2_2019_Prep_Slide_LastName_FirstName.pdf"
+We ask that you please submit the PDF version of your slide [here](https://airtable.com/shrBZDKMYdliP58cx) by midnight on Friday, January 3 in advance of arrival to the workshop. Please use the following naming convention upon submission: "E2M2_2020_Prep_Slide_LastName_FirstName.pdf"
 
----
-
-### **Preparatory reading**
-
-Please also read the scientific paper, “Bubonic plaque: a metapopulation model of a zoonosis” by M.J. Keeling and C.A. Gilligan, linked [here](E2M2-2018/E2M2_Readings.zip), and take notes to answer the accompanying study questions in advance of your arrival on January 13.
 
 ---
 
 ### **Food, accommodation, and weather**
 
-All meals and lodging during the workshop will be provided, beginning with lunch on Sunday, January 13 (please eat breakfast prior to arrival) and ending with lunch on Sunday, January 20 (you will be responsible for your own dinner the evening after return to Tana). With the exception of lunch during both transit journeys, all meals will take place at Centre Valbio. Additionally, lunch will be provided at our mandatory closing session at Institut Pasteur de Madagascar (IPM) on Monday, January 21, as well as at the optional 'R bootcamp' which will precede the workshop at IPM on Saturday, January 12.
+All meals and lodging during the workshop will be provided, beginning with lunch on Monday, January 6 (please eat breakfast prior to arrival) and ending with lunch on Sunday, January 12 (you will be responsible for your own dinner the evening after return to Tana). With the exception of lunch during both transit journeys, all meals will take place at Centre ValBio. Additionally, lunch, snacks, and coffee will be provided at our mandatory closing session at Institut Pasteur de Madagascar (IPM) on Tuesday, January 14, as well as at the optional 'R bootcamp' which will precede the workshop at IPM on Saturday, January 4 and Sunday, January 5.
 
 Our workshop takes place at the onset of the rainy season in Madagascar’s summer. As such, it will be hot and humid in Ranomafana, so please pack accordingly. While most of our workshop will take place in the CVB conference room, some of our sessions will involve hiking outside. Please bring bug-repellent clothing (long sleeves and pants), hiking shoes, and rain gear. Each participant should also bring a backpack, a water bottle, and a headlamp or flashlight to take on the trail.
 
-<div style="text-align: left; font-size: 1.0em; color:#C11B17;">
-**Additionally, it is highly recommended that all foreign participants take malaria medication (i.e. malarone, doxycycline, or mefloquine) throughout the duration of their visit.**
-</div>
