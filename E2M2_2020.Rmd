@@ -89,6 +89,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 4:30-5:30pm: Lecture w/Tutorial: Introduction to Occupancy Modeling __(Tanjona)__
 * 5:30-6:30pm: Work time + one-on-one student-instructor meetings __(All Instructors)__
 * 6:30-7:30pm: Dinner
+* 7:30-8:30pm: Mentors practice presentations with instructors. Students do not need to attend.
 
 
 **Friday, Jan 10: “Refining Your Work”**
