@@ -45,10 +45,10 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:30am: Road Map and Daily Agenda. Brief Introductions (animals worked well last year) __(Cara)__
-* 8:30-10:00am: Lecture: What are We Doing Here? Data and Models __(Tanjona, Cara)__
-  * Includes introduction to ecology and epidemiology
+* 8:30-9:15: Lecture: Conservation Biology Meets Disease Ecology __(Cara)__
+* 9:15 - 10:00am: Lecture: What are We Doing Here? Data and Models __(Tanjona)__
 * 10:00-10:30am: Coffee Break
-* 10:30-12:00pm: Assessment: Challenges in Ecological and Epidemilogical Modeling __(Tanjona, Cara)__
+* 10:30-12:00pm: Reviewing Key Concepts in Mathematics __(Tanjona)__
 * 12:00-1:00pm: Lunch
 * 1:00-2:00pm: Introductions: 2-min student/mentor/instructor introductions __(Sarah)__
 * 2:30-4:00pm: Formulating research questions __(Cara)__
@@ -96,7 +96,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 6:30-8:00am: Breakfast
 * 8:00-8:15am: Road Map and Daily Agenda __(Cara)__
 * 8:15-8:30am: Response to Feedback __(Tanjona)__
-* 8:30-9:30am: Lecture/Tutorial: Model Selection and Comparison __(Tanjona)__
+* 8:30-9:30am: Lecture/Tutorial: Model Selection and Comparison __(Cara)__
 * 9:30-10:00am: Coffee Break
 * 10:30am-12:00pm: Lecture/Tutorial: Introduction to Network Modeling __(Andres)__
 * 12:00-1:00pm: Lunch
@@ -104,9 +104,6 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 2:30-3:00pm: Final research plans (HW) __(Cara)__
 * 3:00-3:30pm: Coffee Break
 * 3:30-5:00pm: Lecture/Tutorial: Compartmental Model Extensions __(Cara, Tanjona)__
-  * Modeling Vector-Borne Disease 
-  * Modeling Turtle Life History
-  * Advances in Spatial Modeling
 * 5:00-5:30pm: Research Snapshots __(All Instructors)__
 * 5:30-6:30pm: Work time + one-on-one student-instructor meetings __(All Instructors)__
 * 6:30-7:30pm: Dinner
@@ -120,11 +117,10 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 8:15-9:30am: Lecture: Modeling in Practice: The Life Cycle of a Modeling Project, from Conception to Publication  __(Andres)__
 * 9:30-10:30am: Mentor research presentations (10 min each) __(Mentors)__
 * 10:30-11:00am: Coffee Break
-* 11:00am-12:00pm: Re-Assessment: Challenges in Ecological and Epidemilogical Modeling __(Tanjona, Cara)__
+* 11:00am-12:00pm: Lecture: Looking back: How far have we come? __(Tanjona)__
 * 12:00-1:00pm: Lunch
-* 1:00-1:30pm: Lecture: Looking back: How far have we come? __(Tanjona)__
-* 1:30-2:00pm: Group photo - Wear your E^2^M^2^ shirts! 
-* 2:00-6:30pm: Work time + one-on-one student-instructor meetings __(All Instructors)__
+* 1:00-1:30pm: Group photo - Wear your E^2^M^2^ shirts! 
+* 1:30-6:30pm: Work time + one-on-one student-instructor meetings __(All Instructors)__
 * 6:30-9:00pm: Farewell dinner in Ranomafana town (Hotel Manja)
 * 9:30pm: Return bus to CVB
 
