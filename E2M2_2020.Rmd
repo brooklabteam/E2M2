@@ -8,10 +8,10 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 **Saturday, Jan 4: ‘R Bootcamp’ (attendance optional)** *(at [Institut Pasteur de Madagascar](http://www.pasteur.mg/) in Antananarivo)*
 
 * 8:00-8:30am: Brief Introductions __(Fidy, Cara, Tanjona)__
-* 8:30-9:30am: Lecture: Intro to R Studio __(Fidy)__
+* 8:30-9:30am: [Lecture: Intro to R Studio](E2M2-2020/Lectures/E2M2_2020_Rbasics.pdf) __(Fidy)__
 * 9:30-10:30am: Small Groups: Software installation and catch-up. Mentors + instructors make sure all students have the proper materials installed and work through Intro Tutorial. __(Fidy, Christian, Mentors)__
 * 10:30-11:00am: Coffee Break
-* 11:00am-12:30pm: Tutorial: Intro to R Studio  __(Fidy, with help from Mentors)__
+* 11:00am-12:30pm: [Tutorial: Intro to R Studio](E2M2-2020/Tutorials/E2M2_2020_Rbasics.R)  __(Fidy, with help from Mentors)__
   * Includes:
       * Knowing your working environment
       * Assigning variables
@@ -24,8 +24,8 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 
 **Sunday, Jan 5: ‘R Bootcamp’ (attendance optional)** 
 
-* 8:00-9:00am: Lecture: Writing For-loops, If-Else Statements, and Functions in R __(Fidy)__
-* 9:00-10:00am: Tutorial: Writing For-loops, If-Else Statements, and Functions in R __(Fidy, with help from mentors)__
+* 8:00-9:00am: [Lecture: Writing For-loops, If-Else Statements, and Functions in R](E2M2-2020/Lectures/R_Bootcamp_forLoopsFunctionsIfElse.pdf) __(Fidy)__
+* 9:00-10:00am: [Tutorial: Writing For-loops, If-Else Statements, and Functions in R](E2M2-2020/Tutorials/E2M2_Bootcamp_IfElse.zip) __(Fidy, with help from mentors)__
 * 10:00-10:30am: Coffee Break
 * 10:30-11:30am: Lecture/Tutorial: Data cleaning in R __(Christian)__
 * 11:30am-12:30pm: Tutorial: Data cleaning in R __(Christian, with help from Mentors)__
