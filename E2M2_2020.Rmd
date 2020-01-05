@@ -27,7 +27,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 8:00-9:00am: [Lecture: Writing For-loops, If-Else Statements, and Functions in R](E2M2-2020/Lectures/R_Bootcamp_forLoopsFunctionsIfElse.pdf) __(Fidy)__
 * 9:00-10:00am: [Tutorial: Writing For-loops, If-Else Statements, and Functions in R](E2M2-2020/Tutorials/E2M2_Bootcamp_If_Else.zip) __(Fidy, with help from mentors)__
 * 10:00-10:30am: Coffee Break
-* 10:30-11:30am: Lecture: Data cleaning in R __(Christian)__
+* 10:30-11:30am: [Lecture: Data Cleaning in R](E2M2-2020/Lectures/Data_Cleaning.pdf) __(Christian)__
 * 11:30am-12:30pm: [Tutorial: Data cleaning in R](E2M2-2020/Tutorials/CleaningData.zip) __(Christian, with help from Mentors)__
 * 12:30-1:30pm: Lunch
 * 1:30-2:30pm:  [Lecture/Tutorial: Intro to Spatial Visualization and Plotting](E2M2-2020/Tutorials/IntroSpatial.zip) __(Fidy)__
