@@ -72,7 +72,6 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
   * All students should have a workable statistical and mechanistic question by the end of the session
   * For HW, assign: Creating a model world to address a research question
 * 5:00-6:30pm: Mid-session feedback __(Program Evaluator)__
-* 5:00-6:30pm: Mentors practice presentations with instructors. Students do not need to attend. 
 * 6:30-7:30pm: Dinner
 
 
@@ -91,7 +90,8 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 4:00-5:30pm: Model Telephone with Model Diagrams __(Sarah)__
 * 5:30-6:30pm: Work time + one-on-one student-instructor meetings __(All Instructors)__
 * 6:30-7:30pm: Dinner
-* 8:00pm: Night walk Ranomafana National Park (optional) __(Mentors)__
+* 7:00-8:30pm: Mentors practice presentations with instructors. Students do not need to attend. 
+
 
 
 
@@ -111,6 +111,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 4:00-4:30pm: Research Snapshots __(All Instructors)__
 * 4:30-6:30pm: Work time + one-on-one student-instructor meetings __(All Instructors)__
 * 6:30-7:30pm: Dinner
+* 8:00pm: Night walk Ranomafana National Park (optional) __(Mentors)__
 
 
 
