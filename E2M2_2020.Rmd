@@ -44,7 +44,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 **Tuesday, Jan 7: “Dealing with Data”**
 
 * 6:30-8:00am: Breakfast
-* 8:00-8:30am: Road Map and Daily Agenda. Brief Introductions (animals worked well last year) __(Cara)__
+* 8:00-8:30am: Road Map and Daily Agenda. Brief Introductions __(Cara)__
 * 8:30-9:00: Lecture: Conservation Biology Meets Disease Ecology __(Cara)__
 * 9:00 - 10:00am: Lecture: What are We Doing Here? Data and Models __(Tanjona)__
 * 10:00-10:30am: Coffee Break
@@ -54,7 +54,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 2:30-4:00pm: Formulating research questions __(Cara)__
   * For HW, write your own research question 
 * 4:00-4:30pm: Coffee Break
-* 4:30-6:30pm: Lecture/Tutorial: Study Design and Data Collection, with examples from ecology and epidemiology __(Sarah)__
+* 4:30-6:30pm: Lecture/Tutorial: Study Design and Data Collection __(Sarah)__
 * 6:30-7:30pm: Dinner
 
 **Wednesday, Jan 8: “Building Simple Models”**
