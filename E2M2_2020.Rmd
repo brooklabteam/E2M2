@@ -25,7 +25,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 **Sunday, Jan 5: ‘R Bootcamp’ (attendance optional)** 
 
 * 8:00-9:00am: [Lecture: Writing For-loops, If-Else Statements, and Functions in R](E2M2-2020/Lectures/R_Bootcamp_forLoopsFunctionsIfElse.pdf) __(Fidy)__
-* 9:00-10:00am: [Tutorial: Writing For-loops, If-Else Statements, and Functions in R](E2M2-2020/Tutorials/E2M2_Bootcamp_IfElse.zip) __(Fidy, with help from mentors)__
+* 9:00-10:00am: [Tutorial: Writing For-loops, If-Else Statements, and Functions in R](E2M2-2020/Tutorials/E2M2_Bootcamp_If_Else.zip) __(Fidy, with help from mentors)__
 * 10:00-10:30am: Coffee Break
 * 10:30-11:30am: Lecture/Tutorial: Data cleaning in R __(Christian)__
 * 11:30am-12:30pm: Tutorial: Data cleaning in R __(Christian, with help from Mentors)__
