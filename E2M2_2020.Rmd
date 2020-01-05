@@ -41,7 +41,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 6:30-7:30pm: Dinner
 * 7:30-9:00pm: Introductions and Ice Breakers __(Mentors)__
 
-**Tuesday, Jan 7: “Dealing with Data”**
+**Tuesday, Jan 7: “Understanding Your System”**
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:30am: Road Map and Daily Agenda. Brief Introductions __(Cara)__
