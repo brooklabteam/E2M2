@@ -45,12 +45,12 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:30am: Road Map and Daily Agenda. Brief Introductions __(Cara)__
-* 8:30-9:00: [Lecture: Ecology Meets Epidemiology](E2M2-2020/Lectures/E2M2_2020_Ecology_Meets_Epidemiology.pdf) __(Cara)__
+* 8:30-9:00am: [Lecture: Ecology Meets Epidemiology](E2M2-2020/Lectures/E2M2_2020_Ecology_Meets_Epidemiology.pdf) __(Cara)__
 * 9:00 - 10:00am: Lecture: What are We Doing Here? Data and Models __(Tanjona)__
 * 10:00-10:30am: Coffee Break
 * 10:30-12:00pm: Reviewing Key Concepts in Mathematics __(Tanjona)__
 * 12:00-1:00pm: Lunch
-* 1:00-2:00pm: Introductions: 2-min student/mentor/instructor introductions __(Sarah)__
+* 1:00-2:00pm: Introductions: 2-min student introductions __(Sarah)__
 * 2:00-3:30pm: [Formulating research questions](E2M2-2020/Activities/HW_Formulating_Research_Questions.pdf) __(Cara)__
   * For HW, write your own research question 
 * 3:30-4:00pm: Coffee Break
