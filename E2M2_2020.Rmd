@@ -52,7 +52,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 12:00-1:00pm: Lunch
 * 1:00-2:00pm: Introductions: 2-min student introductions __(Sarah)__
 * 2:00-3:30pm: Formulating research questions __(Cara)__
-  * [For HW, write your own research question](E2M2-2020/Activities/HW_Formulating_Research_Questions.pdf)
+  * For HW, [write your own research question](E2M2-2020/Activities/HW_Formulating_Research_Questions.pdf)
 * 3:30-4:00pm: Coffee Break
 * 4:00-6:00pm: [Lecture](E2M2-2020/Lectures/E2M2_Study_Design.pdf)/[Tutorial](E2M2-2020/Tutorials/Data_Study_Design.zip): Study Design and Data Collection __(Sarah)__
 * 6:30-7:30pm: Dinner
@@ -71,7 +71,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 4:30-5:00pm: Small Group Sessions: Refining research questions for modeling __(all instructors lead small groups)__
   * All students should have a workable statistical and mechanistic question by the end of the session
   * For HW, assign: Creating a model world to address a research question
-* 5:00-6:30pm: Mid-session feedback __(Program Evaluator)__
+* 5:00-6:30pm: Mid-session feedback __(Christian)__
 * 6:30-7:30pm: Dinner
 
 
