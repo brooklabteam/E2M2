@@ -54,7 +54,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 2:00-3:30pm: [Formulating research questions](E2M2-2020/Activities/HW_Formulating_Research_Questions.pdf) __(Cara)__
   * For HW, write your own research question 
 * 3:30-4:00pm: Coffee Break
-* 4:00-6:00pm: Lecture/Tutorial: Study Design and Data Collection __(Sarah)__
+* 4:00-6:00pm: [Lecture](E2M2-2020/Lectures/E2M2_Study_Design.pdf)/[Tutorial](E2M2-2020/Tutorials/Data_Study_Design.zip): Study Design and Data Collection __(Sarah)__
 * 6:30-7:30pm: Dinner
 
 **Wednesday, Jan 8: “Building Simple Models”**
