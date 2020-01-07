@@ -84,7 +84,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 10:30-11:00am: Coffee Break
 * 11:00am-12:00pm: Lecture w/Tutorial: Introduction to Occupancy Modeling __(Tanjona)__
 * 12:00-1:00pm: Lunch
-* 1:30-2:30pm: Comparmental Modeling Extensions __(Cara)__
+* 1:30-2:30pm: Compartmental Modeling Extensions __(Cara, Tanjona)__
 * 2:30-3:30pm: Lecture/Tutorial: Introduction to Network Modeling __(Andres)__
 * 3:30-4:00pm: Coffee Break
 * 4:00-5:30pm: Model Telephone with Model Diagrams __(Sarah)__
