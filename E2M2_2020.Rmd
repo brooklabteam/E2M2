@@ -85,9 +85,9 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 12:00-1:00pm: Lunch
 * 1:00-2:00pm: Activity: The Metapopulation Game __(Tanjona)__
 * 2:00-2:30pm: Lecture: Modeling Insights from the Metapopulation Game __(Tanjona)__
-* 2:30-4:00pm: Model Telephone with Model Diagrams __(Sarah)__
-* 4:00-4:30pm: Coffee Break
-* 4:30-5:30pm: Work time + one-on-one student-instructor meetings __(All Instructors)__
+* 2:30-3:30pm: Model Telephone with Model Diagrams __(Cara)__
+* 3:30-4:00pm: Coffee Break
+* 4:00-5:30pm: Work time + [One-on-One Student-Instructor Meetings](E2M2-2020/Activities/OneOnOneInstructor_Meetings.pdf) __(All Instructors)__
 * 5:30-6:30pm: Mid-session feedback __(Christian)__
 * 5:30-6:30pm: Mentors practice presentations with instructors. Students do not need to attend. 
 * 6:30-7:30pm: Dinner
@@ -96,7 +96,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 **Friday, Jan 10: “Refining Your Work”**
 
 * 6:30-8:00am: Breakfast
-* 8:00-8:15am: Road Map and Daily Agenda __(Cara)__
+* 8:00-8:15am: Road Map, Daily Agenda, and Response to Feedback __(Cara)__
 * 8:15-9:15am: Lecture w/Tutorial: Model Fitting in Practice – the Basic Concept __(Sarah)__
 * 9:15-10:15am: Lecture/Tutorial: Introduction to Network Modeling __(Andres)__
 * 10:15-10:45am: Coffee Break

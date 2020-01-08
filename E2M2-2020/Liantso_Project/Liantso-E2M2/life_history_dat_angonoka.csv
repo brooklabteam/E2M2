@@ -1,0 +1,3 @@
+﻿species,age_1st_rep,IBI_fecundity,infant_IBI_survival,adult_IBI_survival,scenario,IBI
+Astrochelys_yniphora,15,1,0.96,0.97,best,1
+Astrochelys_yniphora,20,6,0.4,0.97,worst,1
