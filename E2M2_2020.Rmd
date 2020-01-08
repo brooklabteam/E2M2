@@ -69,6 +69,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 2:30-3:00pm: Coffee Break 
 * 3:00-4:30pm: Lecture/Tutorial: Introduction to Compartmental Models and Differential Equations __(Cara)__
 * 4:30-6:30pm: Small Group Sessions: Refining research questions for modeling __(all instructors lead small groups)__
+  * [Assigned groups are posted here](E2M2-2020/Activities/Small_Group_Assignments.pdf).
   * All students should have a workable statistical and mechanistic question by the end of the session
   * For HW, assign: [Creating a Model world + a Statistical Framework](E2M2-2020/Activities/Model_Framework_HW.pdf)
 * 6:30-7:30pm: Dinner
