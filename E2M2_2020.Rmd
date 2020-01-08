@@ -45,10 +45,10 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:30am: Road Map and Daily Agenda. Brief Introductions __(Cara)__
-* 8:30-9:00am: [Lecture: Ecology Meets Epidemiology](E2M2-2020/Lectures/E2M2_2020_Ecology_Meets_Epidemiology.pdf) __(Cara)__
-* 9:00 - 10:00am: Lecture: What are We Doing Here? Data and Models __(Tanjona)__
+* 8:30-9:00am: [Lecture: What are We Doing Here? Ecology Meets Epidemiology](E2M2-2020/Lectures/E2M2_2020_Ecology_Meets_Epidemiology.pdf) __(Cara)__
+* 9:00 - 10:00am: [Lecture: Data and Models](E2M2-2020/Lectures/Data_Models.pdf) __(Tanjona)__
 * 10:00-10:30am: Coffee Break
-* 10:30-12:00pm: Reviewing Key Concepts in Mathematics __(Tanjona)__
+* 10:30-12:00pm: [Lecture: Reviewing Key Concepts in Mathematics](E2M2-2020/Lectures/Basic_Math.pdf) __(Tanjona)__
 * 12:00-1:00pm: Lunch
 * 1:00-2:00pm: Introductions: 2-min student introductions __(Sarah)__
 * 2:00-3:30pm: Formulating research questions __(Cara)__
@@ -82,9 +82,9 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 8:15-8:30am: Response to Feedback __(Tanjona)__
 * 8:30-10:30am: Lecture/Tutorial: Introduction to Mixed Modeling __(Andres, Fara)__
 * 10:30-11:00am: Coffee Break
-* 11:00am-12:00pm: Lecture w/Tutorial: Introduction to Occupancy Modeling __(Tanjona)__
+* 11:00am-12:00pm: Activity: The Metapopulation Game __(Tanjona)__
 * 12:00-1:00pm: Lunch
-* 1:30-2:30pm: Compartmental Modeling Extensions __(Cara, Tanjona)__
+* 1:30-2:30pm: Lecture: Modeling Insights from the Metapopulation Game __(Tanjona)__
 * 2:30-3:30pm: Lecture/Tutorial: Introduction to Network Modeling __(Andres)__
 * 3:30-4:00pm: Coffee Break
 * 4:00-5:30pm: Model Telephone with Model Diagrams __(Sarah)__
@@ -102,7 +102,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 8:15-9:15am: Lecture w/Tutorial: Model Fitting in Practice – the Basic Concept __(Sarah)__
 * 9:15-10:15am: Lecture/Tutorial: Model Selection and Comparison __(Cara)__
 * 10:15-10:45am: Coffee Break
-* 10:45am-12:00pm: Small Group Discussion: Reading a Research Paper __(Fara, Mentors)__
+* 10:45am-12:00pm: [Small Group Discussion: Reading a Research Paper](E2M2-2020/Activities/Wesolowski_et_al_2016_Impact_of_RCV_on_CRS_in_Madagascar.pdf) __(Fara, Mentors)__
 * 12:00-1:00pm: Lunch
 * 1:00-1:45pm: Exercise: Epidemic Cards __(Christian, and Mentors)__
 * 1:45-3:00pm: Tutorial: Model Fitting with Epidemic Cards __(Cara)__
