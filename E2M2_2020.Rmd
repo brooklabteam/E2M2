@@ -61,17 +61,16 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:15am: Road Map and Daily Agenda 
-* 8:15-9:30am: Lecture/Tutorial: Lecture: Linear regression and simple statistics __(Andres, Fara)__
+* 8:15-9:30am: Lecture/Tutorial: Lecture: Linear regression and simple statistics __(Fara)__
 * 9:30-10:00am: Coffee Break; prep for hike
 * 10:00am-12:00pm: Morning hike in Ranomafana National Park
 * 12:00-1:00pm: Lunch
 * 1:00-2:30pm: Exercise + Discussion: Dynamical Fever __(Christian, Fara, Mentors)__
 * 2:30-3:00pm: Coffee Break 
 * 3:00-4:30pm: Lecture/Tutorial: Introduction to Compartmental Models and Differential Equations __(Cara)__
-* 4:30-5:00pm: Small Group Sessions: Refining research questions for modeling __(all instructors lead small groups)__
+* 4:30-6:30pm: Small Group Sessions: Refining research questions for modeling __(all instructors lead small groups)__
   * All students should have a workable statistical and mechanistic question by the end of the session
-  * For HW, assign: Creating a model world to address a research question
-* 5:00-6:30pm: Mid-session feedback __(Christian)__
+  * For HW, assign: [Creating a Model world + a Statistical Framework](E2M2-2020/Activities/Model_Framework_HW.pdf)
 * 6:30-7:30pm: Dinner
 
 
@@ -79,20 +78,18 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:15am: Road Map and Daily Agenda __(Cara)__
-* 8:15-8:30am: Response to Feedback __(Tanjona)__
-* 8:30-10:30am: Lecture/Tutorial: Introduction to Mixed Modeling __(Andres, Fara)__
-* 10:30-11:00am: Coffee Break
-* 11:00am-12:00pm: Activity: The Metapopulation Game __(Tanjona)__
+* 8:15-10:00am: Lecture/Tutorial: Introduction to Mixed Modeling __(Andres)__
+* 10:00-10:30am: Coffee Break
+* 10:30-11:30am: Activity: The Metapopulation Game __(Tanjona)__
+* 11:30am-12:30pm: Lecture: Modeling Insights from the Metapopulation Game __(Tanjona)__
 * 12:00-1:00pm: Lunch
-* 1:30-2:30pm: Lecture: Modeling Insights from the Metapopulation Game __(Tanjona)__
-* 2:30-3:30pm: Lecture/Tutorial: Introduction to Network Modeling __(Andres)__
+* 1:00-2:00pm: Lecture/Tutorial: Introduction to Network Modeling __(Andres)__
+* 2:00-3:30pm: Model Telephone with Model Diagrams __(Sarah)__
 * 3:30-4:00pm: Coffee Break
-* 4:00-5:30pm: Model Telephone with Model Diagrams __(Sarah)__
-* 5:30-6:30pm: Work time + one-on-one student-instructor meetings __(All Instructors)__
+* 4:30-5:30pm: Work time + one-on-one student-instructor meetings __(All Instructors)__
+* 5:30-6:30pm: Mid-session feedback __(Christian)__
+* 5:30-6:30pm: Mentors practice presentations with instructors. Students do not need to attend. 
 * 6:30-7:30pm: Dinner
-* 7:30-8:30pm: Mentors practice presentations with instructors. Students do not need to attend. 
-
-
 
 
 **Friday, Jan 10: “Refining Your Work”**
