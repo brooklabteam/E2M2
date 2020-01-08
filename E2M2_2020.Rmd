@@ -102,9 +102,9 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 8:15-9:15am: Lecture w/Tutorial: Model Fitting in Practice – the Basic Concept __(Sarah)__
 * 9:15-10:15am: Lecture/Tutorial: Model Selection and Comparison __(Cara)__
 * 10:15-10:45am: Coffee Break
-* 10:45am-12:00pm: [Small Group Discussion: Reading a Research Paper](E2M2-2020/Activities/Wesolowski_et_al_2016_Impact_of_RCV_on_CRS_in_Madagascar.pdf) __(Fara, Mentors)__
+* 10:45am-12:00pm: [Small Group Discussion: Reading a Research Paper](E2M2-2020/Activities/Wesolowski_et_al_2016_Impact_of_RCV_on_CRS_in_Madagascar.pdf) __(Fara, Sarah, Mentors)__
 * 12:00-1:00pm: Lunch
-* 1:00-1:45pm: Exercise: Epidemic Cards __(Christian, and Mentors)__
+* 1:00-1:45pm: Exercise: Epidemic Cards __(Christian, Cara, and Mentors)__
 * 1:45-3:00pm: Tutorial: Model Fitting with Epidemic Cards __(Cara)__
 * 3:00-3:30pm: Coffee Break
 * 3:30-4:00pm: Final research plans (HW) __(Cara)__
