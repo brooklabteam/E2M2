@@ -9,12 +9,11 @@
 ## In this tutorial, we will construct simple compartmental models and explore different structures of these models
 ##############################################################################
 ## Contents: 
-# Line 23: Modeling Population Growth
-# Line 80: Investigating continuous vs discrete time
-# Line 165: Structured population models
-# Line 205: Life-stages of a mosquito population
-# Line 264: Lotka-Volterra models of predator-prey dynamics
-# Line 319: Susceptible-Infected-Recovered models
+# Modeling Population Growth
+# Investigating continuous vs discrete time
+# Structured population models
+# Lotka-Volterra models of predator-prey dynamics
+# Susceptible-Infected-Recovered models
 ##############################################################################
 ## load your libraries first
 
@@ -36,41 +35,37 @@ library(deSolve)
 
 
 
-## Make a sub-data set called 'mada.pop' that is the row of your dataset which 
+## Make a sub-vector called 'mada.pop' that is the row of your dataset which 
 ## corresponds to Madagascar.
 
 
-## Make a second sub-dataset called 'france.pop' that corresponds to France.
-
-## Now, wee can calculate the growth rate, N_t+1/N_t, by taking a vector that goes from the 2nd until the last value in our population vectors (this is years 1961 until 2016, and thus we call it N_t+1). We will divide this by the the vector that goes from the first until the before-last column, which will correspond to 1960 to 2015. Relative to the first vector, this is N_t - i.e., the first number in the N_t+1 vector is 1961; and the first number in the N_t vector is 1960, and so on.  
-
-## estimate the growth rate for Madagascar and France
-growth.mada.pop <- mada.pop[2:length(mada.pop)]/mada.pop[1:(length(mada.pop)-1)]
-growth.france.pop <- france.pop[2:length(france.pop)]/france.pop[1:(length(france.pop)-1)]
-
-## and we can then plot these two things together
-
-par(mfrow=c(1,2)) #create a matrix of plots with 1 row and 2 cols
-plot(1960:2016,mada.pop, type="l",xlab="",  #plot mada pop data
-     ylab="Population size (World Bank estimate)", 
-     ylim=range(c(mada.pop,france.pop),na.rm=TRUE))  #define limits of the y axis
-points(1960:2016,france.pop, type="l",lty=2) #plot France pop data
-legend("topleft",legend=c("Madagascar","France"),lty=1:2,bty="n")
+## Make a second sub-vector called 'france.pop' that corresponds to France.
 
 
-plot(1960:2015,growth.mada.pop, type="l",xlab="", ylab="N(t+1)/N(t)",
-     ylim=range(c(growth.mada.pop,growth.france.pop),na.rm=TRUE))
-points(1960:2015,growth.france.pop, type="l",lty=2)
+## Now, we can calculate the growth rate, N_t+1/N_t, by taking a vector that goes from the
+## 2nd until the last value in our population vectors (this is years 1961 until 2016, and 
+## thus we call it N_t+1). We will divide this by the the vector that goes from the first 
+## until the before-last column, which will correspond to 1960 to 2015. Relative to the 
+## first vector, this is N_t - i.e., the first number in the N_t+1 vector is 1961; and the 
+## first number in the N_t vector is 1960, and so on.  
 
-abline(h=1)
 
-## The growth rates for Madagascar and France never drop below 1 (although France comes close), so these populations have been persistently growing. To predict the future, we could take the last value of population size that we have (2016) - and multiply it by the estimated most recent growth rate (which could be accessed by doing "growth.mada.pop[length(growth.mada.pop)]" as the command "length" tells us how long the vector is).  This is, of course, a very simple model of population growth! We could add age-structure, spatial variation, variation in birth rates, mortality rates, etc, to try and make a more precise prediction.   
+## First make a vector of Nt and Nt+1 for Mada
+
+## And do the same for France
+
+## Now estimate population growth rate for Madagascar and France as lambda = Nt+1/Nt
+
+## Is the population growing or declining?
+
+## Now plot (a) the population sizes for Madagascar and France from 1960-2016,
+## side-by-side with the (b) population growth rates
 
 
-## TO DO: 
-#### 1) Change the colour of the plots and the legend; 
-#### 2) Experiment with plotting out different countries (Germany? Tanzania?)
-#### 3) [maybe later] See if you can find which country in the entire data-base has the fastest growth, and when that occurred. You might want to use the 'which' command, with the argument 'arr.ind=TRUE' since this will index the matrix, i.e., tell you the row (which corresponds to the country) and the column (which corresponds to the year). Note that you will need to apply this to a matrix of growth rates!
+
+
+## The growth rates for Madagascar and France never drop below 1 (although France comes close).
+## What does this tell us?
 
 
 
@@ -78,72 +73,82 @@ abline(h=1)
 ## Investigating continuous vs discrete time
 ##############################################################################
 
-## Introduction: The model of population growth introduced above is framed in discrete time, i.e., the population is projected from one year to the next, without considering time-steps in between. To understand discrete time models better, we are going to consider an example where the population growth is constant, i.e. is the same every year. If we assume that the population growth rate is constant, i.e., say, N_t+1/N_t=lambda=1.1$, and the population starts with 10 individuals, we can project the population forward for 100 time-steps using the fact that N_t+1=lambda N_t$. This can be done  using a loop in R. First, we set up an empty vector to contain the population size at each time-step, and we set the first value to 10, and define the growth rate, lambda:  
+## Is the model above structured like a continuous or a discrete time model?
 
-N <- rep(NA,100) #create a vector for the population
-N[1] <- 10       #set N(0) to be 10, as described
-lambda <- 1.1    #set lambda, as described
+## Let's make a discrete time population model. We will use a for-loop to project a 
+## population 100 time-steps, starting with population size of 10, and with a population 
+## growth rate equal to 1.1
 
-## By using the command "for" we can loop over values of t from 2 to 100. For each value of t, we calculate the N_t for that time-step based on the last time-step, and then store it in our matrix: 
-  
-#loop t from 2 to 100, noting that t=1 corresponds to N(0)
-for (t in 2:100){
-  N[t] <- N[t-1]*lambda }
-
-## Alternatively, we can use the solution that N(t)=lambda^t N(0)$ (see the lecture):
-
-Ndirect <- N[1]*lambda^(0:99) 
+## Set up your (a) vector "N" of future population sizes, (b) fill in your initial population size,
+## and (c) define "lambda", the population growth rate.
 
 
-## Again, noting that the first value in the vector N[1] corresponds to t=0, we can plot the two estimates for comparison, here with red squares for N, and small blue points for Ndirect (the size of the points is set by the command 'cex', and making the 2^nd set of points smaller is necessary to be able to see both): 
 
-plot(0:99,N, pch=15,col="red", xlab="time", ylab="N")
-points(0:99,Ndirect,pch=19,col="blue", cex=0.5)
+## Now make a discrete time model using a for-loop to iterate this population 100 years
+## into the future.
 
-## These match perfectly, which is reassuring. If, instead, we choose to work with continuous time, we need to use a differential equation, dP(t)/dt = rP. This is equivalent to framing the growth of the population in continuous time, with an instantaneous rate of change r of P, the population size (here, I'm using P just to distinguish from the discrete time estimate, N; and again, we're assuming that the growth rate of the population is not changing through time). We can write out a function that defines this differential equation in R:
-  
-pgrow <- function(t,y,parms){
-  # The with() function gives access to the named values of parms within the
-  # local environment created by the function
-  with(c(as.list(y),parms),{
-    dPdt <- r*P
-    list(c(dPdt))
-  })
-}
 
-## To solve this, we're going to need to use the R library called "deSolve". We also need to define the starting variables and parameters: 
+## Does anyone remember the equation to shorten this discrete time model? 
+## If we do this, do we get the same result?
+
+
+
+## Plot the results together.
+
+
+## What if we want to make a continuous time model? How dowe write that?
+## (Hint: First, write the differential equation dN(t)/dt = rN in a function called 'ngrow')
+
+
+
+## To solve this, we're going to need to use the R library called "deSolve".
+## We also need to define the starting variables and parameters: 
 
 library(deSolve)              # Load libary to be used for numerical integration
-Pop <- c(P=10)                # Define starting variables (P(0)=10, as above)
+Pop <- c(N=10)                # Define starting variables (P(0)=10, as above)
 values <- c(r=log(lambda))    # Define parameters - use an approx of the lambda used in the discrete time ex above
 time.out <- seq(0,100,by=0.1) # Set up time-steps for variables - here go for 100 years
-pgrow(t=0,y=Pop,parms=values)  #try out the function for t=0
+ngrow(t=0,y=Pop,parms=values)  #try out the function for t=0
 
-## The function outputs the time derivative of P at the time t. This means that in order to get the (approximate) values of P at some time delta.t in the future, we need to calculate the equivalent of P(t+delta.t)=P(t)+rP(t)*delta.t. We can do this by hand: 
+## The function outputs the time derivative of N at the time t. 
+# This means that in order to get the (approximate) values of N at some time 
+# delta.t in the future, we need to calculate the equivalent of N(t+delta.t)=N(t)+rN(t)*delta.t. 
+# We can do this by hand: 
 
 delta.t <- 0.1                    # Set a small value for delta.t (0.1 day)
-pop.next <- Pop + unlist(pgrow(t=time,y=Pop,parms=values)) * delta.t
+pop.next <- Pop + unlist(ngrow(t=time,y=Pop,parms=values)) * delta.t
 pop.next
 
-## We could iterate this process, updating our values of Pop and time with each iteration to get a discrete-time approximation of the values of $P$ through time. However, differential equations describe the rates of change \textbf{in the limit as delta.t goes to zero}. It turns out that using the discrete time approximation of this process leads to rapid acummulation of error in our estimate of the state variables through time, even if we set our value of delta.t to be very small. Fortunately,  a number of algorithms have been developed to come up with better (both more accurate and more computationally efficient) approximations to the values of the state variables through time. One such is "lsoda" which we loaded above, and which we can run, here storing the result in a variable called 'Ncontinuous': 
+## We could iterate this process, updating our values of Pop 
+## and time with each iteration to get a discrete-time approximation 
+## of the values of $P$ through time. However, differential equations describe 
+## the rates of change. It turns out that using the discrete time approximation 
+## of this process leads to rapid acummulation of error in our estimate of the state 
+## variables through time, even if we set our value of delta.t to be very small. 
+## Fortunately,  a number of algorithms have been developed to come up with better 
+## (both more accurate and more computationally efficient) approximations to the values of the 
+## state variables through time. One such is "lsoda" which we loaded above, and which we can run, 
+## here storing the result in a variable called 'Ncontinuous': 
 
 
 Ncontinuous <- lsoda(
 y = Pop,               # Initial conditions for population
 times = time.out,      # Timepoints for evaluation
-func = pgrow,          # Function to evaluate
+func = ngrow,          # Function to evaluate
 parms = values         # Vector of parameters
 )
 
 ## We can check the first few lines of the output:
 head(Ncontinuous)
 
-## The data frame has 2 columns showing the values of time (labeled "time") and the state variable ("P", which is population size) through time. Let's see what has happened after 2 years, by printing it out:
+## The data frame has 2 columns showing the values of time (labeled "time") 
+## and the state variable ("N", which is population size) through time. Let's see what 
+## has happened after 2 years, by printing it out:
 subset(Ncontinuous,time==2)
 
 ## Now we can also plot the full time-series: 
 plot(Ncontinuous[,"time"],               # Time on the x axis
-     Ncontinuous[,"P"],                  # Number infected (I) on the y axis
+     Ncontinuous[,"N"],                  # Number people on the y axis
      xlab = "Time in days",     # Label the x axis
      ylab = "Pop size",         # Label the y axis
      main = " ",                # Plot title
@@ -152,13 +157,10 @@ plot(Ncontinuous[,"time"],               # Time on the x axis
      bty = "n")                 # Remove the box around the plot
 points(1:100,N, pch=19,col="red",cex=0.2)  #compare with our discrete time
 
-# Note that we overlaid our discrete time model predictions (the variable N) for comparison. This is close, but not an exact match to our discrete time version, which makes sense, since these are different processes.  
-
-## TO DO: 
-#### 1) See what happens to a population where r<0
-#### 2) Change the time resolution (set by "time.out"") and see if/where the results change
-
-                                
+# Note that we overlaid our discrete time model predictions (the variable N) for comparison.
+## This is close, but not an exact match to our discrete time version, which makes sense, 
+## since these are different processes.  
+                           
 ##############################################################################
 ## Structured population models 
 ##############################################################################
@@ -170,7 +172,13 @@ aj=0.8  #juvenile aging
 sa=0.8  #adult survival
 f=1     #adult fertility
 
-## These parameters can be estimated by tracking individuals in the field and counting the number that survive between censuses (here, distinguishing 'juvenile' and 'adult' stages), what number moved between stages, and the number of offspring produced at each stage. From this, we obtain survival and aging probabilities, and fertility. We place these parameters in a matrix which has as many rows and columns as we have stages. The columns define the stage that individuals start in, and the rows the stage that individuals end up in: 
+## These parameters can be estimated by tracking individuals in the field and
+## counting the number that survive between censuses (here, distinguishing 'juvenile' 
+## and 'adult' stages), what number moved between stages, and the number of offspring 
+## produced at each stage. From this, we obtain survival and aging probabilities, and 
+## fertility. We place these parameters in a matrix which has as many rows and columns as
+## we have stages. The columns define the stage that individuals start in, and the rows the 
+## stage that individuals end up in: 
 
 A <- matrix(0,2,2)
 A[1,1] <- sj*(1-aj)  #juvenile to juvenile = not aging and surving as a juvenile
@@ -217,7 +225,13 @@ return(list(c(dx, dy)))
 })
 }
 
-## where x reflects the prey population (hares, rabbits, lemurs, etc), and y reflects the predator population (wolves, foxes, fossa, etc). The prey population grows at a linear rate (alpha) and gets eaten by the predator population at the rate of (beta) per predator. The predator gains a certain amount vitality by eating the prey at a rate (delta), while dying off at another rate (gamma). Let's set some initial parameter values, and a starting population structure, and time-vector, as previously: 
+## where x reflects the prey population (hares, rabbits, lemurs, etc), 
+## and y reflects the predator population (wolves, foxes, fossa, etc). 
+## The prey population grows at a linear rate (alpha) and gets eaten by the predator 
+## population at the rate of (beta) per predator. The predator gains a certain amount 
+## vitality by eating the prey at a rate (delta), while dying off at another rate (gamma). 
+## Let's set some initial parameter values, and a starting population structure, and 
+## time-vector, as previously: 
 
 Pars <- c(alpha = 2, beta = .5, gamma = .2, delta = .6)
 State <- c(x = 10, y = 10)
@@ -229,7 +243,7 @@ out <- as.data.frame(ode(func = LotVmod, y = State, parms = Pars, times = Time))
 ## plot results
 matplot(out[,1],out[,-1], type = "l",    #separate 1st col (time), plot against other 2
         xlab = "time", ylab = "population", lty=1)  
-legend("topright", c("Rabbits", "Fossa"), lty = c(1,1), col = c(1,2), box.lwd = 0)
+legend("topright", c("Lemurs", "Fossa"), lty = c(1,1), col = c(1,2), box.lwd = 0)
 
 ## We can start with different starting numbers of rabbits and fosa, and overlay the two plots (using the command 'add=TRUE' in matplot). To distinguish the two runs, we use dashed lines for the second set of starting values using lty=2 (colours still represent predator and prey, as in the legend):  
 
@@ -238,31 +252,39 @@ out2 <- as.data.frame(ode(func = LotVmod, y = State2, parms = Pars, times = Time
 matplot(out[,1],out[,-1], type = "l", 
         xlab = "time", ylab = "population", lty=1)  #plot out our previous results
 matplot(out2[,1],out2[,-1], type = "l", lty=2,add=TRUE)  #add the new runs
-legend("topright", c("Rabbits", "Fossa"), lty = c(1,1), col = c(1,2), box.lwd = 0)
+legend("topright", c("Lemurs", "Fossa"), lty = c(1,1), col = c(1,2), box.lwd = 0)
 
-## This shows the same pattern, just slightly lagged in time. After the initial transient (detectable by slightly higher or lower peaks for the first few cycles), the two simulations start repeating the same pattern over and over. 
+## This shows the same pattern, just slightly lagged in time. 
+## After the initial transient (detectable by slightly higher or lower peaks for the 
+## first few cycles), the two simulations start repeating the same pattern over and over. 
 
-## We can try the same with different parameters, to understand what the parameters do, again overlaying the new results for comparison. Here, we double the parameter alpha, which determines prey reproduction: 
+## We can try the same with different parameters, to understand what the parameters do, 
+## again overlaying the new results for comparison. Here, we double the parameter alpha, 
+## which determines prey reproduction: 
   
 Pars2 <- c(alpha = 4, beta = .5, gamma = .2, delta = .6)
 out3 <- as.data.frame(ode(func = LotVmod, y = State, parms = Pars2, times = Time))
 matplot(out[,1],out[,-1], type = "l", 
         xlab = "time", ylab = "population", lty=1)  
 matplot(out3[,1],out3[,-1], type = "l", lty=2,add=TRUE)  
-legend("topright", c("Rabbits", "Fossa"), lty = c(1,1), col = c(1,2), box.lwd = 0)
+legend("topright", c("Lemurs", "Fossa"), lty = c(1,1), col = c(1,2), box.lwd = 0)
 
-## The two time-series settle down to different patterns. Interestingly, if more rabbits are being produced, you end up with lessrabbits, because you are getting more predators. Sometimes, this is referred to as the 'paradox of enrichment'. 
-
-## TO DO: 
-#### 1) Change the parameter values, see if there are combinations for which coexistence of rabbits and lynxes are impossible. Try and identify these parameters. Use some of the equilibria calculations that we did in class and add them to your plots. 
-                
+## The two time-series settle down to different patterns. Interestingly, if more lemurs
+## are being produced, you end up with less lemurs in the end, because you are getting 
+## more fossa in the system. Sometimes, this is referred to as the 'paradox of enrichment'. 
 
 
 ##############################################################################
 ## Susceptible-Infected-Recovered models  
 ##############################################################################
 
-## Let's think about another two species model: dynamics for a directly transmitted immunizing infection, with a short generation time (e.g., ~2 weeks), like measles. We need to keep track of 3 states, or types of individuals, i.e., susceptible individuals ('S'), infected individuals ('I') and recovered individuals ('R'). We can write the function that defines this process, assuming that the total population size is constant, which means we don't need to keep track of the ('R') compartment. This is:  
+## Let's think about another two species model: dynamics for a directly 
+## transmitted immunizing infection, with a short generation time (e.g., ~2 weeks), 
+## like measles. We need to keep track of 3 states, or types of individuals, i.e., 
+## susceptible individuals ('S'), infected individuals ('I') and recovered individuals ('R').
+## We can write the function that defines this process, assuming that the total population 
+## size is constant, which means we don't need to keep track of the ('R') compartment. 
+## This is:  
 
 sir <- function(t,y,parms){
   with(c(as.list(y),parms),{
@@ -272,19 +294,25 @@ sir <- function(t,y,parms){
   })
 }
 
-## We define a starting population with 500,000 susceptible individuals and 20 infected individuals; and a list of parameters that define the processes, beta, the transmission rate, and gamma, the recovery rate (defined as 1/infectious period): 
+## We define a starting population with 500,000 susceptible individuals and 20 infected 
+## individuals; and a list of parameters that define the processes, beta, the transmission 
+## rate, and gamma, the recovery rate (defined as 1/infectious period): 
   
 pop.SI <- c(S = 500000,I = 20)  
 values <- c(beta = 3.6,          # Transmission coefficient
             gamma = 1/5,         #recovery rate
             N=800000)            # population size (constant)
 
-## We can calculate the value of the basic reproduction number R_0 = beta / gamma, as follows:
+## We can calculate the value of the basic reproduction number R_0 = beta / gamma, 
+## as follows:
   
 R0 <- values["beta"]/values["gamma"] # value of R0
-R0                                   # Remember that the infection will spread (grow) when R0 > 1, just like the population grows when lambda > 1 in the structured population models above.
+R0                                  # Remember that the infection will spread (grow) 
+                                    #  when R0 > 1, just like the population grows when 
+                                    # lambda > 1 in the structured population models above.
 
-## As in the population example, we can use the function lsoda, here taking as our time-unit 1 day, setting a small time-step, and running it out across 1 year (365 days): 
+## As in the population example, we can use the function lsoda, here taking as our time-unit
+# 1 day, setting a small time-step, and running it out across 1 year (365 days): 
 ts.sir <- data.frame(lsoda(
   y = pop.SI,                   # Initial conditions for population
   times = seq(0,365,by=0.1),   # Timepoints for evaluation
@@ -301,9 +329,12 @@ plot(ts.sir[,"time"],ts.sir[,"S"], xlab="Time", ylab="Susceptible", type="l", co
 lines(ts.sir[,"time"],ts.sir[,"I"], xlab="Time", ylab="Infected", type="l", col="red")
 legend("topright", c("S", "I"), col = c("green", "red"), lty=c(1,1),  box.lwd = 0)
 
-## The epidemic burns itself out (i.e., at the end, the number of infected individuals is zero), but, interestingly, not all susceptible individuals are infected (i.e., the number of susceptibles at the end is > 0). This is the phenomenon of herd immunity. 
+## The epidemic burns itself out (i.e., at the end, the number of infected individuals 
+## is zero), but, interestingly, not all susceptible individuals are infected (i.e., the 
+## number of susceptibles at the end is > 0). This is the phenomenon of herd immunity. 
 
-## Now we can re-run the analysis for a less infectious pathogen, i.e. beta is lower, but with the same population parameters:
+## Now we can re-run the analysis for a less infectious pathogen, i.e. beta is lower, but
+## with the same population parameters:
 
 lower.values <- c(beta = 0.9,   # Transmission coefficient decreases from 3.6 to .9
             gamma = 1/5,         #recovery rate
