@@ -105,7 +105,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 1:00-1:45pm: Exercise: Epidemic Cards __(Christian, Cara, and Mentors)__
 * 1:45-3:00pm: Tutorial: Model Fitting with Epidemic Cards __(Cara)__
 * 3:00-3:30pm: Coffee Break
-* 3:30-4:00pm: Final research plans (HW) __(Cara)__
+* 3:30-4:00pm: [Final research plans (HW)](E2M2-2020/Activities/E2M2-Final-Research-Plan.pdf) __(Cara)__
 * 4:00-4:30pm: Research Snapshots __(All Instructors)__
 * 4:30-6:30pm: Work time + one-on-one student-instructor meetings __(All Instructors)__
 * 6:30-7:30pm: Dinner
