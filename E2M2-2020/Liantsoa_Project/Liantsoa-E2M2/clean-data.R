@@ -104,7 +104,7 @@ p8 <- p7 + ylab("count per patrol") +
 print(p8)
 
 #save this plot - will save autmoatically to your working directory
-ggsave(file = "Liantso_cumulative_plot.pdf",
+ggsave(file = "Liantsoa_cumulative_plot.pdf",
        units="mm",  
        width=40, 
        height=50, 

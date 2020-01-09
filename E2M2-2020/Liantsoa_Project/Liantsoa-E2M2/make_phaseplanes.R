@@ -8,6 +8,9 @@ library(ggplot2)
 #load data
 ang.dat <- read.csv(file="life_history_dat_angonoka.csv", header = T,stringsAsFactors = F)
 head(ang.dat)
+names(ang.dat)[1] <- "species"
+#divide fecundity in half because we model only females
+ang.dat$IBI_fecundity <- ang.dat$IBI_fecundity/2
 
 isocline.survival.wrap <- function(df, p_sequence){
   #new version essentially plots isocline wrap based on the age at first rep for each species
@@ -164,7 +167,8 @@ wrap.isocline.survival <- function(dat1, type, p_sequence, do.plot, do.save, fil
     #then overwrite Pteropus to use Eidolon
     #dat1$infant_annual_survival[dat1$species=="Pteropus rufus"] = dat1$infant_annual_survival[dat1$species=="Eidolon dupreanum"]
     
-    quartz()
+    
+    
     
     p <-  ggplot(data=isocline.df) + facet_grid(species~.) +
       geom_ribbon(data =  plot.upper.df, aes(x= IBI_adult_survival_rate, ymin=IBI_infant_survival_rate, ymax=1), colour="black", fill="gray85") + #color above line
@@ -176,8 +180,8 @@ wrap.isocline.survival <- function(dat1, type, p_sequence, do.plot, do.save, fil
             axis.title.x=element_text(size=20), axis.title.y=element_text(size=20), 
             axis.text.x=element_text(size=17), axis.text.y=element_text(size=17), panel.spacing = unit(.5, "cm")) + 
       xlab("adult annual survival") + ylab("juvenile annual survival") +
-      annotate("text", x=.94, y=.8, label="population\ngrowth", size=3.5, fontface="bold") + 
-      annotate("text", x=.4, y=.5, label="population\nextinction",colour="white", size=3.5, fontface="bold") +
+      annotate("text", x=.955, y=.8, label="population\ngrowth", size=3, fontface="bold") + 
+      annotate("text", x=.4, y=.5, label="population\nextinction",colour="white", size=3, fontface="bold") +
       geom_segment(data=dat1, aes(x=adult_IBI_survival, y=0, xend=adult_IBI_survival, yend=1), linetype=2, size=1, color="magenta") +
       geom_point(data=dat1, aes(x=adult_IBI_survival, y=infant_IBI_survival), shape=18, size=6, color="magenta")
     
