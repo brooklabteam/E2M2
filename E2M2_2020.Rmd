@@ -118,6 +118,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:15am: Road Map and Daily Agenda 
+  * Please make edits to [this google doc](https://docs.google.com/spreadsheets/d/14GL_uFwMGRIj2E93s-AZA4jgkAz4eaNhWXWvjwcbpXc/edit?usp=sharing) by **midnight on Sunday, January 12** if you would like to change how your name is written on your final certificate!
 * 8:15-9:15am: Lecture: Modeling in Practice: The Life Cycle of a Modeling Project, from Conception to Publication  __(Andres)__
 * 9:15-10:30am: Lecture/Tutorial: Model Selection and Comparison __(Cara)__
 * 10:30-11:00am: Coffee Break
@@ -140,6 +141,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 **Monday, Jan 13**
 
 * IPM Salle de Direction is open with WiFi connections for students to upload documents. We will have 1-2 instructors and 1-2 mentors on hand for office hourse to answer questions if students need help.
+* **Please upload your final slide presentations [here](https://airtable.com/shrzMuduT6Vrh5zx2) by midnight on Monday, January 13, 2020!**
 
 **Tuesday, Jan 14: "Sharing Your Work"** *(at [Institut Pasteur de Madagascar](http://www.pasteur.mg/) in Antananarivo)*
 
