@@ -10,32 +10,17 @@ rm(list-ls())
 dat = read.csv(file="WN.csv", header = T, stringsAsFactors = F)
 head(dat)
 
+
 #subset to variables of interest
-dat.sub <- dplyr::select(dat, Ordre, Genre.et.especes, Date.prlvs, A, SX, Res)
+dat.sub <- dplyr::select(dat, Ordre, Genre.et.especes, Region, Date.prlvs, A, SX, Res)
 head(dat.sub)
-names(dat.sub) <- c("order", "species", "date", "class", "sex", "res")
+names(dat.sub) <- c("order", "species", "region", "date",  "class", "sex", "res")
 unique(dat.sub$sex) 
 unique(dat.sub$class)
 unique(dat.sub$order)
 dat.sub$date = as.Date(dat.sub$date, format = "%m/%d/%y")
 
-#get month and year from date
-dat.sub$year = year(dat.sub$date)
-dat.sub$month = month(dat.sub$date)
-
-#look at seroprevalence in wet vs. dry
-dat.sub$season <- NA
-dat.sub$season[dat.sub$month==1|dat.sub$month==11|dat.sub$month==12] <- "wet"
-dat.sub$season[dat.sub$month==5] <- "dry"
-
-dat.seas <- ddply(dat.sub, .(season, order, species), summarize, N_pos = sum(res), N_tot=length(res))
-dat.seas$seroprevalence <- dat.seas$N_pos/dat.seas$N_tot
-ggplot(data=dat.seas) + geom_point(aes(x=season, y=seroprevalence, color=species, size=N_tot))
-#it looks like the seroprevalence is actually higher in the dry season
-#try a boxplot
-boxplot(seroprevalence~season, data=dat.seas, ylab = "seroprevalence by species")
-
-#model it from original data
+#check out 'risk factors' for testing seropos to WNV
 dat.sub$season = as.factor(dat.sub$season)
 dat.sub$species = as.factor(dat.sub$species)
 dat.sub$class = as.factor(dat.sub$class)
@@ -71,11 +56,11 @@ dat.spp$outline = factor(dat.spp$outline)
 colz= c('0'="black", '1'="red")
 
 
-  ggplot(data=dat.spp) + geom_bar(aes(x=species, y=seroprevalence, fill=seroprevalence, color=outline), stat = "identity", size = 1.1, show.legend = F) +
+p1<-  ggplot(data=dat.spp) + geom_bar(aes(x=species, y=seroprevalence, fill=seroprevalence, color=outline), stat = "identity", size = 1.1, show.legend = F) +
                         geom_label(aes(x=species, y=seroprevalence+.05, label=label),label.size=0, size=1.9, fill=NA) + theme_bw() + scale_color_manual(values=colz) +
                         theme(axis.text.x = element_text(angle=90, face="italic"), axis.title.x = element_blank(), panel.grid = element_blank()) +
                         scale_fill_continuous(low="white", high="darkblue") + coord_cartesian(ylim=c(0,1.1), expand = F)
-  
+print(p1)  
   #and save
   ggsave(file = "seroprev_by_spp.pdf",
          units="mm",  
@@ -84,6 +69,14 @@ colz= c('0'="black", '1'="red")
          scale=3, 
          dpi=300)
 
+
+  
+###################################################################################################
+###################################################################################################
+  
+#other exploratory analyses that are not significant
+  
+### AGE  
 #sum by species and age
 dat.sum <-ddply(dat.sub, .(species, class),summarize, N_pos=sum(res), N=length(res))
 dat.sum$seroprevalence = dat.sum$N_pos/dat.sum$N
@@ -101,3 +94,24 @@ dat.tot= ddply(dat.sum, .(class), summarize, N_pos=sum(N_pos), N=sum(N))
 dat.tot$seroprevalence = dat.tot$N_pos/dat.tot$N
   
 ggplot(data=dat.tot) + geom_point(aes(x=class, y=seroprevalence, color=class, size=N))
+
+
+### SEASON
+
+
+#get month and year from date
+dat.sub$year = year(dat.sub$date)
+dat.sub$month = month(dat.sub$date)
+
+#look at seroprevalence in wet vs. dry
+dat.sub$season <- NA
+dat.sub$season[dat.sub$month==1|dat.sub$month==11|dat.sub$month==12] <- "wet"
+dat.sub$season[dat.sub$month==5] <- "dry"
+
+dat.seas <- ddply(dat.sub, .(season, order, species), summarize, N_pos = sum(res), N_tot=length(res))
+dat.seas$seroprevalence <- dat.seas$N_pos/dat.seas$N_tot
+ggplot(data=dat.seas) + geom_point(aes(x=season, y=seroprevalence, color=species, size=N_tot))
+#it looks like the seroprevalence is actually higher in the dry season
+#try a boxplot
+boxplot(seroprevalence~season, data=dat.seas, ylab = "seroprevalence by species")
+
