@@ -118,13 +118,15 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:15am: Road Map and Daily Agenda 
-* 8:15-9:30am: Lecture: Modeling in Practice: The Life Cycle of a Modeling Project, from Conception to Publication  __(Andres)__
-* 9:30-10:30am: Lecture/Tutorial: Model Selection and Comparison __(Cara)__
+* 8:15-9:15am: Lecture: Modeling in Practice: The Life Cycle of a Modeling Project, from Conception to Publication  __(Andres)__
+* 9:15-10:30am: Lecture/Tutorial: Model Selection and Comparison __(Cara)__
 * 10:30-11:00am: Coffee Break
 * 11:00am-12:00pm: Lecture: Looking back: How far have we come? __(Tanjona)__
 * 12:00-1:00pm: Lunch
 * 1:00-1:30pm: Group photo - Wear your E^2^M^2^ shirts! 
-* 1:30-6:30pm: Work time + one-on-one student-instructor meetings __(All Instructors)__
+* 1:30-2:30pm: Work time + One-on-One Student-Instructor Meetings (optional) __(All Instructors)__
+  * Sign up [here](https://docs.google.com/spreadsheets/d/1hYRysYM-zMEFTAiGehrMMaVcogAAwOGyVH_3gPFk7m8/edit?usp=sharing) if desired to meet with an instructor one last time.
+* 2:30-3:30pm: Instructors and mentors meet. Assignments [here](E2M2-2020-Activities/Instructor-Mentor-Working-Groups.pdf).
 * 6:30-9:00pm: Farewell dinner in Ranomafana town (Hotel Manja)
 * 9:30pm: Return bus to CVB
 
