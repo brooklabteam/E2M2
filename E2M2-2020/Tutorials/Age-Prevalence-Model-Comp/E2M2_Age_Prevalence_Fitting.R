@@ -125,6 +125,8 @@ model.age.prev <- function(log.lambda, data, cate){
 
 #then we get prevalence to plot with our other function, feeding it these values for log.lambda
 prev <- model.age.prev(log.lambda=log(c(1e-02, 1e-02, 1e-02)), data=dat.pho, cate=c(0,15,30))
+prev <- model.age.prev(log.lambda=log(c(.9e-02, .9e-02, .9e-02)), data=dat.pho, cate=c(0,15,30))
+prev <- model.age.prev(log.lambda=log(c(.9e-02, .9e-02, .5e-02)), data=dat.pho, cate=c(0,15,30))
 prev <- c(unlist(prev))
 
 #then you make your model outputs and CIs into classes ggplot can handle that match above

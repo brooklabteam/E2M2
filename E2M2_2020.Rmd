@@ -127,7 +127,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 1:00-1:30pm: Group photo - Wear your E^2^M^2^ shirts! 
 * 1:30-2:30pm: Work time + One-on-One Student-Instructor Meetings (optional) __(All Instructors)__
   * Sign up [here](https://docs.google.com/spreadsheets/d/1hYRysYM-zMEFTAiGehrMMaVcogAAwOGyVH_3gPFk7m8/edit?usp=sharing) if desired to meet with an instructor one last time.
-* 2:30-3:30pm: Instructors and mentors meet. Assignments [here](E2M2-2020-Activities/Instructor-Mentor-Working-Groups.pdf).
+* 2:30-3:30pm: Instructors and mentors meet. Assignments [here](E2M2-2020/Activities/Instructor-Mentor-Working-Groups.pdf).
 * 6:30-9:00pm: Farewell dinner in Ranomafana town (Hotel Manja)
 * 9:30pm: Return bus to CVB
 
