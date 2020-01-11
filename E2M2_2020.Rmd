@@ -118,7 +118,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 6:30-8:00am: Breakfast
 * 8:00-8:15am: Road Map and Daily Agenda 
   * Please make edits to [this google doc](https://docs.google.com/spreadsheets/d/14GL_uFwMGRIj2E93s-AZA4jgkAz4eaNhWXWvjwcbpXc/edit?usp=sharing) by **midnight on Sunday, January 12** if you would like to change how your name is written on your final certificate!
-* 8:15-8:45am: [Final research plans (HW)](E2M2-2020/Activities/E2M2-Final-Research-Plan.pdf) and Research Snapshots __(Cara, Sarah, Fara, Andres)__
+* 8:15-8:45am: [Final research plans (HW)](E2M2-2020/Activities/E2M2-Final-Research-Plan.pdf) and [Research Snapshots](E2M2-2020/Activities/ResearchSnapshots.zip) __(Cara, Sarah, Fara, Andres)__
 * 8:45-10:00am: [Lecture: Modeling in Practice: The Life Cycle of a Modeling Project, from Conception to Publication](E2M2-2020/Lectures/LifeCycleModelingProject.pdf)  __(Andres)__
 * 10:00-10:30am: Coffee Break
 * 10:30-11:15am: Lecture/Tutorial: Model Selection and Comparison __(Cara)__
