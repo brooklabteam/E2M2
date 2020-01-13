@@ -122,7 +122,7 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 * 8:45-10:00am: [Lecture: Modeling in Practice: The Life Cycle of a Modeling Project, from Conception to Publication](E2M2-2020/Lectures/LifeCycleModelingProject.pdf)  __(Andres)__
 * 10:00-10:30am: Coffee Break
 * 10:30-11:15am: [Lecture](E2M2-2020/Model_Fitting_Comparison.pdf)/[Tutorial](E2M2-2020/Tutorials/Age-Prevalence-Model-Comp.zip): Model Selection and Comparison __(Cara)__
-* 11:15am-12:00pm: Lecture: Looking back: How far have we come? __(Tanjona)__
+* 11:15am-12:00pm: [Lecture: Looking back: How far have we come?](E2M2-2020/LookingBack_2020.pdf) __(Tanjona)__
 * 12:00-1:00pm: Lunch
 * 1:00-1:30pm: Group photo - Wear your E^2^M^2^ shirts! 
 * 1:30-2:30pm: Work time + One-on-One Student-Instructor Meetings (optional) __(All Instructors)__
