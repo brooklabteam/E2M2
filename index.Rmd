@@ -15,12 +15,12 @@ h1.title {
 ---
 
 <div style="text-align: left; font-size: 1.5em; color:#C11B17;">
-**E^2^M^2^ 2020 is currently underway! Please check back in September 2020 for information about applying to E^2^M^2^ 2021.**
+**E^2^M^2^ 2020 has already concluded! Please check back in September 2020 for information about applying to E^2^M^2^ 2021.**
 </div>
 
 ---
 
-<img src="E2M2-2019/E2M2-2019.JPG" alt="E2M2class" style="width: 70%; height: 70%;" align="center">
+<img src="E2M2-2020/E2M2-2020.jpg" alt="E2M2class" style="width: 70%; height: 70%;" align="center">
 
 <span style="text-align: left; font-size: 1.5em;">**January 3-14, 2020**</span><br>
 
