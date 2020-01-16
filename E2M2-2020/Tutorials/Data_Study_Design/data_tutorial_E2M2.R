@@ -2,7 +2,7 @@
 rm(list = ls())
 
 #set here the directory where your data files are located
-setwd("~/Documents/Berkeley/Madagascar/E2M2")
+setwd("/Users/caraebrook/Documents/R/R_repositories/E2M2/E2M2-2020/Tutorials/Data_Study_Design/")
 
 #load library
 library(dplyr)
@@ -14,8 +14,8 @@ library(dplyr)
 #Sarah and Cara added their data to the compiled project data on the same day
 #so now there are two overlapping but incomplete project datasheets that need to be combined
 #let's take a look at these two versions of the project datasheet
-dat.sarah <- read.csv("data_tutorial/Flying_Fox_Capture_Data_12_06_2019_SG.csv", skip=2, header = TRUE)
-dat.cara <- read.csv("data_tutorial/Flying_Fox_Capture_Data_12_06_2019_CB.csv", skip=2, header = TRUE)
+dat.sarah <- read.csv("Flying_Fox_Capture_Data_12_06_2019_SG.csv", skip=2, header = TRUE)
+dat.cara <- read.csv("Flying_Fox_Capture_Data_12_06_2019_CB.csv", skip=2, header = TRUE)
 
 #it's easy to quickly calculate the dimensions of each dataframes
 #the number of entries don't match up--their two versions are incomplete and need to be combined
@@ -154,3 +154,4 @@ length(wing.RM$Sample.ID)
 
 wing.PR <- freeze.dat[freeze.dat$Sample.Type=="Wing Punch" & freeze.dat$Species=="Pteropus rufus",] 
 length(wing.PR$Sample.ID)
+
