@@ -8,6 +8,8 @@ navbar:
       href: index.html
     - text: "Preparation"
       href: preparation.html
+    - text: "E2M2 2021 (Tentative)"
+      href: E2M2_2021.html
     - text: "E2M2 2020"
       href: E2M2_2020.html
     - text: "E2M2 2019"

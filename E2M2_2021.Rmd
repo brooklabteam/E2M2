@@ -9,145 +9,145 @@ Please follow instructions for installing packages in R [here](E2M2-2018/E2M2_In
 
 * 6:00am: Meet at Institut Pasteur for departure to Ranomafana (lunch stop Ambositra)
 * 6:30-7:30pm: Dinner
-* 7:30-9:00pm: Introductions and Ice Breakers __(Mentors)__
-* 7:30-9:00pm: Anyone who has not downloaded R and installed packages can get help from a subset of the mentors to do this now.  __(Mentors)__
+* 7:30-9:00pm: Introductions and Ice Breakers 
+* 7:30-9:00pm: Anyone who has not downloaded R and installed packages can get help from a subset of the mentors to do this now.  
 
-**Monday, Jan 4: Getting Started**
+**Monday, Jan 4: Getting Started with the Basics**
 
-* 8:00-8:30am: Brief Introductions __(Fidy, Cara, Tanjona)__
-* 8:30-9:30am: Lecture: What are We Doing Here? Ecology Meets Epidemiology __(Cara)__
-*
-* 9:30-10:00am: Lecture: Intro to R Studio __(Fidy)__
+* 6:30-8:00am: Breakfast
+* 8:00-8:30am: Brief Introductions 
+* 8:30-9:00am: Lecture: What are We Doing Here? Ecology Meets Epidemiology
+* 9:00-10:00: Models and Data 
 * 10:00-10:30am: Coffee Break
-* 10:00-10:30am: Small Groups: Software installation and catch-up if you have not yet worked through the R tutorials for HW. __(Fidy, Christian, Mentors)__
-* 10:30am-12:00pm: [Tutorial: Intro to R Studio] __(Fidy, with help from Mentors)__
-  * Includes:
+* 10:30-11:15am: Lecture: Intro to R Studio 
+* 11:15am-12:00pm: Tutorial: Intro to R Studio 
       * Knowing your working environment
       * Assigning variables
       * Basic arithmetic
       * Running a script
-* 12:30-1:30pm: Lunch + extra time if certain students need extra time for downloads/installations.
-* 1:30-2:30pm: [Lecture: Exploring & visualizing data in R](E2M2-2020/Lectures/DataVisualization.pdf) __(Christian)__
-* 2:30-3:00pm: Coffee Break 
-* 3:00-5:00pm: [Tutorial: Exploring & visualizing data in R](E2M2-2020/Tutorials/DataVisualizing.zip) __(Christian, with help from Mentors)__
-
-**Sunday, Jan 5: ‘R Bootcamp’ (attendance optional)** 
-
-* 8:00-9:00am: [Lecture: Writing For-loops, If-Else Statements, and Functions in R](E2M2-2020/Lectures/R_Bootcamp_forLoopsFunctionsIfElse.pdf) __(Fidy)__
-* 9:00-10:00am: [Tutorial: Writing For-loops, If-Else Statements, and Functions in R](E2M2-2020/Tutorials/E2M2_Bootcamp_If_Else.zip) __(Fidy, with help from mentors)__
-* 10:00-10:30am: Coffee Break
-* 10:30-11:30am: [Lecture: Data Cleaning in R](E2M2-2020/Lectures/Data_Cleaning.pdf) __(Christian)__
-* 11:30am-12:30pm: [Tutorial: Data cleaning in R](E2M2-2020/Tutorials/CleaningData.zip) __(Christian, with help from Mentors)__
-* 12:30-1:30pm: Lunch
-* 1:30-2:30pm:  [Lecture/Tutorial: Intro to Spatial Visualization and Plotting](E2M2-2020/Tutorials/IntroSpatial.zip) __(Fidy)__
-* 2:30-3:30pm: Time for students to load and clean their own datasets if they have them. Otherwise, students are free to go home.
-* 3:30-4:00pm: Coffee Break
-* 4:00-5:00pm: Open mentoring session for outstanding questions or continued work on tutorials from above
-
-
-**Tuesday, Jan 7: “Understanding Your System”**
-
-* 6:30-8:00am: Breakfast
-* 8:00-8:30am: Road Map and Daily Agenda. Brief Introductions __(Cara)__
-* 8:30-9:00am: Lecture: What are We Doing Here? Ecology Meets Epidemiology (E2M2-2020/Lectures/E2M2_2020_Ecology_Meets_Epidemiology.pdf) __(Cara)__
-* 9:00 - 10:00am: [Lecture: Data and Models](E2M2-2020/Lectures/Data_Models.pdf) __(Tanjona)__
-* 10:00-10:30am: Coffee Break
-* 10:30-12:00pm: [Lecture: Reviewing Key Concepts in Mathematics](E2M2-2020/Lectures/Basic_Math.pdf) __(Tanjona)__
-* 12:00-1:00pm: Lunch
-* 1:00-2:00pm: Introductions: 2-min student introductions __(Sarah)__
-* 2:00-3:30pm: Formulating research questions __(Cara)__
-  * For HW, [write your own research question](E2M2-2020/Activities/HW_Formulating_Research_Questions.pdf)
-* 3:30-4:00pm: Coffee Break
-* 4:00-6:00pm: [Lecture](E2M2-2020/Lectures/E2M2_Study_Design.pdf)/[Tutorial](E2M2-2020/Tutorials/Data_Study_Design.zip): Study Design and Data Collection __(Sarah)__
+      * If you finish early, catch-up if you have not yet worked through the R tutorials for HW.
+* 12:00-1:00pm: Lunch + extra time if certain students need extra time for downloads/installations.
+* 1:00-2:00pm:  Introductions: 2-min student introductions 
+* 2:00-3:00pm: Lecture: Reviewing Key Concepts in Mathematics 
+  * Includes introduction of the terms:
+    * Discrete
+    * Continuous
+    * Stochastic
+    * Deterministic
+* 3:00-3:30pm: Coffee Break 
+* 3:30-5:00pm: Formulating research questions 
+  * For HW, write your own research question
+* 5:00-6:00pm: Initial Assessment
 * 6:30-7:30pm: Dinner
 
-**Wednesday, Jan 8: “Building Simple Models”**
+**Tuesday, Jan 5: “Using Models with Data”**
+
+* 6:30-8:00am: Breakfast
+* 8:00-8:30am: Road Map and Daily Agenda
+* 8:30-10:00am: Lecture/Tutorial: Model Guided Study Design 
+  * Let's adapt last year's Study Design lecture to emphasize 'Model-Guided Field Work' (or lab work) -- see         Restif et al. 2012. **Should we assign this paper for students to read before they arrive for the week?**
+  * Should include idea of power analysis for statistical design and/or simulation for mechanistic design
+  *In 2020, there was a separate lecture/tutorial for Study Design and Data Cleaning. These should be merged into   one in 2021, as they are basically the same
+  * Build on 'Models and Data' lecture from Day 1
+  * Be sure to 
+* 10:00-10:30am: Coffee Break
+* 10:30am-12:00pm:  Lecture/Tutorial: Exploring & Visualizing Data in R 
+* 12:00-1:00pm: Lunch
+* 1:00-2:30pm: Lecture/Tutorial: Linear Regression and Simple Statistics 
+* 2:30-3:00pm: Coffee Break
+* 3:00-4:00pm Lecture: Introduction to Compartmental Models 
+  * No longer includes stochastic/deterministic and discrete/continuous except as review terms from Tanjona's        lecture
+* 4:00-4:30pm: Large Group Session: Refining research questions for modeling
+  * Refine questions from yesterday and develop statistical frame work + model diagram
+* 4:30-6:30pm: Small Group Sessions: Refining research questions for modeling __(all instructors lead small groups)__
+  * All students should have a workable statistical and mechanistic question by the end of the session
+  * For HW, assign: 'Creating a Model world + Building a Statistical Framework' (but it will not be due until Thursday)
+* 6:30-7:30pm: Dinner
+
+**Wednesday, Jan 6: “Applying Simple Models”**
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:15am: Road Map and Daily Agenda 
-* 8:15-9:30am: [Lecture](E2M2-2020/Lectures/BasicStatistics.pdf)/[Tutorial](E2M2-2020/Tutorials/LinearRegression.zip): Lecture: Linear Regression and Simple Statistics __(Fara)__
+* 8:15-9:30am: Tutorial: Building Mechanistic Models in R (follow-up from compartmental lecture yesterday)
+  * Include intro to for-loops, if-else statements, and functions at the beginning of this tutorial
 * 9:30-10:00am: Coffee Break; prep for hike
 * 10:00am-12:00pm: Morning hike in Ranomafana National Park
 * 12:00-1:00pm: Lunch
-* 1:00-2:30pm: [Lecture](E2M2-2020/Lectures/IntroCompartmentalModels.pdf)/Tutorial: Introduction to Compartmental Models __(Cara)__
-* 2:30-3:00pm: Coffee Break 
-* 3:00-4:30pm: [Exercise + Discussion: Dynamical Fever](E2M2-2020/Activities/Dynamical_Fever_Upload.zip) __(Christian, Fara, Mentors)__
-* 4:30-6:30pm: Small Group Sessions: Refining research questions for modeling __(all instructors lead small groups)__
-  * [Assigned groups are posted here](E2M2-2020/Activities/Small_Group_Assignments.pdf).
-  * All students should have a workable statistical and mechanistic question by the end of the session
-  * For HW, assign: [Creating a Model world + a Statistical Framework](E2M2-2020/Activities/Model_Framework_HW.pdf)
-* 6:30-7:30pm: Dinner
-
-
-**Thursday, Jan 9: “More Complicated Models”**
-
-* 6:30-8:00am: Breakfast
-* 8:00-8:15am: Road Map and Daily Agenda __(Cara)__
-* 8:15-10:00am: [Lecture](E2M2-2020/Lectures/GLMMs_for_Dynamical_Systems.pdf)/[Tutorial](E2M2-2020/Tutorials/Statistics_Mixed_Models.zip): Introduction to Mixed Modeling __(Andres)__
-* 10:00-10:30am: Coffee Break
-* 10:30-12:00pm: [Live Coding + Tutorial](E2M2-2020/Tutorials/IntroCompartmentalModelsNew.zip): Building Mechanistic Models in R __(Cara)__
-* 12:00-1:00pm: Lunch
-* 1:00-2:00pm: Activity: The Metapopulation Game __(Tanjona)__
-* 2:00-2:30pm: Lecture: Modeling Insights from the Metapopulation Game __(Tanjona)__
-* 2:30-3:30pm: Model Telephone with Model Diagrams
-  * Example model description is available [here](E2M2-2020/Activities/Model_Telephone_Example_Model_Description.pdf) __(Cara)__
+* 1:00-2:30pm: Exercise + Discussion: Dynamical Fever 
+* 2:20-3:30pm: Lecture w/Tutorial: Model Fitting in Practice – the Basic Concept 
+  * Can we adapt this lecture/tutorial to fit a model to the Dynamical Fever data this year?!?
 * 3:30-4:00pm: Coffee Break
-* 4:00-5:30pm: Work time + [One-on-One Student-Instructor Meetings](E2M2-2020/Activities/OneOnOneInstructor_Meetings.pdf) __(All Instructors)__
-* 5:30-6:30pm: Mid-session feedback __(Christian)__
+* 4:00-5:30pm: Work time + One-on-One Student-Instructor Meetings 
+  * Students should fully develop their Statistical Frameworks and Model Diagrams today
+* 5:30-6:30pm: Mid-Session Feedback 
 * 5:30-6:30pm: Mentors practice presentations with instructors. Students do not need to attend. 
 * 6:30-7:30pm: Dinner
 
-
-**Friday, Jan 10: “Refining Your Work”**
-
-* 6:30-8:00am: Breakfast
-* 8:00-8:15am: Road Map, Daily Agenda, and Response to Feedback __(Cara)__
-* 8:15-9:15am: Lecture w/Tutorial: Model Fitting in Practice – the Basic Concept __(Sarah)__
-* 9:15-10:15am: Lecture/Tutorial: Introduction to Network Modeling __(Andres)__
-* 10:15-10:45am: Coffee Break
-* 10:45am-12:00pm: [Small Group Discussion: Reading a Research Paper](E2M2-2020/Activities/Wesolowski_et_al_2016_Impact_of_RCV_on_CRS_in_Madagascar.pdf) __(Fara, Sarah, Mentors)__
-* 12:00-1:00pm: Lunch
-* 1:00-1:45pm: Exercise: Epidemic Cards __(Christian, Cara, and Mentors)__
-* 1:45-3:00pm: Tutorial: Model Fitting with Epidemic Cards __(Cara)__
-* 3:00-3:30pm: Coffee Break
-* 3:30-4:00pm: [Final research plans (HW)](E2M2-2020/Activities/E2M2-Final-Research-Plan.pdf) __(Cara)__
-* 4:00-4:30pm: Research Snapshots __(All Instructors)__
-* 4:30-6:30pm: Work time + one-on-one student-instructor meetings __(All Instructors)__
-* 6:30-7:30pm: Dinner
-* 8:00pm: Night walk Ranomafana National Park (optional) __(Mentors)__
-
-
-
-**Saturday, Jan 11: “Putting It All In Perspective”**
+**Thursday, Jan 7: “Refining Your Work”**
 
 * 6:30-8:00am: Breakfast
 * 8:00-8:15am: Road Map and Daily Agenda 
-* 8:15-9:30am: Lecture: Modeling in Practice: The Life Cycle of a Modeling Project, from Conception to Publication  __(Andres)__
-* 9:30-10:30am: Mentor Research Presentations (10 min each) __(Mentors)__
-* 10:30-11:00am: Coffee Break
-* 11:00am-12:00pm: Lecture/Tutorial: Model Selection and Comparison __(Cara)__
+* 8:15-10:00am: Lecture/Tutorial: Introduction to Mixed Modeling 
+* 10:00-10:30am: Coffee Break
+* 11:30am-12:00pm: Lecture/Tutorial: Model Selection and Comparison 
 * 12:00-1:00pm: Lunch
-* 1:00-1:30pm: Group photo - Wear your E^2^M^2^ shirts! 
-* 1:30-2:00pm: Lecture: Looking back: How far have we come? __(Tanjona)__
-* 2:30-6:30pm: Work time + one-on-one student-instructor meetings __(All Instructors)__
+* 1:00-1:45pm: Exercise: Epidemic Cards 
+* 1:45-2:30pm: Tutorial: Model Fitting with Epidemic Cards
+  * Add in some model comparison via AIC
+* 2:30-3:00pm: Coffee Break
+* 3:00-4:00pm: Small Group Discussion: Reading a Research Paper
+* 4:00-5:00pm: Model Telephone with Model Diagrams
+* 5:00-6:30pm:  One-on-One Student-Instructor Meetings 
+* 6:30-7:30pm: Dinner
+* 8:00pm: Night walk Ranomafana National Park (optional) 
+
+**Friday, Jan 8: “Bells and Whistles”**
+
+* 6:30-8:00am: Breakfast
+* 8:00-8:15am: Road Map, Daily Agenda, and Response to Feedback
+* 8:15-9:15am: Lecture/Tutorial: Introduction to Network Modeling 
+* 9:15-10:00am: Lecture/Tutorial: Introduction to Occupancy Modeling
+  *Not sure if we need this or if something else would better fill this slot (or just more time for 'Network')
+* 10:00-10:30am: Coffee Break
+* 10:30am-12:00pm: Lecture/Tutorial: Introduction to Spatial Visualization and Plotting
+* 12:00-1:00pm: Lunch
+* 1:00-2:00pm: Activity: The Metapopulation Game 
+* 2:00-3:00pm: Lecture/Tutorial: Modeling Insights from the Metapopulation Game 
+  * Would be great to make a tutorial that shows how to build this model and uses data from this game.
+* 3:00-3:30pm: Coffee Break
+* 3:30-4:00pm: Final research plans (HW)
+* 4:00-4:30pm: Research Snapshots 
+* 4:30-6:30pm: Work time + One-on-One student-instructor meetings 
+* 6:30-7:30pm: Dinner
+
+**Saturday, Jan 9: “Putting It All In Perspective”**
+
+* 6:30-8:00am: Breakfast
+* 8:00-8:15am: Road Map and Daily Agenda 
+* 8:15-9:30am: Lecture: Modeling in Practice: The Life Cycle of a Modeling Project, from Conception to Publication  
+* 9:30-10:30am: Final Assessment 
+* 10:30-11:00am: Coffee Break
+* 11:00-11:30am: Lecture: Looking back: How far have we come?
+* 11:30am-12:00pm: Group photo - Wear your E^2^M^2^ shirts! 
+* 12:00-1:00pm: Lunch
+* 1:00-6:30pm: Work time + one-on-one student-instructor meetings __(All Instructors)__
 * 6:30-9:00pm: Farewell dinner in Ranomafana town (Hotel Manja)
 * 9:30pm: Return bus to CVB
 
-**Sunday, Jan 12: (Travel Day)**
+**Sunday, Jan 10: (Travel Day)**
 
 * 5:00-6:00am: Breakfast to go
 * 6:00am: Board bus
 * Return to Antananarivo 
 
-**Monday, Jan 13**
+**Monday, Jan 11**
 
-* IPM is open with WiFi connections for students to upload documents. We will have 1-2 instructors and 1-2 mentors on hand for office hourse to answer questions if students need help.
+* Mahaliana is open with WiFi connections for students to upload documents. We will have 1-2 instructors and 1-2 mentors on hand for office hourse to answer questions if students need help.
 
-**Tuesday, Jan 14: "Sharing Your Work"** *(at [Institut Pasteur de Madagascar](http://www.pasteur.mg/) in Antananarivo)*
+**Tuesday, Jan 12: "Sharing Your Work"** *(at Institut Pasteur de Madagascar in Antananarivo)*
 
-* 9:00-11:00am: Closing ceremony and final student presentations 
+* 8:30-11:00am: Closing ceremony and final student presentations 
 * 11:00am-12:00pm: Final Feedback Session
 * 12:30-2:00pm: Farewell lunch
-* 2:00-4:30pm: Mini-symposium: **“Modeling Insights Into Ecology and Epidemiology”** *(Instructor presentations)*
-    * [Instructor and Mentor Research Presentations](E2M2-2020/Activities/E2M2-2020-IPM-Mini-Symposium.pdf)
+* 2:00-4:30pm: Mini-symposium: **“Modeling Insights Into Ecology and Epidemiology”** *(Instructor and Mentor Research Presentations)*
 * 4:30pm: Social Hour
