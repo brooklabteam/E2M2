@@ -15,7 +15,7 @@ h1.title {
 ---
 
 <div style="text-align: left; font-size: 1.5em; color:#C11B17;">
-**E^2^M^2^ 2020 has already concluded! Please check back in September 2020 for information about applying to E^2^M^2^ 2021.**
+**Due to COVID-19, E^2^M^2^ 2021 is on hold until further notice. Please check back here for updates in the coming months.**
 </div>
 
 ---
