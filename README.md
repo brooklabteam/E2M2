@@ -11,7 +11,7 @@
 - Index
 - Acknowledgements
 - Archives
- - 2018 ~> course syllabus, etc
+  - 2018 ~> course syllabus, etc
  - 2019
  - 2020
  - ...
