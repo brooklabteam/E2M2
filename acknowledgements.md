@@ -3,7 +3,7 @@ layout: page
 title: Acknowledgements
 permalink: /acknowledgements
 ---
-Many of the materials and methods used in E^2^M^2^ were adapted from those previously developed by faculty at [ICI3D](http://www.ici3d.org/):
+Many of the materials and methods used in E<sup>2</sup>M<sup>2</sup> were adapted from those previously developed by faculty at [ICI3D](http://www.ici3d.org/):
 
 <img src="/assets/img/acknowledgements/ici3d-logo.png" alt="ICI3D logo" style="width: 100%;" />
 
