@@ -12,16 +12,16 @@
 - Acknowledgements
 - Archives
   - 2018 ~> course syllabus, etc
- - 2019
- - 2020
- - ...
- - present year
+  - 2019
+  - 2020
+  - ...
+  - present year
 - assets
- - img ~> any images/marketing materials
- - 2018 ~> all course material for this year's course
- - 2019
- - 2020
- - ...
- - present year
+  - img ~> any images/marketing materials
+  - 2018 ~> all course material for this year's course
+  - 2019
+  - 2020
+  - ...
+  - present year
 - Preparation
 - Syllabus
