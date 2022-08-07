@@ -6,7 +6,7 @@ Due to COVID-19, E^2^M^2^ 2021 is on hold until further notice. Please check bac
 
 ---
 
-<img src="/assets/img/E2M2-2020.jpg" alt="E2M2class" />
+<img src="/assets/img/E2M2-2020.jpg" alt="E2M2class" style="col-lg-8" />
 
 January 3-14, 2020
 
