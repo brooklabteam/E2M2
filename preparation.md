@@ -3,11 +3,11 @@ layout: page
 title: "Preparation"
 permalink: /preparation
 ---
-Congratulations on your selection for E^2^M^2^ 2020!
+Congratulations on your selection for E<sup>2</sub>M<sup>2</sup>!
 
 Please familiarize yourself with the preparation materials below in order to prepare for the upcoming workshop.
 
-### **Software installations**
+### Software installations
 
 For those selected for participation in E^2^M^2^, we ask that you please begin to familiarize yourself with the computer programs that will be used at the workshop in advance of arrival. If you will be bringing a personal laptop to the workshop, please be sure that the following programs are installed and working:
 
