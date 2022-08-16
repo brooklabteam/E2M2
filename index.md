@@ -3,7 +3,14 @@ layout: home
 title: "E2M2: Ecological & Epidemiological Modeling in Madagascar"
 ---
 
-We are excited to announce that E<sup>2</sup>M<sup>2</sup> 2022 will take place in December! Please check back here for an application link in towards the end of August.
+
+
+<div class="bs-callout bs-callout-warning">
+<p><center>🛑 We are excited to announce that E<sup>2</sup>M<sup>2</sup> 2022 will take place in December! <br />
+Please apply <a href="https://airtable.com/shrEEmhR3KyRcYOJB">here</a> by September 16, 2022!</center></p>
+</div>
+
+ 
 
 ---
 
@@ -19,10 +26,34 @@ Throughout E<sup>2</sup>M<sup>2</sup>, students will participate in a series of 
 
 The course will be targeted towards students in their third cycle or higher in biology, mathematics, medicine, public health, or related fields, though all are welcome to apply. The course will be taught primarily in English, though a subset of the faculty will be available to offer some translation into French and/or Malagasy. A working knowledge of the English language is required for admission; however, we will do our best to make the material accessible to students who find English challenging.
 
+
 ---
 
 A working outline of our 2022 syllabus is available for your perusal [here](/archives/2022), and materials from previous years' courses can be accessed at [E<sup>2</sup>M<sup>2</sup> 2020](/archives/2012), [E<sup>2</sup>M<sup>2</sup> 2019](/archives/2019) and [E<sup>2</sup>M<sup>2</sup> 2018](/archives/2018).
 
 ---
 
+
+<p>Applications must be completed and submitted by 11:59 pm East Africa Time (GMT+3) on <strong>Friday, September 16, 2022</strong> if you wish to be considered.</p>
+
+<div class="bs-callout bs-callout-info">
+<p>All application materials must be submitted in English. The application consists of:</p>
+<ul>
+	<li>Form linked <a href="https://airtable.com/shrEEmhR3KyRcYOJB">here</a>!</li>
+	<li>Uploaded .pdf file with:
+		<ul>
+			<li>Curriculum Vitae (Limit: 4 pages).</li>
+			<li>Research Abstract. <em>Please describe your ongoing research project and the data you wish to analyze in conjunction with this program in detail. (Limit: 250 words).</em></li>
+			<li>Statement of Interest and Intent. <em>Please describe why you are interested in this program and what you will gain from the experience. (Limit: 500 words).</em></li>
+			<li style="overflow-wrap: break-word;"><em>Please save your application as a single, collated PDF with a name that follows: “E2M2_Application_<strong>YourLastName_YourFirstName</strong>.pdf”.</em></li>
+		</ul>
+	</li>
+</ul>
+</div>
+
+<p>Please do not hesitate to contact cbrook@uchicago.edu with any questions or concerns. We hope to see your application in September!</p>
+
+
 Misaotra betsaka from the E<sup>2</sup>M<sup>2</sup> organizing team!
+
+<em>Cara Brook, Fidy Rasambainarivo, Hafaliana Christian Ranaivoson, Angelo Andrianiaina, Fifi Ravelomanantsoa, Gwen Kettenburg, Sophia Horigan, Kendall Fitzgerald </em></p>
