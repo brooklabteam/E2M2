@@ -47,7 +47,7 @@ Applications must be completed and submitted by 11:59 pm East Africa Time (GMT+3
 </ul>
 </div>
 
-Please do not hesitate to contact Cara Brook ([cbrook@uchicago.edu](cbrook@uchicago.edu)) or Fidisoa Rasambainarivo ([fidy@mahaliana.org](fidy@mahaliana.org)) with any questions or concerns. We hope to see your application in September!
+Please do not hesitate to contact Cara Brook ([cbrook@uchicago.edu](mailto:cbrook@uchicago.edu)) or Fidisoa Rasambainarivo ([fidy@mahaliana.org](mailto:fidy@mahaliana.org)) with any questions or concerns. We hope to see your application in September!
 
 
 
