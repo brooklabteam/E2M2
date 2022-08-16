@@ -7,8 +7,8 @@ title: "E2M2: Ecological & Epidemiological Modeling in Madagascar"
 ---
 
 <div class="bs-callout bs-callout-warning">
-<p><center>🛑 <strong> We are excited to announce that E<sup>2</sup>M<sup>2</sup> 2022 will take place in December 9-17! <br />
-Please apply <a href="https://airtable.com/shrEEmhR3KyRcYOJB">here</a> by September 16, 2022! </strong></center></p>
+<p>🛑 <strong> We are excited to announce that E<sup>2</sup>M<sup>2</sup> 2022 will take place December 9-17! <br />
+Please apply <a href="https://airtable.com/shrEEmhR3KyRcYOJB">here</a> by September 16, 2022! </strong></p>
 </div>
 
 ---
@@ -39,7 +39,7 @@ The course will be targeted towards students in their third cycle or higher in b
 	<li>Uploaded .pdf file with:
 		<ul>
 			<li>Curriculum Vitae (Limit: 4 pages).</li>
-			<li>Research Abstract. <em>Please describe your ongoing research project and the data you wish to analyze in conjunction with this program in detail. (Limit: 250 words).</em></li>
+			<li>Research Abstract. <em>Please present an abstract for a project you would like to undertake that involves applying models to data. This can be your ongoing research project or a hypothetical project of your choosing. (Limit: 250 words).</em></li>
 			<li>Statement of Interest and Intent. <em>Please describe why you are interested in this program and what you will gain from the experience. (Limit: 500 words).</em></li>
 			<li style="overflow-wrap: break-word;"><em>Please save your application as a single, collated PDF with a name that follows: “E2M2_Application_<strong>YourLastName_YourFirstName</strong>.pdf”.</em></li>
 		</ul>
@@ -60,4 +60,4 @@ A working outline of our 2022 syllabus is available for your perusal [here](/arc
 
 Misaotra betsaka from the E<sup>2</sup>M<sup>2</sup> organizing team!
 
-<em>Cara Brook, Fidy Rasambainarivo, Hafaliana Christian Ranaivoson, Angelo Andrianiaina, Fifi Ravelomanantsoa, Gwen Kettenburg, Sophia Horigan, Kendall Fitzgerald </em></p>
+<em>Cara Brook, Fidy Rasambainarivo, Hafaliana Christian Ranaivoson, Angelo Andrianiaina, Fifi Ravelomanantsoa, Gwen Kettenburg, Sophia Horigan, Kendall Fitzgerald </em>
