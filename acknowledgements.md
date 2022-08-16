@@ -10,6 +10,6 @@ Many of the materials and methods used in E<sup>2</sup>M<sup>2</sup> were adapte
 Thanks to our sponsors:
 
 <img src="/assets/img/acknowledgements/IPM_logo.png" alt="IPM logo" style="width: 100%;" />
-<img src="/assets/img/acknowledgements/CVB-logo.png" alt="CVB logo" style="width: 100%;" />
-<img src="/assets/img/acknowledgements/PIVOT-logo.png" alt="PIVOT logo" style="width: 100%;" />
+<img src="/assets/img/acknowledgements/CVB-logo.png" alt="CVB logo" style="width: 60%;" />
+<img src="/assets/img/acknowledgements/PIVOT-logo.png" alt="PIVOT logo" style="width: 60%;" />
 <img src="/assets/img/acknowledgements/Mahaliana_Logo.jpg" alt="Mahaliana logo" style="width: 100%;" />
