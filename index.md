@@ -4,17 +4,18 @@ title: "E2M2: Ecological & Epidemiological Modeling in Madagascar"
 ---
 
 
+---
 
 <div class="bs-callout bs-callout-warning">
-<p><center>🛑 We are excited to announce that E<sup>2</sup>M<sup>2</sup> 2022 will take place in December! <br />
-Please apply <a href="https://airtable.com/shrEEmhR3KyRcYOJB">here</a> by September 16, 2022!</center></p>
+<p><center>🛑 <strong> We are excited to announce that E<sup>2</sup>M<sup>2</sup> 2022 will take place in December 9-17! <br />
+Please apply <a href="https://airtable.com/shrEEmhR3KyRcYOJB">here</a> by September 16, 2022! </strong></center></p>
 </div>
-
- 
 
 ---
 
-<img src="/assets/img/E2M2-2020.jpg" alt="E2M2class" style="width: 100%;" />
+
+
+<img src="/assets/img/E2M2-2020.jpg" alt="E2M2class" style="width: 70%;" />
 
 December 9-17, 2022
 
@@ -28,11 +29,6 @@ The course will be targeted towards students in their third cycle or higher in b
 
 
 ---
-
-A working outline of our 2022 syllabus is available for your perusal [here](/archives/2022), and materials from previous years' courses can be accessed at [E<sup>2</sup>M<sup>2</sup> 2020](/archives/2012), [E<sup>2</sup>M<sup>2</sup> 2019](/archives/2019) and [E<sup>2</sup>M<sup>2</sup> 2018](/archives/2018).
-
----
-
 
 <p>Applications must be completed and submitted by 11:59 pm East Africa Time (GMT+3) on <strong>Friday, September 16, 2022</strong> if you wish to be considered.</p>
 
@@ -52,6 +48,14 @@ A working outline of our 2022 syllabus is available for your perusal [here](/arc
 </div>
 
 <p>Please do not hesitate to contact cbrook@uchicago.edu with any questions or concerns. We hope to see your application in September!</p>
+
+
+
+---
+
+A working outline of our 2022 syllabus is available for your perusal [here](/archives/2022), and materials from previous years' courses can be accessed at [E<sup>2</sup>M<sup>2</sup> 2020](/archives/2012), [E<sup>2</sup>M<sup>2</sup> 2019](/archives/2019) and [E<sup>2</sup>M<sup>2</sup> 2018](/archives/2018).
+
+---
 
 
 Misaotra betsaka from the E<sup>2</sup>M<sup>2</sup> organizing team!
