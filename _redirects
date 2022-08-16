@@ -1,3 +1,4 @@
 # netlify redirects https://docs.netlify com/routing/redirects/#syntax-for-the-redirects-file
 
 /archives					/	# no actual `/archives` path just send people to home page for now
+/archives/2022    /2022
