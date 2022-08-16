@@ -47,7 +47,7 @@ The course will be targeted towards students in their third cycle or higher in b
 </ul>
 </div>
 
-<p>Please do not hesitate to contact cbrook@uchicago.edu with any questions or concerns. We hope to see your application in September!</p>
+<p>Please do not hesitate to contact Cara Brook (cbrook@uchicago.edu) or Fidisoa Rasambainarivo (fidy@mahaliana.org) with any questions or concerns. We hope to see your application in September!</p>
 
 
 
@@ -60,4 +60,4 @@ A working outline of our 2022 syllabus is available for your perusal [here](/arc
 
 Misaotra betsaka from the E<sup>2</sup>M<sup>2</sup> organizing team!
 
-<em>Cara Brook, Fidy Rasambainarivo, Hafaliana Christian Ranaivoson, Angelo Andrianiaina, Fifi Ravelomanantsoa, Gwen Kettenburg, Sophia Horigan, Kendall Fitzgerald </em>
+<em>Cara Brook, Fidy Rasambainarivo, Hafaliana Christian Ranaivoson, Andres Garchitorena, Angelo Andrianiaina, Fifi Ravelomanantsoa, Gwen Kettenburg, Sophia Horigan, Kendall Fitzgerald </em>
