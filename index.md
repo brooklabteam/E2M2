@@ -30,7 +30,7 @@ The course will be targeted towards students in their third cycle or higher in b
 
 ---
 
-<p>Applications must be completed and submitted by 11:59 pm East Africa Time (GMT+3) on <strong>Friday, September 16, 2022</strong> if you wish to be considered.</p>
+Applications must be completed and submitted by 11:59 pm East Africa Time (GMT+3) on <strong>Friday, September 16, 2022</strong> if you wish to be considered.
 
 <div class="bs-callout bs-callout-info">
 <p>All application materials must be submitted in English. The application consists of:</p>
@@ -47,7 +47,7 @@ The course will be targeted towards students in their third cycle or higher in b
 </ul>
 </div>
 
-<p>Please do not hesitate to contact Cara Brook ([cbrook@uchicago.edu](cbrook@uchicago.edu)) or Fidisoa Rasambainarivo ([fidy@mahaliana.org](fidy@mahaliana.org)) with any questions or concerns. We hope to see your application in September!</p>
+Please do not hesitate to contact Cara Brook ([cbrook@uchicago.edu](mailto:cbrook@uchicago.edu)) or Fidisoa Rasambainarivo ([fidy@mahaliana.org](mailto:fidy@mahaliana.org)) with any questions or concerns. We hope to see your application in September!
 
 
 
