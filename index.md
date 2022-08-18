@@ -60,4 +60,4 @@ A working outline of our 2022 syllabus is available for your perusal [here](/arc
 
 Misaotra betsaka from the E<sup>2</sup>M<sup>2</sup> organizing team!
 
-<em>Cara Brook, Fidy Rasambainarivo, Hafaliana Christian Ranaivoson, Andres Garchitorena, Angelo Andrianiaina, Fifi Ravelomanantsoa, Gwen Kettenburg, Sophia Horigan, Kendall Fitzgerald </em>
+<em>Cara Brook, Fidy Rasambainarivo, Hafaliana Christian Ranaivoson, Andres Garchitorena, Angelo Andrianiaina, Fifi Ravelomanantsoa,Santino Andry, Gwen Kettenburg, Sophia Horigan, Kendall Fitzgerald </em>
