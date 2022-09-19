@@ -8,7 +8,7 @@ title: "E2M2: Ecological & Epidemiological Modeling in Madagascar"
 
 <div class="bs-callout bs-callout-warning">
 <p>🛑 <strong> We are excited to announce that E<sup>2</sup>M<sup>2</sup> 2022 will take place December 9-17! <br />
-Please apply <a href="https://airtable.com/shrEEmhR3KyRcYOJB">here</a> by September 16, 2022! </strong></p>
+Applications are now closed. Applicants can expect to hear back from us by Wedmesday, October 5, 2022. Please stay tuned! </strong></p>
 </div>
 
 ---
@@ -30,12 +30,12 @@ The course will be targeted towards students in their third cycle or higher in b
 
 ---
 
-Applications must be completed and submitted by 11:59 pm East Africa Time (GMT+3) on <strong>Friday, September 16, 2022</strong> if you wish to be considered.
+The application window has now closed. Applications were due on <strong>Friday, September 16, 2022</strong>. Applicants can expect to hear back about their status by October 5, 2022. 
 
 <div class="bs-callout bs-callout-info">
-<p>All application materials must be submitted in English. The application consists of:</p>
+<p>All application materials were required to be submitted in English. The application consisted of:</p>
 <ul>
-	<li>Form linked <a href="https://airtable.com/shrEEmhR3KyRcYOJB">here</a>!</li>
+	<li>Application form </li>
 	<li>Uploaded .pdf file with:
 		<ul>
 			<li>Curriculum Vitae (Limit: 4 pages).</li>
