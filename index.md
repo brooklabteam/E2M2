@@ -7,8 +7,8 @@ title: "E2M2: Ecological & Epidemiological Modeling in Madagascar"
 ---
 
 <div class="bs-callout bs-callout-warning">
-<p>🛑 <strong> We are excited to announce that E<sup>2</sup>M<sup>2</sup> 2022 will take place December 9-17! <br />
-Applications are now closed. Applicants can expect to hear back from us by Wedmesday, October 5, 2022. Please stay tuned! </strong></p>
+<p>🛑 <strong> E<sup>2</sup>M<sup>2</sup> 2022 will take place December 9-17! <br />
+Applications are now closed, and students have been notified. We are looking forward to seeing you in December! </strong></p>
 </div>
 
 ---
@@ -30,8 +30,10 @@ The course will be targeted towards students in their third cycle or higher in b
 
 ---
 
-The application window has now closed. Applications were due on <strong>Friday, September 16, 2022</strong>. Applicants can expect to hear back about their status by October 5, 2022. 
+The application window has now closed. Applications were due on <strong>Friday, September 16, 2022</strong>. Applicants have already been informed of their application status. For interested future applicants, please check back in ~September 2023 for updated plans for next year's course.
 
+
+<!--
 <div class="bs-callout bs-callout-info">
 <p>All application materials were required to be submitted in English. The application consisted of:</p>
 <ul>
@@ -46,9 +48,9 @@ The application window has now closed. Applications were due on <strong>Friday, 
 	</li>
 </ul>
 </div>
+-->
 
-Please do not hesitate to contact Cara Brook ([cbrook@uchicago.edu](mailto:cbrook@uchicago.edu)) or Fidisoa Rasambainarivo ([fidy@mahaliana.org](mailto:fidy@mahaliana.org)) with any questions or concerns. We hope to see your application in September!
-
+In the meantime, please do not hesitate to contact Cara Brook ([cbrook@uchicago.edu](mailto:cbrook@uchicago.edu)) or Fidisoa Rasambainarivo ([fidy@mahaliana.org](mailto:fidy@mahaliana.org)) with any questions or concerns. 
 
 
 ---
