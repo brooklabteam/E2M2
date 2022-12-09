@@ -16,7 +16,7 @@ For most of you, you should be able to install all required packages for E^2^M^2
 
 ```{r echo=TRUE, message=TRUE, warning=TRUE, eval=FALSE}
 
-install.packages(c("arm", "asnipe", "coloRamps", "deSolve", "dplyr", "ergm", "ggplot2", "googleway", "igraph", "installr", "lattice", "leaflet", "lme4", "maps", "maptools", "MASS", "Matrix", "minqa", "mgcv",  "mgcv", "network", "nlme", "plyr", "raster", "Rcpp", "reshape", "reshape2", "rgdal", "rgeos", "sp", "survival", "tnet", "unmarked"))
+install.packages(c("arm", "asnipe", "coloRamps", "deSolve", "dplyr", "ergm", "ggplot2", "googleway", "igraph", "installr", "lattice", "leaflet", "lme4", "maps", "maptools", "MASS", "Matrix", "minqa", "mgcv",  "mgcv", "network", "nlme", "plyr", "raster", "Rcpp", "reshape", "reshape2", "rgdal", "rgeos", "sp", "survival","tidyr","tnet", "unmarked"))
 
 ```
 
