@@ -18,6 +18,7 @@ library(plyr)
 library(ggplot2)
 library(mvtnorm)
 
+edits
 #load data
 #setwd("/Users/caraebrook/Documents/R/R_repositories/bat-age-seroprev/JAE_Sept2018/revisions_Dec2018/refits/")
 #load("seasonal_prev.Rdata")
