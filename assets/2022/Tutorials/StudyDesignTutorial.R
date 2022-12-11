@@ -22,4 +22,4 @@ rm(list=ls())
 
 #load functions from previous work
 
-edits and
+#edits and
