@@ -1,0 +1,201 @@
+tip_label,accession_number,strain,title,country,bat_host,host,collection_date,collection_year,sub_group,novel
+NC_055108.1,NC_055108,,Poecivirus A,USA,0,Poecile atricapillus,12/2/02,2002,Poecivirus,0
+NC_055156.1,NC_055156,RtMp-PicoV/YN2014,Rabovirus B,China,0,Rodentia,7/15/18,2018,Rabovirus,0
+NC_055159.1,NC_055159,,Tottorivirus A,Japan,0,Sus scrofa domesticus,7/15/15,2015,Tottorivirus,0
+NC_055160.1,NC_055160,MPV/NYC/2014/M005/0074,Rabovirus D,USA,0,Mus musculus,8/15/14,2014,Rabovirus,0
+NC_055161.1,NC_055161,,Ailurivirus A,China,0,NA,7/15/15,2015,Ailurivirus,0
+NC_043071.1,NC_043071,BtMr-PicoV/JX2010,Shanbavirus A,China,1,Myotis ricketti,10/15/10,2010,Shanbavirus,0
+NC_043072.1,NC_043072,,Mischivirus B,Hungary,1,Miniopterus schreibersii,7/15/13,2013,Mischivirus,0
+NC_043544.1,NC_043544,,Rafivirus B,China,0,Gekko similignum,7/15/18,2018,Rafivirus,0
+NC_040605.1,NC_040605,,Marmot sapelovirus 1,China,0,Marmota himalayana,7/15/13,2013,Sapelovirus,0
+NC_040611.1,NC_040611,,Cadicivirus B,Hungary,0,Erinaceus roumanicus,4/15/15,2015,Dicipivirus,0
+NC_040642.1,NC_040642,,Rhimavirus A,Australia,0,Rhinella marina,7/15/17,2017,Unclassified-rhimavirus,0
+NC_040673.1,NC_040673,,Tremovirus B,China,0,Pelodiscus sinensis,6/6/11,2011,Tremovirus,0
+NC_040684.1,NC_040684,,Goose picornavirus 1,Hungary,0,Anser albifrons,7/15/13,2013,Unclassified-picornavirus,0
+NC_038303.1,NC_038303,,Bovine rhinitis A virus,Germany,0,Bos taurus,7/15/62,1962,Aphthovirus,0
+NC_038304.1,NC_038304,USA-IN1,Avisivirus A,USA,0,Meleagris gallopavo,10/1/10,2010,Avisivirus,0
+NC_038305.1,NC_038305,BCV-1,Cardiovirus C,USA,0,Rattus norvegicus,12/17/10,2010,Cardiovirus,0
+NC_038306.1,NC_038306,CA2,Enterovirus A,,0,NA,7/15/19,2019,Enterovirus,0
+NC_038307.1,NC_038307,,Enterovirus B,,0,Homo sapiens,7/15/92,1992,Enterovirus,0
+NC_038308.1,NC_038308,,Enterovirus D,USA,0,,7/15/04,2004,Enterovirus,0
+NC_038309.1,NC_038309,,Enterovirus H,,0,,7/15/07,2007,Enterovirus,0
+NC_038310.1,NC_038310,,Enterovirus I,United Arab Emirates,0,Camelus dromedarius,2/3/13,2013,Enterovirus,0
+NC_038311.1,NC_038311,,Rhinovirus A,,0,,7/15/09,2009,Enterovirus,0
+NC_038312.1,NC_038312,,Rhinovirus B,USA,0,,7/15/19,2019,Enterovirus,0
+NC_038313.1,NC_038313,SMG18520Minmav2014,Hepatovirus C,Madagascar,1,Miniopterus,7/15/14,2014,Hepatovirus,0
+NC_038314.1,NC_038314,CIV459Lopsik2004,Hepatovirus E,Cote d'Ivoire,0,Lophuromys sikapusi,7/15/04,2004,Hepatovirus,0
+NC_038315.1,NC_038315,KEF121Sigmas2012,Hepatovirus F,Mexico,0,Sigmodon mascotensis,7/15/12,2012,Hepatovirus,0
+NC_038316.1,NC_038316,BUO2BF86Colafr2010,Hepatovirus G,Ghana,1,Coleura afra,7/15/10,2010,Hepatovirus,0
+NC_038317.1,NC_038317,,Kunsagivirus A,Hungary,0,Coracias garrulus,7/15/11,2011,Kunsagivirus,0
+NC_038318.1,NC_038318,,Mosavirus A,USA,0,Peromyscus crinitus,7/15/10,2010,Mosavirus,0
+NC_038319.1,NC_038319,,Parechovirus A,,0,,7/15/92,1992,Parechovirus,0
+NC_038878.1,NC_038878,NAT001,Rhinovirus C,,0,,11/15/01,2001,Enterovirus,0
+NC_038880.1,NC_038880,,Rosavirus A,USA,0,Peromyscus crinitus,7/15/10,2010,Rosavirus,0
+NC_038957.1,NC_038957,,Megrivirus B,Hong Kong,0,Columbidae,7/15/11,2011,Megrivirus,0
+NC_038961.1,NC_038961,BtMf-PicoV-1/SAX2011,Shanbavirus A,China,1,Miniopterus fuliginosus,9/15/11,2011,Shanbavirus,0
+NC_038989.1,NC_038989,rodent/Ee/PicoV/NX2015,Enterovirus K,China,0,Rodentia,7/15/16,2016,Enterovirus,0
+NC_039004.1,NC_039004,KGI-Bel-P5/2015,Megrivirus E,,0,Pygoscelis adeliae,1/9/15,2015,Megrivirus,0
+NC_039209.1,NC_039209,,Equine rhinitis A virus,,0,Equus caballus,7/15/05,2005,Aphthovirus,0
+NC_039210.1,NC_039210,o6pirbright iso58,Foot-and-mouth disease virus,United Kingdom,0,,7/15/19,2019,Aphthovirus,0
+NC_039211.1,NC_039211,,Aichivirus E,Hungary,0,Oryctolagus cuniculus,3/15/10,2010,Kobuvirus,0
+NC_039212.1,NC_039212,FHMPV-1,Limnipivirus C,USA,0,Pimephales promelas,7/15/11,2011,Limnipivirus,0
+NC_039235.1,NC_039235,,Chicken megrivirus,Hungary,0,Gallus gallus,7/15/12,2012,Megrivirus,0
+NC_037654.1,NC_037654,LLT03,Sichuan takin enterovirus,China,0,Budorcas taxicolor tibetana,7/15/13,2013,Enterovirus,0
+NC_036588.1,NC_036588,,Passerivirus sp.,Hungary,0,,11/14/14,2014,Passerivirus,0
+NC_035779.1,NC_035779,,Falcon picornavirus,Hungary,0,Falco vespertinus,6/15/14,2014,Unclassified-picornavirus,0
+NC_035198.1,NC_035198,,Aimelvirus 2,,0,,7/15/17,2017,Unclassified-aimelvirus,0
+NC_035110.1,NC_035110,KGI-Bel-22,Fur seal picorna-like virus,,0,Arctocephalus gazella,2/15/15,2015,Unclassified-picornavirus,0
+NC_034971.1,NC_034971,SMCD-59,Canine kobuvirus,China,0,Canis lupus familiaris,9/15/15,2015,Kobuvirus,0
+NC_034617.1,NC_034617,,Megrivirus D,Hungary,0,Circus aeruginosus,7/15/14,2014,Megrivirus,0
+NC_034453.1,NC_034453,MpPeV1,Parechovirus D,Netherlands,0,Mustela putorius furo,7/15/13,2013,Parechovirus,0
+NC_034385.1,NC_034385,,Cosavirus F,Pakistan,0,Homo sapiens,7/15/07,2007,Cosavirus,0
+NC_034381.1,NC_034381,,Mischivirus A,China,1,Miniopterus schreibersii,12/15/10,2010,Mischivirus,0
+NC_034267.1,NC_034267,JL14,Enterovirus goat/JL14,China,0,Capra hircus,4/20/14,2014,Enterovirus,0
+NC_034245.1,NC_034245,,Bovine rhinovirus 1,USA,0,,7/15/17,2017,Aphthovirus,0
+NC_034206.1,NC_034206,baboon/M27-KuV/1986/TAN,Kunsagivirus C,Tanzania,0,Papio cynocephalus,12/15/86,1986,Kunsagivirus,0
+NC_033793.1,NC_033793,HN56,Megrivirus A,China,0,Anatidae,6/15/14,2014,Megrivirus,0
+NC_033818.1,NC_033818,,Kunsagivirus B,Cameroon,1,Eidolon helvum,12/15/13,2013,Kunsagivirus,0
+NC_033819.1,NC_033819,,Crohivirus B,Cameroon,1,Eidolon helvum,12/15/13,2013,Crohivirus,0
+NC_033820.1,NC_033820,,Bat sapelovirus,Cameroon,1,Eidolon helvum,12/15/13,2013,Sapelovirus,0
+NC_033695.1,NC_033695,,Enterovirus AN12,Japan,0,Bos taurus,10/21/14,2014,Enterovirus,0
+NC_032126.1,NC_032126,,Livupivirus A,Hungary,0,Lissotriton vulgaris,4/1/14,2014,Livupivirus,0
+NC_031105.1,NC_031105,,Rosavirus B,Hong Kong,0,Rattus norvegicus,2/6/09,2009,Rosavirus,0
+NC_031106.1,NC_031106,,Rosavirus C,Hong Kong,0,Rattus andamanensis,3/24/09,2009,Rosavirus,0
+NC_030843.1,NC_030843,,Washington bat picornavirus,USA,1,Chiroptera,4/22/16,2016,Unclassified-picornavirus,0
+NC_030454.1,NC_030454,,Enterovirus A,India,0,Homo sapiens,9/9/13,2013,Enterovirus,0
+NC_029905.1,NC_029905,SEV-gx,Enterovirus L,China,0,Macaca mulatta,5/17/14,2014,Enterovirus,0
+NC_029854.1,NC_029854,,Yak enterovirus,China,0,Bos grunniens,8/15/14,2014,Enterovirus,0
+NC_028964.1,NC_028964,,Gallivirus Pf-CHK1/GV,Hungary,0,Gallus gallus,12/15/13,2013,Gallivirus,0
+NC_028970.1,NC_028970,,Avisivirus Pf-CHK1/AsV,Hungary,0,Gallus gallus,7/15/13,2013,Avisivirus,0
+NC_028981.1,NC_028981,TN1,Tupaia hepatovirus A,China,0,Tupaia chinensis,1/1/12,2014,Hepatovirus,0
+NC_028363.1,NC_028363,RMU101637Micarv2010,Hepatovirus D,Germany,0,Microtus arvalis,7/15/10,2010,Hepatovirus,0
+NC_028364.1,NC_028364,KS121232Sorara2012,Hepatovirus I,Germany,0,Sorex araneus,7/15/12,2012,Hepatovirus,0
+NC_028365.1,NC_028365,Igel8Erieur2014,Hepatovirus H,Germany,0,Erinaceus europaeus,7/15/14,2014,Hepatovirus,0
+NC_028366.1,NC_028366,M32Eidhel2010,Hepatovirus H,Ghana,1,Eidolon helvum,7/15/10,2010,Hepatovirus,0
+NC_028380.1,NC_028380,JSY,Sicinivirus A,China,0,Gallus gallus,7/15/15,2015,Sicinivirus,0
+NC_027918.1,NC_027918,,Kobuvirus cattle/Kagoshima-2-24-KoV/2015/JPN,Japan,0,Bos taurus,2/2/15,2015,Kobuvirus,0
+NC_027919.1,NC_027919,,Aichivirus D,Japan,0,Bos taurus,11/15/14,2014,Kobuvirus,0
+NC_027818.1,NC_027818,,Hepatovirus B,USA,0,Phoca vitulina,9/30/11,2011,Hepatovirus,0
+NC_027214.1,NC_027214,,Ampivirus A,Hungary,0,Lissotriton vulgaris,3/15/13,2013,Ampivirus,0
+NC_027054.1,NC_027054,JS-02a-CHN/2014/China,Aichivirus C,China,0,Sus scrofa,7/15/14,2014,Kobuvirus,0
+NC_026921.1,NC_026921,,Harkavirus A,Hungary,0,Falco tinnunculus,6/22/13,2013,Harkavirus,0
+NC_026470.1,NC_026470,PREDICT-06105,Mischivirus C,Democratic Republic of the Congo,1,Macronycteris gigas,7/15/13,2013,Mischivirus,0
+NC_026314.1,NC_026314,Berlin/Jan2011/0572,Aichivirus E,Germany,0,Rattus norvegicus,1/15/11,2011,Kobuvirus,0
+NC_026315.1,NC_026315,Mis101308/2012,Lesavirus 1,USA,0,Lemur catta,7/15/12,2012,Unclassified-lesavirus,0
+NC_026316.1,NC_026316,Nai108015/2012,Lesavirus 2,USA,0,Varecia variegata,7/15/12,2012,Unclassified-lesavirus,0
+NC_026249.1,NC_026249,TCH6,Bopivirus A,USA,0,Bos taurus,7/15/13,2013,Bopivirus,0
+NC_025961.1,NC_025961,Cosa-CHN,Cosavirus JMY-2014,China,0,Homo sapiens,8/11/12,2012,Cosavirus,0
+NC_025890.1,NC_025890,,Torchivirus A,Germany,0,Testudo hermanni,7/15/04,2004,Torchivirus,0
+NC_025432.1,NC_025432,,Chicken orivirus 1,Hungary,0,Gallus gallus,7/15/13,2013,Orivirus,0
+NC_025675.1,NC_025675,NrHuV/NYC-E21,Norway rat hunnivirus,USA,0,Rattus norvegicus,12/2/12,2012,Hunnivirus,0
+NC_025474.1,NC_025474,,Crohivirus A,Zambia,0,Crocidura hirta,5/15/12,2012,Crohivirus,0
+NC_025114.1,NC_025114,SaliV-FHB,Salivirus FHB,China,0,Homo sapiens,7/15/11,2011,Salivirus,0
+NC_024765.1,NC_024765,55C,Chicken picornavirus 1,Hong Kong,0,Gallus gallus,10/10/08,2008,Unclassified-picornavirus,0
+NC_024766.1,NC_024766,44C,Avisivirus B,Hong Kong,0,Gallus gallus,10/10/08,2008,Avisivirus,0
+NC_024767.1,NC_024767,45C,Avisivirus C,Hong Kong,0,Gallus gallus,10/10/08,2008,Avisivirus,0
+NC_024768.1,NC_024768,5C,Chicken picornavirus 4,Hong Kong,0,Gallus gallus,9/9/08,2008,Unclassified-picornavirus,0
+NC_024769.1,NC_024769,27C,Megrivirus C,Hong Kong,0,Gallus gallus,9/19/08,2008,Megrivirus,0
+NC_024770.1,NC_024770,518C,Gallivirus A,Hong Kong,0,Gallus gallus,9/16/10,2010,Gallivirus,0
+NC_024120.1,NC_024120,,Megrivirus A,,0,Anas platyrhynchos,7/15/13,2013,Megrivirus,0
+NC_024073.1,NC_024073,CPML_8109/08,Enterovirus sp.,Cameroon,0,Mandrillus sphinx,2/4/08,2008,Enterovirus,0
+NC_024070.1,NC_024070,,Rosavirus A,Gambia,0,Homo sapiens,10/29/08,2008,Rosavirus,0
+NC_023984.1,NC_023984,Cosavirus_Amsterdam_1994,Human cosavirus,Netherlands,0,Homo sapiens,3/22/94,1994,Cosavirus,0
+NC_023985.1,NC_023985,,Aalivirus A,China,0,Anas platyrhynchos,10/10/12,2012,Aalivirus,0
+NC_023987.1,NC_023987,,Mosavirus A,Hungary,0,Coracias garrulus,7/15/11,2011,Mosavirus,0
+NC_023988.1,NC_023988,UF4,Tortoise rafivirus A,USA,0,Indotestudo forstenii,7/15/09,2009,Unclassified-rafivirus,0
+NC_023858.1,NC_023858,,Melegrivirus A,Hungary,0,Meleagris gallopavo,7/15/11,2011,Megrivirus,0
+NC_023861.1,NC_023861,,Sicinivirus A,Ireland,0,Gallus gallus,7/15/13,2013,Sicinivirus,0
+NC_023422.1,NC_023422,12Q108,Caprine kobuvirus,South Korea,0,Capra hircus,7/15/12,2012,Kobuvirus,0
+NC_023162.1,NC_023162,F37/06,Limnipivirus B,Germany,0,Cyprinus carpio,7/15/06,2006,Limnipivirus,0
+NC_022802.1,NC_022802,FFUP1,Sakobuvirus A,Portugal,0,Felis catus,12/1/12,2012,Sakobuvirus,0
+NC_022332.1,NC_022332,,Potamipivirus A,Germany,0,Anguilla anguilla,5/15/05,2005,Potamipivirus,0
+NC_021482.1,NC_021482,,Parechovirus C,Central African Republic,0,Hylomyscus,7/15/72,1972,Parechovirus,0
+NC_021220.1,NC_021220,,Enterovirus F,,0,,7/15/05,2005,Enterovirus,0
+NC_021201.1,NC_021201,,Melegrivirus A,USA,0,Meleagris gallopavo,7/15/10,2010,Megrivirus,0
+NC_021178.1,NC_021178,,Cadicivirus A,Hong Kong,0,Canis lupus familiaris,7/15/08,2008,Dicipivirus,0
+NC_018668.1,NC_018668,,Hunnivirus A,Hungary,0,Bos taurus,2/29/08,2008,Hunnivirus,0
+NC_018506.1,NC_018506,04-032,Limnipivirus A,USA,0,Lepomis macrochirus,11/15/03,2003,Limnipivirus,0
+NC_018400.1,NC_018400,,Gallivirus A,Hungary,0,Meleagris gallopavo,4/15/11,2011,Gallivirus,0
+NC_018226.1,NC_018226,,Pasivirus A,France,0,Sus scrofa,7/15/10,2010,Pasivirus,0
+NC_015936.1,NC_015936,,Mouse kobuvirus M-5/USA/2010,USA,0,Peromyscus crinitus,7/15/10,2010,Kobuvirus,0
+NC_016964.1,NC_016964,325,Mischivirus D,Hong Kong,0,Canis lupus familiaris,7/15/08,2008,Mischivirus,0
+NC_016769.1,NC_016769,SH-W-CHN/2010/China,Aichivirus C,China,0,Sus scrofa,15/15/2010,2010,Kobuvirus,0
+NC_016156.1,NC_016156,,Feline picornavirus,Hong Kong,0,Felis catus,8/24/07,2007,Unclassified-picornavirus,0
+NC_016403.1,NC_016403,,Quail picornavirus QPV1/HUN/2010,Hungary,0,Coturnix coturnix,7/15/10,2010,Unclassified-picornavirus,0
+NC_015934.1,NC_015934,,Bat picornavirus 3,Hong Kong,1,Rhinolophus sinicus,9/12/08,2008,Unclassified-picornavirus,0
+NC_015940.1,NC_015940,,Bat picornavirus 1,Hong Kong,1,Miniopterus pusillus,12/19/08,2008,Unclassified-picornavirus,0
+NC_015941.1,NC_015941,,Bat picornavirus 2,Hong Kong,1,Miniopterus magnater,9/6/05,2005,Unclassified-picornavirus,0
+NC_015626.1,NC_015626,,Pigeon picornavirus B,Norway,0,Columbidae,8/19/03,2003,Unclassified-picornavirus,0
+NC_014411.1,NC_014411,,Passerivirus A,Hong Kong,0,Turdus pallidus,1/11/07,2007,Passerivirus,0
+NC_014412.1,NC_014412,,Oscivirus A,Hong Kong,0,Copsychus saularis,12/6/06,2006,Oscivirus,0
+NC_014413.1,NC_014413,,Oscivirus A,Hong Kong,0,Turdus hortulorum,12/21/06,2006,Oscivirus,0
+NC_013695.1,NC_013695,Simian picornavirus strain N203,Enterovirus J,,0,,7/15/01,2001,Enterovirus,0
+NC_012986.1,NC_012986,02394-01,Salivirus A,USA,0,Homo sapiens,10/16/02,2002,Salivirus,0
+NC_012957.1,NC_012957,,Salivirus A,Nigeria,0,Homo sapiens,4/15/07,2007,Salivirus,0
+NC_012798.1,NC_012798,,Cosavirus E,Australia,0,Homo sapiens,7/15/81,1981,Cosavirus,0
+NC_012800.1,NC_012800,553,Cosavirus A,,0,Homo sapiens,7/15/08,2008,Cosavirus,0
+NC_012801.1,NC_012801,2263,Cosavirus B,Pakistan,0,Homo sapiens,7/15/08,2008,Cosavirus,0
+NC_012802.1,NC_012802,5004,Cosavirus D,Pakistan,0,Homo sapiens,7/15/08,2008,Cosavirus,0
+NC_011829.1,NC_011829,,Aichivirus C,Hungary,0,Sus scrofa,7/15/07,2007,Kobuvirus,0
+NC_011349.1,NC_011349,SVV-001,Senecavirus A,USA,0,,7/15/06,2006,Senecavirus,0
+NC_010810.1,NC_010810,,Cardiovirus B,,0,,7/15/08,2008,Cardiovirus,0
+NC_010415.1,NC_010415,Simian enterovirus SV6,Enterovirus J,,0,,7/15/00,2000,Enterovirus,0
+NC_010354.1,NC_010354,,Bovine rhinitis B virus,United Kingdom,0,Bos taurus,7/15/07,2007,Aphthovirus,0
+NC_009996.1,NC_009996,,Rhinovirus C,Hong Kong,0,,7/15/07,2007,Enterovirus,0
+NC_009891.1,NC_009891,HO.02.21,Aquamavirus A,Canada,0,Pusa hispida,7/15/07,2007,Aquamavirus,0
+NC_009448.2,NC_009448,,Cardiovirus B,USA,0,,7/15/06,2006,Cardiovirus,0
+NC_008714.1,NC_008714,W1,Enterovirus F,,0,,7/15/03,2003,Enterovirus,0
+NC_008250.2,NC_008250,,Avihepatovirus A,,0,,7/15/13,2013,Avihepatovirus,0
+NC_006553.1,NC_006553,TW90A,Anativirus A,,0,,7/15/04,2004,Anativirus,0
+NC_004451.1,NC_004451,,Sapelovirus B,,0,,7/15/01,2001,Sapelovirus,0
+NC_004441.1,NC_004441,,Enterovirus G,,0,,7/15/01,2001,Enterovirus,0
+NC_004421.1,NC_004421,,Aichivirus B,,0,Bos taurus,7/15/02,2002,Kobuvirus,0
+NC_003976.2,NC_003976,,Parechovirus B,,0,,7/15/00,2000,Parechovirus,0
+NC_003987.1,NC_003987,,Sapelovirus A,,0,,7/15/01,2001,Sapelovirus,0
+NC_003988.1,NC_003988,,Enterovirus H,,0,,7/15/99,1999,Enterovirus,0
+NC_003985.1,NC_003985,F65,Teschovirus A,,0,,7/15/98,1998,Teschovirus,0
+NC_003990.1,NC_003990,,Tremovirus A,,0,,7/15/97,1997,Tremovirus,0
+NC_001918.1,NC_001918,A846/88,Aichivirus A,,0,Homo sapiens,7/15/98,1998,Kobuvirus,0
+NC_001897.1,NC_001897,,Parechovirus A,,0,,7/15/98,1998,Parechovirus,0
+NC_003983.1,NC_003983,,Erbovirus A,,0,Equus caballus,7/15/96,1996,Erbovirus,0
+NC_001612.1,NC_001612,,Enterovirus A,,0,,7/15/94,1994,Enterovirus,0
+NC_001617.1,NC_001617,,Rhinovirus A,,0,,7/15/04,2004,Enterovirus,0
+NC_001472.1,NC_001472,,Enterovirus B,,0,,7/15/87,1987,Enterovirus,0
+NC_001479.1,NC_001479,,Cardiovirus A,,0,,7/15/92,1992,Cardiovirus,0
+NC_001489.1,NC_001489,,Hepatovirus A,,0,,7/15/87,1987,Hepatovirus,0
+NC_001490.1,NC_001490,,Rhinovirus B,,0,,7/15/00,2000,Enterovirus,0
+NC_001430.1,NC_001430,,Enterovirus D,,0,,7/15/04,2004,Enterovirus,0
+NC_001859.1,NC_001859,,Enterovirus E,,0,,7/15/88,1988,Enterovirus,0
+NC_001366.1,NC_001366,,Cardiovirus B,,0,,7/15/90,1990,Cardiovirus,0
+NC_002058.3,NC_002058,,Enterovirus C,,0,,7/15/00,2000,Enterovirus,0
+NC_040642.1,NC_040642,,Rhimavirus A,Australia,0,Rhinella marina,7/15/17,2017,Unclassified-rhimavirus,0
+NC_040684.1,NC_040684,,Goose picornavirus 1,Hungary,0,Anser albifrons,7/15/13,2017,Unclassified-picornavirus,0
+NC_035779.1,NC_035779,,Falcon picornavirus,Hungary,0,Falco vespertinus,6/15/14,2014,Unclassified-picornavirus,0
+NC_035198.1,NC_035198,,Aimelvirus 2,,0,,7/15/17,2017,Unclassified-aimelvirus,0
+NC_035110.1,NC_035110,KGI-Bel-22,Fur seal picorna-like virus,,0,Arctocephalus gazella,2/15/15,2015,Unclassified-picornavirus,0
+NC_030843.1,NC_030843,,Washington bat picornavirus,USA,1,Chiroptera,4/22/16,2016,Unclassified-picornavirus,0
+NC_026315.1,NC_026315,Mis101308/2012,Lesavirus 1,USA,0,Lemur catta,7/15/12,2012,unclassified-lesavirus,0
+NC_026316.1,NC_026316,Nai108015/2012,Lesavirus 2,USA,0,Varecia variegata,7/15/12,2012,unclassified-lesavirus,0
+NC_025432.1,NC_025432,,Chicken orivirus 1,Hungary,0,Gallus gallus,7/15/13,2013,unclassified-orivirus,0
+NC_024765.1,NC_024765,55C,Chicken picornavirus 1,Hong Kong,0,Gallus gallus,10/10/08,2008,Unclassified-picornavirus,0
+NC_024768.1,NC_024768,5C,Chicken picornavirus 4,Hong Kong,0,Gallus gallus,9/9/08,2008,Unclassified-picornavirus,0
+NC_023988.1,NC_023988,UF4,Tortoise rafivirus A,USA,0,Indotestudo forstenii,7/15/09,2009,unclassified-rafivirus,0
+NC_016156.1,NC_016156,,Feline picornavirus,Hong Kong,0,Felis catus,8/24/07,2007,Unclassified-picornavirus,0
+NC_016403.1,NC_016403,,Quail picornavirus QPV1/HUN/2010,Hungary,0,Coturnix coturnix,7/15/10,2010,Unclassified-picornavirus,0
+NC_015934.1,NC_015934,,Bat picornavirus 3,Hong Kong,1,Rhinolophus sinicus,9/12/08,2008,Unclassified-picornavirus,0
+NC_015940.1,NC_015940,,Bat picornavirus 1,Hong Kong,1,Miniopterus pusillus,12/19/08,2008,Unclassified-picornavirus,0
+NC_015941.1,NC_015941,,Bat picornavirus 2,Hong Kong,1,Miniopterus magnater,9/6/05,2005,Unclassified-picornavirus,0
+NC_015626.1,NC_015626,,Pigeon picornavirus B,Norway,0,Columbidae,8/19/03,2003,Unclassified-picornavirus,0
+RR034B_257_NODE_5_length_8315_cov_53.152179,NA,,Mada bat picornavirus 1,Madagascar,1,Rousettus madagascariensis,7/29/18,2018,Picornavirus,1
+RR034B_268_NODE_61_length_7807_cov_24.084623,NA,,Mada bat picornavirus 2,Madagascar,1,Rousettus madagascariensis,9/11/18,2018,Picornavirus,1
+RR034B_268_NODE_77_length_7280_cov_4.481246,NA,,Mada bat picornavirus 3,Madagascar,1,Rousettus madagascariensis,9/11/18,2018,Picornavirus,1
+RR034B_288_NODE_100_length_7614_cov_7.535124,NA,,Mada bat picornavirus 4,Madagascar,1,Rousettus madagascariensis,9/11/18,2018,Picornavirus,1
+RR034B_079_NODE_3_length_7329_cov_16.102695,NA,,Mada bat kunsagivirus,Madagascar,1,Eidolon dupreanum,2/15/18,2018,Kunsagivirus,1
+RR034B_029_NODE_84_length_7982_cov_390.097641,NA,,Mada bat mischivirus,Madagascar,1,Pteropus rufus,8/6/18,2018,Mischivirus,1
+RR034B_163_NODE_204_length_7685_cov_6.419135,NA,,Mada bat sapelovirus 1,Madagascar,1,Eidolon dupreanum,7/27/18,2018,Sapelovirus,1
+RR034B_189_NODE_1_length_7751_cov_15.700754,NA,,Mada bat sapelovirus 2,Madagascar,1,Eidolon dupreanum,1/7/19,2019,Sapelovirus,1
+RR034B_290_NODE_2_length_7714_cov_16.413370,NA,,Mada bat sapelovirus 3,Madagascar,1,Rousettus madagascariensis,9/12/18,2018,Sapelovirus,1
+RR034B_094_NODE_3_length_7085_cov_4.126031,NA,,Mada bat teschovirus 1,Madagascar,1,Eidolon dupreanum,2/15/18,2018,Teschovirus,1
+RR034B_244_NODE_40_length_7294_cov_100.356955,NA,,Mada bat teschovirus 2,Madagascar,1,Rousettus madagascariensis,9/11/18,2018,Teschovirus,1
+RR034B_259_NODE_68_length_7228_cov_12.546633,NA,,Mada bat teschovirus 3,Madagascar,1,Rousettus madagascariensis,7/29/18,2018,Teschovirus,1
+NC_045762.1,NC_045762.1,GIV,Norovirus,USA,0,Felis catus,7/15/12,2012,Norovirus,0
