@@ -7,8 +7,11 @@ title: "E2M2: Ecological & Epidemiological Modeling in Madagascar"
 ---
 
 <div class="bs-callout bs-callout-warning">
-<p>🛑 <strong> E<sup>2</sup>M<sup>2</sup> 2022 will take place December 9-17! <br />
-Applications are now closed, and students have been notified. We are looking forward to seeing you in December! Thanks for applying! </strong></p>
+<!--🛑 
+-->
+
+<p><strong> E<sup>2</sup>M<sup>2</sup> 2022 is currently underway! <br />
+Applications for the next E<sup>2</sup>M<sup>2</sup> (to be held in Jan 2024) will become available in September 2023! </strong></p>
 </div>
 
 ---
