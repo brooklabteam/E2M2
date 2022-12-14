@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.253">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Michelle Evans, mv.evans.phd@gmail.com">
+<meta name="dcterms.date" content="2022-12-11">
+
+<title>E2M2 2022: Model Fitting Basics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="fire-model-fitting_files/libs/clipboard/clipboard.min.js"></script>
+<script src="fire-model-fitting_files/libs/quarto-html/quarto.js"></script>
+<script src="fire-model-fitting_files/libs/quarto-html/popper.min.js"></script>
+<script src="fire-model-fitting_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="fire-model-fitting_files/libs/quarto-html/anchor.min.js"></script>
+<link href="fire-model-fitting_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="fire-model-fitting_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="fire-model-fitting_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="fire-model-fitting_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="fire-model-fitting_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#load-the-packages-for-this-tutorial" id="toc-load-the-packages-for-this-tutorial" class="nav-link" data-scroll-target="#load-the-packages-for-this-tutorial">Load the packages for this tutorial</a></li>
+  <li><a href="#first-exploration-of-the-data" id="toc-first-exploration-of-the-data" class="nav-link" data-scroll-target="#first-exploration-of-the-data">First exploration of the data</a></li>
+  <li><a href="#statistical-model" id="toc-statistical-model" class="nav-link" data-scroll-target="#statistical-model">Statistical Model</a>
+  <ul class="collapse">
+  <li><a href="#fit-using-glm" id="toc-fit-using-glm" class="nav-link" data-scroll-target="#fit-using-glm">Fit using <code>glm</code></a></li>
+  <li><a href="#manually-fit-by-least-squares" id="toc-manually-fit-by-least-squares" class="nav-link" data-scroll-target="#manually-fit-by-least-squares">Manually fit by least-squares</a></li>
+  </ul></li>
+  <li><a href="#mechanistic-model" id="toc-mechanistic-model" class="nav-link" data-scroll-target="#mechanistic-model">Mechanistic Model</a>
+  <ul class="collapse">
+  <li><a href="#create-the-initial-model" id="toc-create-the-initial-model" class="nav-link" data-scroll-target="#create-the-initial-model">Create the initial model</a></li>
+  <li><a href="#fitting-a-mechanistic-model" id="toc-fitting-a-mechanistic-model" class="nav-link" data-scroll-target="#fitting-a-mechanistic-model">Fitting a mechanistic model</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">E2M2 2022: Model Fitting Basics</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Michelle Evans, mv.evans.phd@gmail.com </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 11, 2022</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p>This is a <a href="https://quarto.org/">Quarto</a> document. It allows us to combine background text, code, and its output in one document. It can be “rendered” into an HTML file that can be read in any browser. All code chunks look like the following below, and can be run in RStudio just like a line in a standard <code>.R</code> script:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#this is an example code script</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span>(<span class="st">"Example plot in a code chunk"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="fire-model-fitting_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>A “code-only” version of this tutorial is available in the <code>fire-model-fitting.R</code> script.</p>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>This is a tutorial that was developed as part of the E2M2 workshop held in December 2022. It is based on code developed by Cara Brook, further developed by Michelle Evans. If you have any questions, please send an email to Michelle at mv.evans.phd@gmail.com.</p>
+<p>This turorial introduces the concept of model fitting. We use the term “model fitting” broadly, referring to both statistical and mechanistic models. In this tutorial you will learn the <a href="https://www.jmp.com/en_in/statistics-knowledge-portal/what-is-regression/the-method-of-least-squares.html">least-squares technique</a> to fit both types of models to simulated data of forest coverage in Madagascar.</p>
+<p>By the end of the tutorial, you should be able to:</p>
+<ul>
+<li>Construct a simple linear regression model and fit it, both manually and via R’s built-in functions</li>
+<li>Construct a simple mechanistic model in continuous time</li>
+<li>Fit a mechanistic model via least squares</li>
+</ul>
+</section>
+<section id="load-the-packages-for-this-tutorial" class="level1">
+<h1>Load the packages for this tutorial</h1>
+<p>Here are the packages we’ll need for this tutorial. I also choose to set some base configurations that I like, such as never reading in strings as factors, setting a limit for the number of digits to include when printing to the console, and setting a base theme for <code>ggplot</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">stringsAsFactors =</span> F, <span class="at">scipen =</span> <span class="dv">999</span>, <span class="at">digits =</span> <span class="dv">4</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">#plotting</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2); <span class="fu">theme_set</span>(<span class="fu">theme_bw</span>())</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">#ordinary differential equations</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(deSolve)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">#data manipulation</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="first-exploration-of-the-data" class="level1">
+<h1>First exploration of the data</h1>
+<p>First, we load the data and inspect the dataframe’s structure:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>treedata <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"treedata.csv"</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(treedata)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    yr forest
+1 1919 708559
+2 1920 710419
+3 1921 733004
+4 1922 739633
+5 1923 733177
+6 1924 717115</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(treedata)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'data.frame':   92 obs. of  2 variables:
+ $ yr    : int  1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 ...
+ $ forest: num  708559 710419 733004 739633 733177 ...</code></pre>
+</div>
+</div>
+<p>It has two columns:</p>
+<ul>
+<li><code>yr</code>: the year of the measurement</li>
+<li><code>forest</code>: the amount of forest coverage in Madagascar in sq. km (remember this is simulated)</li>
+</ul>
+<p>We can then plot the data, looking at the amount of forest cover over time. Note that we save this plot so we can easily add regression lines to it later in the tutorial.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>base.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(treedata, <span class="fu">aes</span>(<span class="at">x =</span> yr, <span class="at">y =</span> forest)) <span class="sc">+</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"forestgreen"</span>) <span class="sc">+</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="fu">c</span>(<span class="dv">0</span>,<span class="fl">8e5</span>)) <span class="sc">+</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Year"</span>) <span class="sc">+</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="fu">bquote</span>(<span class="st">'Forest Cover'</span>(km<span class="sc">^</span><span class="dv">2</span>)))</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>base.plot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="fire-model-fitting_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="statistical-model" class="level1">
+<h1>Statistical Model</h1>
+<p>First, we will fit a statistical model. We are interested in fitting forest cover as a function of the year, to look at the change overtime:</p>
+<p><span class="math display">\[forest = m * year + b\]</span></p>
+<section id="fit-using-glm" class="level2">
+<h2 class="anchored" data-anchor-id="fit-using-glm">Fit using <code>glm</code></h2>
+<p>This is a linear regression, that we can fit using R’s built-in functions.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>mod.stat <span class="ot">&lt;-</span> <span class="fu">glm</span>(<span class="at">formula =</span> forest <span class="sc">~</span> yr,</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>                <span class="at">family =</span> gaussian,</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>                <span class="at">data  =</span> treedata)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co">#investigate parameters estimated by model</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod.stat)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+glm(formula = forest ~ yr, family = gaussian, data = treedata)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-100668   -27121     3331    29925   100682  
+
+Coefficients:
+            Estimate Std. Error t value            Pr(&gt;|t|)    
+(Intercept)  5152516     343511    15.0 &lt;0.0000000000000002 ***
+yr             -2293        175   -13.1 &lt;0.0000000000000002 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for gaussian family taken to be 1983480599)
+
+    Null deviance: 519643631025  on 91  degrees of freedom
+Residual deviance: 178513253944  on 90  degrees of freedom
+AIC: 2235
+
+Number of Fisher Scoring iterations: 2</code></pre>
+</div>
+</div>
+<p>We can see that it returns two estimates that we are interest in. That for the Intercept (b in the equation above) and for the coefficient of year (slope, m in the equation above). Let’s add this fit line to the graph. The parameters can be access via <code>mod.stat$coefficients</code>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>mod.stat<span class="sc">$</span>coefficients</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(Intercept)          yr 
+    5152515       -2293 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>base.plot <span class="sc">+</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_abline</span>(<span class="at">slope =</span> mod.stat<span class="sc">$</span>coefficients[<span class="dv">2</span>], <span class="at">intercept =</span> mod.stat<span class="sc">$</span>coefficients[<span class="dv">1</span>], <span class="at">color =</span> <span class="st">"darkred"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="fire-model-fitting_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>We can also manually create this fit line through two methods. There is a function in base R called <code>predict</code>, that will predict values using the original dataframe used in the model:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>base.predict <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">yr =</span> treedata<span class="sc">$</span>yr,</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>           <span class="at">prediction =</span> <span class="fu">predict</span>(mod.stat)) </span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(base.predict)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    yr prediction
+1 1919     752343
+2 1920     750050
+3 1921     747757
+4 1922     745464
+5 1923     743171
+6 1924     740878</code></pre>
+</div>
+</div>
+<p>We can write our own function that creates a new line based on estimated m (slope) and b (intercept):</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>mxb_line <span class="ot">&lt;-</span> <span class="cf">function</span>(m, x, b){</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  y <span class="ot">=</span> m<span class="sc">*</span>x <span class="sc">+</span> b</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(y)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="co">#example of predicting with this</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>my.predict <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">yr =</span> treedata<span class="sc">$</span>yr,</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>           <span class="at">prediction =</span> <span class="fu">mxb_line</span>(<span class="at">m =</span> mod.stat<span class="sc">$</span>coefficients[<span class="dv">2</span>],</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">x =</span> treedata<span class="sc">$</span>yr, </span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">b =</span> mod.stat<span class="sc">$</span>coefficients[<span class="dv">1</span>])) </span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(my.predict)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    yr prediction
+1 1919     752343
+2 1920     750050
+3 1921     747757
+4 1922     745464
+5 1923     743171
+6 1924     740878</code></pre>
+</div>
+</div>
+<p>We can add that to the plot to see how they compare:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>base.plot <span class="sc">+</span> </span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> base.predict, <span class="fu">aes</span>(<span class="at">y =</span> prediction), <span class="at">color =</span> <span class="st">"darkred"</span>, <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> my.predict, <span class="fu">aes</span>(<span class="at">y =</span> prediction), <span class="at">color =</span> <span class="st">"dodgerblue"</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>,</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">size =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="fire-model-fitting_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="manually-fit-by-least-squares" class="level2">
+<h2 class="anchored" data-anchor-id="manually-fit-by-least-squares">Manually fit by least-squares</h2>
+<p>There are two parts to manually fitting a model, corresponding to two functions. The first function takes the parameters for <code>m</code> and <code>b</code>, predicts y-values based on these parameters, and calculates the sum of squares wit the true data. The second function wraps around the first function to minimize the sum of squares, resulting in the optimum estimate for the parameters.</p>
+<p>The first function to calculate a sum of squares for one set of parameters. We’ve added some <code>roxygen2</code> code above the function to help remind us what each of the arguments does. You can read it similar to how you would read a help file for a function.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">#' Manually Estimate Least Squares</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="co">#' @param par vector of parameter values (m and b)</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="co">#' @param xval vector of x-values in the equation (in our case year)</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="co">#' @param ytrue vector of true y-values in our dataset</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="co">#' </span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="co">#' @return Sum of Squares for given parameter values</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>lst_sq <span class="ot">&lt;-</span> <span class="cf">function</span>(par,  xval, ytrue){</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>  m.guess <span class="ot">&lt;-</span> par[<span class="st">"m"</span>]</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>  b.guess <span class="ot">&lt;-</span> par[<span class="st">"b"</span>]</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>  <span class="do">##run your model with your guess parameters</span></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>  y.pred <span class="ot">&lt;-</span> <span class="fu">mxb_line</span>(<span class="at">m =</span> m.guess, <span class="at">x =</span> xval, <span class="at">b =</span> b.guess)</span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>  <span class="do">##compare with data via sum of squares.</span></span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a>  sum.sq <span class="ot">&lt;-</span> <span class="fu">sum</span>((y.pred <span class="sc">-</span> ytrue)<span class="sc">^</span><span class="dv">2</span>)</span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(sum.sq)</span>
+<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>As an example, let’s use this function to estimate the sum of squares for our “optimal” parameter estimates above to some that we have moved away from the optimum.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#optimal parameters from linear regression</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">lst_sq</span>(<span class="at">par =</span> <span class="fu">c</span>(<span class="st">"m"</span> <span class="ot">=</span> <span class="sc">-</span><span class="dv">2293</span>, <span class="st">"b"</span> <span class="ot">=</span> <span class="dv">5152515</span>), <span class="at">xval =</span> treedata<span class="sc">$</span>yr, <span class="at">ytrue =</span> treedata<span class="sc">$</span>forest)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 178514122204</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co">#estimate SS with parameters lightly moved from optimum</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">lst_sq</span>(<span class="at">par =</span> <span class="fu">c</span>(<span class="st">"m"</span> <span class="ot">=</span> <span class="sc">-</span><span class="dv">2600</span>, <span class="st">"b"</span> <span class="ot">=</span> <span class="dv">5500000</span>), <span class="at">xval =</span> treedata<span class="sc">$</span>yr, <span class="at">ytrue =</span> treedata<span class="sc">$</span>forest)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 6200461146534</code></pre>
+</div>
+</div>
+<p>We can see that the parameters we’ve moved away have a higher sum of squares and therefore are a worse fit. We can also double-check this visually by plotting both of the lines. The displaced line is in blue, and you can see it is a worse fit to the data.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>base.plot <span class="sc">+</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_abline</span>(<span class="at">intercept =</span> <span class="dv">5152515</span>, <span class="at">slope =</span> <span class="sc">-</span><span class="dv">2293</span>) <span class="sc">+</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_abline</span>(<span class="at">intercept =</span> <span class="dv">5500000</span>, <span class="at">slope =</span> <span class="sc">-</span><span class="dv">2600</span>, <span class="at">color =</span> <span class="st">"dodgerblue"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="fire-model-fitting_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>The second function is a wrapper that works to minimize the output (i.e.&nbsp;the sum of squares) from the previous function. By minimizing the output, we will find the optimum fit. This is done using the <code>optim</code> function in R, which searches the parameter space to find the values that result in the minimum sum of squares.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>wrap_fit <span class="ot">=</span> <span class="cf">function</span>(guess.slope, guess.int, xguess, ydata){</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  par <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"m"</span> <span class="ot">=</span> guess.slope, <span class="st">"b"</span> <span class="ot">=</span> guess.int)</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>  out <span class="ot">&lt;-</span> <span class="fu">optim</span>(<span class="at">par=</span>par, <span class="at">fn =</span> lst_sq, <span class="at">xval =</span> xguess, <span class="at">ytrue =</span> ydata)</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>  m.fit <span class="ot">=</span> out<span class="sc">$</span>par[<span class="st">'m'</span>]</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>  b.fit <span class="ot">=</span> out<span class="sc">$</span>par[<span class="st">'b'</span>]</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">list</span>(m.fit, b.fit))  </span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The two “guesses” that we give to this function are the initial starting values that the <code>optim</code> function will start the search at. It is always good to try and start these near where we think they might be, otherwise the model may not converge or will result in a poor fit. For example, let’s try with some nonsense values and see what happens:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>poor.fit <span class="ot">&lt;-</span> <span class="fu">wrap_fit</span>(<span class="at">guess.slope =</span> <span class="dv">10</span>, <span class="at">guess.int =</span> <span class="dv">100</span>, </span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>                     <span class="at">xguess =</span> treedata<span class="sc">$</span>yr, <span class="at">ydata =</span> treedata<span class="sc">$</span>forest)</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>poor.fit</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[1]]
+    m 
+329.3 
+
+[[2]]
+    b 
+168.9 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>base.plot <span class="sc">+</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_abline</span>(<span class="at">slope =</span> poor.fit[[<span class="dv">1</span>]], <span class="at">intercept  =</span> poor.fit[[<span class="dv">2</span>]])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="fire-model-fitting_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>This is clearly not a great fit to the data. Let’s make a better starting guess, taking for example the intercept of our data on the y-axis (800000) and the average decrease over this time period, about 5000 per year:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>good.fit <span class="ot">&lt;-</span> <span class="fu">wrap_fit</span>(<span class="at">guess.slope =</span> <span class="sc">-</span><span class="dv">5000</span>, <span class="at">guess.int =</span> <span class="dv">800000</span>, </span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>                     <span class="at">xguess =</span> treedata<span class="sc">$</span>yr, <span class="at">ydata =</span> treedata<span class="sc">$</span>forest)</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>good.fit</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[1]]
+    m 
+-2315 
+
+[[2]]
+      b 
+5195033 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co">#predict from this model</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>good.predictions <span class="ot">&lt;-</span> <span class="fu">mxb_line</span>(<span class="at">m =</span> good.fit[[<span class="dv">1</span>]], <span class="at">x =</span> treedata<span class="sc">$</span>yr, <span class="at">b =</span> good.fit[[<span class="dv">2</span>]])</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="co">#plot this data</span></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>base.plot <span class="sc">+</span></span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> treedata<span class="sc">$</span>yr, <span class="at">y =</span> good.predictions))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="fire-model-fitting_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>This is a much better fit, and agrees with what we saw in the statistical model above. We can compare all the linear regressions we have done in a plot</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>base.plot <span class="sc">+</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">#original statistical model with glm</span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> treedata<span class="sc">$</span>yr, <span class="at">y =</span> <span class="fu">predict</span>(mod.stat)), <span class="at">color =</span> <span class="st">"darkred"</span>) <span class="sc">+</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>  <span class="co">#model fit using optim</span></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> treedata<span class="sc">$</span>yr, <span class="at">y =</span> good.predictions), <span class="at">color =</span> <span class="st">"blue"</span>, </span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">linetype =</span> <span class="st">"dotted"</span>, <span class="at">size =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="fire-model-fitting_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>From this we can see that forest is declining, because the slope is negative, and also estimate he amount of forest cover at the beginning of our time series using any of our predict functions. Remember that the intercept returned by the model isn’t the intercept at the beginning of our data in 1920, but would correspond to the amount of forest cover when x = 0 (which isn’t very useful to us), so you need to predict it using the value of the year.</p>
+<p>This is all great, but we don’t know anything about why or how this decline took place. For this we need to use a mechanistic model.</p>
+</section>
+</section>
+<section id="mechanistic-model" class="level1">
+<h1>Mechanistic Model</h1>
+<p>Mechanistic models allow us to directly model the process that may be creating the data that we have. For example, we may hypothesize that the declining forest is due to slash and burn agriculture. We decide to build a model describing conversion of forest to savanna via slash and burn. Instead of m and b, the slope and intercept of a line, we now want to estimate the rate of slash and burn. We can describe this process with the following equations, describing changes in forest (F) and savanna (S):</p>
+<p><span class="math display">\[ \frac{dF}{dt} = rF\frac{K-N}{K} - \gamma F S \]</span> <span class="math display">\[ \frac{dS}{dt} = \gamma F S \frac{K-N}{K}\]</span></p>
+<p>The model has four parameters:</p>
+<ul>
+<li>r : the rate of forest growth, the number of sq. km of forest produced b one existing sq. km of forest per year</li>
+<li>K : the carrying capacity for the forest, equal to the amount of land available for forest and savanna</li>
+<li>N : the total amount of forest and savanna land</li>
+<li><span class="math inline">\(\gamma\)</span>: the rate of slash and burn, the number of sq km of savanna produced per sq km of slashed forest. For example, a rate of 0.8 would mean 0.2 of the forest that is slashed reconverts to forest</li>
+</ul>
+<p>We already know the rate of forest growth (r = 1.01) and the carrying capacity (K = 900000). We will build a continuous model to estimate the rate of slash and burn that explains our data.</p>
+<section id="create-the-initial-model" class="level2">
+<h2 class="anchored" data-anchor-id="create-the-initial-model">Create the initial model</h2>
+<p>We define the model as a function that can be read by the ODE solver:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>ForestSavannaCont <span class="ot">&lt;-</span> <span class="cf">function</span>(t,y,parms){</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># The with() function gives access to the named values of parms within the</span></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># local environment created by the function</span></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">with</span>(<span class="fu">c</span>(<span class="fu">as.list</span>(y),parms),{</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>    N <span class="ot">=</span> For <span class="sc">+</span> Sav</span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>    dFordt <span class="ot">&lt;-</span> r<span class="sc">*</span>((K<span class="sc">-</span>N)<span class="sc">/</span>K)<span class="sc">*</span>For <span class="sc">-</span> gamma<span class="sc">*</span>For<span class="sc">*</span>Sav</span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>    dSavdt <span class="ot">&lt;-</span> gamma<span class="sc">*</span>((K<span class="sc">-</span>N)<span class="sc">/</span>K)<span class="sc">*</span>For<span class="sc">*</span>Sav </span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Return forest to compare with data</span></span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">list</span>(<span class="fu">c</span>(dFordt, dSavdt))</span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>To then run the model, we need to provide the initial conditions (amount of forest and savanna), the time series we want to run it over, and values for the parameters:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Intialize population</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>Mada.start <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">For =</span> <span class="dv">450000</span>, <span class="co">#sq. km of forest in Mada</span></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>                <span class="at">Sav =</span> <span class="dv">100000</span>)  <span class="co">#sq. km of savanna in Mada  </span></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a><span class="do">## Set up time-steps and units - here go for slightly longer to allow model to equilibrate</span></span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>times <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">1900</span>,<span class="dv">2010</span>,<span class="at">by=</span><span class="dv">1</span>) </span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a><span class="do">## Define parameters </span></span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a>values <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">r=</span><span class="fl">1.01</span>, </span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>            <span class="at">gamma =</span> .<span class="dv">00000045</span>, </span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a>            <span class="at">K =</span> <span class="dv">900000</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We can then run the model and plot it with the data:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>slash.mod1<span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="fu">lsoda</span>(<span class="at">y =</span> Mada.start, <span class="at">times =</span> times, <span class="at">func =</span> ForestSavannaCont, </span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>                              <span class="at">parms =</span> values))</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(slash.mod1) <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"yr"</span>, <span class="st">"forest"</span>, <span class="st">"savanna"</span>)</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>base.plot <span class="sc">+</span></span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> slash.mod1, <span class="fu">aes</span>(<span class="at">x =</span> yr, <span class="at">y =</span> forest)) <span class="sc">+</span></span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlim</span>(<span class="fu">c</span>(<span class="dv">1915</span>, <span class="dv">2012</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="fire-model-fitting_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>It looks like the model is overestimating the forest conversion rate. Let’s adjust the rate by fitting the model to our dataset</p>
+</section>
+<section id="fitting-a-mechanistic-model" class="level2">
+<h2 class="anchored" data-anchor-id="fitting-a-mechanistic-model">Fitting a mechanistic model</h2>
+<p>Like the statistical model, we use a workflow consisting of several functions to fit a mechanistic model:</p>
+<ol type="1">
+<li>A function that runs our model (we already made this above <code>ForestSavannaCont</code>)</li>
+<li>A function that compares our model with the data via a statistical test (we’ll use least squares)</li>
+<li>A wrapper function that minimizes the difference between our model and the data (here, we’ll use R’s function ‘optim’ to minimize the function we write under #2)</li>
+</ol>
+<p>The comparison function takes a set of parameters, estimates the the forest cover for each year, and compares these predictions to the true data using the sum of least squares:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>sum_sq_mech <span class="ot">&lt;-</span> <span class="cf">function</span>(gamma, r, K, xstart, times, data){</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>    parms <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">r =</span> r,</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>              <span class="at">gamma =</span> gamma,</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>              <span class="at">K =</span> K)</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>    model.out <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="fu">lsoda</span>(<span class="at">y =</span> xstart, <span class="at">times =</span> times, </span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">func =</span> ForestSavannaCont, <span class="at">parms =</span> parms))</span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">names</span>(model.out) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"yr"</span>, <span class="st">"forest"</span>, <span class="st">"savanna"</span>)</span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># the model runs for longer than our data, so we need to make sure </span></span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a>  <span class="co"># we are comparing the same years across the two datasets</span></span>
+<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a>  forest.preds <span class="ot">&lt;-</span> model.out[<span class="fu">match</span>(data<span class="sc">$</span>yr, model.out<span class="sc">$</span>yr),]</span>
+<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb35-14"><a href="#cb35-14" aria-hidden="true" tabindex="-1"></a>  <span class="do">## and compare the output of the model with the data</span></span>
+<span id="cb35-15"><a href="#cb35-15" aria-hidden="true" tabindex="-1"></a>    sum.sq <span class="ot">&lt;-</span> <span class="fu">sum</span>((forest.preds<span class="sc">$</span>forest <span class="sc">-</span> data<span class="sc">$</span>forest)<span class="sc">^</span><span class="dv">2</span>)</span>
+<span id="cb35-16"><a href="#cb35-16" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb35-17"><a href="#cb35-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(sum.sq)</span>
+<span id="cb35-18"><a href="#cb35-18" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Let’s now test the function on one value of parameters:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum_sq_mech</span>(<span class="at">gamma =</span> <span class="fl">0.00000045</span>,</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>            <span class="at">r =</span> <span class="fl">1.01</span>,</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">K =</span> <span class="dv">900000</span>,</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">xstart =</span> Mada.start,</span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">times =</span> times,</span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">data =</span> treedata)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 13332008425590</code></pre>
+</div>
+</div>
+<p>Now we write the wrapper function that minimizes the least squares to fit the optimum fit. It manually explores a range of values for the slashing rate and then chooses the one which results in the lowest sum of squares.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>wrap_mech <span class="ot">&lt;-</span> <span class="cf">function</span>(xstart, times, r, K, data){</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>  <span class="do">## make a sequence of guesses for the rate</span></span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>  slash.list <span class="ot">=</span> <span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">0</span>, <span class="at">to =</span> .<span class="dv">000001</span>, <span class="at">by =</span> .<span class="dv">0000001</span>)</span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>  <span class="do">## then, search for the minimum</span></span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>  sum.sq.lst <span class="ot">=</span> <span class="fu">list</span>()</span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(slash.list)){</span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a>    sum.sq.lst[[i]] <span class="ot">=</span> <span class="fu">sum_sq_mech</span>(<span class="at">gamma=</span>slash.list[i], <span class="at">xstart=</span>xstart, <span class="at">r=</span>r, <span class="at">K=</span>K, <span class="at">times=</span>times, <span class="at">data=</span>data)</span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a>  sum.sq.lst <span class="ot">=</span> <span class="fu">c</span>(<span class="fu">unlist</span>(sum.sq.lst))</span>
+<span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb38-13"><a href="#cb38-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot</span>(slash.list, sum.sq.lst, <span class="at">type=</span><span class="st">"b"</span>)</span>
+<span id="cb38-14"><a href="#cb38-14" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb38-15"><a href="#cb38-15" aria-hidden="true" tabindex="-1"></a>  <span class="do">##find the minimum</span></span>
+<span id="cb38-16"><a href="#cb38-16" aria-hidden="true" tabindex="-1"></a>  fit.slash <span class="ot">=</span> slash.list[sum.sq.lst<span class="sc">==</span><span class="fu">min</span>(sum.sq.lst)]</span>
+<span id="cb38-17"><a href="#cb38-17" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb38-18"><a href="#cb38-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(fit.slash)</span>
+<span id="cb38-19"><a href="#cb38-19" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Then we can fit the model.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>fit.mech <span class="ot">&lt;-</span> <span class="fu">wrap_mech</span>(<span class="at">xstart =</span> Mada.start, <span class="at">times =</span> times, <span class="at">r =</span> <span class="fl">1.01</span>, <span class="at">K =</span> <span class="dv">900000</span>, <span class="at">data =</span> treedata)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="fire-model-fitting_files/figure-html/unnamed-chunk-23-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>It returns a plot of the estimated value of the sum of squares across the values of <span class="math inline">\(\gamma\)</span> that we evaluted. We can see that <span class="math inline">\(3e10^-7\)</span> is the best fit. This is also what the function returns!</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>fit.mech</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.0000003</code></pre>
+</div>
+</div>
+<p>With this estimated parameter, let’s fit the mechanistic model and compare it to the data:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>param.fit <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">r =</span> <span class="fl">1.01</span>, <span class="at">gamma =</span> fit.mech, <span class="at">K =</span> <span class="dv">900000</span>)</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>mech.fit <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="fu">lsoda</span>(<span class="at">y =</span> Mada.start, <span class="at">times =</span> times, <span class="at">func =</span> ForestSavannaCont, </span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>                              <span class="at">parms =</span> param.fit))</span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(mech.fit) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"yr"</span>, <span class="st">"forest"</span>, <span class="st">"savanna"</span>)</span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a>base.plot <span class="sc">+</span></span>
+<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> slash.mod1, <span class="fu">aes</span>(<span class="at">x =</span> yr, <span class="at">y =</span> forest)) <span class="sc">+</span></span>
+<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> mech.fit, <span class="fu">aes</span>(<span class="at">x =</span> yr, <span class="at">y =</span> forest), <span class="at">color =</span> <span class="st">"dodgerblue"</span>) <span class="sc">+</span></span>
+<span id="cb42-10"><a href="#cb42-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlim</span>(<span class="fu">c</span>(<span class="dv">1920</span>, <span class="dv">2010</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="fire-model-fitting_files/figure-html/unnamed-chunk-25-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>We can see that our fit line in blue is a much better fit to the data than our original guess.</p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
