@@ -58,7 +58,7 @@ In the meantime, please do not hesitate to contact Cara Brook ([cbrook@uchicago.
 
 ---
 
-A working outline of our 2023 syllabus is available for your perusal [here](/archives/2024), and materials from previous years' courses can be accessed at [E<sup>2</sup>M<sup>2</sup> 2022](/archives/2022), [E<sup>2</sup>M<sup>2</sup> 2020](/archives/2020), [E<sup>2</sup>M<sup>2</sup> 2019](/archives/2019) and [E<sup>2</sup>M<sup>2</sup> 2018](/archives/2018).
+A working outline of our 2024 syllabus is available for your perusal [here](/archives/2024), and materials from previous years' courses can be accessed at [E<sup>2</sup>M<sup>2</sup> 2022](/2022), [E<sup>2</sup>M<sup>2</sup> 2020](/archives/2020), [E<sup>2</sup>M<sup>2</sup> 2019](/archives/2019) and [E<sup>2</sup>M<sup>2</sup> 2018](/archives/2018).
 
 ---
 
