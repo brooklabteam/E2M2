@@ -14,6 +14,8 @@
   - 2018 ~> course syllabus, etc
   - 2019
   - 2020
+  - 2022
+  - 2024
   - ...
   - present year
 - assets
@@ -21,6 +23,8 @@
   - 2018 ~> all course material for this year's course
   - 2019
   - 2020
+  - 2022
+  - 2024
   - ...
   - present year
 - Preparation
