@@ -269,13 +269,13 @@ p + geom_line(data= pho.prev, aes(age,prev, linetype=model), colour="turquoise")
 lik_m1 <- loglikpc(par = out.pho$par, data = dat.pho, cate = c(0,15,30))
 lik_m2 <- loglikpc(par = out.pho2$par, data = dat.pho, cate = c(0)) 
 
-AIC_m1 <- -2*lik_m1 + 2*length(out.pho$par)
-AIC_m2 <- -2*lik_m2 + 2*length(out.pho2$par)
+AIC_m1 <- 2*lik_m1 + 2*length(out.pho$par)
+AIC_m2 <- 2*lik_m2 + 2*length(out.pho2$par)
 
 
 ## Look at these two calculations of AIC:
-AIC_m1 #-143.4076
-AIC_m2 #-148.5627
+AIC_m1 #155.4076
+AIC_m2 #152.5627
 
 ## We want to get the smallest AIC to have the model that most closely fits the data.
 
@@ -317,12 +317,12 @@ lik_m4 <- loglikpc(par = out.eliza2$par, data = dat.eliza, cate = c(0))
 k_m3 = length(out.eliza$par)
 k_m4 = length(out.eliza2$par)
 
-AIC_m3 <- -2*lik_m3 + 2*k_m3
-AIC_m4 <- -2*lik_m4 + 2*k_m4
+AIC_m3 <- 2*lik_m3 + 2*k_m3
+AIC_m4 <- 2*lik_m4 + 2*k_m4
 
 ## Look at AIC:
-AIC_m3
-AIC_m4
+AIC_m3 #114.6327
+AIC_m4 #126.2653
 
 ## This time, the model with more parameters (m3) has a lower AIC than the simple model (m4)
 ## with only 1 age class. Typically, we think that changes in AIC greater than 2 points are 
@@ -417,14 +417,14 @@ p + geom_line(data= eliza.prev, aes(age,prev, linetype=model), colour="coral")
 lik_m5 <- loglikpc.clear(par = out.eliza3$par, data = dat.eliza, cate = c(0,15,30))
 k_m5 <- length(out.eliza3$par) # this time, extra parameters are fitted
 
-AIC_m5 = -2*lik_m5 + 2*k_m5
+AIC_m5 = 2*lik_m5 + 2*k_m5
 
 ##Compare with m3 AIC:
-AIC_m3 #-102.6
-AIC_m5 #-97.1
+AIC_m3 #114.6327
+AIC_m5 #113.1223
 
-## The model including clearance (m5) has a lower AIC by ~5 points, meaning that it 
-## a significantly better fit to your data than model 3.
+## The model including clearance (m5) has a lower AIC by ~1 points, meaning that it 
+## a marginally  better fit to your data than model 3.
 
 ## You've just fitted, evaluated, compared, and selected models from data.
 ## But, remember that you had to have the model in mind when collecting these data.
