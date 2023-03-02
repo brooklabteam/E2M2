@@ -10,11 +10,7 @@ title: "E2M2: Ecological & Epidemiological Modeling in Madagascar"
 <!--🛑 
 -->
 
-<p><strong> 
-E<sup>2</sup>M<sup>2</sup> 2022 students, please submit your final homework assignments <a href="https://airtable.com/shrtvko5RPUyPlVjI">here</a> by midnight on Wednesday, January 4!</strong>
-<br>
-<br>
-
+<p>
 Applications for the next E<sup>2</sup>M<sup>2</sup> (to be held in Jan 2024) will become available in September 2023!
 </p>
 
