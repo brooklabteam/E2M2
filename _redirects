@@ -1,7 +1,7 @@
 # netlify redirects https://docs.netlify com/routing/redirects/#syntax-for-the-redirects-file
 
-# Plausible Analytics https://plausible.io/docs/proxy/guides/netlify
-/pio/js/script.js https://plausible.io/js/script.js 200
+# Plausible Analytics https://plausible.io/docs/proxy/guides/netlify with https://plausible.io/docs/script-extensions
+/pio/js/script.js https://plausible.io/js/script.outbound-links.file-downloads.js 200
 /pio/api/event https://plausible.io/api/event 200
 
 /archives			/	# no actual `/archives` path just send people to home page for now
