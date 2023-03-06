@@ -5,4 +5,4 @@
 /pio/api/event https://plausible.io/api/event 200
 
 /archives			/	# no actual `/archives` path just send people to home page for now
-/archives/2022		/2022
+/2022				/archives/2022
