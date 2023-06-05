@@ -11,7 +11,7 @@ title: "E2M2: Ecological & Epidemiological Modeling in Madagascar"
 -->
 
 <p>
-Applications for the next E<sup>2</sup>M<sup>2</sup> (to be held in Jan 2024) will become available in September 2023!
+Applications for the next E<sup>2</sup>M<sup>2</sup> (to be held in March 2024) will become available in November 2023!
 </p>
 
 </div>
@@ -22,11 +22,9 @@ Applications for the next E<sup>2</sup>M<sup>2</sup> (to be held in Jan 2024) wi
 
 <img src="/assets/img/E2M2-2022.jpg" alt="E2M2class" style="width: 70%;" />
 
-January 5-14, 2024
+Exact Dates and Location To Be Announced - Check back soon!
 
-Madagascar Biodiversity Center, Antananarivo & Centre ValBio, Ranomafana National Park
-
-We are pleased to announce the sixth annual E<sup>2</sup>M<sup>2</sup>:  Ecological and Epidemiological Modeling in Madagascar, to be held January 5-14, 2024, with time split between Madagascar Biodiversity Center (MBC) at Tsimbazaza in Antananarivo and Centre ValBio (CVB) in Ranomafana National Park, Madagascar. The course will include a 1-day introduction to basic programming in R ('R Bootcamp') to be held at MBC, followed by a week-long intensive workshop at CVB aimed to provide an introduction to the use of dynamical models in understanding ecological and epidemiological data. Finally, students will have the opportunity to present research plans in a final symposium to follow the workshop, once again at MBC on January 14, 2024.
+We are pleased to announce the sixth annual E<sup>2</sup>M<sup>2</sup>:  Ecological and Epidemiological Modeling in Madagascar. The course will include a 1-day introduction to basic programming in R ('R Bootcamp'), followed by a week-long intensive workshop aimed to provide an introduction to the use of dynamical models in understanding ecological and epidemiological data. Finally, students will have the opportunity to present research plans in a final symposium to follow the workshop.
 
 Throughout E<sup>2</sup>M<sup>2</sup>, students will participate in a series of interactive lectures and computer-based tutorials and learn to fine-tune model-based research questions, develop clear model frameworks and corresponding equations, and fit models to real-world data. All students will work closely with peers and faculty to develop a research plan for an ongoing or existing project integrating dynamical modeling with data collection and/or analysis in a biological system of their choosing. These research plans can then be used as a foundation for future dissertation or grant proposals. 
 
@@ -35,7 +33,7 @@ The course will be targeted towards students in their third cycle or higher in b
 
 ---
 
-The application window will open in September 2023. Please check back at this website for updates.
+The application window will open in November 2023. Please check back at this website for updates.
 
 
 <!--
