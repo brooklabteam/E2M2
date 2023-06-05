@@ -1,4 +1,23 @@
 # netlify redirects https://docs.netlify com/routing/redirects/#syntax-for-the-redirects-file
 
-/archives					/	# no actual `/archives` path just send people to home page for now
-/archives/2022    /2022
+# Plausible Analytics https://plausible.io/docs/proxy/guides/netlify with https://plausible.io/docs/script-extensions
+/pio/js/script.js https://plausible.io/js/script.outbound-links.file-downloads.js 200
+/pio/api/event https://plausible.io/api/event 200
+
+/archives			/	# no actual `/archives` path just send people to home page for now
+/2022				/archives/2022
+
+# 404 errors
+/assets/2019/4_Occupancy.zip                                                    /assets/2019/4_Occupancy_2019.zip
+/assets/img/IMG_1317.JPG                                                        /assets/img/E2M2-2022.jpg
+/assets/E2M2-2022.jpg                                                           /assets/img/E2M2-2022.jpg
+/E2M2-2019/4_FanazavaniWomensMarch.pdf                                          /assets/2019/4_FanazavaniWomensMarch.pdf
+/e2m2_2020                                                                      /archives/2020
+/archives/assets/2022/Activities/Dynamical_Fever/Dynamical_Fever_Download.zip   /assets/2022/Activities/Dynamical_Fever/Dynamical_Fever_Download.zip
+/archives/assets/2022/Activities/E2M2-Final-Research-Plan.pdf                   /assets/2022/Activities/E2M2-Final-Research-Plan.pdf
+/archives/assets/2022/Activities/Model_Framework_HW.pdf                         /assets/2022/Activities/Model_Framework_HW.pdf
+/archives/assets/2022/Activities/Model_Telephone_Example_Model_Description.pdf  /assets/2022/Activities/Model_Telephone_Example_Model_Description.pdf
+/archives/assets/2022/Activities/Research-Snapshots.pdf                         /assets/2022/Activities/Research-Snapshots.pdf
+/archives/assets/2022/Lectures/Intro_CompartmentalModels_2022.pdf               /assets/2022/Lectures/Intro_CompartmentalModels_2022.pdf
+/archives/assets/2022/Tutorials/CompartmentalModels.zip                         /assets/2022/Tutorials/CompartmentalModels.zip
+/archives/assets/2022/Tutorials/Epidemic_Cards_Activity.zip                     /assets/2022/Tutorials/Epidemic_Cards_Activity.zip
