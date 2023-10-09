@@ -1,7 +1,8 @@
 ---
 layout: page
-title: "Preparation"
+#title: "Preparation"
 permalink: /preparation
+
 ---
 Congratulations on your selection for E<sup>2</sup>M<sup>2</sup>!
 
