@@ -1,7 +1,7 @@
 ---
-layout: page
+#layout: page
 #title: "Preparation"
-permalink: /preparation
+#permalink: /preparation
 
 ---
 Congratulations on your selection for E<sup>2</sup>M<sup>2</sup>!
