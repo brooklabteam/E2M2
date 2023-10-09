@@ -10,9 +10,7 @@ title: "E2M2: Ecological & Epidemiological Modeling in Madagascar"
 <!--🛑 
 -->
 
-E<sup>2</sup>M<sup>2</sup> 2024 : March 10-18th
-
-Applications for the next E<sup>2</sup>M<sup>2</sup> are now open! The workshop will take place March 10-18th, location to be determined. Submit your application below by November 30th.
+Applications for the next E<sup>2</sup>M<sup>2</sup> are now open! The workshop will take place March 10-18th, location to be determined. Information regarding the program and application can be found below. Applications are due by November 30th.
 
 </div>
 
@@ -55,7 +53,7 @@ Please do not hesitate to contact Cara Brook ([cbrook@uchicago.edu](mailto:cbroo
 
 ---
 
-A working outline of our 2024 syllabus is available for your perusal [here](/archives/2024), and materials from previous years' courses can be accessed at [E<sup>2</sup>M<sup>2</sup> 2022](/2022), [E<sup>2</sup>M<sup>2</sup> 2020](/archives/2020), [E<sup>2</sup>M<sup>2</sup> 2019](/archives/2019) and [E<sup>2</sup>M<sup>2</sup> 2018](/archives/2018).
+ Materials from previous years' courses can be accessed at [E<sup>2</sup>M<sup>2</sup> 2022](/2022), [E<sup>2</sup>M<sup>2</sup> 2020](/archives/2020), [E<sup>2</sup>M<sup>2</sup> 2019](/archives/2019) and [E<sup>2</sup>M<sup>2</sup> 2018](/archives/2018).
 
 ---
 
