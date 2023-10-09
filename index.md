@@ -12,9 +12,7 @@ title: "E2M2: Ecological & Epidemiological Modeling in Madagascar"
 
 E<sup>2</sup>M<sup>2</sup> 2024 : March 10-18th
 
-Applications for the next E<sup>2</sup>M<sup>2</sup> are now open! Submit your application below by November 30th.
-
-Location TBD.
+Applications for the next E<sup>2</sup>M<sup>2</sup> are now open! The workshop will take place March 10-18th, location to be determined. Submit your application below by November 30th.
 
 </div>
 
