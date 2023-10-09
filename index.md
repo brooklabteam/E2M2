@@ -10,19 +10,15 @@ title: "E2M2: Ecological & Epidemiological Modeling in Madagascar"
 <!--🛑 
 -->
 
-<p>
 E<sup>2</sup>M<sup>2</sup> 2024 : March 10-18th
 
 Applications for the next E<sup>2</sup>M<sup>2</sup> are now open! Submit your application below by November 30th.
 
 Location TBD.
-</p>
 
 </div>
 
 ---
-
-
 
 <img src="/assets/img/E2M2-2022.jpg" alt="E2M2class" style="width: 70%;" />
 
@@ -41,7 +37,7 @@ Applications due by midnight November 30th.
 
 
 <div class="bs-callout bs-callout-info">
-<p>All application materials were required to be submitted in English. The application consisted of:</p>
+<p>All application materials are required to be submitted in English. The application consists of:</p>
 <ul>
 	<li>Application form </li>
 	<li>Uploaded .pdf file with:
