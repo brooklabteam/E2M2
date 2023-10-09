@@ -11,8 +11,10 @@ title: "E2M2: Ecological & Epidemiological Modeling in Madagascar"
 -->
 
 <p>
-Applications for the next E<sup>2</sup>M<sup>2</sup> are now open!
-The workshop will take place from March 10-18th, 2024.
+E<sup>2</sup>M<sup>2</sup> 2024 : March 10-18th
+
+Applications for the next E<sup>2</sup>M<sup>2</sup> are now open! Submit your application below by November 30th.
+
 Location TBD.
 </p>
 
@@ -34,7 +36,8 @@ The course will be targeted towards students in their third cycle or higher in b
 
 ---
 
-Apply here. Applications due by midnight November 30th.
+<a href="https://airtable.com/appOmknn85Pk2TFON/shrVqROd5NL0d87Io">Apply here.</a>
+Applications due by midnight November 30th.
 
 
 <div class="bs-callout bs-callout-info">
@@ -53,7 +56,7 @@ Apply here. Applications due by midnight November 30th.
 </div>
 
 
-Please do not hesitate to contact Cara Brook ([cbrook@uchicago.edu](mailto:cbrook@uchicago.edu)) or Fidisoa Rasambainarivo ([fidy@mahaliana.org](mailto:fidy@mahaliana.org)) with any questions or concerns. 
+Please do not hesitate to contact Cara Brook ([cbrook@uchicago.edu](mailto:cbrook@uchicago.edu)) or Sophia Horigan ([shorigan@uchicago.edu](mailto:shorigan@uchicago.edu)) with any questions or concerns. 
 
 
 ---
@@ -63,6 +66,6 @@ A working outline of our 2024 syllabus is available for your perusal [here](/arc
 ---
 
 
-Misaotra betsaka from the E<sup>2</sup>M<sup>2</sup> organizing team!
+Misaotra betsaka from the 2024 E<sup>2</sup>M<sup>2</sup> organizing team!
 
-<em>Cara Brook, Tanjona Ramiadantsoa, Fidy Rasambainarivo, Hafaliana Christian Ranaivoson, Andres Garchitorena, Angelo Andrianiaina, Santino Andry, Gwen Kettenburg, Sophia Horigan, Kendall Fitzgerald </em>
+<em>Cara Brook, Sophia Horigan, Tanjona Ramiadantsoa, Fidy Rasambainarivo, Hafaliana Christian Ranaivoson, Andres Garchitorena, Michelle Evans, Angelo Andrianiaina, Santino Andry, Gwen Kettenburg, Emily Ruhs  </em>
