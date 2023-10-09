@@ -11,7 +11,9 @@ title: "E2M2: Ecological & Epidemiological Modeling in Madagascar"
 -->
 
 <p>
-Applications for the next E<sup>2</sup>M<sup>2</sup> (to be held in March 2024) will become available in November 2023!
+Applications for the next E<sup>2</sup>M<sup>2</sup> are now open!
+The workshop will take place from March 10-18th, 2024.
+Location TBD.
 </p>
 
 </div>
@@ -22,9 +24,8 @@ Applications for the next E<sup>2</sup>M<sup>2</sup> (to be held in March 2024) 
 
 <img src="/assets/img/E2M2-2022.jpg" alt="E2M2class" style="width: 70%;" />
 
-Exact Dates and Location To Be Announced - Check back soon!
 
-We are pleased to announce the sixth annual E<sup>2</sup>M<sup>2</sup>:  Ecological and Epidemiological Modeling in Madagascar. The course will include a 1-day introduction to basic programming in R ('R Bootcamp'), followed by a week-long intensive workshop aimed to provide an introduction to the use of dynamical models in understanding ecological and epidemiological data. Finally, students will have the opportunity to present research plans in a final symposium to follow the workshop.
+We are pleased to announce the sixth annual E<sup>2</sup>M<sup>2</sup>:  Ecological and Epidemiological Modeling in Madagascar. The course will consist of a week-long intensive workshop aimed to provide an introduction to the use of dynamical models in understanding ecological and epidemiological data, followed by a final symposium where students will have a chance to present original research.
 
 Throughout E<sup>2</sup>M<sup>2</sup>, students will participate in a series of interactive lectures and computer-based tutorials and learn to fine-tune model-based research questions, develop clear model frameworks and corresponding equations, and fit models to real-world data. All students will work closely with peers and faculty to develop a research plan for an ongoing or existing project integrating dynamical modeling with data collection and/or analysis in a biological system of their choosing. These research plans can then be used as a foundation for future dissertation or grant proposals. 
 
@@ -33,10 +34,9 @@ The course will be targeted towards students in their third cycle or higher in b
 
 ---
 
-The application window will open in November 2023. Please check back at this website for updates.
+Apply here. Applications due by midnight November 30th.
 
 
-<!--
 <div class="bs-callout bs-callout-info">
 <p>All application materials were required to be submitted in English. The application consisted of:</p>
 <ul>
@@ -51,9 +51,9 @@ The application window will open in November 2023. Please check back at this web
 	</li>
 </ul>
 </div>
--->
 
-In the meantime, please do not hesitate to contact Cara Brook ([cbrook@uchicago.edu](mailto:cbrook@uchicago.edu)) or Fidisoa Rasambainarivo ([fidy@mahaliana.org](mailto:fidy@mahaliana.org)) with any questions or concerns. 
+
+Please do not hesitate to contact Cara Brook ([cbrook@uchicago.edu](mailto:cbrook@uchicago.edu)) or Fidisoa Rasambainarivo ([fidy@mahaliana.org](mailto:fidy@mahaliana.org)) with any questions or concerns. 
 
 
 ---
