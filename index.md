@@ -48,12 +48,12 @@ Applications due by midnight November 30th.
 </div>
 
 
-Please do not hesitate to contact Cara Brook ([cbrook@uchicago.edu](mailto:cbrook@uchicago.edu)) or Sophia Horigan ([shorigan@uchicago.edu](mailto:shorigan@uchicago.edu)) with any questions or concerns. 
+Please do not hesitate to contact Sophia Horigan ([shorigan@uchicago.edu](mailto:shorigan@uchicago.edu)) or Tanjona Ramiadantsoa ([tanjona.ramiadantsoa@gmail.com](mailto:tanjona.ramiadantsoa@gmail.com)) with any questions or concerns. 
 
 
 ---
 
- Materials from previous years' courses can be accessed at [E<sup>2</sup>M<sup>2</sup> 2022](/2022), [E<sup>2</sup>M<sup>2</sup> 2020](/archives/2020), [E<sup>2</sup>M<sup>2</sup> 2019](/archives/2019) and [E<sup>2</sup>M<sup>2</sup> 2018](/archives/2018).
+ The 2024 syllabus in progress can be found at [E<sup>2</sup>M<sup>2</sup> 2024](/archives/2024). Materials from previous years' courses can be accessed at [E<sup>2</sup>M<sup>2</sup> 2022](/archives/2022), [E<sup>2</sup>M<sup>2</sup> 2020](/archives/2020), [E<sup>2</sup>M<sup>2</sup> 2019](/archives/2019) and [E<sup>2</sup>M<sup>2</sup> 2018](/archives/2018).
 
 ---
 
