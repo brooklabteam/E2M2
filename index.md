@@ -48,7 +48,7 @@ Applications due by midnight November 30th.
 </div>
 
 
-Please do not hesitate to contact Sophia Horigan ([shorigan@uchicago.edu](mailto:shorigan@uchicago.edu)) or Tanjona Ramiadantsoa ([tanjona.ramiadantsoa@gmail.com](mailto:tanjona.ramiadantsoa@gmail.com)) with any questions or concerns. 
+Please do not hesitate to contact Cara Brook ([cbrook@uchicago.edu](mailto:cbrook@uchicago.edu)) or Tanjona Ramiadantsoa ([tanjona.ramiadantsoa@gmail.com](mailto:tanjona.ramiadantsoa@gmail.com)) with any questions or concerns. 
 
 
 ---
