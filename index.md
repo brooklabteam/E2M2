@@ -10,7 +10,7 @@ title: "E2M2: Ecological & Epidemiological Modeling in Madagascar"
 <!--🛑 
 -->
 
-Applications for the next E<sup>2</sup>M<sup>2</sup> are now open! The workshop will take place March 10-18th, location to be determined. Information regarding the program and application can be found below. Applications are due by November 30th.
+Applications for the next E<sup>2</sup>M<sup>2</sup> are now open! The workshop will take place March 10-18th, location to be determined. Information regarding the program and application can be found below. <strong> Applications are due by November 30th </strong>.
 
 </div>
 
