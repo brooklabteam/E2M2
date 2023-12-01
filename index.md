@@ -10,7 +10,7 @@ title: "E2M2: Ecological & Epidemiological Modeling in Madagascar"
 <!--🛑 
 -->
 
-Applications for the next E<sup>2</sup>M<sup>2</sup> are now open! The workshop will take place March 10-18th, location to be determined. Information regarding the program and application can be found below. <strong> Applications are due by November 30th </strong>.
+<strong> Applications for the next E<sup>2</sup>M<sup>2</sup> are now closed! </strong> Applicants will be notified regarding their submission by Friday December 8th.
 
 </div>
 
@@ -27,7 +27,7 @@ The course will be targeted towards students in their third cycle or higher in b
 
 
 ---
-
+<!--
 <a href="https://airtable.com/appOmknn85Pk2TFON/shrVqROd5NL0d87Io">Apply here.</a>
 Applications due by midnight November 30th.
 
@@ -46,7 +46,7 @@ Applications due by midnight November 30th.
 	</li>
 </ul>
 </div>
-
+-->
 
 Please do not hesitate to contact Cara Brook ([cbrook@uchicago.edu](mailto:cbrook@uchicago.edu)) or Tanjona Ramiadantsoa ([tanjona.ramiadantsoa@gmail.com](mailto:tanjona.ramiadantsoa@gmail.com)) with any questions or concerns. 
 
