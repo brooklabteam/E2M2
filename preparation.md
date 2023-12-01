@@ -36,7 +36,8 @@ We recommend including 1-2 visual aids (e.g. figures or diagrams) that will help
 **We ask that you please submit the PDF version of your slide [here](https://airtable.com/shrSK0HeD6HUKembm) by midnight on Thursday, December 8 in advance of arrival to the workshop.**
 
 Please use the following naming convention upon submission: "E2M2_2022_Prep_Slide_LastName_FirstName.pdf"
-
+-->
+<!--
 ### Food, accommodation, and weather
 
 All meals and lodging during the workshop will be provided, beginning with lunch on Monday, December 10 (please eat breakfast prior to arrival) and ending with lunch on Saturday, December 17 (you will be responsible for your own dinner the evening after return to Tana). With the exception of lunch during both transit journeys, all meals will take place at [Centre ValBio](https://www.stonybrook.edu/commcms/centre-valbio/). Additionally, lunch, snacks, and coffee will be provided at our optional R Bootcamp on Friday, December 9 and at our optional final closing session from 2-4:30pm on Thursday, January 5, 2023. Both events will be held at [Institut Pasteur de Madagascar](https://www.pasteur.mg/) (IPM) in Antananarivo. 
