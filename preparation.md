@@ -2,14 +2,15 @@
 layout: page
 title: "Preparation"
 permalink: /preparation
-published: false
+published: true
 ---
 preparation page
 
+<!--
 Congratulations on your selection for E<sup>2</sup>M<sup>2</sup>!
 
 Please familiarize yourself with the preparation materials below in order to prepare for the upcoming workshop.
-
+-->
 ### Software installations
 
 For those selected for participation in E<sup>2</sup>M<sup>2</sup>, we ask that you please begin to familiarize yourself with the computer programs that will be used at the workshop in advance of arrival. If you will be bringing a personal laptop to the workshop, please be sure that the following programs are installed and working:
@@ -26,7 +27,7 @@ If you will not be bringing your own computer to the workshop, we will still exp
 ### Preparatory tutorials
 
 After you have installed R and R studio on your computer, **please begin to work through the [four tutorials](https://coding4conservation.org/assets/tutorials/R_tutorials.zip) linked here.** All of them are extensively annotated with directions. If you have any problems loading and/or the software, please let us know immediately. We expect you to be familiar with all material presented in these tutorials prior to your arrival to the E<sup>2</sup>M<sup>2</sup> R Bootcamp on December 9.
-
+<!--
 ### Preparatory assignment
 
 In addition to the above tutorials, we ask that you prepare **one powerpoint slide** (saved in PDF format) summarizing your research prior to your arrival to E<sup>2</sup>M<sup>2</sup>. Please be prepared to present your slide to the rest of the class in a short, 2-minute oral presentation at Centre ValBio on Sunday, December 11, 2022.
@@ -44,4 +45,4 @@ Please use the following naming convention upon submission: "E2M2_2022_Prep_Slid
 All meals and lodging during the workshop will be provided, beginning with lunch on Monday, December 10 (please eat breakfast prior to arrival) and ending with lunch on Saturday, December 17 (you will be responsible for your own dinner the evening after return to Tana). With the exception of lunch during both transit journeys, all meals will take place at [Centre ValBio](https://www.stonybrook.edu/commcms/centre-valbio/). Additionally, lunch, snacks, and coffee will be provided at our optional R Bootcamp on Friday, December 9 and at our optional final closing session from 2-4:30pm on Thursday, January 5, 2023. Both events will be held at [Institut Pasteur de Madagascar](https://www.pasteur.mg/) (IPM) in Antananarivo. 
 
 Our workshop takes place at the onset of the rainy season in Madagascar’s summer. As such, it will be hot and humid in Ranomafana, so please pack accordingly. While most of our workshop will take place in the CVB conference room, some of our sessions will involve hiking outside. Please bring bug-repellent clothing (long sleeves and pants), hiking shoes, and rain gear. Each participant should also bring a backpack, a water bottle, and a headlamp or flashlight to take on the trail.
-
+-->
