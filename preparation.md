@@ -2,7 +2,6 @@
 layout: page
 title: "Preparation"
 permalink: /preparation
-published: true
 ---
 preparation page
 
