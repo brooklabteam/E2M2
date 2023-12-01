@@ -3,8 +3,6 @@ layout: page
 title: "Preparation"
 permalink: /preparation
 ---
-preparation page
-
 <!--
 Congratulations on your selection for E<sup>2</sup>M<sup>2</sup>!
 
