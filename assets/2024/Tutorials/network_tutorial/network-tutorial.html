@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.253">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Michelle Evans, mv.evans.phd@gmail.com">
+<meta name="dcterms.date" content="2022-12-11">
+
+<title>E2M2 2022: Network Tutorial</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="network-tutorial_files/libs/clipboard/clipboard.min.js"></script>
+<script src="network-tutorial_files/libs/quarto-html/quarto.js"></script>
+<script src="network-tutorial_files/libs/quarto-html/popper.min.js"></script>
+<script src="network-tutorial_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="network-tutorial_files/libs/quarto-html/anchor.min.js"></script>
+<link href="network-tutorial_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="network-tutorial_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="network-tutorial_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="network-tutorial_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="network-tutorial_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#background-on-the-tutorial" id="toc-background-on-the-tutorial" class="nav-link active" data-scroll-target="#background-on-the-tutorial">Background on the tutorial</a></li>
+  <li><a href="#packages-we-will-need" id="toc-packages-we-will-need" class="nav-link" data-scroll-target="#packages-we-will-need">Packages we will need</a></li>
+  <li><a href="#loading-the-datasets" id="toc-loading-the-datasets" class="nav-link" data-scroll-target="#loading-the-datasets">Loading the datasets</a>
+  <ul class="collapse">
+  <li><a href="#network-data" id="toc-network-data" class="nav-link" data-scroll-target="#network-data">Network Data</a></li>
+  <li><a href="#metadata" id="toc-metadata" class="nav-link" data-scroll-target="#metadata">Metadata</a></li>
+  </ul></li>
+  <li><a href="#visualizing-the-network" id="toc-visualizing-the-network" class="nav-link" data-scroll-target="#visualizing-the-network">Visualizing the network</a></li>
+  <li><a href="#calculating-network-characteristics" id="toc-calculating-network-characteristics" class="nav-link" data-scroll-target="#calculating-network-characteristics">Calculating network characteristics</a>
+  <ul class="collapse">
+  <li><a href="#node-characteristics" id="toc-node-characteristics" class="nav-link" data-scroll-target="#node-characteristics">Node characteristics</a></li>
+  <li><a href="#network-level-characteristics" id="toc-network-level-characteristics" class="nav-link" data-scroll-target="#network-level-characteristics">Network-level characteristics</a></li>
+  </ul></li>
+  <li><a href="#multiple-regression-quadratic-assignment-procedures-mrqap" id="toc-multiple-regression-quadratic-assignment-procedures-mrqap" class="nav-link" data-scroll-target="#multiple-regression-quadratic-assignment-procedures-mrqap">Multiple Regression Quadratic Assignment Procedures (MRQAP)</a>
+  <ul class="collapse">
+  <li><a href="#create-matrices-of-dependent-variables" id="toc-create-matrices-of-dependent-variables" class="nav-link" data-scroll-target="#create-matrices-of-dependent-variables">Create matrices of dependent variables</a></li>
+  <li><a href="#statistical-model" id="toc-statistical-model" class="nav-link" data-scroll-target="#statistical-model">Statistical Model</a></li>
+  </ul></li>
+  <li><a href="#simulations-on-networks" id="toc-simulations-on-networks" class="nav-link" data-scroll-target="#simulations-on-networks">Simulations on networks</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">E2M2 2022: Network Tutorial</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Michelle Evans, mv.evans.phd@gmail.com </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 11, 2022</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p>This is a <a href="https://quarto.org/">Quarto</a> document. It allows us to combine background text, code, and its output in one document. It can be “rendered” into an HTML file that can be read in any browser. All code chunks look like the following below, and can be run in RStudio just like a line in a standard <code>.R</code> script:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#this is an example code script</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span>(<span class="st">"Example plot in a code chunk"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="network-tutorial_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>A “code-only” version of this tutorial is available in the <code>network-tutorial.R</code> script.</p>
+<section id="background-on-the-tutorial" class="level1">
+<h1>Background on the tutorial</h1>
+<p>This is a tutorial that was developed as part of the E2M2 workshop held in December 2022. It is based on code developed by Fidisoa Rasambainarivo, further developed by Michelle Evans. If you have any questions, please send an email to Michelle at mv.evans.phd@gmail.com.</p>
+<p>The tutorial follows an example scenario when network analysis may be needed by public health authorities. In this example, an outbreak of an unknown parasite community has occured near the great Republic of E2M2. Public health officials want to evaluate the risks of disease spreading in a small community. They have collected interaction data from a group of 79 scientists from 3 institutions. This dataset records whether each person spent time with another person during the past 3 days.</p>
+</section>
+<section id="packages-we-will-need" class="level1">
+<h1>Packages we will need</h1>
+<p>Here are the packages we’ll need for this tutorial. I also choose to set some base configurations that I like, such as never reading in strings as factors and setting a limit for the number of digits to include when printing to the console.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">stringsAsFactors =</span> F, <span class="at">scipen =</span> <span class="dv">999</span>, <span class="at">digits =</span> <span class="dv">4</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">#networks</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(igraph)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(asnipe)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">#data manipulation</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="loading-the-datasets" class="level1">
+<h1>Loading the datasets</h1>
+<section id="network-data" class="level2">
+<h2 class="anchored" data-anchor-id="network-data">Network Data</h2>
+<p>First, we will explore the dataset to get a feel for its structure and format.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>edgelist <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"edgelist-e2m2.csv"</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(edgelist)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      Node1     Node2 Link
+1 BET.14.01 BET.14.01    0
+2 BET.14.01 BET.14.02    0
+3 BET.14.01 BET.14.03    0
+4 BET.14.01 BET.14.04    0
+5 BET.14.01 BET.15.01    0
+6 BET.14.01 BET.15.02    0</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(edgelist)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'data.frame':   6241 obs. of  3 variables:
+ $ Node1: chr  "BET.14.01" "BET.14.01" "BET.14.01" "BET.14.01" ...
+ $ Node2: chr  "BET.14.01" "BET.14.02" "BET.14.03" "BET.14.04" ...
+ $ Link : int  0 0 0 0 0 0 0 0 0 0 ...</code></pre>
+</div>
+</div>
+<p>In its current structure, each potential pair is represented by row in the dataframe. Whether or not that pair of nodes is connected is described by the column <code>Link</code>, with a <code>0</code> corresponding to no social contact over the prior 3 days and a <code>1</code> indicating contact.</p>
+<p>We want to “widen” this dataset so that it becomes a matrix where each row or column represents an individual node and the value of the cell for column <code>i</code> and row <code>j</code> is the value of the edge between individual <code>i</code> and <code>j</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>network <span class="ot">&lt;-</span> <span class="fu">pivot_wider</span>(edgelist, <span class="at">names_from =</span> Node2, <span class="at">values_from =</span> Link)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co">#move name of node1 to the rowname and turn into a matrix</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>network.mat <span class="ot">&lt;-</span> <span class="fu">select</span>(network, <span class="sc">-</span>Node1) <span class="sc">%&gt;%</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.matrix</span>()</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(network.mat) <span class="ot">&lt;-</span> network<span class="sc">$</span>Node1</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co">#set diagonal (contact with oneself) to 0</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="fu">diag</span>(network.mat) <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="co">#investigate small portion of this matrix to see what it looks like</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>network.mat[<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>,<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>          BET.14.01 BET.14.02 BET.14.03 BET.14.04 BET.15.01 BET.15.02
+BET.14.01         0         0         0         0         0         0
+BET.14.02         0         0         0         0         0         0
+BET.14.03         0         0         0         0         0         0
+BET.14.04         0         0         0         0         0         0
+BET.15.01         0         0         0         0         0         0
+BET.15.02         0         0         0         0         0         0</code></pre>
+</div>
+</div>
+</section>
+<section id="metadata" class="level2">
+<h2 class="anchored" data-anchor-id="metadata">Metadata</h2>
+<p>The public health officials also have information, or metadata, about each citizen (node). This includes their sex, institution, and what their superpower is.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>nodeinfo <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"nodeinfo_all.csv"</span>,<span class="at">header =</span> T)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(nodeinfo)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'data.frame':   79 obs. of  4 variables:
+ $ CitizenID  : chr  "BET.14.01" "BET.14.02" "BET.14.03" "BET.14.04" ...
+ $ Institution: chr  "student" "student" "student" "student" ...
+ $ Sex        : chr  "F" "M" "F" "F" ...
+ $ superpower : chr  "Mogul" "Mogul" "Mogul" "Wizard" ...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(nodeinfo)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  CitizenID Institution Sex superpower
+1 BET.14.01     student   F      Mogul
+2 BET.14.02     student   M      Mogul
+3 BET.14.03     student   F      Mogul
+4 BET.14.04     student   F     Wizard
+5 BET.15.01     student   F      Mogul
+6 BET.15.02     student   M      Mogul</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="visualizing-the-network" class="level1">
+<h1>Visualizing the network</h1>
+<p>If we want to visualize the network as series of nodes and edges, we need to turn it into a <code>graph</code> object using the <code>igraph</code> package. It can then be plotted automatically via the <code>plot</code> function</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>net <span class="ot">&lt;-</span> <span class="fu">graph.adjacency</span>(network.mat, <span class="at">mode =</span> <span class="st">"undirected"</span>, <span class="at">diag =</span> <span class="cn">FALSE</span>, <span class="at">weighted =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(net)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="network-tutorial_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>We can use the metadata about the nodes to make this graph more informative by assigning it to the nodes/vertices defined as <code>V(net)</code>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">#first check that the order of nodes in the nodeinfo matches that in the network</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>nodeinfo<span class="sc">$</span>CitizenID <span class="sc">==</span> <span class="fu">V</span>(net)<span class="sc">$</span>name <span class="co">#all should be TRUE</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[16] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[31] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[46] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[61] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[76] TRUE TRUE TRUE TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#if it is not true, then you need to reorder the nodeinfo based on order of names in network</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>nodeinfo <span class="ot">&lt;-</span> nodeinfo[<span class="fu">match</span>(<span class="fu">V</span>(net)<span class="sc">$</span>name,nodeinfo<span class="sc">$</span>CitizenID),]</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co"># shape is dependent on sex</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="fu">V</span>(net)<span class="sc">$</span>shape <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(nodeinfo<span class="sc">$</span>Sex <span class="sc">==</span> <span class="st">"F"</span>, <span class="st">"circle"</span>, <span class="st">"square"</span>)</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="co">#color is dependent on institution</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="co">#create a named color palette</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>color.pal  <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"instructor"</span> <span class="ot">=</span> <span class="st">"blue"</span>, <span class="st">"mentor"</span> <span class="ot">=</span> <span class="st">"yellow"</span>, <span class="st">"student"</span> <span class="ot">=</span> <span class="st">"red"</span>)</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="co">#assign color by matching institution to this palette</span></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="fu">V</span>(net)<span class="sc">$</span>color <span class="ot">=</span> color.pal[<span class="fu">match</span>(nodeinfo<span class="sc">$</span>Institution, <span class="fu">names</span>(color.pal))]</span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a><span class="co">#plot with legend</span></span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>fr <span class="ot">&lt;-</span> <span class="fu">layout_nicely</span>(net, <span class="at">dim=</span><span class="dv">2</span>) <span class="co">#uses a specific algorithm to draw the network</span></span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(net, </span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>     <span class="at">vertex.label=</span><span class="cn">NA</span>,</span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a>     <span class="at">vertex.size=</span><span class="dv">4</span>,</span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a>     <span class="at">layout=</span>fr, </span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a>     <span class="at">edge.lty=</span><span class="dv">1</span>,<span class="at">edge.width=</span><span class="dv">1</span>,</span>
+<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a>     <span class="at">margin=</span><span class="fu">c</span>(<span class="sc">-</span><span class="fl">0.1</span>,<span class="sc">-</span><span class="fl">0.1</span>,<span class="dv">0</span>,<span class="dv">0</span>))</span>
+<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="at">x=</span><span class="dv">0</span>, <span class="at">y=</span><span class="sc">-</span><span class="fl">0.9</span>, <span class="fu">c</span>(<span class="st">"Male"</span>,<span class="st">"Female"</span>), </span>
+<span id="cb16-23"><a href="#cb16-23" aria-hidden="true" tabindex="-1"></a>       <span class="at">pch=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>), <span class="at">pt.cex=</span><span class="fl">1.5</span>, <span class="at">cex=</span>.<span class="dv">8</span>, <span class="at">bty=</span><span class="st">"n"</span>, <span class="at">ncol=</span><span class="dv">1</span>,<span class="at">y.intersp =</span> <span class="fl">1.2</span>)</span>
+<span id="cb16-24"><a href="#cb16-24" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="at">x=</span><span class="sc">-</span><span class="fl">0.9</span>, <span class="at">y=</span><span class="sc">-</span><span class="fl">0.9</span>, <span class="fu">c</span>(<span class="st">"student"</span>, <span class="st">"mentor"</span>, <span class="st">"instructor"</span>), </span>
+<span id="cb16-25"><a href="#cb16-25" aria-hidden="true" tabindex="-1"></a>       <span class="at">pch=</span><span class="dv">16</span>, <span class="at">col=</span><span class="fu">c</span>(<span class="st">"red"</span>,<span class="st">"yellow"</span>,<span class="st">"blue"</span>), <span class="at">bg=</span><span class="fu">c</span>(<span class="st">"red"</span>,<span class="st">"yellow"</span>,<span class="st">"blue"</span>), <span class="at">pt.cex=</span><span class="fl">1.5</span>, <span class="at">cex=</span>.<span class="dv">8</span>, <span class="at">bty=</span><span class="st">"n"</span>, <span class="at">ncol=</span><span class="dv">1</span>, <span class="at">y.intersp=</span> <span class="fl">1.2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="network-tutorial_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>It is also possible to plot social networks using <code>ggplot</code> via the <code>ggraphs</code> package. For more information, refer to the <a href="https://ggplot2-book.org/networks.html">ggplot2 book</a>.</p>
+</section>
+<section id="calculating-network-characteristics" class="level1">
+<h1>Calculating network characteristics</h1>
+<p>There are many existing functions in the <code>igraph</code> package for calculating characteristics of individual nodes and and at the level of the network</p>
+<section id="node-characteristics" class="level2">
+<h2 class="anchored" data-anchor-id="node-characteristics">Node characteristics</h2>
+<p>First, we will calculate two characteristics for each node : degree and betweenness. We can add these columns to our dataframe of node metadata and also visualize these characteristics on the network</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>nodeinfo<span class="sc">$</span>deg <span class="ot">&lt;-</span> <span class="fu">degree</span>(net)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>nodeinfo<span class="sc">$</span>bet <span class="ot">&lt;-</span> <span class="fu">betweenness</span>(net, <span class="at">directed=</span>F)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(nodeinfo)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  CitizenID Institution Sex superpower deg     bet
+1 BET.14.01     student   F      Mogul   3  29.123
+2 BET.14.02     student   M      Mogul   2   1.727
+3 BET.14.03     student   F      Mogul   1   0.000
+4 BET.14.04     student   F     Wizard   6 122.116
+5 BET.15.01     student   F      Mogul   3  10.862
+6 BET.15.02     student   M      Mogul   4  18.817</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># add the degree as a characteristic of the node to the network</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">V</span>(net)<span class="sc">$</span>size <span class="ot">&lt;-</span> nodeinfo<span class="sc">$</span>deg<span class="sc">/</span><span class="dv">2</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(net, </span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">vertex.label.cex=</span><span class="fl">0.5</span>,</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">vertex.label.dist=</span><span class="dv">0</span>,</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>     <span class="at">layout=</span>fr, </span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>     <span class="at">edge.lty=</span><span class="dv">1</span>, <span class="at">edge.width=</span><span class="dv">1</span>,</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>     <span class="at">margin=</span><span class="fu">c</span>(<span class="sc">-</span><span class="fl">0.1</span>,<span class="sc">-</span><span class="fl">0.1</span>,<span class="dv">0</span>,<span class="dv">0</span>))</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="at">x=</span><span class="dv">0</span>, <span class="at">y=</span><span class="sc">-</span><span class="fl">0.9</span>, <span class="fu">c</span>(<span class="st">"Male"</span>,<span class="st">"Female"</span>), </span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>       <span class="at">pch=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>), <span class="at">pt.cex=</span><span class="fl">1.5</span>, <span class="at">cex=</span>.<span class="dv">8</span>, <span class="at">bty=</span><span class="st">"n"</span>, <span class="at">ncol=</span><span class="dv">1</span>,<span class="at">y.intersp =</span> <span class="fl">1.2</span>)</span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="at">x=</span><span class="sc">-</span><span class="fl">0.9</span>, <span class="at">y=</span><span class="sc">-</span><span class="fl">0.9</span>, <span class="fu">c</span>(<span class="st">"student"</span>, <span class="st">"mentor"</span>, <span class="st">"instructor"</span>), </span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>       <span class="at">pch=</span><span class="dv">16</span>, <span class="at">col=</span><span class="fu">c</span>(<span class="st">"red"</span>,<span class="st">"yellow"</span>,<span class="st">"blue"</span>), <span class="at">bg=</span><span class="fu">c</span>(<span class="st">"red"</span>,<span class="st">"yellow"</span>,<span class="st">"blue"</span>), <span class="at">pt.cex=</span><span class="fl">1.5</span>, <span class="at">cex=</span>.<span class="dv">8</span>, <span class="at">bty=</span><span class="st">"n"</span>, <span class="at">ncol=</span><span class="dv">1</span>, <span class="at">y.intersp=</span> <span class="fl">1.2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="network-tutorial_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="network-level-characteristics" class="level2">
+<h2 class="anchored" data-anchor-id="network-level-characteristics">Network-level characteristics</h2>
+<p><strong>Mean Distance</strong>: What is the average number of steps between any two pairs of individuals?</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean_distance</span>(net, <span class="at">directed=</span><span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2.823</code></pre>
+</div>
+</div>
+<p><strong>Edge Density</strong>: What is the proportion of realized links compared to all possible links? (How dense is the network?)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">edge_density</span>(net)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.0727</code></pre>
+</div>
+</div>
+<p><strong>Transitivity</strong>: What is the probability that the adjacent vertices of a focal vertex are also connected? (I.e. are my friends also friends with each other?)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">transitivity</span>(net) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.001388</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="multiple-regression-quadratic-assignment-procedures-mrqap" class="level1">
+<h1>Multiple Regression Quadratic Assignment Procedures (MRQAP)</h1>
+<p>The public health officials had the following question:</p>
+<blockquote class="blockquote">
+<p>Are individuals of the same institution or sex more likely to interact with each other than predicted by chance?</p>
+</blockquote>
+<p>We can answer this question via MRQAP from the <code>asnipe</code> package. This tests whether y (interaction between two nodes) is related to x1 (sex similarity) while controlling for x2 (group belonging) and vice versa.</p>
+<section id="create-matrices-of-dependent-variables" class="level2">
+<h2 class="anchored" data-anchor-id="create-matrices-of-dependent-variables">Create matrices of dependent variables</h2>
+<p>First, we need to create matrices that describe an individual’s membership of our groups (sex and institution):</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>sex.info <span class="ot">&lt;-</span> <span class="fu">select</span>(nodeinfo, <span class="at">ID =</span> CitizenID, <span class="at">Group =</span> Sex)</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>gbs <span class="ot">&lt;-</span> <span class="fu">get_group_by_individual</span>(sex.info, <span class="at">data_format =</span> <span class="st">"individuals"</span>)</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>net.sx <span class="ot">&lt;-</span> <span class="fu">get_network</span>(gbs, <span class="at">data_format =</span> <span class="st">"GBI"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Let’s compare how the information is reported in each of our datasets to better understand what the above code does:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>sex.info[<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>         ID Group
+1 BET.14.01     F
+2 BET.14.02     M
+3 BET.14.03     F
+4 BET.14.04     F
+5 BET.15.01     F
+6 BET.15.02     M</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>net.sx[<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>,<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>          BET.14.01 BET.14.02 BET.14.03 BET.14.04 BET.15.01 BET.15.02
+BET.14.01         0         0         1         1         1         0
+BET.14.02         0         0         0         0         0         1
+BET.14.03         1         0         0         1         1         0
+BET.14.04         1         0         1         0         1         0
+BET.15.01         1         0         1         1         0         0
+BET.15.02         0         1         0         0         0         0</code></pre>
+</div>
+</div>
+<p>It has created a new matrix of connections between individuals in row <code>i</code> and column <code>j</code>, where a value of <code>1</code> signifies that individuals <code>i</code> and <code>j</code> are in the same group.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>inst.info <span class="ot">&lt;-</span> <span class="fu">select</span>(nodeinfo, <span class="at">ID =</span> CitizenID, <span class="at">Group =</span> Institution)</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>gbs <span class="ot">&lt;-</span> <span class="fu">get_group_by_individual</span>(inst.info, <span class="at">data_format =</span> <span class="st">"individuals"</span>)</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>net.inst <span class="ot">&lt;-</span> <span class="fu">get_network</span>(gbs, <span class="at">data_format =</span> <span class="st">"GBI"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="statistical-model" class="level2">
+<h2 class="anchored" data-anchor-id="statistical-model">Statistical Model</h2>
+<p>We can then use these matrices as dependent variables in our statistical model to explain the similarity in our contact matrix as a function of shared group membership. We have set the number of randomisations low (99) to speed up the model, but if you were running this analysis for real you would want to use 999.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>net.model <span class="ot">&lt;-</span> <span class="fu">mrqap.dsp</span>(network.mat <span class="sc">~</span> net.sx <span class="sc">+</span> net.inst,</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>                       <span class="at">intercept =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>                       <span class="at">directed =</span> <span class="st">"undirected"</span>,</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>                       <span class="at">diagonal =</span> F, <span class="at">test.statistic =</span> <span class="st">"beta"</span>, </span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>                       <span class="at">randomisations =</span> <span class="dv">99</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>You can call the model object to look at its summary</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>net.model</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>MRQAP with Double-Semi-Partialing (DSP)
+
+Formula:  network.mat ~ net.sx + net.inst 
+
+Coefficients:
+          Estimate  P(β&gt;=r) P(β&lt;=r) P(|β|&lt;=|r|)
+intercept  0.021732 1.0000  0.0000  0.0000     
+net.sx    -0.001244 0.3131  0.6869  0.6768     
+net.inst  -0.021127 0.0000  1.0000  0.0000     
+
+Residual standard error: 0.1099 on 3078 degrees of freedom
+F-statistic: 13.85 on 2 and 3078 degrees of freedom, p-value: 1.028e-06 
+Multiple R-squared: 0.008919    Adjusted R-squared: 0.008275 
+AIC: -839.2 </code></pre>
+</div>
+</div>
+<p>It shows the overall estimate of the coefficent (<code>Estimate</code>) as well as a comparison of that estimate to the probability that a similar pattern could be found randomly.</p>
+<p>The estimate for the coefficient of the effect of shared sex is very small and doesn’t have a high probability of being less than or greater than random.</p>
+<p>The estimate for the coefficient of the effect of a shared institute has a high probability of being less than random, suggesting that being of the same institute means individuals are less likely to interact. However, note that this coefficient is small, and the overall R-squared of the model very low, so it doesn’t seem to have a strong effect.</p>
+<p>As a sanity check, we can make a new network where all of the mentors are connected and see how this changes our statistical output.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>ind.mentor <span class="ot">&lt;-</span> nodeinfo<span class="sc">$</span>Institution<span class="sc">==</span><span class="st">"mentor"</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>net2 <span class="ot">&lt;-</span> network.mat</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>net2[ind.mentor, ind.mentor] <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>net.model2 <span class="ot">&lt;-</span> <span class="fu">mrqap.dsp</span>(net2 <span class="sc">~</span> net.sx <span class="sc">+</span> net.inst,</span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>                       <span class="at">intercept =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>                       <span class="at">directed =</span> <span class="st">"undirected"</span>,</span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>                       <span class="at">diagonal =</span> F, <span class="at">test.statistic =</span> <span class="st">"beta"</span>, </span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>                       <span class="at">randomisations =</span> <span class="dv">99</span>)</span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a>net.model2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>MRQAP with Double-Semi-Partialing (DSP)
+
+Formula:  net2 ~ net.sx + net.inst 
+
+Coefficients:
+          Estimate   P(β&gt;=r) P(β&lt;=r) P(|β|&lt;=|r|)
+intercept  0.0213387 0.7778  0.2222  0.2222     
+net.sx    -0.0004561 0.4545  0.5455  0.9192     
+net.inst   0.4706864 1.0000  0.0000  0.0000     
+
+Residual standard error: 0.3407 on 3078 degrees of freedom
+F-statistic: 714.1 on 2 and 3078 degrees of freedom, p-value:     0 
+Multiple R-squared: 0.3169  Adjusted R-squared: 0.3165 
+AIC: -839.2 </code></pre>
+</div>
+</div>
+<p>In this new dataset, we can see that being in the same institution greatly increases a dyad’s probality of interacting, given by the much higher coefficient and R-squared.</p>
+</section>
+</section>
+<section id="simulations-on-networks" class="level1">
+<h1>Simulations on networks</h1>
+<p>The <code>igraph</code> package comes with a function that runs simulations of an SIR model on a network graph. You can change the values of beta and gamma to see how that changes the epidemic dynamics on the network.</p>
+<p>Calling <code>plot</code> will automatically plot all of the simulations, plus a median line and confidence intervals.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>net.sims <span class="ot">&lt;-</span> <span class="fu">sir</span>(net, <span class="at">beta =</span> <span class="fl">0.2</span>, <span class="at">gamma =</span> <span class="fl">0.2</span> , <span class="at">no.sim =</span> <span class="dv">1000</span>)</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="co">#number of susceptible</span></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(net.sims, <span class="at">comp =</span> <span class="st">"NS"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="network-tutorial_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co">#number of infected</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(net.sims, <span class="at">comp =</span> <span class="st">"NI"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="network-tutorial_files/figure-html/unnamed-chunk-18-2.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co">#number of recovered</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(net.sims, <span class="at">comp =</span> <span class="st">"NR"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="network-tutorial_files/figure-html/unnamed-chunk-18-3.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
