@@ -3,11 +3,15 @@ layout: page
 title: "Preparation"
 permalink: /preparation
 ---
-<!--
+
 Congratulations on your selection for E<sup>2</sup>M<sup>2</sup>!
 
 Please familiarize yourself with the preparation materials below in order to prepare for the upcoming workshop.
--->
+
+### R Tutorials
+
+Please make sure to work through the [Intro Tutorials](https://coding4conservation.org/assets/tutorials/R_tutorials.zip) before the workshop. 
+
 ### Software installations
 
 For those selected for participation in E<sup>2</sup>M<sup>2</sup>, we ask that you please begin to familiarize yourself with the computer programs that will be used at the workshop in advance of arrival. If you will be bringing a personal laptop to the workshop, please be sure that the following programs are installed and working:
