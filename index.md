@@ -10,7 +10,7 @@ title: "E2M2: Ecological & Epidemiological Modeling in Madagascar"
 <!--🛑 
 -->
 
-<strong> Applications for the next E<sup>2</sup>M<sup>2</sup> are now closed! </strong> Applicants will be notified regarding their submission by Friday December 8th.
+<strong> Applications for the next E<sup>2</sup>M<sup>2</sup> are now closed! </strong> 
 
 </div>
 
