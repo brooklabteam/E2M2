@@ -10,16 +10,18 @@ title: "E2M2: Ecological & Epidemiological Modeling in Madagascar"
 <!--🛑 
 -->
 
-<strong> Applications for the next E<sup>2</sup>M<sup>2</sup> are now closed! </strong> 
+<strong> We just finished a successful and exciting sixth iteration of E<sup>2</sup>M<sup>2</sup>. Please check back for the announcement of our 2025 course. </strong> 
 
 </div>
 
 ---
 
-<img src="/assets/img/E2M2-2022.jpg" alt="E2M2class" style="width: 70%;" />
+<img src="/assets/img/E2M2-2024.jpg" alt="E2M2class" style="width: 70%;" />
 
-
+<!---
 We are pleased to announce the sixth annual E<sup>2</sup>M<sup>2</sup>:  Ecological and Epidemiological Modeling in Madagascar. The course will consist of a week-long intensive workshop aimed to provide an introduction to the use of dynamical models in understanding ecological and epidemiological data, followed by a final symposium where students will have a chance to present original research.
+-->
+
 
 Throughout E<sup>2</sup>M<sup>2</sup>, students will participate in a series of interactive lectures and computer-based tutorials and learn to fine-tune model-based research questions, develop clear model frameworks and corresponding equations, and fit models to real-world data. All students will work closely with peers and faculty to develop a research plan for an ongoing or existing project integrating dynamical modeling with data collection and/or analysis in a biological system of their choosing. These research plans can then be used as a foundation for future dissertation or grant proposals. 
 
