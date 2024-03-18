@@ -16,7 +16,7 @@ title: "E2M2: Ecological & Epidemiological Modeling in Madagascar"
 
 ---
 
-<img src="/assets/img/E2M2-2024.jpg" alt="E2M2class" style="width: 70%;" />
+<img src="/assets/img/E2M2-2024.jpeg" alt="E2M2class" style="width: 70%;" />
 
 <!---
 We are pleased to announce the sixth annual E<sup>2</sup>M<sup>2</sup>:  Ecological and Epidemiological Modeling in Madagascar. The course will consist of a week-long intensive workshop aimed to provide an introduction to the use of dynamical models in understanding ecological and epidemiological data, followed by a final symposium where students will have a chance to present original research.
