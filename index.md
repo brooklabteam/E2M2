@@ -10,7 +10,7 @@ title: "E2M2: Ecological & Epidemiological Modeling in Madagascar"
 <!--🛑 
 -->
 
-<strong> We are pleased to announce the seventh annual E<sup>2</sup>M<sup>2</sup> to be held May 18-26, 2025! Applications can be found [here](https://airtable.com/appj1BhwDs8BaYPO8/shrtcJp9bQMxJnef1).  Applications are due Friday, December 13, 2024 </strong> 
+</strong> We are pleased to announce the seventh annual E<sup>2</sup>M<sup>2</sup> to be held May 18-26, 2025! Applications can be found [here](https://airtable.com/appj1BhwDs8BaYPO8/shrtcJp9bQMxJnef1).  Applications are due Friday, December 13, 2024 </strong> 
 
 </div>
 
@@ -55,7 +55,7 @@ Please do not hesitate to contact Cara Brook ([cbrook@uchicago.edu](mailto:cbroo
 
 ---
 
- The 2025 syllabus in progress can be found at [E<sup>2</sup>M<sup>2</sup> 2025](/archives/2025). Materials from previous years' courses can be accessed at [E<sup>2</sup>M<sup>2</sup> 2024](/archives/2024), [E<sup>2</sup>M<sup>2</sup> 2022](/archives/2022), [E<sup>2</sup>M<sup>2</sup> 2020](/archives/2020), [E<sup>2</sup>M<sup>2</sup> 2019](/archives/2019) and [E<sup>2</sup>M<sup>2</sup> 2018](/archives/2018).
+ The 2025 syllabus is in progress. Materials from previous years' courses can be accessed at [E<sup>2</sup>M<sup>2</sup> 2024](/archives/2024), [E<sup>2</sup>M<sup>2</sup> 2022](/archives/2022), [E<sup>2</sup>M<sup>2</sup> 2020](/archives/2020), [E<sup>2</sup>M<sup>2</sup> 2019](/archives/2019) and [E<sup>2</sup>M<sup>2</sup> 2018](/archives/2018).
 
 ---
 
