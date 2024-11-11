@@ -10,7 +10,7 @@ title: "E2M2: Ecological & Epidemiological Modeling in Madagascar"
 <!--🛑 
 -->
 
-<strong> We just finished a successful and exciting sixth iteration of E<sup>2</sup>M<sup>2</sup>. Please check back for the announcement of our 2025 course. </strong> 
+<strong> We are pleased to announce the seventh annual E<sup>2</sup>M<sup>2</sup> to be held May 18-26, 2025! Applications can be found [here](https://airtable.com/appj1BhwDs8BaYPO8/shrtcJp9bQMxJnef1)  Applications are due Friday, December 13, 2024 </strong> 
 
 </div>
 
@@ -50,16 +50,16 @@ Applications due by midnight November 30th.
 </div>
 -->
 
-Please do not hesitate to contact Cara Brook ([cbrook@uchicago.edu](mailto:cbrook@uchicago.edu)) or Tanjona Ramiadantsoa ([tanjona.ramiadantsoa@gmail.com](mailto:tanjona.ramiadantsoa@gmail.com)) with any questions or concerns. 
+Please do not hesitate to contact Cara Brook ([cbrook@uchicago.edu](mailto:cbrook@uchicago.edu)) or Christian Ranaivoson ([hcranaivoson@uchicago.edu](mailto:hcranaivoson@uchicago.edu)) with any questions or concerns. 
 
 
 ---
 
- The 2024 syllabus in progress can be found at [E<sup>2</sup>M<sup>2</sup> 2024](/archives/2024). Materials from previous years' courses can be accessed at [E<sup>2</sup>M<sup>2</sup> 2022](/archives/2022), [E<sup>2</sup>M<sup>2</sup> 2020](/archives/2020), [E<sup>2</sup>M<sup>2</sup> 2019](/archives/2019) and [E<sup>2</sup>M<sup>2</sup> 2018](/archives/2018).
+ The 2025 syllabus in progress can be found at [E<sup>2</sup>M<sup>2</sup> 2025](/archives/2025). Materials from previous years' courses can be accessed at [E<sup>2</sup>M<sup>2</sup> 2024](/archives/2024), [E<sup>2</sup>M<sup>2</sup> 2022](/archives/2022), [E<sup>2</sup>M<sup>2</sup> 2020](/archives/2020), [E<sup>2</sup>M<sup>2</sup> 2019](/archives/2019) and [E<sup>2</sup>M<sup>2</sup> 2018](/archives/2018).
 
 ---
 
 
-Misaotra betsaka from the 2024 E<sup>2</sup>M<sup>2</sup> organizing team!
+Misaotra betsaka from the 2025 E<sup>2</sup>M<sup>2</sup> organizing team!
 
-<em>Cara Brook, Sophia Horigan, Tanjona Ramiadantsoa, Fidy Rasambainarivo, Hafaliana Christian Ranaivoson, Andres Garchitorena, Michelle Evans, Angelo Andrianiaina, Santino Andry, Gwen Kettenburg, Emily Ruhs  </em>
+<em>Cara Brook, Hafaliana Christian Ranaivoson, Angelo Andrianiaina, Santino Andry, Gwen Kettenburg, Emily Ruhs, Natalia Cortes Delgado, Sophie Lockwood  </em>
