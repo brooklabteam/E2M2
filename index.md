@@ -10,7 +10,7 @@ title: "E2M2: Ecological & Epidemiological Modeling in Madagascar"
 <!--🛑 
 -->
 
-<strong> We are pleased to announce the seventh annual E<sup>2</sup>M<sup>2</sup> to be held May 18-26, 2025! Applications can be found <a href="https://airtable.com/appj1BhwDs8BaYPO8/shrtcJp9bQMxJnef1">here</a>.  Applications are due Friday, December 13, 2024. </strong> 
+<strong> We are pleased to announce the seventh annual E<sup>2</sup>M<sup>2</sup> will be held May 18-26, 2025! Applications can be found <a href="https://airtable.com/appj1BhwDs8BaYPO8/shrtcJp9bQMxJnef1">here</a>.  Applications are due Friday, December 13, 2024. </strong> 
 
 </div>
 
